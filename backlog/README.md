@@ -24,7 +24,7 @@ Statusy: todo → ready (zależności zamknięte, decyzje wypełnione) → in-pr
 | ID | Story | Kto | Zależy od | Status |
 | --- | --- | --- | --- | --- |
 | [S-001](S-001.md) | Struktura repozytorium | CC | – | done |
-| [S-002](S-002.md) | CLAUDE.md – zasady pracy z Claude Code | CC+P | S-001 | todo |
+| [S-002](S-002.md) | CLAUDE.md – zasady pracy z Claude Code | CC+P | S-001 | done |
 | [S-003](S-003.md) | Środowisko developerskie | CC | S-001 | todo |
 | [S-004](S-004.md) | CI w GitHub Actions | CC | S-003 | todo |
 | [S-005](S-005.md) | Szablony story i ADR | CC | S-001 | todo |
