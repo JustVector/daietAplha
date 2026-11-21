@@ -1,0 +1,148 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5">
+  <diagram name="Strona-1" id="jRKGx_Nn_HpJsOXuwk6U">
+    <mxGraphModel dx="2066" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sS4SckW2--thV-sHCSJE-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-1" target="sS4SckW2--thV-sHCSJE-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-1" target="sS4SckW2--thV-sHCSJE-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-1" value="plan żywienia" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="230" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-2" target="sS4SckW2--thV-sHCSJE-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-2" value="plan zakupów" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-4" target="sS4SckW2--thV-sHCSJE-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="sS4SckW2--thV-sHCSJE-4" target="sS4SckW2--thV-sHCSJE-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-4" value="przepisy" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-6" target="sS4SckW2--thV-sHCSJE-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-6" value="gotowanie" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-9" target="sS4SckW2--thV-sHCSJE-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-9" value="Zakupy" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-14" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="40" width="380" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-12" value="Założenia diety" style="rounded=0;whiteSpace=wrap;html=1;" parent="sS4SckW2--thV-sHCSJE-14" vertex="1">
+          <mxGeometry x="30" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="sS4SckW2--thV-sHCSJE-14" source="sS4SckW2--thV-sHCSJE-13" target="sS4SckW2--thV-sHCSJE-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-13" value="Preferencje smakowe" style="rounded=0;whiteSpace=wrap;html=1;" parent="sS4SckW2--thV-sHCSJE-14" vertex="1">
+          <mxGeometry x="230" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-15" target="sS4SckW2--thV-sHCSJE-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-15" value="ankieta preferencji" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="635" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="sS4SckW2--thV-sHCSJE-17" target="sS4SckW2--thV-sHCSJE-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-17" value="baza dozwolonych składników" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sS4SckW2--thV-sHCSJE-18" target="sS4SckW2--thV-sHCSJE-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-18" value="baza dopuszczonych przepisów" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-19" target="sS4SckW2--thV-sHCSJE-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-19" target="sS4SckW2--thV-sHCSJE-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-19" value="propozycje składników" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sS4SckW2--thV-sHCSJE-20" target="sS4SckW2--thV-sHCSJE-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-20" value="propozycje przepisów" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-25" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="230" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-27" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="430" width="500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-32" value="baza wykorzystanych przepisów" style="rounded=0;whiteSpace=wrap;html=1;" parent="sS4SckW2--thV-sHCSJE-27" vertex="1">
+          <mxGeometry x="350" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sS4SckW2--thV-sHCSJE-12" target="sS4SckW2--thV-sHCSJE-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sS4SckW2--thV-sHCSJE-34" value="recenzje" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-title" value="Architektura (zaktualizowana)" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="10" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-docker" value="Docker (docker compose)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-backend" value="Backend REST API (FastAPI)&lt;br&gt;logika planera, walidacja więzów, prompty" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="1115" y="300" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-llm" value="API LLM&lt;br&gt;(np. Claude)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="900" y="315" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-db" value="PostgreSQL&lt;br&gt;(produkty, profile, plany, oceny)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="300" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-ui" value="Bot Discord&lt;br&gt;(domownicy)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="540" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="arch-docker" target="arch-backend" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="arch-docker" target="arch-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="arch-backend" target="arch-llm" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="arch-backend" target="arch-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="arch-backend" target="arch-ui" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-cli" value="CLI&lt;br&gt;(insiderzy)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="540" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="arch-backend" target="arch-cli" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arch-e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="arch-docker" target="arch-ui" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
