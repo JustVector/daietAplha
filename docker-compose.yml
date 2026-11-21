@@ -1,0 +1,22 @@
+# Lokalne środowisko dAIet. Backend dochodzi w S-007, bot Discord w S-405.
+# Wartości z .env (wzór: .env.example); domyślne pozwalają wystartować bez .env.
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-daiet}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-daiet}
+      POSTGRES_DB: ${POSTGRES_DB:-daiet}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      # Od PostgreSQL 18 obraz trzyma dane w /var/lib/postgresql/<wersja>/
+      - db-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  db-data:

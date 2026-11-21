@@ -1,0 +1,37 @@
+[project]
+name = "daiet"
+version = "0.0.0"
+description = "Planer posiłków oparty na bazie żywności i silniku więzów"
+readme = "README.md"
+license = "AGPL-3.0-only"
+# Gałąź 3.13 przypięta też w .python-version, obrazie Dockera (S-007) i CI (S-004)
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18",
+    "pre-commit>=4.3",
+    "pytest>=8.4",
+    "ruff>=0.14",
+]
+
+[tool.uv]
+# Na razie repo nie jest pakietem; backend i data-pipeline dojdą w S-007 i S-102
+package = false
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+# E/W – pycodestyle, F – pyflakes, I – isort, N – nazewnictwo PEP 8,
+# UP – nowoczesna składnia, B – bugbear, SIM – uproszczenia
+select = ["E", "W", "F", "I", "N", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

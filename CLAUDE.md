@@ -26,13 +26,22 @@ Diagram: `DietAi.drawio`.
 ## Środowisko i komendy
 
 - Python **3.13** (gałąź 3.13, nie konkretna łatka). Sprawdzenie: `python --version`.
-- `make up` – start PostgreSQL i backendu w docker compose
-- `make test` – testy (pytest)
-- `make lint` – ruff i mypy
-- Konfiguracja tylko z `.env`; wzór zmiennych w `.env.example`.
+  Ta sama gałąź w czterech miejscach: `.python-version`, `requires-python` w `pyproject.toml`,
+  obraz Dockera `python:3.13-slim-trixie` (S-007) i CI `python-version: "3.13"` (S-004).
+- Zależności: **uv** (`pyproject.toml` + `uv.lock`). Nowa zależność: `uv add <pakiet>` (dev: `uv add --dev`).
+  Komendy Pythona uruchamiaj przez `uv run`.
+- Wymagane narzędzia: uv, make, Docker z Docker Compose.
 
-> Makefile, docker compose, `.env.example` i pre-commit powstają w S-003, backend w S-007.
-> Do tego czasu powyższe komendy nie istnieją.
+| Komenda | Działanie |
+| --- | --- |
+| `make install` | `uv sync` i instalacja hooków pre-commit |
+| `make up` / `make down` | start / stop PostgreSQL (od S-007 także backendu) w docker compose |
+| `make test` | testy (pytest) |
+| `make lint` | ruff check, ruff format --check, mypy (strict) |
+| `make format` | formatowanie i automatyczne poprawki ruff |
+
+- Konfiguracja tylko z `.env`; wzór zmiennych w `.env.example`.
+- pre-commit uruchamia się przy każdym commicie (ruff, mypy, podstawowe hooki). Nie omijaj go `--no-verify`.
 
 ## Konwencje kodu
 

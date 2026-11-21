@@ -26,18 +26,21 @@ Diagram: [`DietAi.drawio`](DietAi.drawio).
 
 ## Uruchomienie środowiska
 
-Wymagania: Python 3.13, Docker z Docker Compose, Git, `make`.
+Wymagania: Python 3.13, [uv](https://docs.astral.sh/uv/), `make`, Docker z Docker Compose, Git.
+Na Windows: `winget install astral-sh.uv` i `winget install ezwinports.make`.
+
+Pierwsze uruchomienie (w nowym katalogu, poza istniejącą kopią repo):
 
 ```
 git clone https://github.com/JustVector/daietAplha.git
 cd daietAplha
 cp .env.example .env    # uzupełnij wartości
+make install            # zależności (uv) i hooki pre-commit
 make up                 # PostgreSQL (+ backend od S-007)
 make test
 ```
 
-> Pliki `.env.example`, `Makefile` i `docker-compose` dochodzą w [S-003](backlog/S-003.md),
-> backend w [S-007](backlog/S-007.md). Do tego czasu powyższe komendy jeszcze nie działają.
+Pozostałe komendy: `make lint`, `make format`, `make down`.
 
 ## Licencja
 
