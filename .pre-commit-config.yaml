@@ -1,0 +1,42 @@
+# Instalacja hooków: make install
+repos:
+  # Hooki uruchamiane przez `python -m`, nie przez launchery .exe ze środowiska pre-commit:
+  # na Windows te launchery potrafią zawisnąć (blokowane przez oprogramowanie ochronne).
+  # Działanie hooków bez zmian.
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        entry: python -m pre_commit_hooks.trailing_whitespace_fixer
+      - id: end-of-file-fixer
+        entry: python -m pre_commit_hooks.end_of_file_fixer
+      - id: check-yaml
+        entry: python -m pre_commit_hooks.check_yaml
+      - id: check-toml
+        entry: python -m pre_commit_hooks.check_toml
+      - id: check-added-large-files
+        entry: python -m pre_commit_hooks.check_added_large_files
+        args: ["--maxkb=1024"]
+      - id: detect-private-key
+        entry: python -m pre_commit_hooks.detect_private_key
+      - id: check-merge-conflict
+        entry: python -m pre_commit_hooks.check_merge_conflict
+
+  # ruff i mypy z wersji przypiętych w uv.lock – jedno źródło wersji narzędzi
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff check
+        entry: uv run --frozen ruff check --fix
+        language: system
+        types_or: [python, pyi]
+      - id: ruff-format
+        name: ruff format
+        entry: uv run --frozen ruff format
+        language: system
+        types_or: [python, pyi]
+      - id: mypy
+        name: mypy
+        entry: uv run --frozen mypy
+        language: system
+        types_or: [python, pyi]

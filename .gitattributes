@@ -1,0 +1,4 @@
+# Końce linii LF w repo i w kopii roboczej (skrypty w Dockerze, Makefile)
+* text=auto eol=lf
+*.png binary
+*.jpg binary
