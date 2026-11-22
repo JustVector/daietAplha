@@ -2,8 +2,10 @@
 
 Dokumentacja projektu.
 
-- `adr/` – zapisy decyzji architektonicznych (szablon i ADR-001 w S-005),
-- `glossary.md` – słownik pojęć: produkt podstawowy, składnik odżywczy, wariant obróbki (S-005),
+- [`adr/`](adr/) – zapisy decyzji architektonicznych: [szablon](adr/0000-template.md),
+  [ADR-0001 – baza żywności](adr/0001-food-database.md),
+- [`glossary.md`](glossary.md) – słownik pojęć (produkt podstawowy, wariant obróbki, składnik odżywczy i in.),
+- [`data/food_db_decisions_2026-11-14.md`](data/food_db_decisions_2026-11-14.md) – kopia dokumentu źródłowego ADR-0001,
 - [`data/licenses.md`](data/licenses.md) – licencje danych, osobne od licencji kodu (S-505).
 
 Diagram architektury: [`../DietAi.drawio`](../DietAi.drawio) (draw.io). Backlog: [`../backlog/`](../backlog/README.md).

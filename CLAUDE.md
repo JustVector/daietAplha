@@ -73,7 +73,9 @@ Diagram: `DietAi.drawio`.
 - Przepis od LLM wskazuje tylko składniki z bazy (identyfikator wariantu produktu) i ich gramaturę (S-304);
   wszystko inne liczy backend.
 - Każda wartość odżywcza ma **źródło** i flagę **`measured` / `calculated`**.
-- Terminologia z `docs/glossary.md` (S-005): produkt podstawowy, składnik odżywczy, wariant obróbki.
+- Terminologia z `docs/glossary.md`: produkt podstawowy, wariant obróbki, składnik odżywczy i in.
+  Nowe pojęcie dopisz do słownika w tym samym PR.
+- Decyzje o bazie żywności (poziom danych, format, źródła): `docs/adr/0001-food-database.md`.
 
 ## Sposób pracy
 
@@ -83,6 +85,7 @@ Diagram: `DietAi.drawio`.
   `backlog/README.md`. Kryteria typu „Piotr zatwierdził” zaznacza Piotr.
 - Statusy: `todo` → `ready` → `in-progress` → `done`; `odłożone` = poza v1.
 - Decyzje Piotra wpisuj do sekcji „Decyzje” w story, z datą.
+- Decyzje architektoniczne zapisuj jako ADR w `docs/adr/` (szablon `0000-template.md`, kolejny numer).
 - Commity i opisy PR po polsku.
 
 ## Czego nie robić
