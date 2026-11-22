@@ -36,7 +36,7 @@ Statusy: todo → ready (zależności zamknięte, decyzje wypełnione) → in-pr
 
 | ID | Story | Kto | Zależy od | Status |
 | --- | --- | --- | --- | --- |
-| [S-101](S-101.md) | Lista docelowych produktów podstawowych | P | – | todo |
+| [S-101](S-101.md) | Lista docelowych produktów podstawowych | P | – | in-progress |
 | [S-102](S-102.md) | Import SR Legacy do tabeli szerokiej | CC | S-006 | done |
 | [S-103](S-103.md) | Wybór składników odżywczych i jednostek | CC+P | S-102 | in-progress |
 | [S-104](S-104.md) | Mapowanie listy produktów do fdc_id | CC+P | S-101, S-102 | todo |

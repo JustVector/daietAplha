@@ -8,7 +8,8 @@ rozmowach z Claude Code. Nowe pojęcie dopisz tutaj w tym samym PR, w którym si
 | Pojęcie | Znaczenie |
 | --- | --- |
 | **produkt podstawowy** (food) | Generyczny produkt spożywczy bez marki, np. „ziemniak”. Poziom danych bazy – [ADR-0001](adr/0001-food-database.md). |
-| **wariant obróbki** (preparation) | Stan produktu po obróbce: surowy, gotowany, pieczony, smażony… |
+| **wariant obróbki** (preparation) | Stan produktu po obróbce: surowy, gotowy, gotowany, gotowany na parze, pieczony, smażony, duszony, grillowany (S-101). Formy przetworzone (kiszony, wędzony, suszony) to osobne produkty. |
+| **lista produktów** (product list) | Warianty produktów bazy v1 (`variant_id`, `food_id`) z kategorią: `data-pipeline/input/product_list.csv` (S-101). |
 | **wariant produktu** (food variant) | Para produkt podstawowy + wariant obróbki, np. „ziemniak, gotowany”. Jeden wiersz CSV bazy; na niego wskazuje przepis od LLM (S-304). |
 | **składnik odżywczy** (nutrient) | Mierzona cecha produktu: białko, tłuszcz, magnez, błonnik, IG itd. Kolumna CSV bazy. |
 | **źródło** (source) | Pochodzenie wartości, np. USDA SR Legacy (z `fdc_id`) albo pozycja w tabeli IG. Każda wartość je ma. |

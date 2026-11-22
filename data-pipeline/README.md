@@ -5,6 +5,7 @@ Przygotowanie bazy żywności v1: pobranie surowych danych, przetworzenie, walid
 Etapy (backlog E1):
 - pobranie USDA FoodData Central SR Legacy do `data/raw/` (S-006),
 - import do tabeli szerokiej (S-102, opis niżej) i wybór składników odżywczych (S-103),
+- lista produktów podstawowych (S-101, opis niżej),
 - mapowanie listy produktów podstawowych, polskie nazwy, warianty obróbki, IG, tagi, miary (S-104 – S-109),
 - walidacja i eksport bazy v1 (S-110, S-111).
 
@@ -79,3 +80,36 @@ make nutrient-coverage
   i przerywa pracę, gdy `nutrients.yaml` nie zgadza się z danymi USDA (id, kolumna, jednostka).
 - Po zmianie `nutrients.yaml` wygeneruj raport ponownie – test na prawdziwych danych sprawdza, czy raport w repo
   jest aktualny.
+
+## Lista produktów podstawowych (S-101)
+
+```
+make product-list
+```
+
+Plik [`input/product_list.csv`](input/product_list.csv) (UTF-8, w git) – produkty podstawowe, które trafią do bazy v1.
+1 wiersz = wariant produktu (produkt podstawowy + wariant obróbki), np. „ziemniak, gotowany” – jak w CSV bazy
+([ADR-0001](../docs/adr/0001-food-database.md)).
+
+| Kolumna | Zawartość |
+| --- | --- |
+| `variant_id` | identyfikator wariantu produktu (int > 0, unikalny); na wariant wskazuje przepis od LLM (S-304) |
+| `food_id` | identyfikator produktu podstawowego (int > 0); wspólny dla wszystkich wariantów produktu |
+| `name_pl` | nazwa polska produktu podstawowego; jedna nazwa = jeden `food_id` |
+| `preparation` | wariant obróbki: `surowy`, `gotowy`, `gotowany`, `gotowany na parze`, `pieczony`, `smażony`, `duszony`, `grillowany` |
+| `category` | grupa: warzywa, owoce, zboża i kasze, nabiał, mięso, ryby i owoce morza, jaja, rośliny strączkowe, orzechy i nasiona, tłuszcze, inne. Podkategorie: S-105 |
+| `polish_specific` | `true` – produkt typowy dla polskiej kuchni lub rynku, którego może brakować w USDA SR Legacy (kandydat do uzupełnienia z Ciqual/Fineli w S-104) |
+| `notes` | uwagi, np. czym różni się najbliższy odpowiednik w USDA |
+
+- Identyfikatory są stałe: nowe warianty i produkty dostają kolejne wolne numery, usuniętych numerów nie używa się
+  ponownie.
+- `name_pl`, `category` i `polish_specific` muszą być takie same we wszystkich wierszach jednego `food_id`.
+- `surowy` przy kaszach, ryżu, makaronie, mąkach i strączkach oznacza produkt suchy, przed ugotowaniem.
+- `gotowy` – produkt jedzony bez obróbki w domu (chleb, ser, jogurt, wędlina, olej, konserwa).
+- Formy przetworzone (kiszony, wędzony, suszony, konserwowy, mrożony) to osobne produkty, nie warianty obróbki –
+  mają inny skład i w USDA osobne rekordy.
+- Flagę `polish_specific` ustalono przez przeszukanie opisów SR Legacy; to wskazówka dla S-104, nie wynik mapowania.
+
+[`product_list.py`](product_list.py) waliduje plik (Pydantic): kolumny, dozwolone kategorie i warianty, unikalność
+`variant_id` i pary (`food_id`, `preparation`), spójność wierszy jednego produktu, liczbę produktów podstawowych
+300–500 i obecność wszystkich grup poza „inne”. Test `tests/test_product_list.py` sprawdza prawdziwy plik w CI.
