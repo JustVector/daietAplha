@@ -1,4 +1,4 @@
-.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage
+.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list
 
 # Instalacja zależności (uv, wszyscy członkowie workspace) i hooków pre-commit
 install:
@@ -46,3 +46,7 @@ sr-wide:
 # Raport pokrycia składników odżywczych (docs/data/nutrient_coverage.md) i sprawdzenie nutrients.yaml
 nutrient-coverage:
 	uv run python data-pipeline/nutrient_coverage.py
+
+# Walidacja i podsumowanie listy produktów podstawowych (data-pipeline/input/product_list.csv)
+product-list:
+	uv run python -X utf8 data-pipeline/product_list.py
