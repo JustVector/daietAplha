@@ -185,3 +185,36 @@ zmienił na liście produkt lub obróbkę, usuwa weryfikację z ostrzeżeniem. W
 przy każdym uruchomieniu – sama zmiana `fdc_id` bez statusu `zweryfikowany` zostanie nadpisana.
 
 Test `tests/test_map_products.py` sprawdza w CI (z danymi USDA), czy pliki wynikowe w repo są aktualne.
+
+## Miary domowe (S-109)
+
+```
+make portions
+```
+
+[`build_portions.py`](build_portions.py) zamienia porcje USDA SR Legacy (`food_portion.csv`) zmapowanych wariantów
+produktów ([`mapping/mapping.csv`](mapping/mapping.csv), S-104) na polskie miary domowe z gramami na jedną miarę.
+Wymaga danych z `make fetch-usda` (sprawdzane sumą SHA-256). Po weryfikacji mapowania (`make map-products`)
+uruchom ponownie.
+
+| Plik | Zawartość |
+| --- | --- |
+| [`measures.yaml`](measures.yaml) | słownik opisów porcji USDA: miary objętości z ml (`volume`), miary sztukowe → polska nazwa (`count`), rozmiary (`sizes`), postaci (`forms`), słowa pomijane (`noise`) i miary pominięte (`ignored`) |
+| [`portions/portions.csv`](portions/portions.csv) | wynik: `variant_id`, `food_id`, `name_pl`, `preparation`, `measure`, `size`, `form`, `grams` (gramy na 1 miarę), `flag`, `fdc_id`, `usda_modifier`, `usda_amount`, `usda_gram_weight`, `calculation` |
+| [`../docs/data/portions_coverage.md`](../docs/data/portions_coverage.md) | wynik: pokrycie wariantów miarami i opisy porcji USDA pominięte przy rozbiorze |
+
+- W SR Legacy jednostka porcji jest tylko w wolnym tekście (`modifier`, np. „cup, chopped”, „large (3" dia)”);
+  `measure_unit_id` ma zawsze wartość 9999 („undetermined”). Rozbiór opisu – komentarz w `measures.yaml`.
+- **`measured`** – wprost z USDA: łyżka (`tbsp`), łyżeczka (`tsp`) i miary sztukowe (sztuka, plaster, liść, filet…)
+  z rozmiarem (`mały`, `średni`, `duży`…) i postacią (`posiekane`, `w plastrach`…). `grams` = `gram_weight / amount`
+  (np. 10 malin = 19 g → 1,9 g na sztukę).
+- **`calculated`** – z gęstości produktu (g/ml) liczonej z miary objętości USDA (cup, tbsp, tsp, fl oz, pint, quart)
+  o największej objętości, osobno dla każdej postaci: `ml` (gramy w 1 ml, tylko bez postaci) i polska szklanka
+  250 ml (amerykański `cup` ma 236,59 ml). Kolumna `calculation` opisuje przeliczenie.
+- Pomijane: jednostki masy (oz, lb – gramy są w USDA wprost), opakowania i porcje handlowe (can, package,
+  NLEA serving) oraz porcje z „yield(s)” (wydajność z opakowania lub produktu przed obróbką).
+- Powtórzenia tej samej miary, rozmiaru i postaci w jednym rekordzie USDA: zostaje pierwsza porcja (`seq_num`).
+- Warianty bez `fdc_id` (status `brak`) nie mają miar; przenoszenie miar między wariantami obróbki – poza S-109.
+
+Test `tests/test_portions.py` sprawdza rozbiór opisów, przeliczenia (3 przykłady na prawdziwych danych: łyżka oliwy,
+szklanka mleka, średnie jabłko) i czy pliki wynikowe w repo są aktualne.
