@@ -103,6 +103,8 @@ Diagram: `DietAi.drawio`.
 - Nie commituj `data/raw/`, `.env`, sekretów ani danych osobowych.
 - Nie wpisuj kluczy API ani tokenów w kod – tylko `.env`.
 - Nie łącz się z bazą z klientów API (bot, CLI, web) – tylko przez REST API.
+- Nie publikuj portów w `docker-compose.yml` poza `127.0.0.1` – wystawienie usługi w sieci tylko po decyzji Piotra
+  (repo jest publiczne, a domyślne hasła w nim jawne).
 - Nie generuj ani nie zgaduj wartości odżywczych modelem językowym.
 - Nie zmieniaj decyzji zapisanych w backlogu bez pytania Piotra.
 - Nie commituj bezpośrednio na `main`.
