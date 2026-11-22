@@ -32,6 +32,9 @@ select = ["E", "W", "F", "I", "N", "UP", "B", "SIM"]
 [tool.mypy]
 python_version = "3.13"
 strict = true
+# data-pipeline ma myślnik w nazwie – moduły importujemy z tego katalogu bezpośrednio
+mypy_path = "data-pipeline"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["data-pipeline"]
