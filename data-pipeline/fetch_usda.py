@@ -69,7 +69,8 @@ def write_manifest(path: Path, entries: dict[str, str]) -> None:
     ]
     lines = [f"{digest}  {name}" for name, digest in sorted(entries.items())]
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join([*header, *lines]) + "\n", encoding="utf-8")
+    # newline="\n": ten sam plik na Windows i Linuksie (format sha256sum)
+    path.write_text("\n".join([*header, *lines]) + "\n", encoding="utf-8", newline="\n")
 
 
 def verify_dir(directory: Path, manifest: dict[str, str]) -> list[str]:
