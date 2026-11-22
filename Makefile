@@ -1,8 +1,8 @@
-.PHONY: install up down logs migrate run test lint format fetch-usda
+.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide
 
-# Instalacja zależności (uv) i hooków pre-commit
+# Instalacja zależności (uv, wszyscy członkowie workspace) i hooków pre-commit
 install:
-	uv sync
+	uv sync --all-packages
 	uv run pre-commit install
 
 # Start bazy i backendu (obraz budowany z bieżącego kodu); czeka, aż serwisy będą zdrowe
@@ -38,3 +38,7 @@ format:
 # Surowe dane USDA SR Legacy do data/raw/usda_sr_legacy/ (lokalna kopia z USDA_SOURCE_DIR albo pobranie)
 fetch-usda:
 	uv run python data-pipeline/fetch_usda.py
+
+# Tabela szeroka SR Legacy (1 wiersz = produkt) do data/interim/ – wymaga danych z make fetch-usda
+sr-wide:
+	uv run python data-pipeline/build_sr_wide.py

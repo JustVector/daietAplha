@@ -4,7 +4,7 @@ Przygotowanie bazy żywności v1: pobranie surowych danych, przetworzenie, walid
 
 Etapy (backlog E1):
 - pobranie USDA FoodData Central SR Legacy do `data/raw/` (S-006),
-- import do tabeli szerokiej i wybór składników odżywczych (S-102, S-103),
+- import do tabeli szerokiej (S-102, opis niżej) i wybór składników odżywczych (S-103),
 - mapowanie listy produktów podstawowych, polskie nazwy, warianty obróbki, IG, tagi, miary (S-104 – S-109),
 - walidacja i eksport bazy v1 (S-110, S-111).
 
@@ -38,3 +38,26 @@ każdy plik jest sprawdzany sumą SHA-256 z manifestu [`checksums/usda_sr_legacy
 
 Uwaga: `retention_factor.csv` zawiera tylko listę procesów obróbki, bez wartości współczynników retencji –
 pełna tabela USDA R6 jest osobnym źródłem (S-106, [ADR-0001](../docs/adr/0001-food-database.md)).
+
+## Tabela szeroka SR Legacy (S-102)
+
+```
+make sr-wide
+```
+
+Skrypt [`build_sr_wide.py`](build_sr_wide.py) sprawdza sumy SHA-256 danych w `data/raw/usda_sr_legacy/`, łączy
+`sr_legacy_food` + `food` + `food_category` z `food_nutrient` + `nutrient` i zapisuje do `data/interim/`
+(poza git, odtwarzane tą komendą):
+
+| Plik | Zawartość |
+| --- | --- |
+| `sr_wide.parquet` | 1 wiersz = produkt SR Legacy (7793). Kolumny: `fdc_id`, `ndb_number`, `description`, `food_category_id`, `food_category`, potem po jednej kolumnie na składnik odżywczy (149) |
+| `sr_wide_nutrients.csv` | słownik kolumn składników: `column`, `nutrient_id`, `nutrient_nbr`, `name`, `unit`, `rank`, `food_count` (liczba produktów z wartością) |
+
+- Nazwa kolumny składnika: nazwa USDA w `snake_case` + jednostka, np. `protein_g`, `energy_kcal`,
+  `potassium_k_mg`, `vitamin_d_d2_d3_international_units_iu`. Jednostki: `g`, `mg`, `ug` (µg), `iu`, `kcal`, `kj`.
+  Skrypt przerywa pracę, gdy dwie nazwy dałyby tę samą kolumnę albo pojawi się nieznana jednostka.
+- Kolejność kolumn składników: `rank` z USDA (kolejność prezentacji w FDC).
+- Wartości na 100 g części jadalnej, wprost z `food_nutrient.amount`. Brak wartości w źródle = `null`, nigdy 0.
+- Informacja o pochodzeniu wartości (`derivation_id`) zostaje w danych surowych; flagi `measured` / `calculated`
+  dochodzą przy eksporcie bazy (S-111). Wybór składników do bazy v1: S-103.
