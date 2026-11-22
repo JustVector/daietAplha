@@ -1,4 +1,4 @@
-.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list
+.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list map-products
 
 # Instalacja zależności (uv, wszyscy członkowie workspace) i hooków pre-commit
 install:
@@ -50,3 +50,8 @@ nutrient-coverage:
 # Walidacja i podsumowanie listy produktów podstawowych (data-pipeline/input/product_list.csv)
 product-list:
 	uv run python -X utf8 data-pipeline/product_list.py
+
+# Mapowanie listy produktów do fdc_id USDA (S-104): kandydaci, mapping.csv i raport braków;
+# wiersze `zweryfikowany` w mapping.csv nie są nadpisywane
+map-products:
+	uv run python -X utf8 data-pipeline/map_products.py

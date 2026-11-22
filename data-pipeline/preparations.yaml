@@ -1,0 +1,57 @@
+# Warianty obróbki z listy produktów (S-101) → słowa w opisach USDA SR Legacy (S-104).
+# Używa ich map_products.py przy punktacji kandydatów:
+#   include – którekolwiek słowo w opisie USDA podnosi wynik (opis pasuje do obróbki),
+#   exclude – którekolwiek słowo w opisie USDA obniża wynik (opis wskazuje inną obróbkę),
+#   required – true: opis bez żadnego słowa z include też obniża wynik (dla obróbki termicznej;
+#              brak opisu obróbki w USDA zwykle oznacza produkt surowy).
+# Słowa i frazy porównywane z wyrazami opisu (małe litery, bez interpunkcji), np. „pan-fried” =
+# „pan” + „fried”. W rybach i owocach morza USDA opisuje obróbkę jako „dry heat” (pieczenie,
+# grillowanie) albo „moist heat” (gotowanie, gotowanie na parze).
+# `surowy` przy kaszach, ryżu, makaronie i strączkach = produkt suchy (S-101), stąd dry/uncooked.
+# `gotowy` = do jedzenia bez obróbki (chleb, ser, wędlina) – bez słów include.
+
+surowy:
+  include: [raw, dry, uncooked, unprepared, dried, fresh]
+  exclude: [cooked, boiled, baked, roasted, fried, braised, stewed, steamed, grilled, broiled,
+            simmered, microwaved, sauteed, prepared, toasted, drained]
+
+gotowy:
+  include: []
+  exclude: [raw, boiled, fried, braised, stewed, simmered, microwaved, roasted, grilled, broiled,
+            sauteed, steamed, toasted]
+
+gotowany:
+  include: [boiled, cooked, simmered, moist heat]
+  exclude: [dry heat, raw, uncooked, unprepared, fried, baked, roasted, broiled, grilled, braised, microwaved,
+            sauteed, pickled]
+  required: true
+
+gotowany na parze:
+  include: [steamed, boiled, cooked, moist heat]
+  exclude: [dry heat, raw, uncooked, unprepared, fried, baked, roasted, broiled, grilled, braised, microwaved,
+            sauteed, pickled]
+  required: true
+
+pieczony:
+  include: [baked, roasted, dry heat]
+  exclude: [moist heat, raw, uncooked, unprepared, boiled, fried, stewed, braised, simmered, steamed, microwaved,
+            sauteed, pickled]
+  required: true
+
+smażony:
+  include: [fried, sauteed, browned]
+  exclude: [dry heat, moist heat, raw, uncooked, unprepared, boiled, baked, roasted, stewed, braised, simmered, steamed,
+            microwaved, pickled]
+  required: true
+
+duszony:
+  include: [braised, stewed, simmered]
+  exclude: [dry heat, raw, uncooked, unprepared, boiled, fried, baked, roasted, broiled, grilled, microwaved, sauteed,
+            pickled]
+  required: true
+
+grillowany:
+  include: [grilled, broiled, dry heat]
+  exclude: [moist heat, raw, uncooked, unprepared, boiled, fried, stewed, braised, simmered, steamed, microwaved,
+            sauteed, pickled]
+  required: true
