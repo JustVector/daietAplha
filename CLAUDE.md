@@ -42,6 +42,8 @@ Diagram: `DietAi.drawio`.
 
 - Konfiguracja tylko z `.env`; wzór zmiennych w `.env.example`.
 - pre-commit uruchamia się przy każdym commicie (ruff, mypy, podstawowe hooki). Nie omijaj go `--no-verify`.
+- CI (GitHub Actions, `.github/workflows/ci.yml`) uruchamia na każdym PR to samo: `make lint`, `make test` i hooki pre-commit.
+  PR scalamy tylko z zielonym CI.
 
 ## Konwencje kodu
 
