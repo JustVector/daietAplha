@@ -5,8 +5,8 @@ Przygotowanie bazy żywności v1: pobranie surowych danych, przetworzenie, walid
 Etapy (backlog E1):
 - pobranie USDA FoodData Central SR Legacy do `data/raw/` (S-006),
 - import do tabeli szerokiej (S-102, opis niżej) i wybór składników odżywczych (S-103),
-- lista produktów podstawowych (S-101, opis niżej),
-- mapowanie listy produktów podstawowych, polskie nazwy, warianty obróbki, IG, tagi, miary (S-104 – S-109),
+- lista produktów podstawowych (S-101) z polskimi nazwami i kategoriami (S-105), opis niżej,
+- mapowanie listy produktów podstawowych, warianty obróbki, IG, tagi, miary (S-104, S-106 – S-109),
 - walidacja i eksport bazy v1 (S-110, S-111).
 
 Zasada: każda wartość odżywcza ma źródło i flagę `measured` / `calculated`.
@@ -97,22 +97,53 @@ Plik [`input/product_list.csv`](input/product_list.csv) (UTF-8, w git) – produ
 | `food_id` | identyfikator produktu podstawowego (int > 0); wspólny dla wszystkich wariantów produktu |
 | `name_pl` | nazwa polska produktu podstawowego; jedna nazwa = jeden `food_id` |
 | `preparation` | wariant obróbki: `surowy`, `gotowy`, `gotowany`, `gotowany na parze`, `pieczony`, `smażony`, `duszony`, `grillowany` |
-| `category` | grupa: warzywa, owoce, zboża i kasze, nabiał, mięso, ryby i owoce morza, jaja, rośliny strączkowe, orzechy i nasiona, tłuszcze, inne. Podkategorie: S-105 |
+| `category` | kategoria (grupa): warzywa, owoce, zboża i kasze, nabiał, mięso, ryby i owoce morza, jaja, rośliny strączkowe, orzechy i nasiona, tłuszcze, inne – polska nazwa z [`categories.yaml`](categories.yaml) (S-105, niżej) |
+| `subcategory` | podkategoria w obrębie kategorii, np. „korzeniowe i bulwiaste” – polska nazwa z [`categories.yaml`](categories.yaml) |
 | `polish_specific` | `true` – produkt typowy dla polskiej kuchni lub rynku, którego może brakować w USDA SR Legacy (kandydat do uzupełnienia z Ciqual/Fineli w S-104) |
 | `notes` | uwagi, np. czym różni się najbliższy odpowiednik w USDA |
 
 - Identyfikatory są stałe: nowe warianty i produkty dostają kolejne wolne numery, usuniętych numerów nie używa się
   ponownie.
-- `name_pl`, `category` i `polish_specific` muszą być takie same we wszystkich wierszach jednego `food_id`.
+- `name_pl`, `category`, `subcategory` i `polish_specific` muszą być takie same we wszystkich wierszach jednego
+  `food_id`.
 - `surowy` przy kaszach, ryżu, makaronie, mąkach i strączkach oznacza produkt suchy, przed ugotowaniem.
 - `gotowy` – produkt jedzony bez obróbki w domu (chleb, ser, jogurt, wędlina, olej, konserwa).
 - Formy przetworzone (kiszony, wędzony, suszony, konserwowy, mrożony) to osobne produkty, nie warianty obróbki –
   mają inny skład i w USDA osobne rekordy.
 - Flagę `polish_specific` ustalono przez przeszukanie opisów SR Legacy; to wskazówka dla S-104, nie wynik mapowania.
 
-[`product_list.py`](product_list.py) waliduje plik (Pydantic): kolumny, dozwolone kategorie i warianty, unikalność
-`variant_id` i pary (`food_id`, `preparation`), spójność wierszy jednego produktu, liczbę produktów podstawowych
-300–500 i obecność wszystkich grup poza „inne”. Test `tests/test_product_list.py` sprawdza prawdziwy plik w CI.
+[`product_list.py`](product_list.py) waliduje plik (Pydantic): kolumny, dozwolone warianty obróbki, kategorie
+i podkategorie ze słownika, unikalność `variant_id` i pary (`food_id`, `preparation`), unikalność nazw (także prawie
+identycznych), spójność wierszy jednego produktu, liczbę produktów podstawowych 300–500, obecność wszystkich grup
+poza „inne” i użycie każdej podkategorii. Test `tests/test_product_list.py` sprawdza prawdziwy plik w CI.
+
+## Polskie nazwy i kategorie (S-105)
+
+```
+make product-list
+```
+
+Wypisuje liczbę produktów podstawowych w każdej kategorii i podkategorii albo błędy.
+
+| Plik | Zawartość |
+| --- | --- |
+| [`categories.yaml`](categories.yaml) | słownik kategorii: kategoria (`code`, `name_pl`, `required`) → lista podkategorii (`code`, `name_pl`); kolejność w pliku = kolejność prezentacji |
+| [`categories.py`](categories.py) | wczytanie i walidacja słownika (Pydantic) |
+
+- W `product_list.csv` kategoria i podkategoria są zapisane polską nazwą (`name_pl`), żeby plik dało się czytać
+  i poprawiać ręcznie. `code` to stały identyfikator angielski (`snake_case`, unikalny w całym słowniku) dla bazy
+  i API; nie zmienia się przy zmianie polskiej nazwy.
+- `required: true` – na liście muszą być produkty z tej kategorii (kryterium S-101); `false` ma tylko „inne”.
+- Każda podkategoria musi mieć co najmniej jeden produkt; nazwa podkategorii jest unikalna w swojej kategorii.
+- **Nazwy produktów**: jedna `name_pl` = jeden `food_id`. Nazwy różniące się tylko wielkością liter, polskimi
+  znakami, spacjami albo interpunkcją (np. „kasza manna” i „Kasza-Manna”) walidator traktuje jak duplikat.
+  Nazwa wariantu produktu to nazwa produktu podstawowego + wariant obróbki („ziemniak, gotowany”), więc jest
+  unikalna, gdy unikalne są nazwy produktów i pary (`food_id`, `preparation`).
+- Konwencja nazw: liczba pojedyncza („ziemniak”, „jabłko”), mnoga tylko w zwyczajowej formie handlowej
+  („winogrona”, „krewetki”, „płatki owsiane”); w nawiasie – synonim albo doprecyzowanie części lub formy
+  („borowik (prawdziwek)”, „cielęcina (udziec)”, „orkisz (ziarno)”).
+- Zmiana `name_pl` wymaga tej samej zmiany w [`input/search_terms.csv`](input/search_terms.csv) (S-104) –
+  inaczej `make map-products` i test mapowania zgłoszą rozbieżność.
 
 ## Mapowanie produktów do `fdc_id` (S-104)
 
