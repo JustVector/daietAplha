@@ -4,8 +4,9 @@ import hashlib
 import zipfile
 from pathlib import Path
 
-import fetch_usda
 import pytest
+
+import fetch_usda
 from fetch_usda import (
     DataIntegrityError,
     extract_archive,

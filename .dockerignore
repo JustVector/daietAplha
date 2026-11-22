@@ -1,0 +1,20 @@
+# Kontekst budowania obrazów = katalog główny repo; do obrazu trafia tylko to, co potrzebne.
+.git
+.github
+.venv
+**/__pycache__
+**/*.pyc
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.env
+.env.*
+data/
+dane projektu/
+backlog/
+docs/
+web/
+data-pipeline/
+tests/
+backend/tests/
+*.drawio

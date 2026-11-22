@@ -1,4 +1,4 @@
-# Lokalne środowisko dAIet. Backend dochodzi w S-007, bot Discord w S-405.
+# Lokalne środowisko dAIet: baza i backend (S-007); bot Discord dojdzie w S-405.
 # Wartości z .env (wzór: .env.example); domyślne pozwalają wystartować bez .env.
 services:
   db:
@@ -8,7 +8,8 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-daiet}
       POSTGRES_DB: ${POSTGRES_DB:-daiet}
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      # Tylko localhost – baza niedostępna z sieci lokalnej (domyślne hasło jest jawne w repo)
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
     volumes:
       # Od PostgreSQL 18 obraz trzyma dane w /var/lib/postgresql/<wersja>/
       - db-data:/var/lib/postgresql
@@ -17,6 +18,21 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      # W sieci compose baza jest pod nazwą hosta "db" (nie localhost)
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-daiet}:${POSTGRES_PASSWORD:-daiet}@db:5432/${POSTGRES_DB:-daiet}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    ports:
+      # Tylko localhost – API bez uwierzytelniania (S-501) nie może być widoczne w sieci
+      - "127.0.0.1:${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
 
 volumes:
   db-data:

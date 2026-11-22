@@ -25,11 +25,11 @@ Statusy: todo → ready (zależności zamknięte, decyzje wypełnione) → in-pr
 | --- | --- | --- | --- | --- |
 | [S-001](S-001.md) | Struktura repozytorium | CC | – | done |
 | [S-002](S-002.md) | CLAUDE.md – zasady pracy z Claude Code | CC+P | S-001 | done |
-| [S-003](S-003.md) | Środowisko developerskie | CC | S-001 | in-progress |
+| [S-003](S-003.md) | Środowisko developerskie | CC | S-001 | done |
 | [S-004](S-004.md) | CI w GitHub Actions | CC | S-003 | done |
 | [S-005](S-005.md) | Szablony story i ADR | CC | S-001 | done |
 | [S-006](S-006.md) | Surowe dane USDA w repo (poza git) | CC | S-001 | done |
-| [S-007](S-007.md) | Szkielet backendu FastAPI w Dockerze | CC | S-003 | todo |
+| [S-007](S-007.md) | Szkielet backendu FastAPI w Dockerze | CC | S-003 | done |
 | [S-008](S-008.md) | Ochrona brancha main | CC+P | S-004 | todo |
 
 ## E1 – Baza żywności v1 (M1)
