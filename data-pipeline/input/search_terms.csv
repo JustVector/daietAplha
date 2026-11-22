@@ -1,0 +1,358 @@
+food_id,name_pl,query_en
+1,ziemniak,"Potatoes, flesh and skin"
+2,batat,Sweet potato
+3,marchew,Carrots
+4,burak ćwikłowy,Beets
+5,pietruszka (korzeń),Parsley root
+6,seler korzeniowy,Celeriac
+7,seler naciowy,Celery
+8,pasternak,Parsnips
+9,por,"Leeks, bulb and lower leaf-portion"
+10,cebula,Onions
+11,cebula czerwona,"Onions, red"
+12,cebula dymka,"Onions, spring or scallions"
+13,szalotka,Shallots
+14,czosnek,Garlic
+15,szczypiorek,Chives
+16,koperek,"Dill weed, fresh"
+17,natka pietruszki,"Parsley, fresh"
+18,kapusta biała,Cabbage
+19,kapusta czerwona,"Cabbage, red"
+20,kapusta włoska,"Cabbage, savoy"
+21,kapusta pekińska,"Cabbage, chinese (pe-tsai)"
+22,kapusta kiszona,Sauerkraut
+23,brukselka,Brussels sprouts
+24,kalafior,Cauliflower
+25,brokuł,Broccoli
+26,kalarepa,Kohlrabi
+27,jarmuż,Kale
+28,szpinak,Spinach
+29,sałata masłowa,"Lettuce, butterhead (includes boston and bibb types)"
+30,sałata lodowa,"Lettuce, iceberg"
+31,sałata rzymska,"Lettuce, cos or romaine"
+32,rukola,Arugula
+33,roszponka,Lamb's lettuce (corn salad)
+34,cykoria,"Chicory, witloof"
+35,rzeżucha,"Cress, garden"
+36,ogórek,"Cucumber, with peel"
+37,ogórek kiszony,"Pickles, cucumber, dill or kosher dill"
+38,pomidor,"Tomatoes, red, ripe"
+39,pomidor koktajlowy,"Tomatoes, red, ripe"
+40,pomidory krojone z puszki,"Tomatoes, red, ripe, canned"
+41,przecier pomidorowy (passata),"Tomato puree, canned"
+42,koncentrat pomidorowy,"Tomato products, canned, paste"
+43,pomidory suszone,"Tomatoes, sun-dried"
+44,papryka czerwona,"Peppers, sweet, red"
+45,papryka zielona,"Peppers, sweet, green"
+46,papryka żółta,"Peppers, sweet, yellow"
+47,papryczka chili,"Peppers, hot chili, red"
+48,cukinia,"Squash, summer, zucchini, includes skin"
+49,bakłażan,Eggplant
+50,dynia,Pumpkin
+51,rzodkiewka,Radishes
+52,rzepa,Turnips
+53,brukiew,Rutabagas
+54,fasolka szparagowa,"Beans, snap, green"
+55,groszek zielony,"Peas, green"
+56,groszek konserwowy,"Peas, green, canned"
+57,kukurydza cukrowa (kolba),"Corn, sweet, yellow"
+58,kukurydza konserwowa,"Corn, sweet, yellow, canned, whole kernel"
+59,szparagi,Asparagus
+60,koper włoski (fenkuł),"Fennel, bulb"
+61,pak choi,"Cabbage, chinese (pak-choi)"
+62,kiełki fasoli mung,"Mung beans, mature seeds, sprouted"
+63,imbir,Ginger root
+64,chrzan tarty,"Horseradish, prepared"
+65,botwina,Beet greens
+66,szczaw,Dock (sorrel)
+67,oliwki zielone,"Olives, pickled, canned or bottled, green"
+68,oliwki czarne,"Olives, ripe, canned"
+69,mieszanka warzyw mrożona,"Vegetables, mixed, frozen"
+70,pieczarka,"Mushrooms, white"
+71,boczniak,"Mushrooms, oyster"
+72,borowik (prawdziwek),"Mushrooms, porcini (boletus)"
+73,kurka,"Mushrooms, chanterelle"
+74,borowik suszony,"Mushrooms, porcini, dried"
+75,jabłko,"Apples, with skin"
+76,gruszka,Pears
+77,śliwka,Plums
+78,śliwka suszona,"Plums, dried (prunes), uncooked"
+79,czereśnia,"Cherries, sweet"
+80,wiśnia,"Cherries, sour, red"
+81,truskawka,Strawberries
+82,malina,Raspberries
+83,borówka amerykańska,Blueberries
+84,jagoda (borówka czarna),"Blueberries, wild"
+85,jeżyna,Blackberries
+86,porzeczka czarna,"Currants, european black"
+87,porzeczka czerwona,"Currants, red and white"
+88,agrest,Gooseberries
+89,żurawina,Cranberries
+90,żurawina suszona,"Cranberries, dried, sweetened"
+91,aronia,Chokeberries (aronia)
+92,rabarbar,Rhubarb
+93,pigwa,Quinces
+94,morela,Apricots
+95,morela suszona,"Apricots, dried, sulfured, uncooked"
+96,brzoskwinia,"Peaches, yellow"
+97,nektarynka,Nectarines
+98,winogrona,"Grapes, red or green (European type, such as Thompson seedless)"
+99,rodzynki,"Raisins, seedless"
+100,banan,Bananas
+101,pomarańcza,"Oranges, all commercial varieties"
+102,mandarynka,"Tangerines, (mandarin oranges)"
+103,grejpfrut,Grapefruit
+104,cytryna,"Lemons, without peel"
+105,limonka,Limes
+106,kiwi,"Kiwifruit, green"
+107,ananas,"Pineapple, all varieties"
+108,mango,Mangos
+109,papaja,Papayas
+110,marakuja,"Passion-fruit, (granadilla), purple"
+111,arbuz,Watermelon
+112,melon kantalupa,"Melons, cantaloupe"
+113,granat,Pomegranates
+114,awokado,"Avocados, all commercial varieties"
+115,figa,Figs
+116,figa suszona,"Figs, dried, uncooked"
+117,daktyle suszone,"Dates, deglet noor"
+118,kaki (persymona),"Persimmons, japanese"
+119,jabłko suszone,"Apples, dried, sulfured, uncooked"
+120,mus jabłkowy bez cukru,"Applesauce, canned, unsweetened"
+121,sok jabłkowy,"Apple juice, canned or bottled, unsweetened"
+122,sok pomarańczowy,"Orange juice, chilled, includes from concentrate"
+123,sok z cytryny,Lemon juice
+124,kasza gryczana palona,"Buckwheat groats, roasted"
+125,kasza gryczana niepalona (biała),Buckwheat
+126,kasza jaglana,Millet
+127,kasza jęczmienna perłowa,"Barley, pearled"
+128,kasza jęczmienna pęczak,"Barley, pearled"
+129,kasza manna,"Cereals, farina"
+130,kasza kukurydziana,"Cereals, corn grits, white, regular and quick, enriched"
+131,kasza kuskus,Couscous
+132,kasza bulgur,Bulgur
+133,orkisz (ziarno),Spelt
+134,komosa ryżowa,Quinoa
+135,amarantus,Amaranth grain
+136,ryż biały,"Rice, white, long-grain, regular"
+137,ryż brązowy,"Rice, brown, long-grain"
+138,ryż basmati,"Rice, white, long-grain, regular"
+139,ryż parboiled,"Rice, white, long-grain, parboiled"
+140,ryż dziki,Wild rice
+141,makaron pszenny,"Pasta, enriched"
+142,makaron pełnoziarnisty,"Pasta, whole-wheat"
+143,makaron jajeczny,"Noodles, egg"
+144,makaron ryżowy,Rice noodles
+145,płatki owsiane,"Cereals, oats, regular and quick, not fortified"
+146,otręby owsiane,Oat bran
+147,otręby pszenne,"Wheat bran, crude"
+148,płatki kukurydziane,"Cereals ready-to-eat, corn flakes"
+149,musli,"Cereals ready-to-eat, muesli"
+150,napój owsiany,Oat beverage (oat milk)
+151,mąka pszenna (typ 450–650),"Wheat flour, white, all-purpose, enriched"
+152,mąka pszenna pełnoziarnista,"Wheat flour, whole-grain"
+153,mąka żytnia,"Rye flour, medium"
+154,mąka gryczana,"Buckwheat flour, whole-groat"
+155,mąka kukurydziana,"Corn flour, whole-grain, yellow"
+156,skrobia ziemniaczana (mąka ziemniaczana),Potato flour
+157,bułka tarta,"Bread, crumbs, dry, grated, plain"
+158,chleb pszenny,"Bread, white, commercially prepared"
+159,chleb żytni,"Bread, rye"
+160,chleb mieszany pszenno-żytni,"Bread, wheat"
+161,chleb żytni razowy,"Bread, pumpernickel"
+162,chleb graham,"Bread, whole-wheat, commercially prepared"
+163,chleb pszenny pełnoziarnisty,"Bread, whole-wheat, commercially prepared"
+164,chleb tostowy,"Bread, white, commercially prepared"
+165,bułka pszenna,"Rolls, dinner, plain, commercially prepared"
+166,bagietka,"Bread, french or vienna"
+167,tortilla pszenna,"Tortillas, ready-to-bake or -fry, flour"
+168,pita,"Bread, pita, white, enriched"
+169,pieczywo chrupkie żytnie,"Crackers, rye, wafers, plain"
+170,wafle ryżowe,"Snacks, rice cakes, brown rice, plain"
+171,"mleko 0,5%","Milk, nonfat, fluid"
+172,mleko 2%,"Milk, reduced fat, fluid, 2% milkfat"
+173,"mleko 3,2%","Milk, whole, 3.25% milkfat"
+174,mleko kozie,"Milk, goat, fluid"
+175,mleko w proszku,"Milk, dry, whole"
+176,kefir,Kefir
+177,maślanka,"Milk, buttermilk, fluid, cultured, lowfat"
+178,mleko zsiadłe,"Sour milk, cultured"
+179,jogurt naturalny,"Yogurt, plain, whole milk"
+180,jogurt grecki,"Yogurt, Greek, plain, whole milk"
+181,jogurt owocowy,"Yogurt, fruit, low fat"
+182,skyr,"Skyr, plain"
+183,twaróg chudy,"Quark cheese, low fat"
+184,twaróg półtłusty,"Quark cheese, medium fat"
+185,twaróg tłusty,"Quark cheese, full fat"
+186,serek wiejski,"Cheese, cottage, creamed, large or small curd"
+187,serek homogenizowany naturalny,"Cheese, fresh, homogenized quark"
+188,serek śmietankowy,"Cheese, cream"
+189,śmietana 12%,"Cream, sour, reduced fat, cultured"
+190,śmietana 18%,"Cream, sour, cultured"
+191,śmietanka 30%,"Cream, fluid, heavy whipping"
+192,ser gouda,"Cheese, gouda"
+193,ser edamski,"Cheese, edam"
+194,ser ementaler,"Cheese, swiss"
+195,ser cheddar,"Cheese, cheddar"
+196,mozzarella,"Cheese, mozzarella, whole milk"
+197,ser feta,"Cheese, feta"
+198,parmezan,"Cheese, parmesan, hard"
+199,camembert,"Cheese, camembert"
+200,ser pleśniowy niebieski,"Cheese, blue"
+201,ser topiony,"Cheese, pasteurized process, American"
+202,mascarpone,"Cheese, mascarpone"
+203,ricotta,"Cheese, ricotta, whole milk"
+204,halloumi,"Cheese, halloumi"
+205,oscypek,"Cheese, smoked sheep milk (oscypek)"
+206,bryndza,"Cheese, sheep milk (bryndza)"
+207,jajo kurze,"Egg, whole"
+208,białko jaja kurzego,"Egg, white"
+209,żółtko jaja kurzego,"Egg, yolk"
+210,jajo przepiórcze,"Egg, quail, whole, fresh"
+211,pierś z kurczaka,"Chicken, broilers or fryers, breast, meat only"
+212,udo z kurczaka,"Chicken, broilers or fryers, thigh, meat only"
+213,podudzie z kurczaka,"Chicken, broilers or fryers, drumstick, meat only"
+214,skrzydełko z kurczaka,"Chicken, broilers or fryers, wing, meat and skin"
+215,kurczak (tuszka),"Chicken, broilers or fryers, meat and skin"
+216,wątróbka drobiowa,"Chicken, liver, all classes"
+217,żołądki drobiowe,"Chicken, gizzard, all classes"
+218,serca drobiowe,"Chicken, heart, all classes"
+219,mięso mielone z kurczaka,"Chicken, ground"
+220,pierś z indyka,"Turkey, breast, meat only"
+221,udziec z indyka,"Turkey, dark meat, meat only"
+222,mięso mielone z indyka,"Turkey, ground"
+223,kaczka,"Duck, domesticated, meat only"
+224,gęś,"Goose, domesticated, meat only"
+225,schab,"Pork, fresh, loin, center loin (chops), boneless, separable lean only"
+226,polędwiczka wieprzowa,"Pork, fresh, loin, tenderloin, separable lean only"
+227,karkówka,"Pork, fresh, shoulder, blade, boston (steaks), separable lean and fat"
+228,łopatka wieprzowa,"Pork, fresh, shoulder, arm picnic, separable lean and fat"
+229,szynka wieprzowa surowa,"Pork, fresh, leg (ham), whole, separable lean only"
+230,boczek surowy,"Pork, fresh, belly"
+231,żeberka wieprzowe,"Pork, fresh, spareribs, separable lean and fat"
+232,golonka,"Pork, hocks"
+233,mięso mielone wieprzowe,"Pork, fresh, ground"
+234,wątróbka wieprzowa,"Pork, fresh, variety meats and by-products, liver"
+235,polędwica wołowa,"Beef, tenderloin, steak, separable lean only"
+236,rostbef,"Beef, short loin, top loin, steak, separable lean only"
+237,antrykot,"Beef, rib, ribeye, steak, separable lean only"
+238,łopatka wołowa,"Beef, chuck, arm pot roast, separable lean only"
+239,pręga wołowa,"Beef, shank crosscuts, separable lean only"
+240,mostek wołowy,"Beef, brisket, flat half, separable lean only"
+241,mięso mielone wołowe,"Beef, ground, 80% lean meat / 20% fat"
+242,wątróbka wołowa,"Beef, variety meats and by-products, liver"
+243,cielęcina (udziec),"Veal, leg (top round), separable lean only"
+244,jagnięcina (udziec),"Lamb, domestic, leg, whole (shank and sirloin), separable lean only"
+245,królik,"Game meat, rabbit, domesticated"
+246,szynka gotowana,"Ham, sliced, regular (approximately 11% fat)"
+247,szynka wędzona,"Pork, cured, ham, boneless, regular"
+248,polędwica sopocka,"Pork, cured, canadian-style bacon"
+249,szynka z indyka,"Turkey ham, sliced"
+250,pierś z kurczaka wędzona (wędlina),"Chicken breast, oven-roasted, fat-free, sliced"
+251,kiełbasa krakowska sucha,"Sausage, Polish, pork and beef, smoked"
+252,kiełbasa śląska,"Polish sausage, pork"
+253,kiełbasa wieprzowa wędzona,"Sausage, smoked link sausage, pork"
+254,biała kiełbasa,"Sausage, pork, fresh"
+255,kabanosy,"Sausage, pork, dry, smoked"
+256,parówki,"Frankfurter, meat"
+257,salami,"Salami, dry or hard, pork"
+258,mortadela,"Mortadella, beef, pork"
+259,boczek wędzony,"Pork, cured, bacon, unprepared"
+260,pasztet,"Pate, liver, not specified, canned"
+261,wątrobianka,"Braunschweiger (a liver sausage), pork"
+262,kaszanka,Blood sausage
+263,salceson,"Headcheese, pork"
+264,łosoś,"Fish, salmon, Atlantic, farmed"
+265,łosoś wędzony,"Fish, salmon, chinook, smoked"
+266,dorsz,"Fish, cod, Atlantic"
+267,mintaj,"Fish, pollock, Alaska"
+268,morszczuk,"Fish, hake"
+269,tilapia,"Fish, tilapia"
+270,panga,"Fish, catfish, channel, farmed"
+271,pstrąg,"Fish, trout, rainbow, farmed"
+272,pstrąg wędzony,"Fish, trout, smoked"
+273,karp,"Fish, carp"
+274,szczupak,"Fish, pike, northern"
+275,sandacz,"Fish, pike, walleye"
+276,okoń,"Fish, perch, mixed species"
+277,halibut,"Fish, halibut, Atlantic and Pacific"
+278,sola,"Fish, flatfish (flounder and sole species)"
+279,tuńczyk świeży,"Fish, tuna, fresh, yellowfin"
+280,makrela,"Fish, mackerel, Atlantic"
+281,makrela wędzona,"Fish, mackerel, smoked"
+282,śledź,"Fish, herring, Atlantic"
+283,śledź solony (matjas),"Fish, herring, salted"
+284,śledź marynowany,"Fish, herring, Atlantic, pickled"
+285,szprot wędzony,"Fish, sprat, smoked"
+286,tuńczyk w sosie własnym,"Fish, tuna, light, canned in water, drained solids"
+287,tuńczyk w oleju,"Fish, tuna, light, canned in oil, drained solids"
+288,sardynki w oleju,"Fish, sardine, Atlantic, canned in oil, drained solids with bone"
+289,makrela w sosie pomidorowym,"Fish, mackerel, canned in tomato sauce"
+290,paluszki rybne,"Fish sticks, frozen, prepared"
+291,paluszki surimi,Surimi
+292,krewetki,"Crustaceans, shrimp"
+293,kalmary,"Mollusks, squid, mixed species"
+294,małże,"Mollusks, mussel, blue"
+295,fasola biała,"Beans, white, mature seeds"
+296,fasola czerwona,"Beans, kidney, red, mature seeds"
+297,fasola czarna,"Beans, black, mature seeds"
+298,fasola czerwona konserwowa,"Beans, kidney, red, mature seeds, canned"
+299,bób,"Broadbeans, immature seeds"
+300,ciecierzyca,"Chickpeas (garbanzo beans, bengal gram), mature seeds"
+301,ciecierzyca konserwowa,"Chickpeas (garbanzo beans, bengal gram), mature seeds, canned"
+302,soczewica czerwona,"Lentils, pink or red"
+303,soczewica zielona,Lentils
+304,groch łuskany,"Peas, split, mature seeds"
+305,soja (nasiona),"Soybeans, mature seeds"
+306,fasola mung,"Mung beans, mature seeds"
+307,edamame,"Edamame, frozen, prepared"
+308,tofu naturalne,"Tofu, firm, prepared with calcium sulfate"
+309,tofu wędzone,"Tofu, smoked"
+310,tempeh,Tempeh
+311,napój sojowy,"Soymilk, original and vanilla, unfortified"
+312,hummus,"Hummus, commercial"
+313,orzechy włoskie,"Nuts, walnuts, english"
+314,orzechy laskowe,"Nuts, hazelnuts or filberts"
+315,migdały,"Nuts, almonds"
+316,orzechy nerkowca,"Nuts, cashew nuts"
+317,pistacje,"Nuts, pistachio nuts"
+318,orzeszki ziemne,"Peanuts, all types"
+319,masło orzechowe,"Peanut butter, smooth style, without salt"
+320,orzechy brazylijskie,"Nuts, brazilnuts, dried, unblanched"
+321,orzechy pekan,"Nuts, pecans"
+322,orzechy makadamia,"Nuts, macadamia nuts"
+323,orzeszki piniowe,"Nuts, pine nuts, dried"
+324,słonecznik łuskany,"Seeds, sunflower seed kernels"
+325,pestki dyni,"Seeds, pumpkin and squash seed kernels"
+326,siemię lniane,"Seeds, flaxseed"
+327,nasiona chia,"Seeds, chia seeds, dried"
+328,sezam,"Seeds, sesame seeds, whole"
+329,mak,"Spices, poppy seed"
+330,nasiona konopi łuskane,"Seeds, hemp seed, hulled"
+331,wiórki kokosowe,"Nuts, coconut meat, dried (desiccated), not sweetened"
+332,tahini (pasta sezamowa),"Seeds, sesame butter, tahini"
+333,masło,"Butter, without salt"
+334,masło klarowane,"Butter oil, anhydrous"
+335,oliwa z oliwek,"Oil, olive, salad or cooking"
+336,olej rzepakowy,"Oil, canola"
+337,olej słonecznikowy,"Oil, sunflower, linoleic"
+338,olej lniany,"Oil, flaxseed, cold pressed"
+339,olej kokosowy,"Oil, coconut"
+340,olej sezamowy,"Oil, sesame, salad or cooking"
+341,smalec,Lard
+342,margaryna,"Margarine, regular, 80% fat"
+343,majonez,"Salad dressing, mayonnaise, regular"
+344,cukier biały,"Sugars, granulated"
+345,cukier trzcinowy,"Sugars, brown"
+346,miód,Honey
+347,syrop klonowy,"Syrups, maple"
+348,kakao (proszek),"Cocoa, dry powder, unsweetened"
+349,czekolada gorzka (70%),"Chocolate, dark, 70-85% cacao solids"
+350,dżem truskawkowy,Jams and preserves
+351,ketchup,Catsup
+352,musztarda,"Mustard, prepared, yellow"
+353,sos sojowy,Soy sauce made from soy and wheat (shoyu)
+354,ocet spirytusowy,"Vinegar, distilled"
+355,drożdże świeże,"Leavening agents, yeast, baker's, compressed"
+356,żelatyna,"Gelatins, dry powder, unsweetened"
+357,sól,"Salt, table"

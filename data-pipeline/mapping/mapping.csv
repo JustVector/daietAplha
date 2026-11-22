@@ -1,0 +1,637 @@
+variant_id,food_id,name_pl,preparation,fdc_id,status,usda_description,score
+1,1,ziemniak,surowy,170026,auto,"Potatoes, flesh and skin, raw",100.0
+2,1,ziemniak,gotowany,170440,auto,"Potatoes, boiled, cooked without skin, flesh, without salt",100.0
+3,1,ziemniak,gotowany na parze,170440,auto,"Potatoes, boiled, cooked without skin, flesh, without salt",100.0
+4,1,ziemniak,pieczony,170093,auto,"Potatoes, baked, flesh and skin, without salt",100.0
+5,1,ziemniak,smażony,,brak,,45.0
+6,2,batat,surowy,169303,auto,"Sweet potato leaves, raw",98.7
+7,2,batat,gotowany,168484,auto,"Sweet potato, cooked, boiled, without skin",100.0
+8,2,batat,pieczony,168483,auto,"Sweet potato, cooked, baked in skin, flesh, without salt",100.0
+9,3,marchew,surowy,170393,auto,"Carrots, raw",100.0
+10,3,marchew,gotowany,170394,auto,"Carrots, cooked, boiled, drained, without salt",100.0
+11,3,marchew,gotowany na parze,170394,auto,"Carrots, cooked, boiled, drained, without salt",100.0
+12,3,marchew,duszony,,brak,,61.7
+13,3,marchew,pieczony,,brak,,61.7
+14,4,burak ćwikłowy,surowy,169145,auto,"Beets, raw",100.0
+15,4,burak ćwikłowy,gotowany,169146,auto,"Beets, cooked, boiled, drained",100.0
+16,4,burak ćwikłowy,pieczony,,brak,,59.7
+17,5,pietruszka (korzeń),surowy,,brak,,68.7
+18,5,pietruszka (korzeń),gotowany,,brak,,47.3
+19,6,seler korzeniowy,surowy,170400,auto,"Celeriac, raw",100.0
+20,6,seler korzeniowy,gotowany,169987,auto,"Celeriac, cooked, boiled, drained, without salt",100.0
+21,6,seler korzeniowy,pieczony,,brak,,45.0
+22,7,seler naciowy,surowy,169988,auto,"Celery, raw",100.0
+23,7,seler naciowy,gotowany,169989,auto,"Celery, cooked, boiled, drained, without salt",100.0
+24,8,pasternak,surowy,170417,auto,"Parsnips, raw",100.0
+25,8,pasternak,gotowany,170009,auto,"Parsnips, cooked, boiled, drained, without salt",100.0
+26,8,pasternak,pieczony,,brak,,45.0
+27,9,por,surowy,169246,auto,"Leeks, (bulb and lower leaf-portion), raw",100.0
+28,9,por,gotowany,168426,auto,"Leeks, (bulb and lower leaf-portion), cooked, boiled, drained, without salt",100.0
+29,9,por,duszony,,brak,,72.6
+30,10,cebula,surowy,170000,auto,"Onions, raw",100.0
+31,10,cebula,smażony,170004,auto,"Onions, yellow, sauteed",100.0
+32,10,cebula,duszony,,brak,,58.8
+33,10,cebula,pieczony,,brak,,58.8
+34,11,cebula czerwona,surowy,,brak,,78.8
+35,12,cebula dymka,surowy,170005,auto,"Onions, spring or scallions (includes tops and bulb), raw",100.0
+36,13,szalotka,surowy,170499,auto,"Shallots, raw",100.0
+37,14,czosnek,surowy,169230,auto,"Garlic, raw",100.0
+38,14,czosnek,smażony,,brak,,48.7
+39,15,szczypiorek,surowy,169994,auto,"Chives, raw",100.0
+40,16,koperek,surowy,172233,auto,"Dill weed, fresh",100.0
+41,17,natka pietruszki,surowy,170416,auto,"Parsley, fresh",100.0
+42,18,kapusta biała,surowy,169975,auto,"Cabbage, raw",100.0
+43,18,kapusta biała,gotowany,169976,auto,"Cabbage, cooked, boiled, drained, without salt",100.0
+44,18,kapusta biała,duszony,,brak,,68.4
+45,19,kapusta czerwona,surowy,169977,auto,"Cabbage, red, raw",100.0
+46,19,kapusta czerwona,gotowany,169978,auto,"Cabbage, red, cooked, boiled, drained, without salt",100.0
+47,19,kapusta czerwona,duszony,,brak,,45.0
+48,20,kapusta włoska,surowy,170388,auto,"Cabbage, savoy, raw",100.0
+49,20,kapusta włoska,gotowany,170389,auto,"Cabbage, savoy, cooked, boiled, drained, without salt",100.0
+50,21,kapusta pekińska,surowy,169979,auto,"Cabbage, chinese (pe-tsai), raw",100.0
+51,21,kapusta pekińska,gotowany,169980,auto,"Cabbage, chinese (pe-tsai), cooked, boiled, drained, without salt",100.0
+52,22,kapusta kiszona,gotowy,169279,auto,"Sauerkraut, canned, solids and liquids",86.1
+53,22,kapusta kiszona,duszony,,brak,,61.1
+54,23,brukselka,surowy,170383,auto,"Brussels sprouts, raw",100.0
+55,23,brukselka,gotowany,169971,auto,"Brussels sprouts, cooked, boiled, drained, without salt",100.0
+56,23,brukselka,gotowany na parze,169971,auto,"Brussels sprouts, cooked, boiled, drained, without salt",100.0
+57,23,brukselka,pieczony,,brak,,45.0
+58,24,kalafior,surowy,169986,auto,"Cauliflower, raw",100.0
+59,24,kalafior,gotowany,170397,auto,"Cauliflower, cooked, boiled, drained, without salt",100.0
+60,24,kalafior,gotowany na parze,170397,auto,"Cauliflower, cooked, boiled, drained, without salt",100.0
+61,24,kalafior,pieczony,,brak,,69.6
+62,25,brokuł,surowy,170379,auto,"Broccoli, raw",100.0
+63,25,brokuł,gotowany,169967,auto,"Broccoli, cooked, boiled, drained, without salt",100.0
+64,25,brokuł,gotowany na parze,169967,auto,"Broccoli, cooked, boiled, drained, without salt",100.0
+65,25,brokuł,pieczony,,brak,,66.7
+66,26,kalarepa,surowy,168424,auto,"Kohlrabi, raw",100.0
+67,26,kalarepa,gotowany,168425,auto,"Kohlrabi, cooked, boiled, drained, without salt",100.0
+68,27,jarmuż,surowy,168421,auto,"Kale, raw",100.0
+69,27,jarmuż,gotowany,169238,auto,"Kale, cooked, boiled, drained, without salt",100.0
+70,28,szpinak,surowy,168462,auto,"Spinach, raw",100.0
+71,28,szpinak,gotowany,168463,auto,"Spinach, cooked, boiled, drained, without salt",100.0
+72,28,szpinak,duszony,,brak,,59.0
+73,29,sałata masłowa,surowy,168429,auto,"Lettuce, butterhead (includes boston and bibb types), raw",100.0
+74,30,sałata lodowa,surowy,169248,auto,"Lettuce, iceberg (includes crisphead types), raw",98.6
+75,31,sałata rzymska,surowy,169247,auto,"Lettuce, cos or romaine, raw",100.0
+76,32,rukola,surowy,169387,auto,"Arugula, raw",100.0
+77,33,roszponka,surowy,,brak,,7.6
+78,34,cykoria,surowy,170404,auto,"Chicory, witloof, raw",100.0
+79,35,rzeżucha,surowy,168407,auto,"Cress, garden, raw",100.0
+80,36,ogórek,surowy,168409,auto,"Cucumber, with peel, raw",100.0
+81,37,ogórek kiszony,gotowy,168558,auto,"Pickles, cucumber, dill or kosher dill",100.0
+82,38,pomidor,surowy,170457,auto,"Tomatoes, red, ripe, raw, year round average",100.0
+83,38,pomidor,duszony,170089,auto,"Tomatoes, red, ripe, cooked, stewed",100.0
+84,38,pomidor,pieczony,,brak,,75.0
+85,39,pomidor koktajlowy,surowy,170457,auto,"Tomatoes, red, ripe, raw, year round average",100.0
+86,40,pomidory krojone z puszki,gotowy,170053,auto,"Tomatoes, red, ripe, canned, with green chilies",94.4
+87,41,przecier pomidorowy (passata),gotowy,170460,auto,"Tomato products, canned, puree, without salt added",86.9
+88,42,koncentrat pomidorowy,gotowy,170459,auto,"Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",88.0
+89,43,pomidory suszone,gotowy,168567,auto,"Tomatoes, sun-dried",100.0
+90,44,papryka czerwona,surowy,170108,auto,"Peppers, sweet, red, raw",100.0
+91,44,papryka czerwona,duszony,,brak,,70.7
+92,44,papryka czerwona,pieczony,,brak,,70.7
+93,44,papryka czerwona,smażony,168550,auto,"Peppers, sweet, red, sauteed",100.0
+94,44,papryka czerwona,grillowany,,brak,,70.7
+95,45,papryka zielona,surowy,170427,auto,"Peppers, sweet, green, raw",100.0
+96,45,papryka zielona,smażony,170024,auto,"Peppers, sweet, green, sauteed",100.0
+97,46,papryka żółta,surowy,169383,auto,"Peppers, sweet, yellow, raw",100.0
+98,46,papryka żółta,pieczony,,brak,,45.0
+99,47,papryczka chili,surowy,170106,auto,"Peppers, hot chili, red, raw",100.0
+100,48,cukinia,surowy,169291,auto,"Squash, summer, zucchini, includes skin, raw",100.0
+101,48,cukinia,gotowany,169292,auto,"Squash, summer, zucchini, includes skin, cooked, boiled, drained, without salt",100.0
+102,48,cukinia,duszony,,brak,,45.0
+103,48,cukinia,pieczony,,brak,,45.0
+104,48,cukinia,smażony,,brak,,45.0
+105,48,cukinia,grillowany,,brak,,45.0
+106,49,bakłażan,surowy,169228,auto,"Eggplant, raw",100.0
+107,49,bakłażan,pieczony,,brak,,45.0
+108,49,bakłażan,smażony,,brak,,46.9
+109,49,bakłażan,grillowany,,brak,,45.0
+110,50,dynia,surowy,168448,auto,"Pumpkin, raw",100.0
+111,50,dynia,gotowany,168449,auto,"Pumpkin, cooked, boiled, drained, without salt",100.0
+112,50,dynia,pieczony,,brak,,75.5
+113,51,rzodkiewka,surowy,169276,auto,"Radishes, raw",100.0
+114,52,rzepa,surowy,170465,auto,"Turnips, raw",100.0
+115,52,rzepa,gotowany,170058,auto,"Turnips, cooked, boiled, drained, without salt",100.0
+116,53,brukiew,surowy,168454,auto,"Rutabagas, raw",100.0
+117,53,brukiew,gotowany,168455,auto,"Rutabagas, cooked, boiled, drained, without salt",100.0
+118,54,fasolka szparagowa,surowy,169961,auto,"Beans, snap, green, raw",100.0
+119,54,fasolka szparagowa,gotowany,169141,auto,"Beans, snap, green, cooked, boiled, drained, without salt",100.0
+120,54,fasolka szparagowa,gotowany na parze,169141,auto,"Beans, snap, green, cooked, boiled, drained, without salt",100.0
+121,55,groszek zielony,surowy,170419,auto,"Peas, green, raw",100.0
+122,55,groszek zielony,gotowany,170420,auto,"Peas, green, cooked, boiled, drained, without salt",100.0
+123,56,groszek konserwowy,gotowy,170104,auto,"Peas, green, canned, no salt added, drained solids",100.0
+124,57,kukurydza cukrowa (kolba),surowy,169998,auto,"Corn, sweet, yellow, raw",100.0
+125,57,kukurydza cukrowa (kolba),gotowany,169999,auto,"Corn, sweet, yellow, cooked, boiled, drained, without salt",100.0
+126,57,kukurydza cukrowa (kolba),grillowany,,brak,,61.0
+127,58,kukurydza konserwowa,gotowy,169214,auto,"Corn, sweet, yellow, canned, whole kernel, drained solids",100.0
+128,59,szparagi,surowy,168389,auto,"Asparagus, raw",100.0
+129,59,szparagi,gotowany,168390,auto,"Asparagus, cooked, boiled, drained",100.0
+130,59,szparagi,gotowany na parze,168390,auto,"Asparagus, cooked, boiled, drained",100.0
+131,59,szparagi,grillowany,,brak,,63.0
+132,60,koper włoski (fenkuł),surowy,169385,auto,"Fennel, bulb, raw",100.0
+133,60,koper włoski (fenkuł),pieczony,,brak,,45.0
+134,61,pak choi,surowy,170390,auto,"Cabbage, chinese (pak-choi), raw",100.0
+135,61,pak choi,gotowany,170391,auto,"Cabbage, chinese (pak-choi), cooked, boiled, drained, without salt",100.0
+136,61,pak choi,smażony,,brak,,45.0
+137,62,kiełki fasoli mung,surowy,169957,auto,"Mung beans, mature seeds, sprouted, raw",100.0
+138,62,kiełki fasoli mung,smażony,169138,auto,"Mung beans, mature seeds, sprouted, cooked, stir-fried",100.0
+139,63,imbir,surowy,169231,auto,"Ginger root, raw",100.0
+140,64,chrzan tarty,gotowy,173472,auto,"Horseradish, prepared",100.0
+141,65,botwina,surowy,170375,auto,"Beet greens, raw",100.0
+142,65,botwina,gotowany,170376,auto,"Beet greens, cooked, boiled, drained, without salt",100.0
+143,66,szczaw,surowy,,brak,,54.2
+144,66,szczaw,gotowany,,brak,,47.5
+145,67,oliwki zielone,gotowy,169096,auto,"Olives, pickled, canned or bottled, green",100.0
+146,68,oliwki czarne,gotowy,169094,auto,"Olives, ripe, canned (small-extra large)",91.7
+147,69,mieszanka warzyw mrożona,gotowany,170472,auto,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",100.0
+148,70,pieczarka,surowy,169251,auto,"Mushrooms, white, raw",100.0
+149,70,pieczarka,duszony,,brak,,45.0
+150,70,pieczarka,smażony,169253,auto,"Mushrooms, white, stir-fried",100.0
+151,70,pieczarka,grillowany,,brak,,74.6
+152,71,boczniak,surowy,168580,auto,"Mushrooms, oyster, raw",100.0
+153,71,boczniak,smażony,,brak,,74.1
+154,72,borowik (prawdziwek),surowy,,brak,,52.1
+155,72,borowik (prawdziwek),duszony,,brak,,12.5
+156,72,borowik (prawdziwek),smażony,,brak,,45.8
+157,73,kurka,surowy,168422,auto,"Mushrooms, Chanterelle, raw",100.0
+158,73,kurka,duszony,,brak,,45.0
+159,73,kurka,smażony,,brak,,61.0
+160,74,borowik suszony,gotowy,,brak,,66.6
+161,75,jabłko,surowy,171689,auto,"Apples, raw, without skin",100.0
+162,75,jabłko,pieczony,,brak,,51.5
+163,76,gruszka,surowy,169118,auto,"Pears, raw",100.0
+164,77,śliwka,surowy,169949,auto,"Plums, raw",100.0
+165,78,śliwka suszona,gotowy,168162,auto,"Plums, dried (prunes), uncooked",100.0
+166,79,czereśnia,surowy,171719,auto,"Cherries, sweet, raw",100.0
+167,80,wiśnia,surowy,173954,auto,"Cherries, sour, red, raw",100.0
+168,81,truskawka,surowy,167762,auto,"Strawberries, raw",100.0
+169,82,malina,surowy,167755,auto,"Raspberries, raw",100.0
+170,83,borówka amerykańska,surowy,171711,auto,"Blueberries, raw",100.0
+171,84,jagoda (borówka czarna),surowy,167640,auto,"Blueberries, wild, raw (Alaska Native)",100.0
+172,85,jeżyna,surowy,173946,auto,"Blackberries, raw",100.0
+173,86,porzeczka czarna,surowy,173963,auto,"Currants, european black, raw",100.0
+174,87,porzeczka czerwona,surowy,173964,auto,"Currants, red and white, raw",100.0
+175,88,agrest,surowy,173030,auto,"Gooseberries, raw",100.0
+176,89,żurawina,surowy,171722,auto,"Cranberries, raw",100.0
+177,90,żurawina suszona,gotowy,171723,auto,"Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program)",86.2
+178,91,aronia,surowy,,brak,,38.8
+179,92,rabarbar,surowy,167758,auto,"Rhubarb, raw",100.0
+180,92,rabarbar,gotowany,168169,auto,"Rhubarb, frozen, cooked, with sugar",93.0
+181,93,pigwa,surowy,168163,auto,"Quinces, raw",100.0
+182,94,morela,surowy,171697,auto,"Apricots, raw",100.0
+183,95,morela suszona,gotowy,173941,auto,"Apricots, dried, sulfured, uncooked",100.0
+184,96,brzoskwinia,surowy,169928,auto,"Peaches, yellow, raw",100.0
+185,97,nektarynka,surowy,169914,auto,"Nectarines, raw",100.0
+186,98,winogrona,surowy,174683,auto,"Grapes, red or green (European type, such as Thompson seedless), raw",100.0
+187,99,rodzynki,gotowy,168164,auto,"Raisins, golden, seedless",95.5
+188,100,banan,surowy,173944,auto,"Bananas, raw",100.0
+189,101,pomarańcza,surowy,169097,auto,"Oranges, raw, all commercial varieties",100.0
+190,102,mandarynka,surowy,169105,auto,"Tangerines, (mandarin oranges), raw",100.0
+191,103,grejpfrut,surowy,173034,auto,"Grapefruit, raw, white, Florida",99.7
+192,104,cytryna,surowy,167746,auto,"Lemons, raw, without peel",100.0
+193,105,limonka,surowy,168155,auto,"Limes, raw",100.0
+194,106,kiwi,surowy,168153,auto,"Kiwifruit, green, raw",100.0
+195,107,ananas,surowy,169124,auto,"Pineapple, raw, all varieties",100.0
+196,108,mango,surowy,169910,auto,"Mangos, raw",100.0
+197,109,papaja,surowy,169926,auto,"Papayas, raw",100.0
+198,110,marakuja,surowy,169108,auto,"Passion-fruit, (granadilla), purple, raw",100.0
+199,111,arbuz,surowy,167765,auto,"Watermelon, raw",100.0
+200,112,melon kantalupa,surowy,169092,auto,"Melons, cantaloupe, raw",100.0
+201,113,granat,surowy,169134,auto,"Pomegranates, raw",100.0
+202,114,awokado,surowy,171705,auto,"Avocados, raw, all commercial varieties",100.0
+203,115,figa,surowy,173021,auto,"Figs, raw",100.0
+204,116,figa suszona,gotowy,174665,auto,"Figs, dried, uncooked",100.0
+205,117,daktyle suszone,gotowy,171726,auto,"Dates, deglet noor",100.0
+206,118,kaki (persymona),surowy,169941,auto,"Persimmons, japanese, raw",100.0
+207,119,jabłko suszone,gotowy,171691,auto,"Apples, dried, sulfured, uncooked",100.0
+208,120,mus jabłkowy bez cukru,gotowy,167772,auto,"Applesauce, canned, unsweetened, with added ascorbic acid",95.1
+209,121,sok jabłkowy,gotowy,167771,auto,"Apple juice, canned or bottled, unsweetened, with added ascorbic acid",96.4
+210,122,sok pomarańczowy,gotowy,169100,auto,"Orange juice, chilled, includes from concentrate",100.0
+211,123,sok z cytryny,gotowy,,brak,,70.0
+212,124,kasza gryczana palona,surowy,170685,auto,"Buckwheat groats, roasted, dry",100.0
+213,124,kasza gryczana palona,gotowany,170686,auto,"Buckwheat groats, roasted, cooked",100.0
+214,125,kasza gryczana niepalona (biała),surowy,170286,auto,Buckwheat,100.0
+215,125,kasza gryczana niepalona (biała),gotowany,,brak,,75.0
+216,126,kasza jaglana,surowy,169702,auto,"Millet, raw",100.0
+217,126,kasza jaglana,gotowany,168871,auto,"Millet, cooked",100.0
+218,127,kasza jęczmienna perłowa,surowy,170284,auto,"Barley, pearled, raw",100.0
+219,127,kasza jęczmienna perłowa,gotowany,170285,auto,"Barley, pearled, cooked",100.0
+220,128,kasza jęczmienna pęczak,surowy,170284,auto,"Barley, pearled, raw",100.0
+221,128,kasza jęczmienna pęczak,gotowany,170285,auto,"Barley, pearled, cooked",100.0
+222,129,kasza manna,surowy,173916,auto,"Cereals, farina, unenriched, dry",100.0
+223,129,kasza manna,gotowany,173917,auto,"Cereals, farina, enriched, cooked with water, with salt",96.3
+224,130,kasza kukurydziana,surowy,171654,auto,"Cereals, corn grits, white, regular and quick, enriched, dry",100.0
+225,130,kasza kukurydziana,gotowany,171655,auto,"Cereals, corn grits, white, regular and quick, enriched, cooked with water, without salt",100.0
+226,131,kasza kuskus,surowy,169699,auto,"Couscous, dry",100.0
+227,131,kasza kuskus,gotowany,169700,auto,"Couscous, cooked",100.0
+228,132,kasza bulgur,surowy,170688,auto,"Bulgur, dry",100.0
+229,132,kasza bulgur,gotowany,170287,auto,"Bulgur, cooked",100.0
+230,133,orkisz (ziarno),surowy,169745,auto,"Spelt, uncooked",100.0
+231,133,orkisz (ziarno),gotowany,169746,auto,"Spelt, cooked",100.0
+232,134,komosa ryżowa,surowy,168874,auto,"Quinoa, uncooked",100.0
+233,134,komosa ryżowa,gotowany,168917,auto,"Quinoa, cooked",100.0
+234,135,amarantus,surowy,170682,auto,"Amaranth grain, uncooked",100.0
+235,135,amarantus,gotowany,170683,auto,"Amaranth grain, cooked",100.0
+236,136,ryż biały,surowy,168877,auto,"Rice, white, long-grain, regular, raw, enriched",100.0
+237,136,ryż biały,gotowany,168878,auto,"Rice, white, long-grain, regular, enriched, cooked",100.0
+238,137,ryż brązowy,surowy,169703,auto,"Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program)",96.2
+239,137,ryż brązowy,gotowany,169704,auto,"Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",96.2
+240,138,ryż basmati,surowy,168877,auto,"Rice, white, long-grain, regular, raw, enriched",100.0
+241,138,ryż basmati,gotowany,168878,auto,"Rice, white, long-grain, regular, enriched, cooked",100.0
+242,139,ryż parboiled,surowy,169707,auto,"Rice, white, long-grain, parboiled, enriched, dry",100.0
+243,139,ryż parboiled,gotowany,169708,auto,"Rice, white, long-grain, parboiled, enriched, cooked",100.0
+244,140,ryż dziki,surowy,169726,auto,"Wild rice, raw",100.0
+245,140,ryż dziki,gotowany,168897,auto,"Wild rice, cooked",100.0
+246,141,makaron pszenny,surowy,169736,auto,"Pasta, dry, enriched",100.0
+247,141,makaron pszenny,gotowany,169737,auto,"Pasta, cooked, enriched, without added salt",100.0
+248,142,makaron pełnoziarnisty,surowy,168915,auto,"Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry",96.2
+249,142,makaron pełnoziarnisty,gotowany,168916,auto,"Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, cooked",96.2
+250,143,makaron jajeczny,surowy,169731,auto,"Noodles, egg, dry, enriched",100.0
+251,143,makaron jajeczny,gotowany,168919,auto,"Noodles, egg, cooked, enriched, with added salt",100.0
+252,144,makaron ryżowy,surowy,169742,auto,"Rice noodles, dry",100.0
+253,144,makaron ryżowy,gotowany,168914,auto,"Rice noodles, cooked",100.0
+254,145,płatki owsiane,surowy,173904,auto,"Cereals, oats, regular and quick, not fortified, dry",100.0
+255,145,płatki owsiane,gotowany,,brak,,75.0
+256,146,otręby owsiane,surowy,168872,auto,"Oat bran, raw",100.0
+257,147,otręby pszenne,surowy,169722,auto,"Wheat bran, crude",100.0
+258,148,płatki kukurydziane,gotowy,174648,auto,"Cereals ready-to-eat, RALSTON Corn Flakes",87.2
+259,149,musli,gotowy,,brak,,70.5
+260,150,napój owsiany,gotowy,,brak,,52.7
+261,151,mąka pszenna (typ 450–650),surowy,168894,auto,"Wheat flour, white, all-purpose, enriched, bleached",97.4
+262,152,mąka pszenna pełnoziarnista,surowy,168944,auto,"Wheat flour, whole-grain, soft wheat",95.2
+263,153,mąka żytnia,surowy,168886,auto,"Rye flour, medium",100.0
+264,154,mąka gryczana,surowy,170687,auto,"Buckwheat flour, whole-groat",100.0
+265,155,mąka kukurydziana,surowy,170290,auto,"Corn flour, whole-grain, yellow",100.0
+266,156,skrobia ziemniaczana (mąka ziemniaczana),surowy,168446,auto,Potato flour,100.0
+267,157,bułka tarta,gotowy,174928,auto,"Bread, crumbs, dry, grated, plain",100.0
+268,158,chleb pszenny,gotowy,172818,auto,"Bread, white, commercially prepared, low sodium, no salt",95.3
+269,159,chleb żytni,gotowy,172684,auto,"Bread, rye",100.0
+270,160,chleb mieszany pszenno-żytni,gotowy,172686,auto,"Bread, wheat",100.0
+271,161,chleb żytni razowy,gotowy,174918,auto,"Bread, pumpernickel",100.0
+272,162,chleb graham,gotowy,172688,auto,"Bread, whole-wheat, commercially prepared",100.0
+273,163,chleb pszenny pełnoziarnisty,gotowy,172688,auto,"Bread, whole-wheat, commercially prepared",100.0
+274,164,chleb tostowy,gotowy,172818,auto,"Bread, white, commercially prepared, low sodium, no salt",95.3
+275,165,bułka pszenna,gotowy,172793,auto,"Rolls, dinner, plain, commercially prepared (includes brown-and-serve)",92.8
+276,166,bagietka,gotowy,174091,auto,"Bread, french or vienna, whole wheat",94.6
+277,167,tortilla pszenna,gotowy,173242,auto,"Tortillas, ready-to-bake or -fry, flour, without added calcium",97.5
+278,168,pita,gotowy,174915,auto,"Bread, pita, white, enriched",100.0
+279,169,pieczywo chrupkie żytnie,gotowy,172744,auto,"Crackers, rye, wafers, plain",100.0
+280,170,wafle ryżowe,gotowy,170250,auto,"Snacks, rice cakes, brown rice, plain, unsalted",97.1
+281,171,"mleko 0,5%",gotowy,169868,auto,"Milk, fluid, nonfat, calcium fortified (fat free or skim)",87.3
+282,172,mleko 2%,gotowy,172193,auto,"Milk, reduced fat, fluid, 2% milkfat, with added nonfat milk solids, without added vitamin A",93.3
+283,173,"mleko 3,2%",gotowy,171265,auto,"Milk, whole, 3.25% milkfat, with added vitamin D",94.6
+284,174,mleko kozie,gotowy,171278,auto,"Milk, goat, fluid, with added vitamin D",93.8
+285,175,mleko w proszku,gotowy,170876,auto,"Milk, dry, whole, with added vitamin D",91.7
+286,176,kefir,gotowy,,brak,,73.1
+287,177,maślanka,gotowy,170874,auto,"Milk, buttermilk, fluid, cultured, lowfat",100.0
+288,178,mleko zsiadłe,gotowy,,brak,,59.7
+289,179,jogurt naturalny,gotowy,171284,auto,"Yogurt, plain, whole milk",100.0
+290,180,jogurt grecki,gotowy,171304,auto,"Yogurt, Greek, plain, whole milk",100.0
+291,181,jogurt owocowy,gotowy,170889,auto,"Yogurt, fruit, low fat,9 g protein/8 oz",93.9
+292,182,skyr,gotowy,,brak,,44.0
+293,183,twaróg chudy,gotowy,,brak,,62.6
+294,184,twaróg półtłusty,gotowy,,brak,,34.4
+295,185,twaróg tłusty,gotowy,,brak,,37.8
+296,186,serek wiejski,gotowy,172179,auto,"Cheese, cottage, creamed, large or small curd",100.0
+297,187,serek homogenizowany naturalny,gotowy,,brak,,40.2
+298,188,serek śmietankowy,gotowy,173418,auto,"Cheese, cream",100.0
+299,189,śmietana 12%,gotowy,171256,auto,"Cream, sour, reduced fat, cultured",100.0
+300,190,śmietana 18%,gotowy,171257,auto,"Cream, sour, cultured",100.0
+301,191,śmietanka 30%,gotowy,170859,auto,"Cream, fluid, heavy whipping",100.0
+302,192,ser gouda,gotowy,171241,auto,"Cheese, gouda",100.0
+303,193,ser edamski,gotowy,173419,auto,"Cheese, edam",100.0
+304,194,ser ementaler,gotowy,171251,auto,"Cheese, swiss",100.0
+305,195,ser cheddar,gotowy,170899,auto,"Cheese, cheddar, sharp, sliced",92.1
+306,196,mozzarella,gotowy,170845,auto,"Cheese, mozzarella, whole milk",100.0
+307,197,ser feta,gotowy,173420,auto,"Cheese, feta",100.0
+308,198,parmezan,gotowy,170848,auto,"Cheese, parmesan, hard",100.0
+309,199,camembert,gotowy,172178,auto,"Cheese, camembert",100.0
+310,200,ser pleśniowy niebieski,gotowy,172175,auto,"Cheese, blue",100.0
+311,201,ser topiony,gotowy,169080,auto,"Cheese, pasteurized process, American, low fat",97.4
+312,202,mascarpone,gotowy,,brak,,61.7
+313,203,ricotta,gotowy,170851,auto,"Cheese, ricotta, whole milk",100.0
+314,204,halloumi,gotowy,,brak,,62.6
+315,204,halloumi,smażony,,brak,,37.6
+316,204,halloumi,grillowany,,brak,,37.6
+317,205,oscypek,gotowy,,brak,,25.5
+318,205,oscypek,grillowany,,brak,,0.5
+319,206,bryndza,gotowy,,brak,,43.0
+320,207,jajo kurze,surowy,171287,auto,"Egg, whole, raw, fresh",100.0
+321,207,jajo kurze,gotowany,173424,auto,"Egg, whole, cooked, hard-boiled",100.0
+322,207,jajo kurze,smażony,173423,auto,"Egg, whole, cooked, fried",100.0
+323,208,białko jaja kurzego,surowy,172183,auto,"Egg, white, raw, fresh",100.0
+324,208,białko jaja kurzego,gotowany,,brak,,75.0
+325,209,żółtko jaja kurzego,surowy,172184,auto,"Egg, yolk, raw, fresh",100.0
+326,209,żółtko jaja kurzego,gotowany,,brak,,75.0
+327,210,jajo przepiórcze,surowy,172191,auto,"Egg, quail, whole, fresh, raw",100.0
+328,210,jajo przepiórcze,gotowany,,brak,,54.0
+329,211,pierś z kurczaka,surowy,171509,auto,"Chicken, broilers or fryers, breast, skinless, boneless, meat only, with added solution, raw",100.0
+330,211,pierś z kurczaka,gotowany,171478,auto,"Chicken, broilers or fryers, breast, meat only, cooked, stewed",100.0
+331,211,pierś z kurczaka,duszony,171478,auto,"Chicken, broilers or fryers, breast, meat only, cooked, stewed",100.0
+332,211,pierś z kurczaka,pieczony,171477,auto,"Chicken, broilers or fryers, breast, meat only, cooked, roasted",100.0
+333,211,pierś z kurczaka,smażony,171078,auto,"Chicken, broilers or fryers, breast, meat only, cooked, fried",100.0
+334,211,pierś z kurczaka,grillowany,,brak,,84.5
+335,212,udo z kurczaka,surowy,173627,auto,"Chicken, broilers or fryers, dark meat, thigh, meat only, raw",100.0
+336,212,udo z kurczaka,gotowany,172389,auto,"Chicken, broilers or fryers, thigh, meat only, cooked, stewed",100.0
+337,212,udo z kurczaka,duszony,172389,auto,"Chicken, broilers or fryers, thigh, meat only, cooked, stewed",100.0
+338,212,udo z kurczaka,pieczony,172388,auto,"Chicken, broilers or fryers, thigh, meat only, cooked, roasted",100.0
+339,212,udo z kurczaka,smażony,172387,auto,"Chicken, broilers or fryers, thigh, meat only, cooked, fried",100.0
+340,212,udo z kurczaka,grillowany,,brak,,75.0
+341,213,podudzie z kurczaka,surowy,173614,auto,"Chicken, broilers or fryers, dark meat, drumstick, meat only, raw",100.0
+342,213,podudzie z kurczaka,gotowany,172377,auto,"Chicken, broilers or fryers, drumstick, meat only, cooked, stewed",100.0
+343,213,podudzie z kurczaka,pieczony,172376,auto,"Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted",100.0
+344,213,podudzie z kurczaka,smażony,172375,auto,"Chicken, broilers or fryers, drumstick, meat only, cooked, fried",100.0
+345,213,podudzie z kurczaka,grillowany,,brak,,72.5
+346,214,skrzydełko z kurczaka,surowy,172390,auto,"Chicken, broilers or fryers, wing, meat and skin, raw",100.0
+347,214,skrzydełko z kurczaka,pieczony,173630,auto,"Chicken, broilers or fryers, wing, meat and skin, cooked, roasted",100.0
+348,214,skrzydełko z kurczaka,smażony,173629,auto,"Chicken, broilers or fryers, wing, meat and skin, cooked, fried, flour",100.0
+349,214,skrzydełko z kurczaka,grillowany,,brak,,75.0
+350,215,kurczak (tuszka),surowy,171447,auto,"Chicken, broilers or fryers, meat and skin, raw",100.0
+351,215,kurczak (tuszka),gotowany,171051,auto,"Chicken, broilers or fryers, meat and skin, cooked, stewed",100.0
+352,215,kurczak (tuszka),pieczony,171450,auto,"Chicken, broilers or fryers, meat and skin, cooked, roasted",100.0
+353,216,wątróbka drobiowa,surowy,171060,auto,"Chicken, liver, all classes, raw",100.0
+354,216,wątróbka drobiowa,duszony,171061,auto,"Chicken, liver, all classes, cooked, simmered",100.0
+355,216,wątróbka drobiowa,smażony,174491,auto,"Chicken, liver, all classes, cooked, pan-fried",100.0
+356,217,żołądki drobiowe,surowy,171456,auto,"Chicken, gizzard, all classes, raw",100.0
+357,217,żołądki drobiowe,gotowany,171457,auto,"Chicken, gizzard, all classes, cooked, simmered",100.0
+358,217,żołądki drobiowe,duszony,171457,auto,"Chicken, gizzard, all classes, cooked, simmered",100.0
+359,218,serca drobiowe,surowy,171458,auto,"Chicken, heart, all classes, raw",100.0
+360,218,serca drobiowe,duszony,171059,auto,"Chicken, heart, all classes, cooked, simmered",100.0
+361,219,mięso mielone z kurczaka,surowy,171116,auto,"Chicken, ground, raw",100.0
+362,219,mięso mielone z kurczaka,duszony,,brak,,69.1
+363,219,mięso mielone z kurczaka,smażony,171117,auto,"Chicken, ground, crumbles, cooked, pan-browned",100.0
+364,220,pierś z indyka,surowy,171098,auto,"Turkey, whole, breast, meat only, raw",100.0
+365,220,pierś z indyka,duszony,,brak,,78.0
+366,220,pierś z indyka,pieczony,171496,auto,"Turkey, whole, breast, meat only, cooked, roasted",100.0
+367,220,pierś z indyka,smażony,,brak,,57.4
+368,220,pierś z indyka,grillowany,,brak,,72.1
+369,221,udziec z indyka,surowy,171090,auto,"Turkey, whole, dark meat, meat only, raw",100.0
+370,221,udziec z indyka,duszony,,brak,,80.2
+371,221,udziec z indyka,pieczony,174508,auto,"Turkey, dark meat, meat only, with added solution, cooked, roasted",100.0
+372,222,mięso mielone z indyka,surowy,171505,auto,"Turkey, Ground, raw",100.0
+373,222,mięso mielone z indyka,duszony,,brak,,75.0
+374,222,mięso mielone z indyka,smażony,,brak,,75.0
+375,223,kaczka,surowy,172410,auto,"Duck, domesticated, meat only, raw",100.0
+376,223,kaczka,pieczony,172411,auto,"Duck, domesticated, meat only, cooked, roasted",100.0
+377,224,gęś,surowy,172413,auto,"Goose, domesticated, meat only, raw",100.0
+378,224,gęś,pieczony,172414,auto,"Goose, domesticated, meat only, cooked, roasted",100.0
+379,225,schab,surowy,168263,auto,"Pork, fresh, loin, center loin (chops), boneless, separable lean only, raw",100.0
+380,225,schab,duszony,168303,auto,"Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, braised",100.0
+381,225,schab,pieczony,167894,auto,"Pork, fresh, loin, center rib (roasts), boneless, separable lean only, cooked, roasted",87.3
+382,225,schab,smażony,167893,auto,"Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, pan-fried",100.0
+383,225,schab,grillowany,168285,auto,"Pork, fresh, loin, center loin (chops), boneless, separable lean only, cooked, pan-broiled",100.0
+384,226,polędwiczka wieprzowa,surowy,168249,auto,"Pork, fresh, loin, tenderloin, separable lean only, raw",100.0
+385,226,polędwiczka wieprzowa,pieczony,168250,auto,"Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted",100.0
+386,226,polędwiczka wieprzowa,smażony,,brak,,79.7
+387,226,polędwiczka wieprzowa,grillowany,168313,auto,"Pork, fresh, loin, tenderloin, separable lean only, cooked, broiled",100.0
+388,227,karkówka,surowy,167849,auto,"Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, raw",100.0
+389,227,karkówka,duszony,167850,auto,"Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, cooked, braised",100.0
+390,227,karkówka,pieczony,168259,auto,"Pork, fresh, shoulder, blade, boston (roasts), separable lean and fat, cooked, roasted",88.9
+391,227,karkówka,grillowany,167851,auto,"Pork, fresh, shoulder, blade, boston (steaks), separable lean and fat, cooked, broiled",100.0
+392,228,łopatka wieprzowa,surowy,168255,auto,"Pork, fresh, shoulder, arm picnic, separable lean and fat, raw",100.0
+393,228,łopatka wieprzowa,gotowany,,brak,,80.0
+394,228,łopatka wieprzowa,duszony,168256,auto,"Pork, fresh, shoulder, arm picnic, separable lean and fat, cooked, braised",100.0
+395,228,łopatka wieprzowa,pieczony,168257,auto,"Pork, fresh, shoulder, arm picnic, separable lean and fat, cooked, roasted",100.0
+396,229,szynka wieprzowa surowa,surowy,168224,auto,"Pork, fresh, leg (ham), whole, separable lean only, raw",100.0
+397,229,szynka wieprzowa surowa,gotowany,,brak,,80.0
+398,229,szynka wieprzowa surowa,duszony,,brak,,71.9
+399,229,szynka wieprzowa surowa,pieczony,168225,auto,"Pork, fresh, leg (ham), whole, separable lean only, cooked, roasted",100.0
+400,230,boczek surowy,surowy,167812,auto,"Pork, fresh, belly, raw",100.0
+401,230,boczek surowy,pieczony,,brak,,68.5
+402,230,boczek surowy,smażony,,brak,,66.4
+403,231,żeberka wieprzowe,surowy,167853,auto,"Pork, fresh, spareribs, separable lean and fat, raw",100.0
+404,231,żeberka wieprzowe,duszony,167854,auto,"Pork, fresh, spareribs, separable lean and fat, cooked, braised",100.0
+405,231,żeberka wieprzowe,pieczony,169178,auto,"Pork, fresh, spareribs, separable lean and fat, cooked, roasted",100.0
+406,231,żeberka wieprzowe,grillowany,,brak,,82.8
+407,232,golonka,surowy,169157,auto,"Pork, pickled pork hocks",95.0
+408,232,golonka,gotowany,,brak,,62.9
+409,232,golonka,pieczony,,brak,,62.0
+410,233,mięso mielone wieprzowe,surowy,167902,auto,"Pork, fresh, ground, raw",100.0
+411,233,mięso mielone wieprzowe,duszony,,brak,,75.0
+412,233,mięso mielone wieprzowe,smażony,,brak,,75.0
+413,234,wątróbka wieprzowa,surowy,167862,auto,"Pork, fresh, variety meats and by-products, liver, raw",100.0
+414,234,wątróbka wieprzowa,duszony,167863,auto,"Pork, fresh, variety meats and by-products, liver, cooked, braised",100.0
+415,234,wątróbka wieprzowa,smażony,,brak,,45.2
+416,235,polędwica wołowa,surowy,171803,auto,"Beef, tenderloin, steak, separable lean only, trimmed to 1/8"" fat, select, raw",100.0
+417,235,polędwica wołowa,pieczony,,brak,,80.9
+418,235,polędwica wołowa,smażony,,brak,,83.2
+419,235,polędwica wołowa,grillowany,173117,auto,"Beef, tenderloin, steak, separable lean only, trimmed to 1/8"" fat, choice, cooked, broiled",100.0
+420,236,rostbef,surowy,173116,auto,"Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8"" fat, choice, raw",100.0
+421,236,rostbef,pieczony,,brak,,70.5
+422,236,rostbef,smażony,,brak,,70.5
+423,236,rostbef,grillowany,171805,auto,"Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8"" fat, select, cooked, grilled",100.0
+424,237,antrykot,surowy,171735,auto,"Beef, Australian, imported, grass-fed, rib, ribeye steak/roast lip-on, boneless, separable lean only, raw",100.0
+425,237,antrykot,smażony,,brak,,48.8
+426,237,antrykot,grillowany,,brak,,83.8
+427,238,łopatka wołowa,surowy,174056,auto,"Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8"" fat, choice, raw",100.0
+428,238,łopatka wołowa,gotowany,,brak,,75.0
+429,238,łopatka wołowa,duszony,170615,auto,"Beef, chuck, arm pot roast, separable lean only, trimmed to 0"" fat, choice, cooked, braised",100.0
+430,239,pręga wołowa,surowy,169441,auto,"Beef, shank crosscuts, separable lean only, trimmed to 1/4"" fat, choice, raw",100.0
+431,239,pręga wołowa,gotowany,169442,auto,"Beef, shank crosscuts, separable lean only, trimmed to 1/4"" fat, choice, cooked, simmered",100.0
+432,239,pręga wołowa,duszony,169442,auto,"Beef, shank crosscuts, separable lean only, trimmed to 1/4"" fat, choice, cooked, simmered",100.0
+433,240,mostek wołowy,surowy,174057,auto,"Beef, brisket, flat half, separable lean only, trimmed to 1/8"" fat, choice, raw",100.0
+434,240,mostek wołowy,gotowany,,brak,,74.8
+435,240,mostek wołowy,duszony,169469,auto,"Beef, brisket, flat half, separable lean only, trimmed to 0"" fat, select, cooked, braised",100.0
+436,241,mięso mielone wołowe,surowy,174036,auto,"Beef, ground, 80% lean meat / 20% fat, raw",100.0
+437,241,mięso mielone wołowe,duszony,,brak,,69.8
+438,241,mięso mielone wołowe,smażony,171799,auto,"Beef, ground, 80% lean meat / 20% fat, crumbles, cooked, pan-browned",100.0
+439,242,wątróbka wołowa,surowy,169451,auto,"Beef, variety meats and by-products, liver, raw",100.0
+440,242,wątróbka wołowa,smażony,168627,auto,"Beef, variety meats and by-products, liver, cooked, pan-fried",100.0
+441,243,cielęcina (udziec),surowy,175269,auto,"Veal, leg (top round), separable lean only, raw",100.0
+442,243,cielęcina (udziec),duszony,175270,auto,"Veal, leg (top round), separable lean only, cooked, braised",100.0
+443,243,cielęcina (udziec),pieczony,173822,auto,"Veal, leg (top round), separable lean only, cooked, roasted",100.0
+444,243,cielęcina (udziec),smażony,175271,auto,"Veal, leg (top round), separable lean only, cooked, pan-fried, breaded",100.0
+445,244,jagnięcina (udziec),surowy,174313,auto,"Lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4"" fat, choice, raw",86.8
+446,244,jagnięcina (udziec),duszony,,brak,,27.3
+447,244,jagnięcina (udziec),pieczony,174314,auto,"Lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4"" fat, choice, cooked, roasted",86.8
+448,244,jagnięcina (udziec),grillowany,,brak,,51.8
+449,245,królik,surowy,172521,auto,"Game meat, rabbit, domesticated, composite of cuts, raw",100.0
+450,245,królik,duszony,174346,auto,"Game meat, rabbit, domesticated, composite of cuts, cooked, stewed",100.0
+451,245,królik,pieczony,172522,auto,"Game meat, rabbit, domesticated, composite of cuts, cooked, roasted",100.0
+452,246,szynka gotowana,gotowy,173864,auto,"Ham, sliced, regular (approximately 11% fat)",100.0
+453,247,szynka wędzona,gotowy,168295,auto,"Pork, cured, ham, boneless, extra lean and regular, unheated",93.0
+454,248,polędwica sopocka,gotowy,,brak,,49.2
+455,249,szynka z indyka,gotowy,,brak,,74.6
+456,250,pierś z kurczaka wędzona (wędlina),gotowy,172963,auto,"Chicken breast, oven-roasted, fat-free, sliced",100.0
+457,251,kiełbasa krakowska sucha,gotowy,172954,auto,"Sausage, Polish, pork and beef, smoked",100.0
+458,252,kiełbasa śląska,gotowy,174577,auto,"Polish sausage, pork",100.0
+459,252,kiełbasa śląska,smażony,,brak,,75.0
+460,252,kiełbasa śląska,grillowany,,brak,,75.0
+461,253,kiełbasa wieprzowa wędzona,gotowy,174584,auto,"Sausage, smoked link sausage, pork",100.0
+462,253,kiełbasa wieprzowa wędzona,pieczony,,brak,,75.0
+463,253,kiełbasa wieprzowa wędzona,smażony,,brak,,75.0
+464,253,kiełbasa wieprzowa wędzona,grillowany,,brak,,75.0
+465,254,biała kiełbasa,surowy,,brak,,76.2
+466,254,biała kiełbasa,gotowany,174579,auto,"Sausage, pork and beef, fresh, cooked",100.0
+467,254,biała kiełbasa,pieczony,,brak,,68.2
+468,255,kabanosy,gotowy,172939,auto,"Sausage, smoked link sausage, pork and beef (nonfat dry milk added)",88.2
+469,256,parówki,gotowy,172968,auto,"Frankfurter, meat",100.0
+470,256,parówki,gotowany,171633,auto,"Frankfurter, meat and poultry, cooked, boiled",100.0
+471,257,salami,gotowy,172938,auto,"Salami, dry or hard, pork",100.0
+472,258,mortadela,gotowy,174573,auto,"Mortadella, beef, pork",100.0
+473,259,boczek wędzony,gotowy,168277,auto,"Pork, cured, bacon, unprepared",100.0
+474,259,boczek wędzony,smażony,,brak,,75.0
+475,260,pasztet,gotowy,172930,auto,"Pate, liver, not specified, canned",100.0
+476,261,wątrobianka,gotowy,171621,auto,"Braunschweiger (a liver sausage), pork",100.0
+477,262,kaszanka,gotowy,171618,auto,Blood sausage,100.0
+478,262,kaszanka,pieczony,,brak,,75.0
+479,262,kaszanka,smażony,,brak,,75.0
+480,262,kaszanka,grillowany,,brak,,75.0
+481,263,salceson,gotowy,171630,auto,"Headcheese, pork",100.0
+482,264,łosoś,surowy,175167,auto,"Fish, salmon, Atlantic, farmed, raw",100.0
+483,264,łosoś,gotowany na parze,,brak,,80.0
+484,264,łosoś,pieczony,175168,auto,"Fish, salmon, Atlantic, farmed, cooked, dry heat",100.0
+485,264,łosoś,smażony,,brak,,51.7
+486,264,łosoś,grillowany,175168,auto,"Fish, salmon, Atlantic, farmed, cooked, dry heat",100.0
+487,265,łosoś wędzony,gotowy,173687,auto,"Fish, salmon, chinook, smoked",100.0
+488,266,dorsz,surowy,171955,auto,"Fish, cod, Atlantic, raw",100.0
+489,266,dorsz,gotowany,,brak,,80.0
+490,266,dorsz,gotowany na parze,,brak,,80.0
+491,266,dorsz,pieczony,171956,auto,"Fish, cod, Atlantic, cooked, dry heat",100.0
+492,266,dorsz,smażony,,brak,,79.3
+493,267,mintaj,surowy,173725,auto,"Fish, pollock, Alaska, raw",100.0
+494,267,mintaj,pieczony,173681,auto,"Fish, pollock, Alaska, cooked, dry heat (may contain additives to retain moisture)",97.0
+495,267,mintaj,smażony,,brak,,75.0
+496,268,morszczuk,surowy,,brak,,71.0
+497,268,morszczuk,pieczony,,brak,,69.8
+498,268,morszczuk,smażony,,brak,,60.5
+499,269,tilapia,surowy,175176,auto,"Fish, tilapia, raw",100.0
+500,269,tilapia,pieczony,175177,auto,"Fish, tilapia, cooked, dry heat",100.0
+501,269,tilapia,smażony,,brak,,53.3
+502,270,panga,surowy,175165,auto,"Fish, catfish, channel, farmed, raw",100.0
+503,270,panga,pieczony,175166,auto,"Fish, catfish, channel, farmed, cooked, dry heat",100.0
+504,270,panga,smażony,,brak,,79.5
+505,271,pstrąg,surowy,173717,auto,"Fish, trout, rainbow, farmed, raw",100.0
+506,271,pstrąg,pieczony,173718,auto,"Fish, trout, rainbow, farmed, cooked, dry heat",100.0
+507,271,pstrąg,smażony,,brak,,45.0
+508,271,pstrąg,grillowany,173718,auto,"Fish, trout, rainbow, farmed, cooked, dry heat",100.0
+509,272,pstrąg wędzony,gotowy,,brak,,65.5
+510,273,karp,surowy,171952,auto,"Fish, carp, raw",100.0
+511,273,karp,pieczony,174185,auto,"Fish, carp, cooked, dry heat",100.0
+512,273,karp,smażony,,brak,,60.3
+513,274,szczupak,surowy,173680,auto,"Fish, pike, northern, raw",100.0
+514,274,szczupak,pieczony,175127,auto,"Fish, pike, northern, cooked, dry heat",100.0
+515,275,sandacz,surowy,175128,auto,"Fish, pike, walleye, raw",100.0
+516,275,sandacz,pieczony,171997,auto,"Fish, pike, walleye, cooked, dry heat",100.0
+517,275,sandacz,smażony,,brak,,45.0
+518,276,okoń,surowy,173678,auto,"Fish, perch, mixed species, raw",100.0
+519,276,okoń,smażony,,brak,,78.0
+520,277,halibut,surowy,174200,auto,"Fish, halibut, Atlantic and Pacific, raw",100.0
+521,277,halibut,pieczony,174201,auto,"Fish, halibut, Atlantic and Pacific, cooked, dry heat",100.0
+522,278,sola,surowy,174196,auto,"Fish, flatfish (flounder and sole species), raw",100.0
+523,278,sola,pieczony,174197,auto,"Fish, flatfish (flounder and sole species), cooked, dry heat",100.0
+524,278,sola,smażony,,brak,,45.0
+525,279,tuńczyk świeży,surowy,175159,auto,"Fish, tuna, fresh, yellowfin, raw",100.0
+526,279,tuńczyk świeży,smażony,,brak,,45.0
+527,279,tuńczyk świeży,grillowany,172006,auto,"Fish, tuna, yellowfin, fresh, cooked, dry heat",100.0
+528,280,makrela,surowy,175119,auto,"Fish, mackerel, Atlantic, raw",100.0
+529,280,makrela,pieczony,175120,auto,"Fish, mackerel, Atlantic, cooked, dry heat",100.0
+530,280,makrela,grillowany,175120,auto,"Fish, mackerel, Atlantic, cooked, dry heat",100.0
+531,281,makrela wędzona,gotowy,,brak,,73.8
+532,282,śledź,surowy,175116,auto,"Fish, herring, Atlantic, raw",100.0
+533,282,śledź,pieczony,175117,auto,"Fish, herring, Atlantic, cooked, dry heat",100.0
+534,282,śledź,smażony,,brak,,70.6
+535,283,śledź solony (matjas),gotowy,,brak,,66.7
+536,284,śledź marynowany,gotowy,175118,auto,"Fish, herring, Atlantic, pickled",100.0
+537,285,szprot wędzony,gotowy,,brak,,65.5
+538,286,tuńczyk w sosie własnym,gotowy,171986,auto,"Fish, tuna, light, canned in water, without salt, drained solids",100.0
+539,287,tuńczyk w oleju,gotowy,173708,auto,"Fish, tuna, light, canned in oil, drained solids",100.0
+540,288,sardynki w oleju,gotowy,175139,auto,"Fish, sardine, Atlantic, canned in oil, drained solids with bone",100.0
+541,289,makrela w sosie pomidorowym,gotowy,,brak,,71.9
+542,290,paluszki rybne,pieczony,,brak,,60.3
+543,290,paluszki rybne,smażony,,brak,,60.3
+544,291,paluszki surimi,gotowy,,brak,,72.6
+545,292,krewetki,surowy,175179,auto,"Crustaceans, shrimp, raw",100.0
+546,292,krewetki,gotowany,175180,auto,"Crustaceans, shrimp, cooked",100.0
+547,292,krewetki,smażony,171970,auto,"Crustaceans, shrimp, mixed species, cooked, breaded and fried",99.5
+548,292,krewetki,grillowany,,brak,,75.0
+549,293,kalmary,surowy,174223,auto,"Mollusks, squid, mixed species, raw",100.0
+550,293,kalmary,gotowany,,brak,,84.0
+551,293,kalmary,smażony,171982,auto,"Mollusks, squid, mixed species, cooked, fried",100.0
+552,294,małże,surowy,174216,auto,"Mollusks, mussel, blue, raw",100.0
+553,294,małże,gotowany,174217,auto,"Mollusks, mussel, blue, cooked, moist heat",100.0
+554,295,fasola biała,surowy,175202,auto,"Beans, white, mature seeds, raw",100.0
+555,295,fasola biała,gotowany,175203,auto,"Beans, white, mature seeds, cooked, boiled, without salt",100.0
+556,296,fasola czerwona,surowy,173744,auto,"Beans, kidney, red, mature seeds, raw",100.0
+557,296,fasola czerwona,gotowany,175194,auto,"Beans, kidney, red, mature seeds, cooked, boiled, without salt",100.0
+558,297,fasola czarna,surowy,173734,auto,"Beans, black, mature seeds, raw",100.0
+559,297,fasola czarna,gotowany,173735,auto,"Beans, black, mature seeds, cooked, boiled, without salt",100.0
+560,298,fasola czerwona konserwowa,gotowy,174285,auto,"Beans, kidney, red, mature seeds, canned, drained solids",100.0
+561,299,bób,surowy,170377,auto,"Broadbeans, immature seeds, raw",100.0
+562,299,bób,gotowany,170378,auto,"Broadbeans, immature seeds, cooked, boiled, drained, without salt",100.0
+563,300,ciecierzyca,surowy,173756,auto,"Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",100.0
+564,300,ciecierzyca,gotowany,173757,auto,"Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt",100.0
+565,301,ciecierzyca konserwowa,gotowy,173800,auto,"Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids",100.0
+566,302,soczewica czerwona,surowy,174284,auto,"Lentils, pink or red, raw",100.0
+567,302,soczewica czerwona,gotowany,,brak,,47.3
+568,303,soczewica zielona,surowy,172420,auto,"Lentils, raw",100.0
+569,303,soczewica zielona,gotowany,172421,auto,"Lentils, mature seeds, cooked, boiled, without salt",98.0
+570,304,groch łuskany,surowy,172428,auto,"Peas, green, split, mature seeds, raw",100.0
+571,304,groch łuskany,gotowany,172429,auto,"Peas, split, mature seeds, cooked, boiled, without salt",100.0
+572,305,soja (nasiona),surowy,174270,auto,"Soybeans, mature seeds, raw",100.0
+573,305,soja (nasiona),gotowany,168460,auto,"Soybeans, mature seeds, sprouted, cooked, steamed",100.0
+574,306,fasola mung,surowy,174256,auto,"Mung beans, mature seeds, raw",100.0
+575,306,fasola mung,gotowany,174257,auto,"Mung beans, mature seeds, cooked, boiled, without salt",100.0
+576,307,edamame,gotowany,,brak,,75.0
+577,308,tofu naturalne,gotowy,172448,auto,"Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)",90.6
+578,308,tofu naturalne,pieczony,,brak,,65.6
+579,308,tofu naturalne,smażony,174304,auto,"Tofu, fried, prepared with calcium sulfate",89.1
+580,308,tofu naturalne,grillowany,,brak,,65.6
+581,309,tofu wędzone,gotowy,,brak,,47.8
+582,310,tempeh,gotowy,172467,auto,"Tempeh, cooked",100.0
+583,310,tempeh,smażony,,brak,,75.0
+584,311,napój sojowy,gotowy,172446,auto,"Soymilk, original and vanilla, unfortified",100.0
+585,312,hummus,gotowy,174289,auto,"Hummus, commercial",100.0
+586,313,orzechy włoskie,surowy,170187,auto,"Nuts, walnuts, english",100.0
+587,314,orzechy laskowe,surowy,170581,auto,"Nuts, hazelnuts or filberts",100.0
+588,315,migdały,surowy,170567,auto,"Nuts, almonds",100.0
+589,315,migdały,pieczony,170158,auto,"Nuts, almonds, dry roasted, without salt added",100.0
+590,316,orzechy nerkowca,surowy,170162,auto,"Nuts, cashew nuts, raw",100.0
+591,316,orzechy nerkowca,pieczony,170571,auto,"Nuts, cashew nuts, dry roasted, without salt added",100.0
+592,317,pistacje,pieczony,170185,auto,"Nuts, pistachio nuts, dry roasted, without salt added",100.0
+593,318,orzeszki ziemne,surowy,172430,auto,"Peanuts, all types, raw",100.0
+594,318,orzeszki ziemne,pieczony,173806,auto,"Peanuts, all types, dry-roasted, without salt",100.0
+595,319,masło orzechowe,gotowy,172470,auto,"Peanut butter, smooth style, without salt",100.0
+596,320,orzechy brazylijskie,surowy,170569,auto,"Nuts, brazilnuts, dried, unblanched",100.0
+597,321,orzechy pekan,surowy,170182,auto,"Nuts, pecans",100.0
+598,322,orzechy makadamia,surowy,170178,auto,"Nuts, macadamia nuts, raw",100.0
+599,323,orzeszki piniowe,surowy,170591,auto,"Nuts, pine nuts, dried",100.0
+600,324,słonecznik łuskany,surowy,170562,auto,"Seeds, sunflower seed kernels, dried",100.0
+601,324,słonecznik łuskany,pieczony,170563,auto,"Seeds, sunflower seed kernels, dry roasted, without salt",100.0
+602,325,pestki dyni,surowy,170556,auto,"Seeds, pumpkin and squash seed kernels, dried",100.0
+603,325,pestki dyni,pieczony,170557,auto,"Seeds, pumpkin and squash seed kernels, roasted, without salt",100.0
+604,326,siemię lniane,surowy,169414,auto,"Seeds, flaxseed",100.0
+605,327,nasiona chia,surowy,170554,auto,"Seeds, chia seeds, dried",100.0
+606,328,sezam,surowy,170150,auto,"Seeds, sesame seeds, whole, dried",100.0
+607,328,sezam,pieczony,170151,auto,"Seeds, sesame seeds, whole, roasted and toasted",100.0
+608,329,mak,surowy,171330,auto,"Spices, poppy seed",100.0
+609,330,nasiona konopi łuskane,surowy,170148,auto,"Seeds, hemp seed, hulled",100.0
+610,331,wiórki kokosowe,gotowy,170170,auto,"Nuts, coconut meat, dried (desiccated), not sweetened",100.0
+611,332,tahini (pasta sezamowa),gotowy,168604,auto,"Seeds, sesame butter, tahini, type of kernels unspecified",91.2
+612,333,masło,gotowy,173430,auto,"Butter, without salt",100.0
+613,334,masło klarowane,gotowy,173412,auto,"Butter oil, anhydrous",100.0
+614,335,oliwa z oliwek,gotowy,171413,auto,"Oil, olive, salad or cooking",100.0
+615,336,olej rzepakowy,gotowy,172336,auto,"Oil, canola",100.0
+616,337,olej słonecznikowy,gotowy,171025,auto,"Oil, sunflower, linoleic, (approx. 65%)",96.6
+617,338,olej lniany,gotowy,167702,auto,"Oil, flaxseed, cold pressed",100.0
+618,339,olej kokosowy,gotowy,171412,auto,"Oil, coconut",100.0
+619,340,olej sezamowy,gotowy,171016,auto,"Oil, sesame, salad or cooking",100.0
+620,341,smalec,gotowy,171401,auto,Lard,100.0
+621,342,margaryna,gotowy,172349,auto,"Margarine, regular, 80% fat, composite, tub, without salt",93.8
+622,343,majonez,gotowy,171009,auto,"Salad dressing, mayonnaise, regular",100.0
+623,344,cukier biały,gotowy,169655,auto,"Sugars, granulated",100.0
+624,345,cukier trzcinowy,gotowy,168833,auto,"Sugars, brown",100.0
+625,346,miód,gotowy,169640,auto,Honey,100.0
+626,347,syrop klonowy,gotowy,169661,auto,"Syrups, maple",100.0
+627,348,kakao (proszek),gotowy,169593,auto,"Cocoa, dry powder, unsweetened",100.0
+628,349,czekolada gorzka (70%),gotowy,170273,auto,"Chocolate, dark, 70-85% cacao solids",100.0
+629,350,dżem truskawkowy,gotowy,169641,auto,Jams and preserves,100.0
+630,351,ketchup,gotowy,168556,auto,Catsup,100.0
+631,352,musztarda,gotowy,172234,auto,"Mustard, prepared, yellow",100.0
+632,353,sos sojowy,gotowy,174277,auto,Soy sauce made from soy and wheat (shoyu),100.0
+633,354,ocet spirytusowy,gotowy,172237,auto,"Vinegar, distilled",100.0
+634,355,drożdże świeże,surowy,175042,auto,"Leavening agents, yeast, baker's, compressed",100.0
+635,356,żelatyna,gotowy,169599,auto,"Gelatins, dry powder, unsweetened",100.0
+636,357,sól,gotowy,173468,auto,"Salt, table",100.0

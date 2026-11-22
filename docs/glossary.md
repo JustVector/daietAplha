@@ -21,6 +21,8 @@ rozmowach z Claude Code. Nowe pojęcie dopisz tutaj w tym samym PR, w którym si
 | **pokrycie składnika** (nutrient coverage) | Odsetek produktów, które mają wartość składnika odżywczego (`null` = brak, zero ze źródła to wartość). Raport: `docs/data/nutrient_coverage.md` (S-103). |
 | **tabela szeroka** (wide table) | Układ danych: 1 wiersz = produkt, 1 kolumna = składnik odżywczy (przeciwieństwo układu wąskiego USDA: 1 wiersz = produkt + składnik). Pośrednia `sr_wide.parquet` (S-102), docelowo CSV bazy (ADR-0001). |
 | **`fdc_id`** | Identyfikator produktu w USDA FoodData Central. |
+| **mapowanie** (mapping) | Przypisanie wariantu produktu do rekordu USDA (`fdc_id`) ze statusem `auto` / `zweryfikowany` / `brak`: `data-pipeline/mapping/mapping.csv` (S-104). |
+| **kandydat** (candidate) | Rekord USDA zaproponowany dla wariantu produktu z wynikiem dopasowania 0–100; top-5 w `mapping_candidates.csv` (S-104). |
 | **mini-baza** | Baza startowa 30–50 produktów (`foods_v0.1`) w formacie v1 (S-113). |
 | **baza v1** | Pełna baza 300–500 produktów (`foods_v1.0`) po akceptacji (S-112). |
 

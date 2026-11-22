@@ -113,3 +113,44 @@ Plik [`input/product_list.csv`](input/product_list.csv) (UTF-8, w git) – produ
 [`product_list.py`](product_list.py) waliduje plik (Pydantic): kolumny, dozwolone kategorie i warianty, unikalność
 `variant_id` i pary (`food_id`, `preparation`), spójność wierszy jednego produktu, liczbę produktów podstawowych
 300–500 i obecność wszystkich grup poza „inne”. Test `tests/test_product_list.py` sprawdza prawdziwy plik w CI.
+
+## Mapowanie produktów do `fdc_id` (S-104)
+
+```
+make map-products
+```
+
+Półautomat: [`map_products.py`](map_products.py) proponuje rekordy USDA SR Legacy dla każdego wariantu produktu
+z listy (S-101), Piotr weryfikuje wynik w `mapping/mapping.csv`. Wymaga danych z `make fetch-usda` (sprawdzane sumą
+SHA-256), nie wymaga `make sr-wide`.
+
+| Plik | Zawartość |
+| --- | --- |
+| [`input/search_terms.csv`](input/search_terms.csv) | `food_id`, `name_pl`, `query_en` – angielskie zapytanie w stylu opisów USDA (np. „Beef, chuck, arm pot roast, separable lean only”), jedno na produkt podstawowy; `name_pl` musi zgadzać się z listą |
+| [`preparations.yaml`](preparations.yaml) | wariant obróbki → słowa lub frazy w opisach USDA: `include` (pasuje), `exclude` (inna obróbka), `required` (brak słowa z `include` obniża wynik) |
+| [`mapping/mapping_candidates.csv`](mapping/mapping_candidates.csv) | wynik: top-5 kandydatów na wariant – `variant_id`, `rank`, `fdc_id`, `score` (0–100), opis i kategoria USDA |
+| [`mapping/mapping.csv`](mapping/mapping.csv) | wynik: `variant_id`, `food_id`, `name_pl`, `preparation`, `fdc_id`, `status`, `usda_description`, `score` |
+| [`../docs/data/missing_in_usda.md`](../docs/data/missing_in_usda.md) | wynik: produkty bez odpowiednika (do Ciqual/Fineli) i brakujące warianty obróbki (do S-106) |
+
+**Wynik dopasowania** (0–100): podobieństwo zapytania do opisu USDA (rapidfuzz: zbiór słów, kolejność słów bez słów
+obróbki, początek opisu do pierwszego przecinka) + premia za słowo obróbki z `include` − kary za słowo z `exclude`,
+za brak obróbki (`required`), za słowa zapytania nieobecne w opisie, za markę (słowo wielkimi literami), dodatek soli
+(„with salt”) i formę handlową (`canned`, `frozen`, `sweetened`, `dehydrated`), jeśli nie ma jej w zapytaniu.
+Słowa obróbki obecne w samym zapytaniu (np. „roasted” w „Buckwheat groats, roasted”) nie są karane.
+Pomijane kategorie USDA: Baby Foods, Fast Foods, Restaurant Foods. Wagi i kary – stałe na początku skryptu.
+
+**Statusy** w `mapping.csv`:
+
+| Status | Znaczenie |
+| --- | --- |
+| `auto` | najlepszy kandydat z wynikiem ≥ 85 – do weryfikacji |
+| `brak` | żaden kandydat nie osiąga progu; `fdc_id` puste, `score` = wynik najlepszego kandydata |
+| `zweryfikowany` | sprawdzony przez Piotra; pusty `fdc_id` = potwierdzony brak odpowiednika w USDA |
+
+Weryfikacja: w `mapping.csv` popraw `fdc_id` (np. na innego kandydata z `mapping_candidates.csv` albo dowolny
+rekord SR Legacy) i ustaw status `zweryfikowany`, potem uruchom `make map-products`. Wiersze `zweryfikowany` nie są
+nadpisywane – skrypt odświeża w nich tylko opis i wynik, sprawdza, czy `fdc_id` istnieje w SR Legacy, a gdy wariant
+zmienił na liście produkt lub obróbkę, usuwa weryfikację z ostrzeżeniem. Wiersze `auto` i `brak` są liczone od nowa
+przy każdym uruchomieniu – sama zmiana `fdc_id` bez statusu `zweryfikowany` zostanie nadpisana.
+
+Test `tests/test_map_products.py` sprawdza w CI (z danymi USDA), czy pliki wynikowe w repo są aktualne.
