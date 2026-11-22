@@ -88,17 +88,22 @@ make product-list
 ```
 
 Plik [`input/product_list.csv`](input/product_list.csv) (UTF-8, w git) – produkty podstawowe, które trafią do bazy v1.
-1 wiersz = produkt podstawowy; warianty produktu (produkt + wariant obróbki) powstają z kolumny `preparations`.
+1 wiersz = wariant produktu (produkt podstawowy + wariant obróbki), np. „ziemniak, gotowany” – jak w CSV bazy
+([ADR-0001](../docs/adr/0001-food-database.md)).
 
 | Kolumna | Zawartość |
 | --- | --- |
-| `product_id` | stały identyfikator (`snake_case`, ASCII), klucz dla mapowania do `fdc_id` (S-104) |
-| `name_pl` | nazwa polska, unikalna |
+| `variant_id` | identyfikator wariantu produktu (int > 0, unikalny); na wariant wskazuje przepis od LLM (S-304) |
+| `food_id` | identyfikator produktu podstawowego (int > 0); wspólny dla wszystkich wariantów produktu |
+| `name_pl` | nazwa polska produktu podstawowego; jedna nazwa = jeden `food_id` |
+| `preparation` | wariant obróbki: `surowy`, `gotowy`, `gotowany`, `gotowany na parze`, `pieczony`, `smażony`, `duszony`, `grillowany` |
 | `category` | grupa: warzywa, owoce, zboża i kasze, nabiał, mięso, ryby i owoce morza, jaja, rośliny strączkowe, orzechy i nasiona, tłuszcze, inne. Podkategorie: S-105 |
-| `preparations` | warianty obróbki rozdzielone `\|`: `surowy`, `gotowy`, `gotowany`, `gotowany na parze`, `pieczony`, `smażony`, `duszony`, `grillowany` |
 | `polish_specific` | `true` – produkt typowy dla polskiej kuchni lub rynku, którego może brakować w USDA SR Legacy (kandydat do uzupełnienia z Ciqual/Fineli w S-104) |
 | `notes` | uwagi, np. czym różni się najbliższy odpowiednik w USDA |
 
+- Identyfikatory są stałe: nowe warianty i produkty dostają kolejne wolne numery, usuniętych numerów nie używa się
+  ponownie.
+- `name_pl`, `category` i `polish_specific` muszą być takie same we wszystkich wierszach jednego `food_id`.
 - `surowy` przy kaszach, ryżu, makaronie, mąkach i strączkach oznacza produkt suchy, przed ugotowaniem.
 - `gotowy` – produkt jedzony bez obróbki w domu (chleb, ser, jogurt, wędlina, olej, konserwa).
 - Formy przetworzone (kiszony, wędzony, suszony, konserwowy, mrożony) to osobne produkty, nie warianty obróbki –
@@ -106,5 +111,5 @@ Plik [`input/product_list.csv`](input/product_list.csv) (UTF-8, w git) – produ
 - Flagę `polish_specific` ustalono przez przeszukanie opisów SR Legacy; to wskazówka dla S-104, nie wynik mapowania.
 
 [`product_list.py`](product_list.py) waliduje plik (Pydantic): kolumny, dozwolone kategorie i warianty, unikalność
-`product_id` i `name_pl`, liczbę produktów 300–500 i obecność wszystkich grup poza „inne”. Test
-`tests/test_product_list.py` sprawdza prawdziwy plik w CI.
+`variant_id` i pary (`food_id`, `preparation`), spójność wierszy jednego produktu, liczbę produktów podstawowych
+300–500 i obecność wszystkich grup poza „inne”. Test `tests/test_product_list.py` sprawdza prawdziwy plik w CI.
