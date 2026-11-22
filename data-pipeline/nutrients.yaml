@@ -1,0 +1,216 @@
+# Składniki odżywcze bazy v1 (S-103). Wybór: decyzja Piotra z 2026-11-22 w backlog/S-103.md.
+#
+# Pola:
+#   usda_nutrient_id – id składnika w USDA FoodData Central (nutrient.csv, kolumna `id`)
+#   usda_column      – kolumna w tabeli szerokiej data/interim/sr_wide.parquet (S-102)
+#   name_pl          – nazwa dla użytkownika (bot, CLI, słownik bazy)
+#   unit             – jednostka wartości na 100 g części jadalnej: g, mg, ug (µg) albo kcal;
+#                      musi się zgadzać z jednostką USDA (bez przeliczeń)
+#   order            – kolejność prezentacji: 1..N, w kolejności wpisów w tym pliku
+#
+# Wczytanie i walidacja: data-pipeline/nutrients.py. Raport pokrycia: make nutrient-coverage.
+
+nutrients:
+  # Energia i makroskładniki
+  - usda_nutrient_id: 1008
+    usda_column: energy_kcal
+    name_pl: Energia
+    unit: kcal
+    order: 1
+  - usda_nutrient_id: 1003
+    usda_column: protein_g
+    name_pl: Białko
+    unit: g
+    order: 2
+  - usda_nutrient_id: 1004
+    usda_column: total_lipid_fat_g
+    name_pl: Tłuszcz
+    unit: g
+    order: 3
+  - usda_nutrient_id: 1005
+    usda_column: carbohydrate_by_difference_g
+    name_pl: Węglowodany ogółem
+    unit: g
+    order: 4
+  - usda_nutrient_id: 2000
+    usda_column: sugars_total_g
+    name_pl: Cukry
+    unit: g
+    order: 5
+  - usda_nutrient_id: 1079
+    usda_column: fiber_total_dietary_g
+    name_pl: Błonnik pokarmowy
+    unit: g
+    order: 6
+  - usda_nutrient_id: 1051
+    usda_column: water_g
+    name_pl: Woda
+    unit: g
+    order: 7
+
+  # Tłuszcze
+  - usda_nutrient_id: 1258
+    usda_column: fatty_acids_total_saturated_g
+    name_pl: Kwasy tłuszczowe nasycone
+    unit: g
+    order: 8
+  - usda_nutrient_id: 1292
+    usda_column: fatty_acids_total_monounsaturated_g
+    name_pl: Kwasy tłuszczowe jednonienasycone
+    unit: g
+    order: 9
+  - usda_nutrient_id: 1293
+    usda_column: fatty_acids_total_polyunsaturated_g
+    name_pl: Kwasy tłuszczowe wielonienasycone
+    unit: g
+    order: 10
+  # PUFA 18:3 – suma izomerów 18:3, w praktyce głównie ALA (omega-3); osobna kolumna ALA
+  # w SR Legacy ma pokrycie ok. 25%
+  - usda_nutrient_id: 1270
+    usda_column: pufa_18_3_g
+    name_pl: Kwas linolenowy (18:3, głównie ALA)
+    unit: g
+    order: 11
+  - usda_nutrient_id: 1278
+    usda_column: pufa_20_5_n_3_epa_g
+    name_pl: Kwas eikozapentaenowy (EPA)
+    unit: g
+    order: 12
+  - usda_nutrient_id: 1272
+    usda_column: pufa_22_6_n_3_dha_g
+    name_pl: Kwas dokozaheksaenowy (DHA)
+    unit: g
+    order: 13
+  - usda_nutrient_id: 1257
+    usda_column: fatty_acids_total_trans_g
+    name_pl: Kwasy tłuszczowe trans
+    unit: g
+    order: 14
+  - usda_nutrient_id: 1253
+    usda_column: cholesterol_mg
+    name_pl: Cholesterol
+    unit: mg
+    order: 15
+
+  # Składniki mineralne
+  - usda_nutrient_id: 1093
+    usda_column: sodium_na_mg
+    name_pl: Sód
+    unit: mg
+    order: 16
+  - usda_nutrient_id: 1092
+    usda_column: potassium_k_mg
+    name_pl: Potas
+    unit: mg
+    order: 17
+  - usda_nutrient_id: 1087
+    usda_column: calcium_ca_mg
+    name_pl: Wapń
+    unit: mg
+    order: 18
+  - usda_nutrient_id: 1090
+    usda_column: magnesium_mg_mg
+    name_pl: Magnez
+    unit: mg
+    order: 19
+  - usda_nutrient_id: 1091
+    usda_column: phosphorus_p_mg
+    name_pl: Fosfor
+    unit: mg
+    order: 20
+  - usda_nutrient_id: 1089
+    usda_column: iron_fe_mg
+    name_pl: Żelazo
+    unit: mg
+    order: 21
+  - usda_nutrient_id: 1095
+    usda_column: zinc_zn_mg
+    name_pl: Cynk
+    unit: mg
+    order: 22
+  - usda_nutrient_id: 1098
+    usda_column: copper_cu_mg
+    name_pl: Miedź
+    unit: mg
+    order: 23
+  - usda_nutrient_id: 1101
+    usda_column: manganese_mn_mg
+    name_pl: Mangan
+    unit: mg
+    order: 24
+  - usda_nutrient_id: 1103
+    usda_column: selenium_se_ug
+    name_pl: Selen
+    unit: ug
+    order: 25
+
+  # Witaminy
+  - usda_nutrient_id: 1106
+    usda_column: vitamin_a_rae_ug
+    name_pl: Witamina A (RAE)
+    unit: ug
+    order: 26
+  - usda_nutrient_id: 1114
+    usda_column: vitamin_d_d2_d3_ug
+    name_pl: Witamina D (D2 + D3)
+    unit: ug
+    order: 27
+  - usda_nutrient_id: 1109
+    usda_column: vitamin_e_alpha_tocopherol_mg
+    name_pl: Witamina E (alfa-tokoferol)
+    unit: mg
+    order: 28
+  - usda_nutrient_id: 1185
+    usda_column: vitamin_k_phylloquinone_ug
+    name_pl: Witamina K (filochinon)
+    unit: ug
+    order: 29
+  - usda_nutrient_id: 1162
+    usda_column: vitamin_c_total_ascorbic_acid_mg
+    name_pl: Witamina C
+    unit: mg
+    order: 30
+  - usda_nutrient_id: 1165
+    usda_column: thiamin_mg
+    name_pl: Tiamina (witamina B1)
+    unit: mg
+    order: 31
+  - usda_nutrient_id: 1166
+    usda_column: riboflavin_mg
+    name_pl: Ryboflawina (witamina B2)
+    unit: mg
+    order: 32
+  - usda_nutrient_id: 1167
+    usda_column: niacin_mg
+    name_pl: Niacyna (witamina B3)
+    unit: mg
+    order: 33
+  - usda_nutrient_id: 1175
+    usda_column: vitamin_b_6_mg
+    name_pl: Witamina B6
+    unit: mg
+    order: 34
+  # DFE – równoważnik folianów pokarmowych (uwzględnia przyswajalność kwasu foliowego);
+  # w tej jednostce są normy spożycia
+  - usda_nutrient_id: 1190
+    usda_column: folate_dfe_ug
+    name_pl: Foliany (DFE)
+    unit: ug
+    order: 35
+  - usda_nutrient_id: 1178
+    usda_column: vitamin_b_12_ug
+    name_pl: Witamina B12
+    unit: ug
+    order: 36
+
+  # Inne
+  - usda_nutrient_id: 1018
+    usda_column: alcohol_ethyl_g
+    name_pl: Alkohol etylowy
+    unit: g
+    order: 37
+  - usda_nutrient_id: 1057
+    usda_column: caffeine_mg
+    name_pl: Kofeina
+    unit: mg
+    order: 38

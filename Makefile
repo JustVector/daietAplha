@@ -1,4 +1,4 @@
-.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide
+.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage
 
 # Instalacja zależności (uv, wszyscy członkowie workspace) i hooków pre-commit
 install:
@@ -42,3 +42,7 @@ fetch-usda:
 # Tabela szeroka SR Legacy (1 wiersz = produkt) do data/interim/ – wymaga danych z make fetch-usda
 sr-wide:
 	uv run python data-pipeline/build_sr_wide.py
+
+# Raport pokrycia składników odżywczych (docs/data/nutrient_coverage.md) i sprawdzenie nutrients.yaml
+nutrient-coverage:
+	uv run python data-pipeline/nutrient_coverage.py

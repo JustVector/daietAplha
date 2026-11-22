@@ -60,4 +60,22 @@ Skrypt [`build_sr_wide.py`](build_sr_wide.py) sprawdza sumy SHA-256 danych w `da
 - Kolejność kolumn składników: `rank` z USDA (kolejność prezentacji w FDC).
 - Wartości na 100 g części jadalnej, wprost z `food_nutrient.amount`. Brak wartości w źródle = `null`, nigdy 0.
 - Informacja o pochodzeniu wartości (`derivation_id`) zostaje w danych surowych; flagi `measured` / `calculated`
-  dochodzą przy eksporcie bazy (S-111). Wybór składników do bazy v1: S-103.
+  dochodzą przy eksporcie bazy (S-111). Wybór składników do bazy v1: S-103 (niżej).
+
+## Składniki odżywcze bazy v1 (S-103)
+
+```
+make nutrient-coverage
+```
+
+| Plik | Zawartość |
+| --- | --- |
+| [`nutrients.yaml`](nutrients.yaml) | składniki bazy v1 (38): `usda_nutrient_id`, `usda_column` (kolumna tabeli szerokiej), `name_pl`, `unit` (`g`, `mg`, `ug`, `kcal`), `order` |
+| [`nutrients.py`](nutrients.py) | wczytanie i walidacja `nutrients.yaml` (Pydantic) oraz sprawdzenie zgodności ze słownikiem tabeli szerokiej |
+| [`nutrient_coverage.py`](nutrient_coverage.py) | raport pokrycia [`docs/data/nutrient_coverage.md`](../docs/data/nutrient_coverage.md) (w git) |
+
+- Jednostki jak w USDA, bez przeliczeń. Pominięte warianty w IU (witaminy A i D) oraz energia w kJ.
+- Skrypt buduje tabelę szeroką w pamięci z `data/raw/` (wymaga `make fetch-usda`, nie wymaga `make sr-wide`)
+  i przerywa pracę, gdy `nutrients.yaml` nie zgadza się z danymi USDA (id, kolumna, jednostka).
+- Po zmianie `nutrients.yaml` wygeneruj raport ponownie – test na prawdziwych danych sprawdza, czy raport w repo
+  jest aktualny.

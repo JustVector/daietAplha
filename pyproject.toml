@@ -16,6 +16,7 @@ dev = [
     "httpx>=0.28",
     "pytest>=8.4",
     "ruff>=0.14",
+    "types-pyyaml>=6.0.12.20261122",
 ]
 
 [tool.uv]
@@ -39,7 +40,7 @@ line-length = 100
 select = ["E", "W", "F", "I", "N", "UP", "B", "SIM"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["daiet_backend", "fetch_usda", "build_sr_wide"]
+known-first-party = ["daiet_backend", "fetch_usda", "build_sr_wide", "nutrients", "nutrient_coverage"]
 
 [tool.mypy]
 python_version = "3.13"
