@@ -1,4 +1,4 @@
-.PHONY: install up down test lint format
+.PHONY: install up down test lint format fetch-usda
 
 # Instalacja zależności (uv) i hooków pre-commit
 install:
@@ -23,3 +23,7 @@ lint:
 format:
 	uv run ruff format .
 	uv run ruff check --fix .
+
+# Surowe dane USDA SR Legacy do data/raw/usda_sr_legacy/ (lokalna kopia z USDA_SOURCE_DIR albo pobranie)
+fetch-usda:
+	uv run python data-pipeline/fetch_usda.py
