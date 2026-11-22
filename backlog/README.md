@@ -30,7 +30,7 @@ Statusy: todo → ready (zależności zamknięte, decyzje wypełnione) → in-pr
 | [S-005](S-005.md) | Szablony story i ADR | CC | S-001 | done |
 | [S-006](S-006.md) | Surowe dane USDA w repo (poza git) | CC | S-001 | done |
 | [S-007](S-007.md) | Szkielet backendu FastAPI w Dockerze | CC | S-003 | done |
-| [S-008](S-008.md) | Ochrona brancha main | CC+P | S-004 | todo |
+| [S-008](S-008.md) | Ochrona brancha main | CC+P | S-004 | done |
 
 ## E1 – Baza żywności v1 (M1)
 

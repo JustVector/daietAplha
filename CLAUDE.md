@@ -48,7 +48,8 @@ Diagram: `DietAi.drawio`.
 - pre-commit uruchamia się przy każdym commicie (ruff, mypy, podstawowe hooki). Nie omijaj go `--no-verify`.
 - CI (GitHub Actions, `.github/workflows/ci.yml`) uruchamia na każdym PR to samo: `make lint`, `make test`
   (z PostgreSQL i `REQUIRE_DB=1`), hooki pre-commit i budowanie obrazu backendu.
-  PR scalamy tylko z zielonym CI.
+  PR scalamy tylko z zielonym CI – wymusza to ruleset na `main` (push prosto na `main` jest odrzucany);
+  opis i zmiana reguł: `docs/repo-settings.md`. Nie zmieniaj nazwy joba CI bez aktualizacji rulesetu.
 
 ## Konwencje kodu
 
