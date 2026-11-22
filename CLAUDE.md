@@ -53,6 +53,9 @@ Diagram: `DietAi.drawio`.
 - CI (GitHub Actions, `.github/workflows/ci.yml`) uruchamia na każdym PR to samo: `make lint`, `make test`
   (z PostgreSQL, danymi USDA, `REQUIRE_DB=1` i `REQUIRE_USDA=1`), hooki pre-commit i budowanie obrazu backendu.
   PR scalamy tylko z zielonym CI.
+  (z PostgreSQL i `REQUIRE_DB=1`), hooki pre-commit i budowanie obrazu backendu.
+  PR scalamy tylko z zielonym CI – wymusza to ruleset na `main` (push prosto na `main` jest odrzucany);
+  opis i zmiana reguł: `docs/repo-settings.md`. Nie zmieniaj nazwy joba CI bez aktualizacji rulesetu.
 
 ## Konwencje kodu
 
