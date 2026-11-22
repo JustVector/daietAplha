@@ -45,19 +45,32 @@ jobs:
           enable-cache: true
           cache-dependency-glob: uv.lock
 
-      # --locked: błąd, jeśli uv.lock nie zgadza się z pyproject.toml
+      # --locked: błąd, jeśli uv.lock nie zgadza się z pyproject.toml;
+      # --all-packages: także zależności data-pipeline (nie jest pakietem, S-102)
       - name: Instalacja zależności
-        run: uv sync --locked
+        run: uv sync --locked --all-packages
+
+      # Surowe dane USDA do testu tabeli szerokiej (S-102); klucz cache = manifest sum SHA-256
+      - name: Cache danych USDA
+        uses: actions/cache@v6
+        with:
+          path: data/raw/usda_sr_legacy
+          key: usda-sr-legacy-${{ hashFiles('data-pipeline/checksums/usda_sr_legacy.sha256') }}
+
+      # Bez cache pobiera archiwum z USDA; z cache tylko sprawdza sumy
+      - name: Dane USDA
+        run: make fetch-usda
 
       - name: Lint (ruff, mypy)
         run: make lint
 
-      # REQUIRE_DB=1: test z prawdziwą bazą nie może zostać pominięty
+      # REQUIRE_DB=1 / REQUIRE_USDA=1: testy z prawdziwą bazą i danymi USDA nie mogą zostać pominięte
       - name: Testy
         run: make test
         env:
           DATABASE_URL: postgresql+psycopg://daiet:daiet@localhost:5432/daiet
           REQUIRE_DB: "1"
+          REQUIRE_USDA: "1"
 
       - name: Budowanie obrazu backendu
         run: docker build -f backend/Dockerfile -t daiet-backend:ci .

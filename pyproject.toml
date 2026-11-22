@@ -19,11 +19,12 @@ dev = [
 ]
 
 [tool.uv]
-# Katalog główny nie jest pakietem – to workspace: backend/ (S-007), data-pipeline dojdzie w S-102
+# Katalog główny nie jest pakietem – to workspace: backend/ (S-007) i data-pipeline/ (S-102).
+# data-pipeline nie jest pakietem, więc jego zależności instaluje `uv sync --all-packages`
 package = false
 
 [tool.uv.workspace]
-members = ["backend"]
+members = ["backend", "data-pipeline"]
 
 [tool.uv.sources]
 daiet-backend = { workspace = true }
@@ -38,7 +39,7 @@ line-length = 100
 select = ["E", "W", "F", "I", "N", "UP", "B", "SIM"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["daiet_backend", "fetch_usda"]
+known-first-party = ["daiet_backend", "fetch_usda", "build_sr_wide"]
 
 [tool.mypy]
 python_version = "3.13"

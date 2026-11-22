@@ -15,6 +15,8 @@ backlog/
 docs/
 web/
 data-pipeline/
+# Workspace uv wymaga pyproject.toml każdego członka (uv sync --locked)
+!data-pipeline/pyproject.toml
 tests/
 backend/tests/
 *.drawio

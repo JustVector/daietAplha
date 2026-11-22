@@ -17,6 +17,8 @@ WORKDIR /app
 # Najpierw same zależności (warstwa cache'owana, dopóki nie zmieni się uv.lock)
 COPY pyproject.toml uv.lock README.md ./
 COPY backend/pyproject.toml backend/README.md backend/
+# Pyproject drugiego członka workspace – bez niego uv nie zweryfikuje uv.lock (kod pipeline'u nie trafia do obrazu)
+COPY data-pipeline/pyproject.toml data-pipeline/
 RUN uv sync --locked --no-dev --package daiet-backend --no-install-workspace
 
 # Potem kod backendu

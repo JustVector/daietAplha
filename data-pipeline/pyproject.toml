@@ -1,0 +1,14 @@
+[project]
+name = "daiet-data-pipeline"
+version = "0.1.0"
+description = "Przygotowanie bazy żywności dAIet (USDA SR Legacy → tabela szeroka → baza v1)"
+readme = "README.md"
+license = "AGPL-3.0-only"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "polars>=2.1",
+]
+
+[tool.uv]
+# Zbiór skryptów, nie pakiet – moduły importowane z katalogu (pythonpath w pytest, mypy_path)
+package = false

@@ -1,6 +1,8 @@
 # --- Dane ---
 # Surowe dane źródłowe (np. USDA SR Legacy) odtwarza skrypt – patrz S-006
 data/raw/
+# Dane pośrednie pipeline'u (np. tabela szeroka SR Legacy) odtwarza skrypt – patrz S-102
+data/interim/
 
 # --- Sekrety ---
 .env
