@@ -4,21 +4,29 @@ version = "0.0.0"
 description = "Planer posiłków oparty na bazie żywności i silniku więzów"
 readme = "README.md"
 license = "AGPL-3.0-only"
-# Gałąź 3.13 przypięta też w .python-version, obrazie Dockera (S-007) i CI (S-004)
+# Gałąź 3.13 przypięta też w .python-version, obrazie Dockera (backend/Dockerfile) i CI
 requires-python = ">=3.13,<3.14"
-dependencies = []
+# Pakiety workspace, żeby testy i mypy widziały kod backendu
+dependencies = ["daiet-backend"]
 
 [dependency-groups]
 dev = [
     "mypy>=1.18",
     "pre-commit>=4.3",
+    "httpx>=0.28",
     "pytest>=8.4",
     "ruff>=0.14",
 ]
 
 [tool.uv]
-# Na razie repo nie jest pakietem; backend i data-pipeline dojdą w S-007 i S-102
+# Katalog główny nie jest pakietem – to workspace: backend/ (S-007), data-pipeline dojdzie w S-102
 package = false
+
+[tool.uv.workspace]
+members = ["backend"]
+
+[tool.uv.sources]
+daiet-backend = { workspace = true }
 
 [tool.ruff]
 target-version = "py313"
@@ -29,12 +37,15 @@ line-length = 100
 # UP – nowoczesna składnia, B – bugbear, SIM – uproszczenia
 select = ["E", "W", "F", "I", "N", "UP", "B", "SIM"]
 
+[tool.ruff.lint.isort]
+known-first-party = ["daiet_backend", "fetch_usda"]
+
 [tool.mypy]
 python_version = "3.13"
 strict = true
 # data-pipeline ma myślnik w nazwie – moduły importujemy z tego katalogu bezpośrednio
-mypy_path = "data-pipeline"
+mypy_path = ["data-pipeline", "backend/src"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "backend/tests"]
 pythonpath = ["data-pipeline"]

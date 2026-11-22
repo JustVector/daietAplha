@@ -1,4 +1,4 @@
-# Lokalne środowisko dAIet. Backend dochodzi w S-007, bot Discord w S-405.
+# Lokalne środowisko dAIet: baza i backend (S-007); bot Discord dojdzie w S-405.
 # Wartości z .env (wzór: .env.example); domyślne pozwalają wystartować bez .env.
 services:
   db:
@@ -17,6 +17,20 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      # W sieci compose baza jest pod nazwą hosta "db" (nie localhost)
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-daiet}:${POSTGRES_PASSWORD:-daiet}@db:5432/${POSTGRES_DB:-daiet}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
 
 volumes:
   db-data:

@@ -14,7 +14,7 @@ przelicza je i weryfikuje na danych z bazy żywności. Wynik: plan na N dni i li
 
 | Katalog | Zawartość |
 | --- | --- |
-| `backend/` | REST API |
+| `backend/` | REST API – pakiet `daiet-backend` (`src/daiet_backend/`), migracje Alembic, Dockerfile |
 | `data-pipeline/` | import, mapowanie, walidacja i eksport bazy żywności |
 | `data/raw/` | surowe dane źródłowe, poza git |
 | `docs/` | ADR, słownik pojęć, licencje danych, specyfikacje |
@@ -27,22 +27,27 @@ Diagram: `DietAi.drawio`.
 
 - Python **3.13** (gałąź 3.13, nie konkretna łatka). Sprawdzenie: `python --version`.
   Ta sama gałąź w czterech miejscach: `.python-version`, `requires-python` w `pyproject.toml`,
-  obraz Dockera `python:3.13-slim-trixie` (S-007) i CI `python-version: "3.13"` (S-004).
-- Zależności: **uv** (`pyproject.toml` + `uv.lock`). Nowa zależność: `uv add <pakiet>` (dev: `uv add --dev`).
+  obraz Dockera `python:3.13-slim-trixie` (`backend/Dockerfile`) i CI `python-version: "3.13"`.
+- Zależności: **uv**, workspace z jednym `uv.lock`; członkowie: `backend/` (pakiet `daiet-backend`).
+  Zależność backendu: `uv add --package daiet-backend <pakiet>`; narzędzia dev: `uv add --dev <pakiet>`.
   Komendy Pythona uruchamiaj przez `uv run`.
 - Wymagane narzędzia: uv, make, Docker z Docker Compose.
 
 | Komenda | Działanie |
 | --- | --- |
 | `make install` | `uv sync` i instalacja hooków pre-commit |
-| `make up` / `make down` | start / stop PostgreSQL (od S-007 także backendu) w docker compose |
-| `make test` | testy (pytest) |
+| `make up` / `make down` | start (z budowaniem obrazu) / stop bazy i backendu w docker compose |
+| `make logs` / `make migrate` | logi backendu / migracje Alembic w kontenerze |
+| `make run` | backend lokalnie z przeładowaniem kodu – http://localhost:8000/docs |
+| `make test` | testy (pytest); test z bazą wymaga `make up` i `DATABASE_URL`, inaczej jest pomijany |
 | `make lint` | ruff check, ruff format --check, mypy (strict) |
 | `make format` | formatowanie i automatyczne poprawki ruff |
+| `make fetch-usda` | surowe dane USDA do `data/raw/` z weryfikacją SHA-256 |
 
 - Konfiguracja tylko z `.env`; wzór zmiennych w `.env.example`.
 - pre-commit uruchamia się przy każdym commicie (ruff, mypy, podstawowe hooki). Nie omijaj go `--no-verify`.
-- CI (GitHub Actions, `.github/workflows/ci.yml`) uruchamia na każdym PR to samo: `make lint`, `make test` i hooki pre-commit.
+- CI (GitHub Actions, `.github/workflows/ci.yml`) uruchamia na każdym PR to samo: `make lint`, `make test`
+  (z PostgreSQL i `REQUIRE_DB=1`), hooki pre-commit i budowanie obrazu backendu.
   PR scalamy tylko z zielonym CI.
 
 ## Konwencje kodu
@@ -51,6 +56,9 @@ Diagram: `DietAi.drawio`.
   `PascalCase` dla klas, `UPPER_CASE` dla stałych.
 - **Po polsku**: komentarze, docstringi, `--help` w CLI, komunikaty dla użytkownika (bot, CLI).
 - Typowanie wszędzie (mypy); modele danych w Pydantic.
+- Backend: endpointy jako routery w `daiet_backend/api/`; błędy przez wyjątki FastAPI, nie własne odpowiedzi –
+  format `{"detail", "error"}` nadaje `errors.py`. Logi przez `logging.getLogger(__name__)`, nie `print`.
+- Zmiana schematu bazy = migracja Alembic w `backend/migrations/` w tym samym PR.
 
 ## Konwencje bazy danych
 

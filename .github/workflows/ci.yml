@@ -19,6 +19,19 @@ jobs:
     name: lint i testy
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # PostgreSQL dla testu integracyjnego /health (S-007) – ta sama wersja co w docker-compose.yml
+    services:
+      db:
+        image: postgres:18
+        env:
+          POSTGRES_USER: daiet
+          POSTGRES_PASSWORD: daiet
+          POSTGRES_DB: daiet
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U daiet -d daiet"
+          --health-interval 5s --health-timeout 5s --health-retries 10
     steps:
       - uses: actions/checkout@v7
 
@@ -39,8 +52,15 @@ jobs:
       - name: Lint (ruff, mypy)
         run: make lint
 
+      # REQUIRE_DB=1: test z prawdziwą bazą nie może zostać pominięty
       - name: Testy
         run: make test
+        env:
+          DATABASE_URL: postgresql+psycopg://daiet:daiet@localhost:5432/daiet
+          REQUIRE_DB: "1"
+
+      - name: Budowanie obrazu backendu
+        run: docker build -f backend/Dockerfile -t daiet-backend:ci .
 
       # Podstawowe hooki pre-commit na całym repo; ruff i mypy już sprawdził make lint
       - name: Hooki pre-commit

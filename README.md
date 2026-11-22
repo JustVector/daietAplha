@@ -38,11 +38,11 @@ git clone https://github.com/JustVector/daietAplha.git
 cd daietAplha
 cp .env.example .env    # uzupełnij wartości
 make install            # zależności (uv) i hooki pre-commit
-make up                 # PostgreSQL (+ backend od S-007)
+make up                 # PostgreSQL + backend (http://localhost:8000/docs)
 make test
 ```
 
-Pozostałe komendy: `make lint`, `make format`, `make down`.
+Pozostałe komendy: `make lint`, `make format`, `make down`, `make logs`, `make run` – opis w [`CLAUDE.md`](CLAUDE.md).
 
 ## Licencja
 

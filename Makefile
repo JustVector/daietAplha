@@ -1,16 +1,27 @@
-.PHONY: install up down test lint format fetch-usda
+.PHONY: install up down logs migrate run test lint format fetch-usda
 
 # Instalacja zależności (uv) i hooków pre-commit
 install:
 	uv sync
 	uv run pre-commit install
 
-# Start PostgreSQL (od S-007 także backendu); czeka, aż serwisy będą zdrowe
+# Start bazy i backendu (obraz budowany z bieżącego kodu); czeka, aż serwisy będą zdrowe
 up:
-	docker compose up -d --wait
+	docker compose up -d --build --wait
 
 down:
 	docker compose down
+
+logs:
+	docker compose logs -f backend
+
+# Migracje bazy (Alembic) w kontenerze backendu; backend robi je też sam przy starcie
+migrate:
+	docker compose exec backend alembic upgrade head
+
+# Backend lokalnie, poza Dockerem, z przeładowaniem kodu (baza z make up, DATABASE_URL z .env)
+run:
+	uv run --directory backend uvicorn daiet_backend.main:app --reload --env-file ../.env
 
 test:
 	uv run pytest
