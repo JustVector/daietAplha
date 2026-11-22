@@ -17,6 +17,7 @@ rozmowach z Claude Code. Nowe pojęcie dopisz tutaj w tym samym PR, w którym si
 | **współczynnik wydajności** (yield factor) | Zmiana masy produktu przy obróbce, np. utrata wody (S-106). |
 | **IG** – indeks glikemiczny (GI) | Jak szybko produkt podnosi glukozę we krwi względem glukozy; brak danych = `null` (S-107). |
 | **ŁG** – ładunek glikemiczny (GL) | IG × węglowodany przyswajalne w porcji / 100; liczony w kodzie (S-302). |
+| **pokrycie składnika** (nutrient coverage) | Odsetek produktów, które mają wartość składnika odżywczego (`null` = brak, zero ze źródła to wartość). Raport: `docs/data/nutrient_coverage.md` (S-103). |
 | **tabela szeroka** (wide table) | Układ danych: 1 wiersz = produkt, 1 kolumna = składnik odżywczy (przeciwieństwo układu wąskiego USDA: 1 wiersz = produkt + składnik). Pośrednia `sr_wide.parquet` (S-102), docelowo CSV bazy (ADR-0001). |
 | **`fdc_id`** | Identyfikator produktu w USDA FoodData Central. |
 | **mini-baza** | Baza startowa 30–50 produktów (`foods_v0.1`) w formacie v1 (S-113). |
