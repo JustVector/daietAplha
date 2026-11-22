@@ -1,0 +1,1039 @@
+variant_id,food_id,name_pl,preparation,measure,size,form,grams,flag,fdc_id,usda_modifier,usda_amount,usda_gram_weight,calculation
+1,1,ziemniak,surowy,szklanka,,w kostkę,158.5,calculated,170026,"cup, diced",0.5,75,gęstość 0.634 g/ml z USDA: 0.5 cup (118.294 ml) = 75 g; × 250 ml
+1,1,ziemniak,surowy,sztuka,mały,,170,measured,170026,"Potato small (1-3/4"" to 2-1/2"" dia)",1,170,
+1,1,ziemniak,surowy,sztuka,średni,,213,measured,170026,"Potato medium (2-1/4"" to 3-1/4"" dia)",1,213,
+1,1,ziemniak,surowy,sztuka,duży,,369,measured,170026,"Potato large (3"" to 4-1/4"" dia)",1,369,
+2,1,ziemniak,gotowany,ml,,,0.659,calculated,170440,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g
+2,1,ziemniak,gotowany,szklanka,,,164.84,calculated,170440,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+2,1,ziemniak,gotowany,sztuka,mały,,125,measured,170440,"small (1-3/4"" to 2-1/2"" dia.)",1,125,
+2,1,ziemniak,gotowany,sztuka,średni,,167,measured,170440,"medium (2-1/4"" to 3-1/4"" dia.)",1,167,
+2,1,ziemniak,gotowany,sztuka,duży,,300,measured,170440,"large (3"" to 4-1/4"" dia.)",1,300,
+3,1,ziemniak,gotowany na parze,ml,,,0.659,calculated,170440,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g
+3,1,ziemniak,gotowany na parze,szklanka,,,164.84,calculated,170440,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+3,1,ziemniak,gotowany na parze,sztuka,mały,,125,measured,170440,"small (1-3/4"" to 2-1/2"" dia.)",1,125,
+3,1,ziemniak,gotowany na parze,sztuka,średni,,167,measured,170440,"medium (2-1/4"" to 3-1/4"" dia.)",1,167,
+3,1,ziemniak,gotowany na parze,sztuka,duży,,300,measured,170440,"large (3"" to 4-1/4"" dia.)",1,300,
+4,1,ziemniak,pieczony,sztuka,mały,,138,measured,170093,potato small,1,138,
+4,1,ziemniak,pieczony,sztuka,średni,,173,measured,170093,potato medium,1,173,
+4,1,ziemniak,pieczony,sztuka,duży,,299,measured,170093,potato large,1,299,
+6,2,batat,surowy,szklanka,,posiekane,36.98,calculated,169303,"cup, chopped",1,35,gęstość 0.148 g/ml z USDA: 1 cup (236.588 ml) = 35 g; × 250 ml
+6,2,batat,surowy,liść,,,16,measured,169303,"leaf (12-1/4"" long)",1,16,
+7,2,batat,gotowany,szklanka,,puree,346.59,calculated,168484,"cup, mashed",1,328,gęstość 1.386 g/ml z USDA: 1 cup (236.588 ml) = 328 g; × 250 ml
+7,2,batat,gotowany,sztuka,średni,,151,measured,168484,medium,1,151,
+8,2,batat,pieczony,ml,,,0.845,calculated,168483,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g
+8,2,batat,pieczony,szklanka,,,211.34,calculated,168483,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g; × 250 ml
+8,2,batat,pieczony,sztuka,mały,,60,measured,168483,small,1,60,
+8,2,batat,pieczony,sztuka,średni,,114,measured,168483,"medium (2"" dia, 5"" long, raw)",1,114,
+8,2,batat,pieczony,sztuka,duży,,180,measured,168483,large,1,180,
+9,3,marchew,surowy,szklanka,,posiekane,135.26,calculated,170393,cup chopped,1,128,gęstość 0.541 g/ml z USDA: 1 cup (236.588 ml) = 128 g; × 250 ml
+9,3,marchew,surowy,szklanka,,starte,116.24,calculated,170393,cup grated,1,110,gęstość 0.465 g/ml z USDA: 1 cup (236.588 ml) = 110 g; × 250 ml
+9,3,marchew,surowy,szklanka,,w paskach,128.92,calculated,170393,cup strips or slices,1,122,gęstość 0.516 g/ml z USDA: 1 cup (236.588 ml) = 122 g; × 250 ml
+9,3,marchew,surowy,pasek,średni,,4,measured,170393,strip medium,1,4,
+9,3,marchew,surowy,pasek,duży,,7,measured,170393,"strip large (3"" long)",1,7,
+9,3,marchew,surowy,plaster,,,3,measured,170393,slice,1,3,
+9,3,marchew,surowy,sztuka,mały,,50,measured,170393,"small (5-1/2"" long)",1,50,
+9,3,marchew,surowy,sztuka,średni,,61,measured,170393,medium,1,61,
+9,3,marchew,surowy,sztuka,duży,,72,measured,170393,"large (7-1/4"" to 8-/1/2"" long)",1,72,
+10,3,marchew,gotowany,ml,,,0.656,calculated,170394,tbsp,1,9.7,gęstość 0.656 g/ml z USDA: 1 tbsp (14.787 ml) = 9.7 g
+10,3,marchew,gotowany,łyżka,,,9.7,measured,170394,tbsp,1,9.7,
+10,3,marchew,gotowany,szklanka,,,164,calculated,170394,tbsp,1,9.7,gęstość 0.656 g/ml z USDA: 1 tbsp (14.787 ml) = 9.7 g; × 250 ml
+10,3,marchew,gotowany,szklanka,,w plastrach,164.84,calculated,170394,cup slices,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+10,3,marchew,gotowany,sztuka,,,46,measured,170394,carrot,1,46,
+11,3,marchew,gotowany na parze,ml,,,0.656,calculated,170394,tbsp,1,9.7,gęstość 0.656 g/ml z USDA: 1 tbsp (14.787 ml) = 9.7 g
+11,3,marchew,gotowany na parze,łyżka,,,9.7,measured,170394,tbsp,1,9.7,
+11,3,marchew,gotowany na parze,szklanka,,,164,calculated,170394,tbsp,1,9.7,gęstość 0.656 g/ml z USDA: 1 tbsp (14.787 ml) = 9.7 g; × 250 ml
+11,3,marchew,gotowany na parze,szklanka,,w plastrach,164.84,calculated,170394,cup slices,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+11,3,marchew,gotowany na parze,sztuka,,,46,measured,170394,carrot,1,46,
+14,4,burak ćwikłowy,surowy,ml,,,0.575,calculated,169145,cup,1,136,gęstość 0.575 g/ml z USDA: 1 cup (236.588 ml) = 136 g
+14,4,burak ćwikłowy,surowy,szklanka,,,143.71,calculated,169145,cup,1,136,gęstość 0.575 g/ml z USDA: 1 cup (236.588 ml) = 136 g; × 250 ml
+14,4,burak ćwikłowy,surowy,sztuka,,,82,measured,169145,"beet (2"" dia)",1,82,
+15,4,burak ćwikłowy,gotowany,szklanka,,w plastrach,179.64,calculated,169146,cup slices,0.5,85,gęstość 0.719 g/ml z USDA: 0.5 cup (118.294 ml) = 85 g; × 250 ml
+15,4,burak ćwikłowy,gotowany,sztuka,,,50,measured,169146,"beets (2"" dia, sphere)",2,100,
+19,6,seler korzeniowy,surowy,ml,,,0.659,calculated,170400,cup,1,156,gęstość 0.659 g/ml z USDA: 1 cup (236.588 ml) = 156 g
+19,6,seler korzeniowy,surowy,szklanka,,,164.84,calculated,170400,cup,1,156,gęstość 0.659 g/ml z USDA: 1 cup (236.588 ml) = 156 g; × 250 ml
+20,6,seler korzeniowy,gotowany,szklanka,,w kawałkach,163.79,calculated,169987,cup pieces,1,155,gęstość 0.655 g/ml z USDA: 1 cup (236.588 ml) = 155 g; × 250 ml
+22,7,seler naciowy,surowy,ml,,,0.507,calculated,169988,tbsp,1,7.5,gęstość 0.507 g/ml z USDA: 1 tbsp (14.787 ml) = 7.5 g
+22,7,seler naciowy,surowy,łyżka,,,7.5,measured,169988,tbsp,1,7.5,
+22,7,seler naciowy,surowy,szklanka,,,126.8,calculated,169988,tbsp,1,7.5,gęstość 0.507 g/ml z USDA: 1 tbsp (14.787 ml) = 7.5 g; × 250 ml
+22,7,seler naciowy,surowy,szklanka,,posiekane,106.73,calculated,169988,cup chopped,1,101,gęstość 0.427 g/ml z USDA: 1 cup (236.588 ml) = 101 g; × 250 ml
+22,7,seler naciowy,surowy,pasek,,,4,measured,169988,"strip (4"" long)",1,4,
+22,7,seler naciowy,surowy,łodyga,mały,,17,measured,169988,"stalk, small (5"" long)",1,17,
+22,7,seler naciowy,surowy,łodyga,średni,,40,measured,169988,"stalk, medium (7-1/2"" - 8"" long)",1,40,
+22,7,seler naciowy,surowy,łodyga,duży,,64,measured,169988,"stalk, large (11""-12"" long)",1,64,
+23,7,seler naciowy,gotowany,szklanka,,w kostkę,158.5,calculated,169989,"cup, diced",1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g; × 250 ml
+23,7,seler naciowy,gotowany,łodyga,,,37.5,measured,169989,stalks,2,75,
+24,8,pasternak,surowy,szklanka,,w plastrach,140.54,calculated,170417,cup slices,1,133,gęstość 0.562 g/ml z USDA: 1 cup (236.588 ml) = 133 g; × 250 ml
+25,8,pasternak,gotowany,szklanka,,w plastrach,164.84,calculated,170009,cup slices,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+25,8,pasternak,gotowany,sztuka,,,160,measured,170009,"parsnip (9"" long)",1,160,
+27,9,por,surowy,ml,,,0.376,calculated,169246,cup,1,89,gęstość 0.376 g/ml z USDA: 1 cup (236.588 ml) = 89 g
+27,9,por,surowy,szklanka,,,94.05,calculated,169246,cup,1,89,gęstość 0.376 g/ml z USDA: 1 cup (236.588 ml) = 89 g; × 250 ml
+27,9,por,surowy,plaster,,,6,measured,169246,slice,1,6,
+27,9,por,surowy,sztuka,,,89,measured,169246,leek,1,89,
+28,9,por,gotowany,szklanka,,posiekane,109.9,calculated,168426,"cup, chopped or diced",0.25,26,gęstość 0.44 g/ml z USDA: 0.25 cup (59.147 ml) = 26 g; × 250 ml
+28,9,por,gotowany,sztuka,,,124,measured,168426,leek,1,124,
+30,10,cebula,surowy,łyżka,,posiekane,10,measured,170000,tbsp chopped,1,10,
+30,10,cebula,surowy,szklanka,,posiekane,169.07,calculated,170000,"cup, chopped",1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g; × 250 ml
+30,10,cebula,surowy,szklanka,,w plastrach,121.52,calculated,170000,"cup, sliced",1,115,gęstość 0.486 g/ml z USDA: 1 cup (236.588 ml) = 115 g; × 250 ml
+30,10,cebula,surowy,krążek,,,6,measured,170000,rings,10,60,
+30,10,cebula,surowy,plaster,,cienki,9,measured,170000,"slice, thin",1,9,
+30,10,cebula,surowy,plaster,średni,,14,measured,170000,"slice, medium (1/8"" thick)",1,14,
+30,10,cebula,surowy,plaster,duży,,38,measured,170000,"slice, large (1/4"" thick)",1,38,
+30,10,cebula,surowy,sztuka,mały,,70,measured,170000,small,1,70,
+30,10,cebula,surowy,sztuka,średni,,110,measured,170000,"medium (2-1/2"" dia)",1,110,
+30,10,cebula,surowy,sztuka,duży,,150,measured,170000,large,1,150,
+31,10,cebula,smażony,szklanka,,posiekane,91.93,calculated,170004,cup chopped,1,87,gęstość 0.368 g/ml z USDA: 1 cup (236.588 ml) = 87 g; × 250 ml
+35,12,cebula dymka,surowy,łyżka,,posiekane,6,measured,170005,tbsp chopped,1,6,
+35,12,cebula dymka,surowy,szklanka,,posiekane,105.67,calculated,170005,"cup, chopped",1,100,gęstość 0.423 g/ml z USDA: 1 cup (236.588 ml) = 100 g; × 250 ml
+35,12,cebula dymka,surowy,sztuka,mały,,5,measured,170005,"small (3"" long)",1,5,
+35,12,cebula dymka,surowy,sztuka,średni,,15,measured,170005,"medium (4-1/8"" long)",1,15,
+35,12,cebula dymka,surowy,sztuka,duży,,25,measured,170005,large,1,25,
+36,13,szalotka,surowy,łyżka,,posiekane,10,measured,170499,tbsp chopped,1,10,
+36,13,szalotka,surowy,szklanka,,posiekane,169.07,calculated,170499,tbsp chopped,1,10,gęstość 0.676 g/ml z USDA: 1 tbsp (14.787 ml) = 10 g; × 250 ml
+37,14,czosnek,surowy,ml,,,0.575,calculated,169230,cup,1,136,gęstość 0.575 g/ml z USDA: 1 cup (236.588 ml) = 136 g
+37,14,czosnek,surowy,łyżeczka,,,2.8,measured,169230,tsp,1,2.8,
+37,14,czosnek,surowy,szklanka,,,143.71,calculated,169230,cup,1,136,gęstość 0.575 g/ml z USDA: 1 cup (236.588 ml) = 136 g; × 250 ml
+37,14,czosnek,surowy,ząbek,,,3,measured,169230,clove,1,3,
+39,15,szczypiorek,surowy,łyżeczka,,posiekane,1,measured,169994,tsp chopped,1,1,
+39,15,szczypiorek,surowy,łyżka,,posiekane,3,measured,169994,tbsp chopped,1,3,
+39,15,szczypiorek,surowy,szklanka,,posiekane,50.72,calculated,169994,tbsp chopped,1,3,gęstość 0.203 g/ml z USDA: 1 tbsp (14.787 ml) = 3 g; × 250 ml
+40,16,koperek,surowy,szklanka,,gałązki,9.4,calculated,172233,cup sprigs,1,8.9,gęstość 0.038 g/ml z USDA: 1 cup (236.588 ml) = 8.9 g; × 250 ml
+40,16,koperek,surowy,gałązka,,,0.2,measured,172233,sprigs,5,1,
+41,17,natka pietruszki,surowy,ml,,,0.257,calculated,170416,tbsp,1,3.8,gęstość 0.257 g/ml z USDA: 1 tbsp (14.787 ml) = 3.8 g
+41,17,natka pietruszki,surowy,łyżka,,,3.8,measured,170416,tbsp,1,3.8,
+41,17,natka pietruszki,surowy,szklanka,,,64.25,calculated,170416,tbsp,1,3.8,gęstość 0.257 g/ml z USDA: 1 tbsp (14.787 ml) = 3.8 g; × 250 ml
+41,17,natka pietruszki,surowy,szklanka,,posiekane,63.4,calculated,170416,cup chopped,1,60,gęstość 0.254 g/ml z USDA: 1 cup (236.588 ml) = 60 g; × 250 ml
+41,17,natka pietruszki,surowy,gałązka,,,1,measured,170416,sprigs,10,10,
+42,18,kapusta biała,surowy,szklanka,,posiekane,94.05,calculated,169975,"cup, chopped",1,89,gęstość 0.376 g/ml z USDA: 1 cup (236.588 ml) = 89 g; × 250 ml
+42,18,kapusta biała,surowy,szklanka,,starte,73.97,calculated,169975,"cup, shredded",1,70,gęstość 0.296 g/ml z USDA: 1 cup (236.588 ml) = 70 g; × 250 ml
+42,18,kapusta biała,surowy,główka,mały,,714,measured,169975,"head, small (about 4-1/2"" dia)",1,714,
+42,18,kapusta biała,surowy,główka,średni,,908,measured,169975,"head, medium (about 5-3/4"" dia)",1,908,
+42,18,kapusta biała,surowy,główka,duży,,1248,measured,169975,"head, large (about 7"" dia)",1,1248,
+42,18,kapusta biała,surowy,liść,,,15,measured,169975,leaf,1,15,
+42,18,kapusta biała,surowy,liść,średni,,23,measured,169975,"leaf, medium",1,23,
+42,18,kapusta biała,surowy,liść,duży,,33,measured,169975,"leaf, large",1,33,
+43,18,kapusta biała,gotowany,szklanka,,starte,158.5,calculated,169976,"cup, shredded",0.5,75,gęstość 0.634 g/ml z USDA: 0.5 cup (118.294 ml) = 75 g; × 250 ml
+43,18,kapusta biała,gotowany,główka,,,1262,measured,169976,head,1,1262,
+45,19,kapusta czerwona,surowy,szklanka,,posiekane,94.05,calculated,169977,"cup, chopped",1,89,gęstość 0.376 g/ml z USDA: 1 cup (236.588 ml) = 89 g; × 250 ml
+45,19,kapusta czerwona,surowy,szklanka,,starte,73.97,calculated,169977,"cup, shredded",1,70,gęstość 0.296 g/ml z USDA: 1 cup (236.588 ml) = 70 g; × 250 ml
+45,19,kapusta czerwona,surowy,główka,mały,,567,measured,169977,"head, small (4"" dia)",1,567,
+45,19,kapusta czerwona,surowy,główka,średni,,839,measured,169977,"head, medium (about 5"" dia)",1,839,
+45,19,kapusta czerwona,surowy,główka,duży,,1134,measured,169977,"head, large (about 5-1/2"" dia)",1,1134,
+45,19,kapusta czerwona,surowy,liść,,,23,measured,169977,leaf,1,23,
+46,19,kapusta czerwona,gotowany,szklanka,,starte,158.5,calculated,169978,"cup, shredded",0.5,75,gęstość 0.634 g/ml z USDA: 0.5 cup (118.294 ml) = 75 g; × 250 ml
+46,19,kapusta czerwona,gotowany,liść,,,22,measured,169978,leaf,1,22,
+48,20,kapusta włoska,surowy,szklanka,,starte,73.97,calculated,170388,"cup, shredded",1,70,gęstość 0.296 g/ml z USDA: 1 cup (236.588 ml) = 70 g; × 250 ml
+49,20,kapusta włoska,gotowany,szklanka,,starte,153.22,calculated,170389,"cup, shredded",1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+50,21,kapusta pekińska,surowy,szklanka,,starte,80.31,calculated,169979,"cup, shredded",1,76,gęstość 0.321 g/ml z USDA: 1 cup (236.588 ml) = 76 g; × 250 ml
+51,21,kapusta pekińska,gotowany,szklanka,,starte,125.75,calculated,169980,"cup, shredded",1,119,gęstość 0.503 g/ml z USDA: 1 cup (236.588 ml) = 119 g; × 250 ml
+51,21,kapusta pekińska,gotowany,liść,,,14,measured,169980,leaf,1,14,
+52,22,kapusta kiszona,gotowy,ml,,,0.6,calculated,169279,cup,1,142,gęstość 0.6 g/ml z USDA: 1 cup (236.588 ml) = 142 g
+52,22,kapusta kiszona,gotowy,szklanka,,,150.05,calculated,169279,cup,1,142,gęstość 0.6 g/ml z USDA: 1 cup (236.588 ml) = 142 g; × 250 ml
+52,22,kapusta kiszona,gotowy,szklanka,,z zalewą,249.38,calculated,169279,"cup, undrained",1,236,gęstość 0.998 g/ml z USDA: 1 cup (236.588 ml) = 236 g; × 250 ml
+54,23,brukselka,surowy,ml,,,0.372,calculated,170383,cup,1,88,gęstość 0.372 g/ml z USDA: 1 cup (236.588 ml) = 88 g
+54,23,brukselka,surowy,szklanka,,,92.99,calculated,170383,cup,1,88,gęstość 0.372 g/ml z USDA: 1 cup (236.588 ml) = 88 g; × 250 ml
+54,23,brukselka,surowy,sztuka,,,19,measured,170383,sprout,1,19,
+55,23,brukselka,gotowany,ml,,,0.659,calculated,169971,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g
+55,23,brukselka,gotowany,szklanka,,,164.84,calculated,169971,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+55,23,brukselka,gotowany,sztuka,,,21,measured,169971,sprout,1,21,
+56,23,brukselka,gotowany na parze,ml,,,0.659,calculated,169971,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g
+56,23,brukselka,gotowany na parze,szklanka,,,164.84,calculated,169971,cup,0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+56,23,brukselka,gotowany na parze,sztuka,,,21,measured,169971,sprout,1,21,
+58,24,kalafior,surowy,szklanka,,posiekane,113.07,calculated,169986,"cup chopped (1/2"" pieces)",1,107,gęstość 0.452 g/ml z USDA: 1 cup (236.588 ml) = 107 g; × 250 ml
+58,24,kalafior,surowy,główka,mały,,265,measured,169986,"head small (4"" dia.)",1,265,
+58,24,kalafior,surowy,główka,średni,,588,measured,169986,"head medium (5-6"" dia.)",1,588,
+58,24,kalafior,surowy,główka,duży,,840,measured,169986,"head large (6-7"" dia.)",1,840,
+58,24,kalafior,surowy,różyczka,,,13,measured,169986,floweret,1,13,
+59,24,kalafior,gotowany,ml,,,0.524,calculated,170397,"cup (1"" pieces)",0.5,62,gęstość 0.524 g/ml z USDA: 0.5 cup (118.294 ml) = 62 g
+59,24,kalafior,gotowany,szklanka,,,131.03,calculated,170397,"cup (1"" pieces)",0.5,62,gęstość 0.524 g/ml z USDA: 0.5 cup (118.294 ml) = 62 g; × 250 ml
+59,24,kalafior,gotowany,różyczka,,,18,measured,170397,flowerets,3,54,
+60,24,kalafior,gotowany na parze,ml,,,0.524,calculated,170397,"cup (1"" pieces)",0.5,62,gęstość 0.524 g/ml z USDA: 0.5 cup (118.294 ml) = 62 g
+60,24,kalafior,gotowany na parze,szklanka,,,131.03,calculated,170397,"cup (1"" pieces)",0.5,62,gęstość 0.524 g/ml z USDA: 0.5 cup (118.294 ml) = 62 g; × 250 ml
+60,24,kalafior,gotowany na parze,różyczka,,,18,measured,170397,flowerets,3,54,
+62,25,brokuł,surowy,szklanka,,posiekane,96.16,calculated,170379,cup chopped,1,91,gęstość 0.385 g/ml z USDA: 1 cup (236.588 ml) = 91 g; × 250 ml
+62,25,brokuł,surowy,pęczek,,,608,measured,170379,bunch,1,608,
+62,25,brokuł,surowy,sztuka,,,31,measured,170379,"spear (about 5"" long)",1,31,
+62,25,brokuł,surowy,łodyga,,,151,measured,170379,stalk,1,151,
+63,25,brokuł,gotowany,szklanka,,posiekane,164.84,calculated,169967,"cup, chopped",0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+63,25,brokuł,gotowany,sztuka,,,37,measured,169967,"spear (about 5"" long)",1,37,
+63,25,brokuł,gotowany,łodyga,mały,,140,measured,169967,"stalk, small (5"" long)",1,140,
+63,25,brokuł,gotowany,łodyga,średni,,180,measured,169967,"stalk, medium (7-1/2"" - 8"" long)",1,180,
+63,25,brokuł,gotowany,łodyga,duży,,280,measured,169967,"stalk, large (11""-12"" long)",1,280,
+64,25,brokuł,gotowany na parze,szklanka,,posiekane,164.84,calculated,169967,"cup, chopped",0.5,78,gęstość 0.659 g/ml z USDA: 0.5 cup (118.294 ml) = 78 g; × 250 ml
+64,25,brokuł,gotowany na parze,sztuka,,,37,measured,169967,"spear (about 5"" long)",1,37,
+64,25,brokuł,gotowany na parze,łodyga,mały,,140,measured,169967,"stalk, small (5"" long)",1,140,
+64,25,brokuł,gotowany na parze,łodyga,średni,,180,measured,169967,"stalk, medium (7-1/2"" - 8"" long)",1,180,
+64,25,brokuł,gotowany na parze,łodyga,duży,,280,measured,169967,"stalk, large (11""-12"" long)",1,280,
+66,26,kalarepa,surowy,ml,,,0.571,calculated,168424,cup,1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g
+66,26,kalarepa,surowy,szklanka,,,142.65,calculated,168424,cup,1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g; × 250 ml
+66,26,kalarepa,surowy,plaster,,,16,measured,168424,slice,1,16,
+67,26,kalarepa,gotowany,szklanka,,w plastrach,174.35,calculated,168425,cup slices,1,165,gęstość 0.697 g/ml z USDA: 1 cup (236.588 ml) = 165 g; × 250 ml
+68,27,jarmuż,surowy,ml,,,0.089,calculated,168421,cup,1,21,gęstość 0.089 g/ml z USDA: 1 cup (236.588 ml) = 21 g
+68,27,jarmuż,surowy,szklanka,,,22.19,calculated,168421,cup,1,21,gęstość 0.089 g/ml z USDA: 1 cup (236.588 ml) = 21 g; × 250 ml
+69,27,jarmuż,gotowany,ml,,,0.499,calculated,169238,cup,1,118,gęstość 0.499 g/ml z USDA: 1 cup (236.588 ml) = 118 g
+69,27,jarmuż,gotowany,szklanka,,,124.69,calculated,169238,cup,1,118,gęstość 0.499 g/ml z USDA: 1 cup (236.588 ml) = 118 g; × 250 ml
+70,28,szpinak,surowy,ml,,,0.127,calculated,168462,cup,1,30,gęstość 0.127 g/ml z USDA: 1 cup (236.588 ml) = 30 g
+70,28,szpinak,surowy,szklanka,,,31.7,calculated,168462,cup,1,30,gęstość 0.127 g/ml z USDA: 1 cup (236.588 ml) = 30 g; × 250 ml
+70,28,szpinak,surowy,liść,,,10,measured,168462,leaf,1,10,
+70,28,szpinak,surowy,pęczek,,,340,measured,168462,bunch,1,340,
+71,28,szpinak,gotowany,ml,,,0.761,calculated,168463,cup,1,180,gęstość 0.761 g/ml z USDA: 1 cup (236.588 ml) = 180 g
+71,28,szpinak,gotowany,szklanka,,,190.2,calculated,168463,cup,1,180,gęstość 0.761 g/ml z USDA: 1 cup (236.588 ml) = 180 g; × 250 ml
+73,29,sałata masłowa,surowy,szklanka,,starte,58.12,calculated,168429,"cup, shredded or chopped",1,55,gęstość 0.232 g/ml z USDA: 1 cup (236.588 ml) = 55 g; × 250 ml
+73,29,sałata masłowa,surowy,główka,,,163,measured,168429,"head (5"" dia)",1,163,
+73,29,sałata masłowa,surowy,liść,,,5,measured,168429,leaf,1,5,
+73,29,sałata masłowa,surowy,liść,średni,,7.5,measured,168429,"leaf, medium",1,7.5,
+73,29,sałata masłowa,surowy,liść,duży,,15,measured,168429,"leaf, large",1,15,
+74,30,sałata lodowa,surowy,szklanka,,posiekane,60.23,calculated,169248,"cup, chopped (1/2"" pieces, loosely packed)",1,57,gęstość 0.241 g/ml z USDA: 1 cup (236.588 ml) = 57 g; × 250 ml
+74,30,sałata lodowa,surowy,szklanka,,starte,76.08,calculated,169248,cup shredded,1,72,gęstość 0.304 g/ml z USDA: 1 cup (236.588 ml) = 72 g; × 250 ml
+74,30,sałata lodowa,surowy,główka,mały,,324,measured,169248,"head, small",1,324,
+74,30,sałata lodowa,surowy,główka,średni,,539,measured,169248,"head, medium (6"" dia)",1,539,
+74,30,sałata lodowa,surowy,główka,duży,,755,measured,169248,"head, large",1,755,
+74,30,sałata lodowa,surowy,liść,mały,,5,measured,169248,"leaf, small",1,5,
+74,30,sałata lodowa,surowy,liść,średni,,8,measured,169248,"leaf, medium",1,8,
+74,30,sałata lodowa,surowy,liść,duży,,15,measured,169248,"leaf, large",1,15,
+75,31,sałata rzymska,surowy,szklanka,,starte,49.66,calculated,169247,cup shredded,1,47,gęstość 0.199 g/ml z USDA: 1 cup (236.588 ml) = 47 g; × 250 ml
+75,31,sałata rzymska,surowy,główka,,,626,measured,169247,head,1,626,
+75,31,sałata rzymska,surowy,liść,,wewnętrzny,6,measured,169247,leaf inner,1,6,
+75,31,sałata rzymska,surowy,liść,,zewnętrzny,28,measured,169247,leaf outer,1,28,
+76,32,rukola,surowy,ml,,,0.085,calculated,169387,cup,0.5,10,gęstość 0.085 g/ml z USDA: 0.5 cup (118.294 ml) = 10 g
+76,32,rukola,surowy,szklanka,,,21.13,calculated,169387,cup,0.5,10,gęstość 0.085 g/ml z USDA: 0.5 cup (118.294 ml) = 10 g; × 250 ml
+76,32,rukola,surowy,liść,,,2,measured,169387,leaf,1,2,
+78,34,cykoria,surowy,ml,,,0.38,calculated,170404,cup,0.5,45,gęstość 0.38 g/ml z USDA: 0.5 cup (118.294 ml) = 45 g
+78,34,cykoria,surowy,szklanka,,,95.1,calculated,170404,cup,0.5,45,gęstość 0.38 g/ml z USDA: 0.5 cup (118.294 ml) = 45 g; × 250 ml
+78,34,cykoria,surowy,główka,,,53,measured,170404,head,1,53,
+79,35,rzeżucha,surowy,ml,,,0.211,calculated,168407,cup,1,50,gęstość 0.211 g/ml z USDA: 1 cup (236.588 ml) = 50 g
+79,35,rzeżucha,surowy,szklanka,,,52.83,calculated,168407,cup,1,50,gęstość 0.211 g/ml z USDA: 1 cup (236.588 ml) = 50 g; × 250 ml
+79,35,rzeżucha,surowy,gałązka,,,1,measured,168407,sprig,1,1,
+80,36,ogórek,surowy,szklanka,,w plastrach,109.9,calculated,168409,cup slices,0.5,52,gęstość 0.44 g/ml z USDA: 0.5 cup (118.294 ml) = 52 g; × 250 ml
+80,36,ogórek,surowy,sztuka,,,301,measured,168409,"cucumber (8-1/4"")",1,301,
+81,37,ogórek kiszony,gotowy,ml,,,0.655,calculated,168558,cup (about 23 slices),1,155,gęstość 0.655 g/ml z USDA: 1 cup (236.588 ml) = 155 g
+81,37,ogórek kiszony,gotowy,szklanka,,,163.79,calculated,168558,cup (about 23 slices),1,155,gęstość 0.655 g/ml z USDA: 1 cup (236.588 ml) = 155 g; × 250 ml
+81,37,ogórek kiszony,gotowy,szklanka,,posiekane,151.11,calculated,168558,"cup, chopped or diced",1,143,gęstość 0.604 g/ml z USDA: 1 cup (236.588 ml) = 143 g; × 250 ml
+81,37,ogórek kiszony,gotowy,plaster,,,7,measured,168558,slice,1,7,
+81,37,ogórek kiszony,gotowy,sztuka,mały,,35,measured,168558,"spear, small",1,35,
+81,37,ogórek kiszony,gotowy,sztuka,duży,,135,measured,168558,"large (4"" long)",1,135,
+82,38,pomidor,surowy,szklanka,,posiekane,190.2,calculated,170457,"cup, chopped or sliced",1,180,gęstość 0.761 g/ml z USDA: 1 cup (236.588 ml) = 180 g; × 250 ml
+82,38,pomidor,surowy,cząstka,,,31,measured,170457,wedge (1/4 of medium tomato),1,31,
+82,38,pomidor,surowy,plaster,,cienki,15,measured,170457,"slice, thin/small",1,15,
+82,38,pomidor,surowy,plaster,,gruby,27,measured,170457,"slice, thick/large (1/2"" thick)",1,27,
+82,38,pomidor,surowy,plaster,średni,,20,measured,170457,"slice, medium (1/4"" thick)",1,20,
+82,38,pomidor,surowy,sztuka,,,62,measured,170457,Italian tomato,1,62,
+82,38,pomidor,surowy,sztuka,mały,całe,91,measured,170457,"small whole (2-2/5"" dia)",1,91,
+82,38,pomidor,surowy,sztuka,średni,całe,123,measured,170457,"medium whole (2-3/5"" dia)",1,123,
+82,38,pomidor,surowy,sztuka,duży,całe,182,measured,170457,"large whole (3"" dia)",1,182,
+83,38,pomidor,duszony,ml,,,0.427,calculated,170089,cup,1,101,gęstość 0.427 g/ml z USDA: 1 cup (236.588 ml) = 101 g
+83,38,pomidor,duszony,szklanka,,,106.73,calculated,170089,cup,1,101,gęstość 0.427 g/ml z USDA: 1 cup (236.588 ml) = 101 g; × 250 ml
+85,39,pomidor koktajlowy,surowy,szklanka,,posiekane,190.2,calculated,170457,"cup, chopped or sliced",1,180,gęstość 0.761 g/ml z USDA: 1 cup (236.588 ml) = 180 g; × 250 ml
+85,39,pomidor koktajlowy,surowy,cząstka,,,31,measured,170457,wedge (1/4 of medium tomato),1,31,
+85,39,pomidor koktajlowy,surowy,plaster,,cienki,15,measured,170457,"slice, thin/small",1,15,
+85,39,pomidor koktajlowy,surowy,plaster,,gruby,27,measured,170457,"slice, thick/large (1/2"" thick)",1,27,
+85,39,pomidor koktajlowy,surowy,plaster,średni,,20,measured,170457,"slice, medium (1/4"" thick)",1,20,
+85,39,pomidor koktajlowy,surowy,sztuka,,,62,measured,170457,Italian tomato,1,62,
+85,39,pomidor koktajlowy,surowy,sztuka,mały,całe,91,measured,170457,"small whole (2-2/5"" dia)",1,91,
+85,39,pomidor koktajlowy,surowy,sztuka,średni,całe,123,measured,170457,"medium whole (2-3/5"" dia)",1,123,
+85,39,pomidor koktajlowy,surowy,sztuka,duży,całe,182,measured,170457,"large whole (3"" dia)",1,182,
+86,40,pomidory krojone z puszki,gotowy,ml,,,1.019,calculated,170053,cup,1,241,gęstość 1.019 g/ml z USDA: 1 cup (236.588 ml) = 241 g
+86,40,pomidory krojone z puszki,gotowy,szklanka,,,254.66,calculated,170053,cup,1,241,gęstość 1.019 g/ml z USDA: 1 cup (236.588 ml) = 241 g; × 250 ml
+87,41,przecier pomidorowy (passata),gotowy,ml,,,1.057,calculated,170460,cup,1,250,gęstość 1.057 g/ml z USDA: 1 cup (236.588 ml) = 250 g
+87,41,przecier pomidorowy (passata),gotowy,szklanka,,,264.17,calculated,170460,cup,1,250,gęstość 1.057 g/ml z USDA: 1 cup (236.588 ml) = 250 g; × 250 ml
+88,42,koncentrat pomidorowy,gotowy,ml,,,1.107,calculated,170459,cup,1,262,gęstość 1.107 g/ml z USDA: 1 cup (236.588 ml) = 262 g
+88,42,koncentrat pomidorowy,gotowy,łyżka,,,16,measured,170459,tbsp,1,16,
+88,42,koncentrat pomidorowy,gotowy,szklanka,,,276.85,calculated,170459,cup,1,262,gęstość 1.107 g/ml z USDA: 1 cup (236.588 ml) = 262 g; × 250 ml
+89,43,pomidory suszone,gotowy,ml,,,0.228,calculated,168567,cup,1,54,gęstość 0.228 g/ml z USDA: 1 cup (236.588 ml) = 54 g
+89,43,pomidory suszone,gotowy,szklanka,,,57.06,calculated,168567,cup,1,54,gęstość 0.228 g/ml z USDA: 1 cup (236.588 ml) = 54 g; × 250 ml
+89,43,pomidory suszone,gotowy,kawałek,,,2,measured,168567,piece,1,2,
+90,44,papryka czerwona,surowy,ml,,,0.629,calculated,170108,tablespoon,1,9.3,gęstość 0.629 g/ml z USDA: 1 tablespoon (14.787 ml) = 9.3 g
+90,44,papryka czerwona,surowy,łyżka,,,9.3,measured,170108,tablespoon,1,9.3,
+90,44,papryka czerwona,surowy,szklanka,,,157.23,calculated,170108,tablespoon,1,9.3,gęstość 0.629 g/ml z USDA: 1 tablespoon (14.787 ml) = 9.3 g; × 250 ml
+90,44,papryka czerwona,surowy,szklanka,,posiekane,157.45,calculated,170108,"cup, chopped",1,149,gęstość 0.63 g/ml z USDA: 1 cup (236.588 ml) = 149 g; × 250 ml
+90,44,papryka czerwona,surowy,szklanka,,w plastrach,97.22,calculated,170108,"cup, sliced",1,92,gęstość 0.389 g/ml z USDA: 1 cup (236.588 ml) = 92 g; × 250 ml
+90,44,papryka czerwona,surowy,krążek,,,10,measured,170108,"ring (3"" dia., 1/4"" thick)",1,10,
+90,44,papryka czerwona,surowy,sztuka,mały,,74,measured,170108,small,1,74,
+90,44,papryka czerwona,surowy,sztuka,średni,,119,measured,170108,"medium (approx 2-3/4"" long, 2-1/2 dia.)",1,119,
+90,44,papryka czerwona,surowy,sztuka,duży,,164,measured,170108,"large (2-1/4 per pound, approx 3-3/4"" long, 3"" dia.)",1,164,
+93,44,papryka czerwona,smażony,szklanka,,posiekane,112.01,calculated,168550,cup chopped,1,106,gęstość 0.448 g/ml z USDA: 1 cup (236.588 ml) = 106 g; × 250 ml
+95,45,papryka zielona,surowy,ml,,,0.629,calculated,170427,tbsp,1,9.3,gęstość 0.629 g/ml z USDA: 1 tbsp (14.787 ml) = 9.3 g
+95,45,papryka zielona,surowy,łyżka,,,9.3,measured,170427,tbsp,1,9.3,
+95,45,papryka zielona,surowy,szklanka,,,157.23,calculated,170427,tbsp,1,9.3,gęstość 0.629 g/ml z USDA: 1 tbsp (14.787 ml) = 9.3 g; × 250 ml
+95,45,papryka zielona,surowy,szklanka,,posiekane,157.45,calculated,170427,"cup, chopped",1,149,gęstość 0.63 g/ml z USDA: 1 cup (236.588 ml) = 149 g; × 250 ml
+95,45,papryka zielona,surowy,szklanka,,w plastrach,97.22,calculated,170427,"cup, sliced",1,92,gęstość 0.389 g/ml z USDA: 1 cup (236.588 ml) = 92 g; × 250 ml
+95,45,papryka zielona,surowy,krążek,,,10,measured,170427,"ring (3"" dia, 1/4"" thick)",1,10,
+95,45,papryka zielona,surowy,pasek,,,2.7,measured,170427,strips,10,27,
+95,45,papryka zielona,surowy,sztuka,mały,,74,measured,170427,small,1,74,
+95,45,papryka zielona,surowy,sztuka,średni,,119,measured,170427,"medium (approx 2-3/4"" long, 2-1/2"" dia)",1,119,
+95,45,papryka zielona,surowy,sztuka,duży,,164,measured,170427,"large (2-1/4 per lb, approx 3-3/4"" long, 3"" dia)",1,164,
+96,45,papryka zielona,smażony,szklanka,,posiekane,121.52,calculated,170024,cup chopped,1,115,gęstość 0.486 g/ml z USDA: 1 cup (236.588 ml) = 115 g; × 250 ml
+97,46,papryka żółta,surowy,pasek,,,5.2,measured,169383,strips,10,52,
+97,46,papryka żółta,surowy,sztuka,duży,,186,measured,169383,"pepper, large (3-3/4"" long, 3"" dia)",1,186,
+99,47,papryczka chili,surowy,szklanka,,posiekane,158.5,calculated,170106,"cup, chopped or diced",0.5,75,gęstość 0.634 g/ml z USDA: 0.5 cup (118.294 ml) = 75 g; × 250 ml
+99,47,papryczka chili,surowy,sztuka,,,45,measured,170106,pepper,1,45,
+100,48,cukinia,surowy,szklanka,,posiekane,131.03,calculated,169291,"cup, chopped",1,124,gęstość 0.524 g/ml z USDA: 1 cup (236.588 ml) = 124 g; × 250 ml
+100,48,cukinia,surowy,szklanka,,w plastrach,119.41,calculated,169291,"cup, sliced",1,113,gęstość 0.478 g/ml z USDA: 1 cup (236.588 ml) = 113 g; × 250 ml
+100,48,cukinia,surowy,plaster,,,9.9,measured,169291,slice,1,9.9,
+100,48,cukinia,surowy,sztuka,mały,,118,measured,169291,small,1,118,
+100,48,cukinia,surowy,sztuka,średni,,196,measured,169291,medium,1,196,
+100,48,cukinia,surowy,sztuka,duży,,323,measured,169291,large,1,323,
+101,48,cukinia,gotowany,szklanka,,puree,253.61,calculated,169292,"cup, mashed",0.5,120,gęstość 1.014 g/ml z USDA: 0.5 cup (118.294 ml) = 120 g; × 250 ml
+101,48,cukinia,gotowany,szklanka,,w plastrach,190.2,calculated,169292,"cup, sliced",1,180,gęstość 0.761 g/ml z USDA: 1 cup (236.588 ml) = 180 g; × 250 ml
+106,49,bakłażan,surowy,szklanka,,w kostkę,86.65,calculated,169228,"cup, cubes",1,82,gęstość 0.347 g/ml z USDA: 1 cup (236.588 ml) = 82 g; × 250 ml
+106,49,bakłażan,surowy,sztuka,,nieobrane,548,measured,169228,"eggplant, unpeeled (approx 1-1/4 lb)",1,548,
+106,49,bakłażan,surowy,sztuka,,obrane,458,measured,169228,"eggplant, peeled (yield from 1-1/4 lb)",1,458,
+110,50,dynia,surowy,ml,,,0.49,calculated,168448,"cup (1"" cubes)",1,116,gęstość 0.49 g/ml z USDA: 1 cup (236.588 ml) = 116 g
+110,50,dynia,surowy,szklanka,,,122.58,calculated,168448,"cup (1"" cubes)",1,116,gęstość 0.49 g/ml z USDA: 1 cup (236.588 ml) = 116 g; × 250 ml
+111,50,dynia,gotowany,szklanka,,puree,258.89,calculated,168449,"cup, mashed",1,245,gęstość 1.036 g/ml z USDA: 1 cup (236.588 ml) = 245 g; × 250 ml
+113,51,rzodkiewka,surowy,szklanka,,w plastrach,122.58,calculated,169276,cup slices,1,116,gęstość 0.49 g/ml z USDA: 1 cup (236.588 ml) = 116 g; × 250 ml
+113,51,rzodkiewka,surowy,plaster,,,1,measured,169276,slice,1,1,
+113,51,rzodkiewka,surowy,sztuka,mały,,2,measured,169276,small,1,2,
+113,51,rzodkiewka,surowy,sztuka,średni,,4.5,measured,169276,"medium (3/4"" to 1"" dia)",1,4.5,
+113,51,rzodkiewka,surowy,sztuka,duży,,9,measured,169276,"large (1"" to 1-1/4"" dia)",1,9,
+114,52,rzepa,surowy,szklanka,,w kostkę,137.37,calculated,170465,"cup, cubes",1,130,gęstość 0.549 g/ml z USDA: 1 cup (236.588 ml) = 130 g; × 250 ml
+114,52,rzepa,surowy,plaster,,,15,measured,170465,slice,1,15,
+114,52,rzepa,surowy,sztuka,mały,,61,measured,170465,small,1,61,
+114,52,rzepa,surowy,sztuka,średni,,122,measured,170465,medium,1,122,
+114,52,rzepa,surowy,sztuka,duży,,183,measured,170465,large,1,183,
+115,52,rzepa,gotowany,szklanka,,puree,243.04,calculated,170058,"cup, mashed",1,230,gęstość 0.972 g/ml z USDA: 1 cup (236.588 ml) = 230 g; × 250 ml
+115,52,rzepa,gotowany,szklanka,,w kostkę,164.84,calculated,170058,"cup, cubes",1,156,gęstość 0.659 g/ml z USDA: 1 cup (236.588 ml) = 156 g; × 250 ml
+116,53,brukiew,surowy,szklanka,,w kostkę,147.94,calculated,168454,"cup, cubes",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+116,53,brukiew,surowy,sztuka,mały,,192,measured,168454,small,1,192,
+116,53,brukiew,surowy,sztuka,średni,,386,measured,168454,medium,1,386,
+116,53,brukiew,surowy,sztuka,duży,,772,measured,168454,large,1,772,
+117,53,brukiew,gotowany,szklanka,,puree,253.61,calculated,168455,"cup, mashed",1,240,gęstość 1.014 g/ml z USDA: 1 cup (236.588 ml) = 240 g; × 250 ml
+117,53,brukiew,gotowany,szklanka,,w kostkę,179.64,calculated,168455,"cup, cubes",1,170,gęstość 0.719 g/ml z USDA: 1 cup (236.588 ml) = 170 g; × 250 ml
+118,54,fasolka szparagowa,surowy,szklanka,,w kawałkach,105.67,calculated,169961,"cup 1/2"" pieces",1,100,gęstość 0.423 g/ml z USDA: 1 cup (236.588 ml) = 100 g; × 250 ml
+118,54,fasolka szparagowa,surowy,sztuka,,,5.5,measured,169961,"beans (4"" long)",10,55,
+119,54,fasolka szparagowa,gotowany,ml,,,0.528,calculated,169141,cup,1,125,gęstość 0.528 g/ml z USDA: 1 cup (236.588 ml) = 125 g
+119,54,fasolka szparagowa,gotowany,szklanka,,,132.09,calculated,169141,cup,1,125,gęstość 0.528 g/ml z USDA: 1 cup (236.588 ml) = 125 g; × 250 ml
+120,54,fasolka szparagowa,gotowany na parze,ml,,,0.528,calculated,169141,cup,1,125,gęstość 0.528 g/ml z USDA: 1 cup (236.588 ml) = 125 g
+120,54,fasolka szparagowa,gotowany na parze,szklanka,,,132.09,calculated,169141,cup,1,125,gęstość 0.528 g/ml z USDA: 1 cup (236.588 ml) = 125 g; × 250 ml
+121,55,groszek zielony,surowy,ml,,,0.613,calculated,170419,cup,1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g
+121,55,groszek zielony,surowy,szklanka,,,153.22,calculated,170419,cup,1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+122,55,groszek zielony,gotowany,ml,,,0.676,calculated,170420,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g
+122,55,groszek zielony,gotowany,szklanka,,,169.07,calculated,170420,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g; × 250 ml
+123,56,groszek konserwowy,gotowy,ml,,,0.719,calculated,170104,cup,0.5,85,gęstość 0.719 g/ml z USDA: 0.5 cup (118.294 ml) = 85 g
+123,56,groszek konserwowy,gotowy,szklanka,,,179.64,calculated,170104,cup,0.5,85,gęstość 0.719 g/ml z USDA: 0.5 cup (118.294 ml) = 85 g; × 250 ml
+124,57,kukurydza cukrowa (kolba),surowy,ml,,,0.613,calculated,169998,cup,1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g
+124,57,kukurydza cukrowa (kolba),surowy,szklanka,,,153.22,calculated,169998,cup,1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+124,57,kukurydza cukrowa (kolba),surowy,kolba,mały,,73,measured,169998,"ear, small (5-1/2"" to 6-1/2"" long)",1,73,
+125,57,kukurydza cukrowa (kolba),gotowany,szklanka,,pokrojone,157.45,calculated,169999,cup cut,1,149,gęstość 0.63 g/ml z USDA: 1 cup (236.588 ml) = 149 g; × 250 ml
+125,57,kukurydza cukrowa (kolba),gotowany,kolba,mały,,89,measured,169999,"ear small (5-1/2"" to 6-1/2"" long)",1,89,
+125,57,kukurydza cukrowa (kolba),gotowany,kolba,średni,,103,measured,169999,"ear medium (6-3/4"" to 7-1/2"" long)",1,103,
+125,57,kukurydza cukrowa (kolba),gotowany,kolba,duży,,118,measured,169999,"ear large (7-3/4"" to 9"" long)",1,118,
+127,58,kukurydza konserwowa,gotowy,ml,,,0.693,calculated,169214,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g
+127,58,kukurydza konserwowa,gotowy,szklanka,,,173.3,calculated,169214,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g; × 250 ml
+128,59,szparagi,surowy,ml,,,0.566,calculated,168389,cup,1,134,gęstość 0.566 g/ml z USDA: 1 cup (236.588 ml) = 134 g
+128,59,szparagi,surowy,szklanka,,,141.6,calculated,168389,cup,1,134,gęstość 0.566 g/ml z USDA: 1 cup (236.588 ml) = 134 g; × 250 ml
+128,59,szparagi,surowy,sztuka,mały,,12,measured,168389,"spear, small (5"" long or less)",1,12,
+128,59,szparagi,surowy,sztuka,średni,,16,measured,168389,"spear, medium (5-1/4"" to 7"" long)",1,16,
+128,59,szparagi,surowy,sztuka,duży,,20,measured,168389,"spear, large (7-1/4"" to 8-1/2"")",1,20,
+128,59,szparagi,surowy,sztuka,bardzo duży,,24,measured,168389,"spear, extra large (8-3/4"" to 10"" long)",1,24,
+129,59,szparagi,gotowany,ml,,,0.761,calculated,168390,cup,0.5,90,gęstość 0.761 g/ml z USDA: 0.5 cup (118.294 ml) = 90 g
+129,59,szparagi,gotowany,szklanka,,,190.2,calculated,168390,cup,0.5,90,gęstość 0.761 g/ml z USDA: 0.5 cup (118.294 ml) = 90 g; × 250 ml
+129,59,szparagi,gotowany,sztuka,,,15,measured,168390,"spears (1/2"" base)",4,60,
+130,59,szparagi,gotowany na parze,ml,,,0.761,calculated,168390,cup,0.5,90,gęstość 0.761 g/ml z USDA: 0.5 cup (118.294 ml) = 90 g
+130,59,szparagi,gotowany na parze,szklanka,,,190.2,calculated,168390,cup,0.5,90,gęstość 0.761 g/ml z USDA: 0.5 cup (118.294 ml) = 90 g; × 250 ml
+130,59,szparagi,gotowany na parze,sztuka,,,15,measured,168390,"spears (1/2"" base)",4,60,
+132,60,koper włoski (fenkuł),surowy,szklanka,,w plastrach,91.93,calculated,169385,"cup, sliced",1,87,gęstość 0.368 g/ml z USDA: 1 cup (236.588 ml) = 87 g; × 250 ml
+132,60,koper włoski (fenkuł),surowy,bulwa,,,234,measured,169385,bulb,1,234,
+134,61,pak choi,surowy,szklanka,,starte,73.97,calculated,170390,"cup, shredded",1,70,gęstość 0.296 g/ml z USDA: 1 cup (236.588 ml) = 70 g; × 250 ml
+134,61,pak choi,surowy,główka,,,840,measured,170390,head,1,840,
+134,61,pak choi,surowy,liść,,,14,measured,170390,leaf,1,14,
+135,61,pak choi,gotowany,szklanka,,starte,179.64,calculated,170391,"cup, shredded",1,170,gęstość 0.719 g/ml z USDA: 1 cup (236.588 ml) = 170 g; × 250 ml
+137,62,kiełki fasoli mung,surowy,ml,,,0.44,calculated,169957,cup,1,104,gęstość 0.44 g/ml z USDA: 1 cup (236.588 ml) = 104 g
+137,62,kiełki fasoli mung,surowy,szklanka,,,109.9,calculated,169957,cup,1,104,gęstość 0.44 g/ml z USDA: 1 cup (236.588 ml) = 104 g; × 250 ml
+138,62,kiełki fasoli mung,smażony,ml,,,0.524,calculated,169138,cup,1,124,gęstość 0.524 g/ml z USDA: 1 cup (236.588 ml) = 124 g
+138,62,kiełki fasoli mung,smażony,szklanka,,,131.03,calculated,169138,cup,1,124,gęstość 0.524 g/ml z USDA: 1 cup (236.588 ml) = 124 g; × 250 ml
+139,63,imbir,surowy,ml,,,0.406,calculated,169231,tsp,1,2,gęstość 0.406 g/ml z USDA: 1 tsp (4.929 ml) = 2 g
+139,63,imbir,surowy,łyżeczka,,,2,measured,169231,tsp,1,2,
+139,63,imbir,surowy,szklanka,,,101.44,calculated,169231,tsp,1,2,gęstość 0.406 g/ml z USDA: 1 tsp (4.929 ml) = 2 g; × 250 ml
+139,63,imbir,surowy,szklanka,,w plastrach,101.44,calculated,169231,"cup slices (1"" dia)",0.25,24,gęstość 0.406 g/ml z USDA: 0.25 cup (59.147 ml) = 24 g; × 250 ml
+139,63,imbir,surowy,plaster,,,2.2,measured,169231,"slices (1"" dia)",5,11,
+140,64,chrzan tarty,gotowy,ml,,,1.014,calculated,173472,tbsp,1,15,gęstość 1.014 g/ml z USDA: 1 tbsp (14.787 ml) = 15 g
+140,64,chrzan tarty,gotowy,łyżeczka,,,5,measured,173472,tsp,1,5,
+140,64,chrzan tarty,gotowy,łyżka,,,15,measured,173472,tbsp,1,15,
+140,64,chrzan tarty,gotowy,szklanka,,,253.6,calculated,173472,tbsp,1,15,gęstość 1.014 g/ml z USDA: 1 tbsp (14.787 ml) = 15 g; × 250 ml
+141,65,botwina,surowy,ml,,,0.161,calculated,170375,cup,1,38,gęstość 0.161 g/ml z USDA: 1 cup (236.588 ml) = 38 g
+141,65,botwina,surowy,szklanka,,,40.15,calculated,170375,cup,1,38,gęstość 0.161 g/ml z USDA: 1 cup (236.588 ml) = 38 g; × 250 ml
+141,65,botwina,surowy,liść,,,32,measured,170375,leaf,1,32,
+142,65,botwina,gotowany,ml,,,0.609,calculated,170376,"cup (1"" pieces)",1,144,gęstość 0.609 g/ml z USDA: 1 cup (236.588 ml) = 144 g
+142,65,botwina,gotowany,szklanka,,,152.16,calculated,170376,"cup (1"" pieces)",1,144,gęstość 0.609 g/ml z USDA: 1 cup (236.588 ml) = 144 g; × 250 ml
+145,67,oliwki zielone,gotowy,sztuka,,,2.7,measured,169096,olive,1,2.7,
+146,68,oliwki czarne,gotowy,ml,,,0.568,calculated,169094,tbsp,1,8.4,gęstość 0.568 g/ml z USDA: 1 tbsp (14.787 ml) = 8.4 g
+146,68,oliwki czarne,gotowy,łyżka,,,8.4,measured,169094,tbsp,1,8.4,
+146,68,oliwki czarne,gotowy,szklanka,,,142.02,calculated,169094,tbsp,1,8.4,gęstość 0.568 g/ml z USDA: 1 tbsp (14.787 ml) = 8.4 g; × 250 ml
+146,68,oliwki czarne,gotowy,sztuka,mały,,3.2,measured,169094,small,1,3.2,
+146,68,oliwki czarne,gotowy,sztuka,duży,,4.4,measured,169094,large,1,4.4,
+147,69,mieszanka warzyw mrożona,gotowany,ml,,,0.769,calculated,170472,cup,0.5,91,gęstość 0.769 g/ml z USDA: 0.5 cup (118.294 ml) = 91 g
+147,69,mieszanka warzyw mrożona,gotowany,szklanka,,,192.32,calculated,170472,cup,0.5,91,gęstość 0.769 g/ml z USDA: 0.5 cup (118.294 ml) = 91 g; × 250 ml
+148,70,pieczarka,surowy,szklanka,,całe,101.44,calculated,169251,"cup, whole",1,96,gęstość 0.406 g/ml z USDA: 1 cup (236.588 ml) = 96 g; × 250 ml
+148,70,pieczarka,surowy,szklanka,,w kawałkach,73.97,calculated,169251,"cup, pieces or slices",1,70,gęstość 0.296 g/ml z USDA: 1 cup (236.588 ml) = 70 g; × 250 ml
+148,70,pieczarka,surowy,plaster,,,6,measured,169251,slice,1,6,
+148,70,pieczarka,surowy,sztuka,mały,,10,measured,169251,small,1,10,
+148,70,pieczarka,surowy,sztuka,średni,,18,measured,169251,medium,1,18,
+148,70,pieczarka,surowy,sztuka,duży,,23,measured,169251,large,1,23,
+150,70,pieczarka,smażony,szklanka,,w plastrach,114.12,calculated,169253,cup sliced,1,108,gęstość 0.456 g/ml z USDA: 1 cup (236.588 ml) = 108 g; × 250 ml
+152,71,boczniak,surowy,szklanka,,w plastrach,90.88,calculated,168580,cup sliced,1,86,gęstość 0.364 g/ml z USDA: 1 cup (236.588 ml) = 86 g; × 250 ml
+152,71,boczniak,surowy,sztuka,mały,,15,measured,168580,small,1,15,
+152,71,boczniak,surowy,sztuka,duży,,148,measured,168580,large,1,148,
+157,73,kurka,surowy,ml,,,0.228,calculated,168422,cup,1,54,gęstość 0.228 g/ml z USDA: 1 cup (236.588 ml) = 54 g
+157,73,kurka,surowy,szklanka,,,57.06,calculated,168422,cup,1,54,gęstość 0.228 g/ml z USDA: 1 cup (236.588 ml) = 54 g; × 250 ml
+157,73,kurka,surowy,kawałek,,,5.4,measured,168422,piece,1,5.4,
+161,75,jabłko,surowy,szklanka,,w plastrach,116.24,calculated,171689,cup slices,1,110,gęstość 0.465 g/ml z USDA: 1 cup (236.588 ml) = 110 g; × 250 ml
+161,75,jabłko,surowy,sztuka,mały,,132,measured,171689,"small (2-3/4"" dia)",1,132,
+161,75,jabłko,surowy,sztuka,średni,,161,measured,171689,"medium (3"" dia)",1,161,
+161,75,jabłko,surowy,sztuka,duży,,216,measured,171689,"large (3-1/4"" dia)",1,216,
+163,76,gruszka,surowy,szklanka,,w kostkę,170.13,calculated,169118,"cup, cubes",1,161,gęstość 0.681 g/ml z USDA: 1 cup (236.588 ml) = 161 g; × 250 ml
+163,76,gruszka,surowy,szklanka,,w plastrach,147.94,calculated,169118,"cup, slices",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+163,76,gruszka,surowy,sztuka,mały,,148,measured,169118,small,1,148,
+163,76,gruszka,surowy,sztuka,średni,,178,measured,169118,medium,1,178,
+163,76,gruszka,surowy,sztuka,duży,,230,measured,169118,large,1,230,
+164,77,śliwka,surowy,szklanka,,w plastrach,174.35,calculated,169949,"cup, sliced",1,165,gęstość 0.697 g/ml z USDA: 1 cup (236.588 ml) = 165 g; × 250 ml
+164,77,śliwka,surowy,sztuka,,,66,measured,169949,"fruit (2-1/8"" dia)",1,66,
+165,78,śliwka suszona,gotowy,szklanka,,bez pestek,183.86,calculated,168162,"cup, pitted",1,174,gęstość 0.735 g/ml z USDA: 1 cup (236.588 ml) = 174 g; × 250 ml
+165,78,śliwka suszona,gotowy,sztuka,,bez pestek,9.5,measured,168162,"prune, pitted",1,9.5,
+166,79,czereśnia,surowy,szklanka,,bez pestek,162.73,calculated,171719,"cup, without pits",1,154,gęstość 0.651 g/ml z USDA: 1 cup (236.588 ml) = 154 g; × 250 ml
+166,79,czereśnia,surowy,sztuka,,,8.2,measured,171719,cherry,1,8.2,
+167,80,wiśnia,surowy,szklanka,,bez pestek,163.79,calculated,173954,"cup, without pits",1,155,gęstość 0.655 g/ml z USDA: 1 cup (236.588 ml) = 155 g; × 250 ml
+168,81,truskawka,surowy,szklanka,,całe,152.16,calculated,167762,"cup, whole",1,144,gęstość 0.609 g/ml z USDA: 1 cup (236.588 ml) = 144 g; × 250 ml
+168,81,truskawka,surowy,szklanka,,połówki,160.62,calculated,167762,"cup, halves",1,152,gęstość 0.642 g/ml z USDA: 1 cup (236.588 ml) = 152 g; × 250 ml
+168,81,truskawka,surowy,szklanka,,przecier,245.15,calculated,167762,"cup, pureed",1,232,gęstość 0.981 g/ml z USDA: 1 cup (236.588 ml) = 232 g; × 250 ml
+168,81,truskawka,surowy,szklanka,,w plastrach,175.41,calculated,167762,"cup, sliced",1,166,gęstość 0.702 g/ml z USDA: 1 cup (236.588 ml) = 166 g; × 250 ml
+168,81,truskawka,surowy,sztuka,mały,,7,measured,167762,"small (1"" dia)",1,7,
+168,81,truskawka,surowy,sztuka,średni,,12,measured,167762,"medium (1-1/4"" dia)",1,12,
+168,81,truskawka,surowy,sztuka,duży,,18,measured,167762,"large (1-3/8"" dia)",1,18,
+168,81,truskawka,surowy,sztuka,bardzo duży,,27,measured,167762,"extra large (1-5/8"" dia)",1,27,
+169,82,malina,surowy,ml,,,0.52,calculated,167755,cup,1,123,gęstość 0.52 g/ml z USDA: 1 cup (236.588 ml) = 123 g
+169,82,malina,surowy,szklanka,,,129.97,calculated,167755,cup,1,123,gęstość 0.52 g/ml z USDA: 1 cup (236.588 ml) = 123 g; × 250 ml
+169,82,malina,surowy,sztuka,,,1.9,measured,167755,raspberries,10,19,
+170,83,borówka amerykańska,surowy,ml,,,0.626,calculated,171711,cup,1,148,gęstość 0.626 g/ml z USDA: 1 cup (236.588 ml) = 148 g
+170,83,borówka amerykańska,surowy,szklanka,,,156.39,calculated,171711,cup,1,148,gęstość 0.626 g/ml z USDA: 1 cup (236.588 ml) = 148 g; × 250 ml
+170,83,borówka amerykańska,surowy,sztuka,,,1.36,measured,171711,berries,50,68,
+172,85,jeżyna,surowy,ml,,,0.609,calculated,173946,cup,1,144,gęstość 0.609 g/ml z USDA: 1 cup (236.588 ml) = 144 g
+172,85,jeżyna,surowy,szklanka,,,152.16,calculated,173946,cup,1,144,gęstość 0.609 g/ml z USDA: 1 cup (236.588 ml) = 144 g; × 250 ml
+173,86,porzeczka czarna,surowy,ml,,,0.473,calculated,173963,cup,1,112,gęstość 0.473 g/ml z USDA: 1 cup (236.588 ml) = 112 g
+173,86,porzeczka czarna,surowy,szklanka,,,118.35,calculated,173963,cup,1,112,gęstość 0.473 g/ml z USDA: 1 cup (236.588 ml) = 112 g; × 250 ml
+174,87,porzeczka czerwona,surowy,ml,,,0.473,calculated,173964,cup,1,112,gęstość 0.473 g/ml z USDA: 1 cup (236.588 ml) = 112 g
+174,87,porzeczka czerwona,surowy,szklanka,,,118.35,calculated,173964,cup,1,112,gęstość 0.473 g/ml z USDA: 1 cup (236.588 ml) = 112 g; × 250 ml
+175,88,agrest,surowy,ml,,,0.634,calculated,173030,cup,1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g
+175,88,agrest,surowy,szklanka,,,158.5,calculated,173030,cup,1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g; × 250 ml
+176,89,żurawina,surowy,szklanka,,całe,105.67,calculated,171722,"cup, whole",1,100,gęstość 0.423 g/ml z USDA: 1 cup (236.588 ml) = 100 g; × 250 ml
+176,89,żurawina,surowy,szklanka,,posiekane,116.24,calculated,171722,"cup, chopped",1,110,gęstość 0.465 g/ml z USDA: 1 cup (236.588 ml) = 110 g; × 250 ml
+177,90,żurawina suszona,gotowy,ml,,,0.676,calculated,171723,cup,0.25,40,gęstość 0.676 g/ml z USDA: 0.25 cup (59.147 ml) = 40 g
+177,90,żurawina suszona,gotowy,szklanka,,,169.07,calculated,171723,cup,0.25,40,gęstość 0.676 g/ml z USDA: 0.25 cup (59.147 ml) = 40 g; × 250 ml
+179,92,rabarbar,surowy,szklanka,,w kostkę,128.92,calculated,167758,"cup, diced",1,122,gęstość 0.516 g/ml z USDA: 1 cup (236.588 ml) = 122 g; × 250 ml
+179,92,rabarbar,surowy,łodyga,,,51,measured,167758,stalk,1,51,
+180,92,rabarbar,gotowany,ml,,,1.014,calculated,168169,cup,1,240,gęstość 1.014 g/ml z USDA: 1 cup (236.588 ml) = 240 g
+180,92,rabarbar,gotowany,szklanka,,,253.61,calculated,168169,cup,1,240,gęstość 1.014 g/ml z USDA: 1 cup (236.588 ml) = 240 g; × 250 ml
+181,93,pigwa,surowy,sztuka,,,92,measured,168163,fruit without refuse,1,92,
+182,94,morela,surowy,szklanka,,połówki,163.79,calculated,171697,"cup, halves",1,155,gęstość 0.655 g/ml z USDA: 1 cup (236.588 ml) = 155 g; × 250 ml
+182,94,morela,surowy,szklanka,,w plastrach,174.35,calculated,171697,"cup, sliced",1,165,gęstość 0.697 g/ml z USDA: 1 cup (236.588 ml) = 165 g; × 250 ml
+182,94,morela,surowy,sztuka,,,35,measured,171697,apricot,1,35,
+183,95,morela suszona,gotowy,szklanka,,połówki,137.37,calculated,173941,"cup, halves",1,130,gęstość 0.549 g/ml z USDA: 1 cup (236.588 ml) = 130 g; × 250 ml
+183,95,morela suszona,gotowy,połówka,,,3.5,measured,173941,half,1,3.5,
+184,96,brzoskwinia,surowy,szklanka,,w plastrach,162.73,calculated,169928,cup slices,1,154,gęstość 0.651 g/ml z USDA: 1 cup (236.588 ml) = 154 g; × 250 ml
+184,96,brzoskwinia,surowy,sztuka,mały,,130,measured,169928,"small (2-1/2"" dia)",1,130,
+184,96,brzoskwinia,surowy,sztuka,średni,,150,measured,169928,"medium (2-2/3"" dia)",1,150,
+184,96,brzoskwinia,surowy,sztuka,duży,,175,measured,169928,"large (2-3/4"" dia)",1,175,
+184,96,brzoskwinia,surowy,sztuka,bardzo duży,,224,measured,169928,"extra large (3"" dia)",1,224,
+185,97,nektarynka,surowy,szklanka,,w plastrach,151.11,calculated,169914,cup slices,1,143,gęstość 0.604 g/ml z USDA: 1 cup (236.588 ml) = 143 g; × 250 ml
+185,97,nektarynka,surowy,sztuka,mały,,129,measured,169914,"small (2-1/3"" dia)",1,129,
+185,97,nektarynka,surowy,sztuka,średni,,142,measured,169914,"medium (2-1/2"" dia)",1,142,
+185,97,nektarynka,surowy,sztuka,duży,,156,measured,169914,"large (2-3/4"" dia)",1,156,
+186,98,winogrona,surowy,ml,,,0.638,calculated,174683,cup,1,151,gęstość 0.638 g/ml z USDA: 1 cup (236.588 ml) = 151 g
+186,98,winogrona,surowy,szklanka,,,159.56,calculated,174683,cup,1,151,gęstość 0.638 g/ml z USDA: 1 cup (236.588 ml) = 151 g; × 250 ml
+186,98,winogrona,surowy,sztuka,,,4.9,measured,174683,grapes,10,49,
+187,99,rodzynki,gotowy,szklanka,,luźno,153.22,calculated,168164,cup (not packed),1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+187,99,rodzynki,gotowy,szklanka,,ubite,174.35,calculated,168164,"cup, packed",1,165,gęstość 0.697 g/ml z USDA: 1 cup (236.588 ml) = 165 g; × 250 ml
+188,100,banan,surowy,szklanka,,puree,237.75,calculated,173944,"cup, mashed",1,225,gęstość 0.951 g/ml z USDA: 1 cup (236.588 ml) = 225 g; × 250 ml
+188,100,banan,surowy,szklanka,,w plastrach,158.5,calculated,173944,"cup, sliced",1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g; × 250 ml
+188,100,banan,surowy,sztuka,bardzo mały,,81,measured,173944,"extra small (less than 6"" long)",1,81,
+188,100,banan,surowy,sztuka,mały,,101,measured,173944,"small (6"" to 6-7/8"" long)",1,101,
+188,100,banan,surowy,sztuka,średni,,118,measured,173944,"medium (7"" to 7-7/8"" long)",1,118,
+188,100,banan,surowy,sztuka,duży,,136,measured,173944,"large (8"" to 8-7/8"" long)",1,136,
+188,100,banan,surowy,sztuka,bardzo duży,,152,measured,173944,"extra large (9"" or longer)",1,152,
+189,101,pomarańcza,surowy,szklanka,,cząstki,190.2,calculated,169097,"cup, sections",1,180,gęstość 0.761 g/ml z USDA: 1 cup (236.588 ml) = 180 g; × 250 ml
+189,101,pomarańcza,surowy,sztuka,,,131,measured,169097,"fruit (2-5/8"" dia)",1,131,
+189,101,pomarańcza,surowy,sztuka,mały,,96,measured,169097,"small (2-3/8"" dia)",1,96,
+189,101,pomarańcza,surowy,sztuka,duży,,184,measured,169097,"large (3-1/16"" dia)",1,184,
+190,102,mandarynka,surowy,szklanka,,cząstki,206.05,calculated,169105,"cup, sections",1,195,gęstość 0.824 g/ml z USDA: 1 cup (236.588 ml) = 195 g; × 250 ml
+190,102,mandarynka,surowy,sztuka,mały,,76,measured,169105,"small (2-1/4"" dia)",1,76,
+190,102,mandarynka,surowy,sztuka,średni,,88,measured,169105,"medium (2-1/2"" dia)",1,88,
+190,102,mandarynka,surowy,sztuka,duży,,120,measured,169105,"large (2-3/4"" dia)",1,120,
+191,103,grejpfrut,surowy,szklanka,,"cząstki, z sokiem",243.04,calculated,173034,"cup sections, with juice",1,230,gęstość 0.972 g/ml z USDA: 1 cup (236.588 ml) = 230 g; × 250 ml
+191,103,grejpfrut,surowy,sztuka,,,236,measured,173034,"fruit (3-3/4"" dia)",0.5,118,
+192,104,cytryna,surowy,szklanka,,cząstki,224.02,calculated,167746,"cup, sections",1,212,gęstość 0.896 g/ml z USDA: 1 cup (236.588 ml) = 212 g; × 250 ml
+192,104,cytryna,surowy,sztuka,,,58,measured,167746,"fruit (2-1/8"" dia)",1,58,
+193,105,limonka,surowy,sztuka,,,67,measured,168155,"fruit (2"" dia)",1,67,
+194,106,kiwi,surowy,szklanka,,w plastrach,190.2,calculated,168153,"cup, sliced",1,180,gęstość 0.761 g/ml z USDA: 1 cup (236.588 ml) = 180 g; × 250 ml
+194,106,kiwi,surowy,sztuka,,,69,measured,168153,"fruit (2"" dia)",1,69,
+195,107,ananas,surowy,szklanka,,w kawałkach,174.35,calculated,169124,"cup, chunks",1,165,gęstość 0.697 g/ml z USDA: 1 cup (236.588 ml) = 165 g; × 250 ml
+195,107,ananas,surowy,plaster,,,166,measured,169124,"slice (4-2/3"" dia x 3/4"" thick)",1,166,
+195,107,ananas,surowy,plaster,,cienki,56,measured,169124,"slice, thin (3-1/2"" dia x 1/2"" thick)",1,56,
+195,107,ananas,surowy,sztuka,,,905,measured,169124,fruit,1,905,
+196,108,mango,surowy,szklanka,,w kawałkach,174.35,calculated,169910,cup pieces,1,165,gęstość 0.697 g/ml z USDA: 1 cup (236.588 ml) = 165 g; × 250 ml
+196,108,mango,surowy,sztuka,,,336,measured,169910,fruit without refuse,1,336,
+197,109,papaja,surowy,szklanka,,puree,243.04,calculated,169926,"cup, mashed",1,230,gęstość 0.972 g/ml z USDA: 1 cup (236.588 ml) = 230 g; × 250 ml
+197,109,papaja,surowy,szklanka,,w kawałkach,153.22,calculated,169926,"cup 1"" pieces",1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+197,109,papaja,surowy,sztuka,mały,,157,measured,169926,"fruit, small",1,157,
+197,109,papaja,surowy,sztuka,duży,,781,measured,169926,"fruit, large",1,781,
+198,110,marakuja,surowy,ml,,,0.998,calculated,169108,cup,1,236,gęstość 0.998 g/ml z USDA: 1 cup (236.588 ml) = 236 g
+198,110,marakuja,surowy,szklanka,,,249.38,calculated,169108,cup,1,236,gęstość 0.998 g/ml z USDA: 1 cup (236.588 ml) = 236 g; × 250 ml
+198,110,marakuja,surowy,sztuka,,,18,measured,169108,fruit without refuse,1,18,
+199,111,arbuz,surowy,szklanka,,kulki,162.73,calculated,167765,"cup, balls",1,154,gęstość 0.651 g/ml z USDA: 1 cup (236.588 ml) = 154 g; × 250 ml
+199,111,arbuz,surowy,szklanka,,w kostkę,160.62,calculated,167765,"cup, diced",1,152,gęstość 0.642 g/ml z USDA: 1 cup (236.588 ml) = 152 g; × 250 ml
+199,111,arbuz,surowy,cząstka,,,286,measured,167765,wedge (approx 1/16 of melon),1,286,
+199,111,arbuz,surowy,sztuka,,,4518,measured,167765,"melon (15"" long x 7-1/2"" dia)",1,4518,
+200,112,melon kantalupa,surowy,szklanka,,kulki,187.03,calculated,169092,"cup, balls",1,177,gęstość 0.748 g/ml z USDA: 1 cup (236.588 ml) = 177 g; × 250 ml
+200,112,melon kantalupa,surowy,szklanka,,w kostkę,169.07,calculated,169092,"cup, cubes",1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g; × 250 ml
+200,112,melon kantalupa,surowy,cząstka,mały,,55,measured,169092,"wedge, small (1/8 of small melon)",1,55,
+200,112,melon kantalupa,surowy,cząstka,średni,,69,measured,169092,"wedge, medium (1/8 of medium melon)",1,69,
+200,112,melon kantalupa,surowy,cząstka,duży,,102,measured,169092,"wedge, large (1/8 of large melon)",1,102,
+200,112,melon kantalupa,surowy,sztuka,mały,,441,measured,169092,"melon, small (about 4-1/4"" dia)",1,441,
+200,112,melon kantalupa,surowy,sztuka,średni,,552,measured,169092,"melon, medium (about 5"" dia)",1,552,
+200,112,melon kantalupa,surowy,sztuka,duży,,814,measured,169092,"melon, large (about 6-1/2"" dia)",1,814,
+201,113,granat,surowy,sztuka,,,282,measured,169134,"pomegranate (4"" dia)",1,282,
+202,114,awokado,surowy,szklanka,,przecier,243.04,calculated,171705,"cup, pureed",1,230,gęstość 0.972 g/ml z USDA: 1 cup (236.588 ml) = 230 g; × 250 ml
+202,114,awokado,surowy,szklanka,,w kostkę,158.5,calculated,171705,"cup, cubes",1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g; × 250 ml
+202,114,awokado,surowy,szklanka,,w plastrach,154.28,calculated,171705,"cup, sliced",1,146,gęstość 0.617 g/ml z USDA: 1 cup (236.588 ml) = 146 g; × 250 ml
+202,114,awokado,surowy,sztuka,,,201,measured,171705,"avocado, NS as to Florida or California",1,201,
+203,115,figa,surowy,sztuka,mały,,40,measured,173021,"small (1-1/2"" dia)",1,40,
+203,115,figa,surowy,sztuka,średni,,50,measured,173021,"medium (2-1/4"" dia)",1,50,
+203,115,figa,surowy,sztuka,duży,,64,measured,173021,"large (2-1/2"" dia)",1,64,
+204,116,figa suszona,gotowy,ml,,,0.63,calculated,174665,cup,1,149,gęstość 0.63 g/ml z USDA: 1 cup (236.588 ml) = 149 g
+204,116,figa suszona,gotowy,szklanka,,,157.45,calculated,174665,cup,1,149,gęstość 0.63 g/ml z USDA: 1 cup (236.588 ml) = 149 g; × 250 ml
+204,116,figa suszona,gotowy,sztuka,,,8.4,measured,174665,fig,1,8.4,
+205,117,daktyle suszone,gotowy,szklanka,,posiekane,155.33,calculated,171726,"cup, chopped",1,147,gęstość 0.621 g/ml z USDA: 1 cup (236.588 ml) = 147 g; × 250 ml
+205,117,daktyle suszone,gotowy,sztuka,,bez pestek,7.1,measured,171726,"date, pitted",1,7.1,
+206,118,kaki (persymona),surowy,sztuka,,,168,measured,169941,"fruit (2-1/2"" dia)",1,168,
+207,119,jabłko suszone,gotowy,ml,,,0.364,calculated,171691,cup,1,86,gęstość 0.364 g/ml z USDA: 1 cup (236.588 ml) = 86 g
+207,119,jabłko suszone,gotowy,szklanka,,,90.88,calculated,171691,cup,1,86,gęstość 0.364 g/ml z USDA: 1 cup (236.588 ml) = 86 g; × 250 ml
+207,119,jabłko suszone,gotowy,krążek,,,6.4,measured,171691,ring,1,6.4,
+208,120,mus jabłkowy bez cukru,gotowy,ml,,,1.031,calculated,167772,cup,1,244,gęstość 1.031 g/ml z USDA: 1 cup (236.588 ml) = 244 g
+208,120,mus jabłkowy bez cukru,gotowy,szklanka,,,257.83,calculated,167772,cup,1,244,gęstość 1.031 g/ml z USDA: 1 cup (236.588 ml) = 244 g; × 250 ml
+209,121,sok jabłkowy,gotowy,ml,,,1.048,calculated,167771,cup,1,248,gęstość 1.048 g/ml z USDA: 1 cup (236.588 ml) = 248 g
+209,121,sok jabłkowy,gotowy,szklanka,,,262.06,calculated,167771,cup,1,248,gęstość 1.048 g/ml z USDA: 1 cup (236.588 ml) = 248 g; × 250 ml
+210,122,sok pomarańczowy,gotowy,ml,,,1.052,calculated,169100,cup,1,249,gęstość 1.052 g/ml z USDA: 1 cup (236.588 ml) = 249 g
+210,122,sok pomarańczowy,gotowy,szklanka,,,263.12,calculated,169100,cup,1,249,gęstość 1.052 g/ml z USDA: 1 cup (236.588 ml) = 249 g; × 250 ml
+212,124,kasza gryczana palona,surowy,ml,,,0.693,calculated,170685,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g
+212,124,kasza gryczana palona,surowy,szklanka,,,173.3,calculated,170685,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g; × 250 ml
+213,124,kasza gryczana palona,gotowany,ml,,,0.71,calculated,170686,cup,1,168,gęstość 0.71 g/ml z USDA: 1 cup (236.588 ml) = 168 g
+213,124,kasza gryczana palona,gotowany,szklanka,,,177.52,calculated,170686,cup,1,168,gęstość 0.71 g/ml z USDA: 1 cup (236.588 ml) = 168 g; × 250 ml
+214,125,kasza gryczana niepalona (biała),surowy,ml,,,0.719,calculated,170286,cup,1,170,gęstość 0.719 g/ml z USDA: 1 cup (236.588 ml) = 170 g
+214,125,kasza gryczana niepalona (biała),surowy,szklanka,,,179.64,calculated,170286,cup,1,170,gęstość 0.719 g/ml z USDA: 1 cup (236.588 ml) = 170 g; × 250 ml
+216,126,kasza jaglana,surowy,ml,,,0.845,calculated,169702,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g
+216,126,kasza jaglana,surowy,szklanka,,,211.34,calculated,169702,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g; × 250 ml
+217,126,kasza jaglana,gotowany,ml,,,0.735,calculated,168871,cup,1,174,gęstość 0.735 g/ml z USDA: 1 cup (236.588 ml) = 174 g
+217,126,kasza jaglana,gotowany,szklanka,,,183.86,calculated,168871,cup,1,174,gęstość 0.735 g/ml z USDA: 1 cup (236.588 ml) = 174 g; × 250 ml
+218,127,kasza jęczmienna perłowa,surowy,ml,,,0.845,calculated,170284,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g
+218,127,kasza jęczmienna perłowa,surowy,szklanka,,,211.34,calculated,170284,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g; × 250 ml
+219,127,kasza jęczmienna perłowa,gotowany,ml,,,0.664,calculated,170285,cup,1,157,gęstość 0.664 g/ml z USDA: 1 cup (236.588 ml) = 157 g
+219,127,kasza jęczmienna perłowa,gotowany,szklanka,,,165.9,calculated,170285,cup,1,157,gęstość 0.664 g/ml z USDA: 1 cup (236.588 ml) = 157 g; × 250 ml
+220,128,kasza jęczmienna pęczak,surowy,ml,,,0.845,calculated,170284,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g
+220,128,kasza jęczmienna pęczak,surowy,szklanka,,,211.34,calculated,170284,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g; × 250 ml
+221,128,kasza jęczmienna pęczak,gotowany,ml,,,0.664,calculated,170285,cup,1,157,gęstość 0.664 g/ml z USDA: 1 cup (236.588 ml) = 157 g
+221,128,kasza jęczmienna pęczak,gotowany,szklanka,,,165.9,calculated,170285,cup,1,157,gęstość 0.664 g/ml z USDA: 1 cup (236.588 ml) = 157 g; × 250 ml
+222,129,kasza manna,surowy,ml,,,0.744,calculated,173916,cup,1,176,gęstość 0.744 g/ml z USDA: 1 cup (236.588 ml) = 176 g
+222,129,kasza manna,surowy,łyżka,,,10.9,measured,173916,tbsp,1,10.9,
+222,129,kasza manna,surowy,szklanka,,,185.98,calculated,173916,cup,1,176,gęstość 0.744 g/ml z USDA: 1 cup (236.588 ml) = 176 g; × 250 ml
+223,129,kasza manna,gotowany,ml,,,0.985,calculated,173917,cup,1,233,gęstość 0.985 g/ml z USDA: 1 cup (236.588 ml) = 233 g
+223,129,kasza manna,gotowany,szklanka,,,246.21,calculated,173917,cup,1,233,gęstość 0.985 g/ml z USDA: 1 cup (236.588 ml) = 233 g; × 250 ml
+224,130,kasza kukurydziana,surowy,ml,,,0.659,calculated,171654,cup,1,156,gęstość 0.659 g/ml z USDA: 1 cup (236.588 ml) = 156 g
+224,130,kasza kukurydziana,surowy,łyżka,,,9.7,measured,171654,tbsp,1,9.7,
+224,130,kasza kukurydziana,surowy,szklanka,,,164.84,calculated,171654,cup,1,156,gęstość 0.659 g/ml z USDA: 1 cup (236.588 ml) = 156 g; × 250 ml
+225,130,kasza kukurydziana,gotowany,ml,,,1.086,calculated,171655,cup,1,257,gęstość 1.086 g/ml z USDA: 1 cup (236.588 ml) = 257 g
+225,130,kasza kukurydziana,gotowany,łyżka,,,16,measured,171655,tbsp,1,16,
+225,130,kasza kukurydziana,gotowany,szklanka,,,271.57,calculated,171655,cup,1,257,gęstość 1.086 g/ml z USDA: 1 cup (236.588 ml) = 257 g; × 250 ml
+226,131,kasza kuskus,surowy,ml,,,0.731,calculated,169699,cup,1,173,gęstość 0.731 g/ml z USDA: 1 cup (236.588 ml) = 173 g
+226,131,kasza kuskus,surowy,szklanka,,,182.81,calculated,169699,cup,1,173,gęstość 0.731 g/ml z USDA: 1 cup (236.588 ml) = 173 g; × 250 ml
+228,132,kasza bulgur,surowy,ml,,,0.592,calculated,170688,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g
+228,132,kasza bulgur,surowy,szklanka,,,147.94,calculated,170688,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+229,132,kasza bulgur,gotowany,ml,,,0.769,calculated,170287,cup,1,182,gęstość 0.769 g/ml z USDA: 1 cup (236.588 ml) = 182 g
+229,132,kasza bulgur,gotowany,łyżka,,,8.4,measured,170287,tbsp,1,8.4,
+229,132,kasza bulgur,gotowany,szklanka,,,192.32,calculated,170287,cup,1,182,gęstość 0.769 g/ml z USDA: 1 cup (236.588 ml) = 182 g; × 250 ml
+230,133,orkisz (ziarno),surowy,ml,,,0.735,calculated,169745,cup,1,174,gęstość 0.735 g/ml z USDA: 1 cup (236.588 ml) = 174 g
+230,133,orkisz (ziarno),surowy,szklanka,,,183.86,calculated,169745,cup,1,174,gęstość 0.735 g/ml z USDA: 1 cup (236.588 ml) = 174 g; × 250 ml
+231,133,orkisz (ziarno),gotowany,ml,,,0.82,calculated,169746,cup,1,194,gęstość 0.82 g/ml z USDA: 1 cup (236.588 ml) = 194 g
+231,133,orkisz (ziarno),gotowany,szklanka,,,205,calculated,169746,cup,1,194,gęstość 0.82 g/ml z USDA: 1 cup (236.588 ml) = 194 g; × 250 ml
+232,134,komosa ryżowa,surowy,ml,,,0.719,calculated,168874,cup,1,170,gęstość 0.719 g/ml z USDA: 1 cup (236.588 ml) = 170 g
+232,134,komosa ryżowa,surowy,szklanka,,,179.64,calculated,168874,cup,1,170,gęstość 0.719 g/ml z USDA: 1 cup (236.588 ml) = 170 g; × 250 ml
+233,134,komosa ryżowa,gotowany,ml,,,0.782,calculated,168917,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g
+233,134,komosa ryżowa,gotowany,szklanka,,,195.49,calculated,168917,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g; × 250 ml
+234,135,amarantus,surowy,ml,,,0.816,calculated,170682,cup,1,193,gęstość 0.816 g/ml z USDA: 1 cup (236.588 ml) = 193 g
+234,135,amarantus,surowy,szklanka,,,203.94,calculated,170682,cup,1,193,gęstość 0.816 g/ml z USDA: 1 cup (236.588 ml) = 193 g; × 250 ml
+235,135,amarantus,gotowany,ml,,,1.04,calculated,170683,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g
+235,135,amarantus,gotowany,szklanka,,,259.95,calculated,170683,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g; × 250 ml
+236,136,ryż biały,surowy,ml,,,0.782,calculated,168877,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g
+236,136,ryż biały,surowy,szklanka,,,195.49,calculated,168877,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g; × 250 ml
+237,136,ryż biały,gotowany,ml,,,0.668,calculated,168878,cup,1,158,gęstość 0.668 g/ml z USDA: 1 cup (236.588 ml) = 158 g
+237,136,ryż biały,gotowany,szklanka,,,166.96,calculated,168878,cup,1,158,gęstość 0.668 g/ml z USDA: 1 cup (236.588 ml) = 158 g; × 250 ml
+238,137,ryż brązowy,surowy,ml,,,0.782,calculated,169703,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g
+238,137,ryż brązowy,surowy,szklanka,,,195.49,calculated,169703,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g; × 250 ml
+239,137,ryż brązowy,gotowany,ml,,,0.854,calculated,169704,cup,1,202,gęstość 0.854 g/ml z USDA: 1 cup (236.588 ml) = 202 g
+239,137,ryż brązowy,gotowany,szklanka,,,213.45,calculated,169704,cup,1,202,gęstość 0.854 g/ml z USDA: 1 cup (236.588 ml) = 202 g; × 250 ml
+240,138,ryż basmati,surowy,ml,,,0.782,calculated,168877,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g
+240,138,ryż basmati,surowy,szklanka,,,195.49,calculated,168877,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g; × 250 ml
+241,138,ryż basmati,gotowany,ml,,,0.668,calculated,168878,cup,1,158,gęstość 0.668 g/ml z USDA: 1 cup (236.588 ml) = 158 g
+241,138,ryż basmati,gotowany,szklanka,,,166.96,calculated,168878,cup,1,158,gęstość 0.668 g/ml z USDA: 1 cup (236.588 ml) = 158 g; × 250 ml
+242,139,ryż parboiled,surowy,ml,,,0.782,calculated,169707,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g
+242,139,ryż parboiled,surowy,szklanka,,,195.49,calculated,169707,cup,1,185,gęstość 0.782 g/ml z USDA: 1 cup (236.588 ml) = 185 g; × 250 ml
+243,139,ryż parboiled,gotowany,ml,,,0.668,calculated,169708,cup,1,158,gęstość 0.668 g/ml z USDA: 1 cup (236.588 ml) = 158 g
+243,139,ryż parboiled,gotowany,szklanka,,,166.96,calculated,169708,cup,1,158,gęstość 0.668 g/ml z USDA: 1 cup (236.588 ml) = 158 g; × 250 ml
+244,140,ryż dziki,surowy,ml,,,0.676,calculated,169726,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g
+244,140,ryż dziki,surowy,szklanka,,,169.07,calculated,169726,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g; × 250 ml
+245,140,ryż dziki,gotowany,ml,,,0.693,calculated,168897,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g
+245,140,ryż dziki,gotowany,szklanka,,,173.3,calculated,168897,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g; × 250 ml
+246,141,makaron pszenny,surowy,szklanka,,kokardki,85.59,calculated,169736,cup farfalle,1,81,gęstość 0.342 g/ml z USDA: 1 cup (236.588 ml) = 81 g; × 250 ml
+246,141,makaron pszenny,surowy,szklanka,,kolanka,128.92,calculated,169736,cup elbows,1,122,gęstość 0.516 g/ml z USDA: 1 cup (236.588 ml) = 122 g; × 250 ml
+246,141,makaron pszenny,surowy,szklanka,,lasagne,95.1,calculated,169736,cup lasagna,1,90,gęstość 0.38 g/ml z USDA: 1 cup (236.588 ml) = 90 g; × 250 ml
+246,141,makaron pszenny,surowy,szklanka,,muszelki,67.63,calculated,169736,cup shells,1,64,gęstość 0.271 g/ml z USDA: 1 cup (236.588 ml) = 64 g; × 250 ml
+246,141,makaron pszenny,surowy,szklanka,,penne,100.39,calculated,169736,cup penne,1,95,gęstość 0.402 g/ml z USDA: 1 cup (236.588 ml) = 95 g; × 250 ml
+246,141,makaron pszenny,surowy,szklanka,,spaghetti,96.16,calculated,169736,cup spaghetti,1,91,gęstość 0.385 g/ml z USDA: 1 cup (236.588 ml) = 91 g; × 250 ml
+246,141,makaron pszenny,surowy,szklanka,,świderki,101.44,calculated,169736,cup rotini,1,96,gęstość 0.406 g/ml z USDA: 1 cup (236.588 ml) = 96 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,kokardki,113.07,calculated,169737,cup farfalle,1,107,gęstość 0.452 g/ml z USDA: 1 cup (236.588 ml) = 107 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,"kolanka, luźno",126.8,calculated,169737,cup elbows not packed,1,120,gęstość 0.507 g/ml z USDA: 1 cup (236.588 ml) = 120 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,"kolanka, ubite",139.48,calculated,169737,cup elbows packed,1,132,gęstość 0.558 g/ml z USDA: 1 cup (236.588 ml) = 132 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,lasagne,122.58,calculated,169737,cup lasagne,1,116,gęstość 0.49 g/ml z USDA: 1 cup (236.588 ml) = 116 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,muszelki,110.95,calculated,169737,cup shells,1,105,gęstość 0.444 g/ml z USDA: 1 cup (236.588 ml) = 105 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,penne,113.07,calculated,169737,cup penne,1,107,gęstość 0.452 g/ml z USDA: 1 cup (236.588 ml) = 107 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,"spaghetti, luźno",131.03,calculated,169737,cup spaghetti not packed,1,124,gęstość 0.524 g/ml z USDA: 1 cup (236.588 ml) = 124 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,"spaghetti, ubite",159.56,calculated,169737,cup spaghetti packed,1,151,gęstość 0.638 g/ml z USDA: 1 cup (236.588 ml) = 151 g; × 250 ml
+247,141,makaron pszenny,gotowany,szklanka,,świderki,113.07,calculated,169737,cup rotini,1,107,gęstość 0.452 g/ml z USDA: 1 cup (236.588 ml) = 107 g; × 250 ml
+248,142,makaron pełnoziarnisty,surowy,szklanka,,kokardki,85.59,calculated,168915,cup farfalle,1,81,gęstość 0.342 g/ml z USDA: 1 cup (236.588 ml) = 81 g; × 250 ml
+248,142,makaron pełnoziarnisty,surowy,szklanka,,kolanka,128.92,calculated,168915,cup elbows,1,122,gęstość 0.516 g/ml z USDA: 1 cup (236.588 ml) = 122 g; × 250 ml
+248,142,makaron pełnoziarnisty,surowy,szklanka,,lasagne,95.1,calculated,168915,cup lasagne,1,90,gęstość 0.38 g/ml z USDA: 1 cup (236.588 ml) = 90 g; × 250 ml
+248,142,makaron pełnoziarnisty,surowy,szklanka,,muszelki,67.63,calculated,168915,cup shells,1,64,gęstość 0.271 g/ml z USDA: 1 cup (236.588 ml) = 64 g; × 250 ml
+248,142,makaron pełnoziarnisty,surowy,szklanka,,penne,100.39,calculated,168915,cup penne,1,95,gęstość 0.402 g/ml z USDA: 1 cup (236.588 ml) = 95 g; × 250 ml
+248,142,makaron pełnoziarnisty,surowy,szklanka,,spaghetti,96.16,calculated,168915,cup spaghetti,1,91,gęstość 0.385 g/ml z USDA: 1 cup (236.588 ml) = 91 g; × 250 ml
+248,142,makaron pełnoziarnisty,surowy,szklanka,,świderki,101.44,calculated,168915,cup rotini,1,96,gęstość 0.406 g/ml z USDA: 1 cup (236.588 ml) = 96 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,kokardki,113.07,calculated,168916,cup farfalle,1,107,gęstość 0.452 g/ml z USDA: 1 cup (236.588 ml) = 107 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,"kolanka, luźno",123.63,calculated,168916,cup elbows not packed,1,117,gęstość 0.495 g/ml z USDA: 1 cup (236.588 ml) = 117 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,lasagne,122.58,calculated,168916,cup lasagne,1,116,gęstość 0.49 g/ml z USDA: 1 cup (236.588 ml) = 116 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,muszelki,110.95,calculated,168916,cup shells,1,105,gęstość 0.444 g/ml z USDA: 1 cup (236.588 ml) = 105 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,penne,102.5,calculated,168916,cup penne,1,97,gęstość 0.41 g/ml z USDA: 1 cup (236.588 ml) = 97 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,"spaghetti, luźno",122.58,calculated,168916,cup spaghetti not packed,1,116,gęstość 0.49 g/ml z USDA: 1 cup (236.588 ml) = 116 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,"spaghetti, ubite",159.56,calculated,168916,cup spaghetti packed,1,151,gęstość 0.638 g/ml z USDA: 1 cup (236.588 ml) = 151 g; × 250 ml
+249,142,makaron pełnoziarnisty,gotowany,szklanka,,świderki,113.07,calculated,168916,cup rotini,1,107,gęstość 0.452 g/ml z USDA: 1 cup (236.588 ml) = 107 g; × 250 ml
+250,143,makaron jajeczny,surowy,ml,,,0.161,calculated,169731,cup,1,38,gęstość 0.161 g/ml z USDA: 1 cup (236.588 ml) = 38 g
+250,143,makaron jajeczny,surowy,szklanka,,,40.15,calculated,169731,cup,1,38,gęstość 0.161 g/ml z USDA: 1 cup (236.588 ml) = 38 g; × 250 ml
+251,143,makaron jajeczny,gotowany,ml,,,0.676,calculated,168919,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g
+251,143,makaron jajeczny,gotowany,szklanka,,,169.07,calculated,168919,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g; × 250 ml
+253,144,makaron ryżowy,gotowany,ml,,,0.744,calculated,168914,cup,1,176,gęstość 0.744 g/ml z USDA: 1 cup (236.588 ml) = 176 g
+253,144,makaron ryżowy,gotowany,szklanka,,,185.98,calculated,168914,cup,1,176,gęstość 0.744 g/ml z USDA: 1 cup (236.588 ml) = 176 g; × 250 ml
+254,145,płatki owsiane,surowy,ml,,,0.342,calculated,173904,cup,1,81,gęstość 0.342 g/ml z USDA: 1 cup (236.588 ml) = 81 g
+254,145,płatki owsiane,surowy,szklanka,,,85.59,calculated,173904,cup,1,81,gęstość 0.342 g/ml z USDA: 1 cup (236.588 ml) = 81 g; × 250 ml
+256,146,otręby owsiane,surowy,ml,,,0.397,calculated,168872,cup,1,94,gęstość 0.397 g/ml z USDA: 1 cup (236.588 ml) = 94 g
+256,146,otręby owsiane,surowy,szklanka,,,99.33,calculated,168872,cup,1,94,gęstość 0.397 g/ml z USDA: 1 cup (236.588 ml) = 94 g; × 250 ml
+257,147,otręby pszenne,surowy,ml,,,0.245,calculated,169722,cup,1,58,gęstość 0.245 g/ml z USDA: 1 cup (236.588 ml) = 58 g
+257,147,otręby pszenne,surowy,szklanka,,,61.29,calculated,169722,cup,1,58,gęstość 0.245 g/ml z USDA: 1 cup (236.588 ml) = 58 g; × 250 ml
+258,148,płatki kukurydziane,gotowy,ml,,,0.118,calculated,174648,cup (1 NLEA serving),1,28,gęstość 0.118 g/ml z USDA: 1 cup (236.588 ml) = 28 g
+258,148,płatki kukurydziane,gotowy,szklanka,,,29.59,calculated,174648,cup (1 NLEA serving),1,28,gęstość 0.118 g/ml z USDA: 1 cup (236.588 ml) = 28 g; × 250 ml
+261,151,mąka pszenna (typ 450–650),surowy,ml,,,0.528,calculated,168894,cup,1,125,gęstość 0.528 g/ml z USDA: 1 cup (236.588 ml) = 125 g
+261,151,mąka pszenna (typ 450–650),surowy,szklanka,,,132.09,calculated,168894,cup,1,125,gęstość 0.528 g/ml z USDA: 1 cup (236.588 ml) = 125 g; × 250 ml
+263,153,mąka żytnia,surowy,ml,,,0.431,calculated,168886,cup,1,102,gęstość 0.431 g/ml z USDA: 1 cup (236.588 ml) = 102 g
+263,153,mąka żytnia,surowy,szklanka,,,107.78,calculated,168886,cup,1,102,gęstość 0.431 g/ml z USDA: 1 cup (236.588 ml) = 102 g; × 250 ml
+264,154,mąka gryczana,surowy,ml,,,0.507,calculated,170687,cup,1,120,gęstość 0.507 g/ml z USDA: 1 cup (236.588 ml) = 120 g
+264,154,mąka gryczana,surowy,szklanka,,,126.8,calculated,170687,cup,1,120,gęstość 0.507 g/ml z USDA: 1 cup (236.588 ml) = 120 g; × 250 ml
+265,155,mąka kukurydziana,surowy,ml,,,0.495,calculated,170290,cup,1,117,gęstość 0.495 g/ml z USDA: 1 cup (236.588 ml) = 117 g
+265,155,mąka kukurydziana,surowy,szklanka,,,123.63,calculated,170290,cup,1,117,gęstość 0.495 g/ml z USDA: 1 cup (236.588 ml) = 117 g; × 250 ml
+266,156,skrobia ziemniaczana (mąka ziemniaczana),surowy,ml,,,0.676,calculated,168446,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g
+266,156,skrobia ziemniaczana (mąka ziemniaczana),surowy,szklanka,,,169.07,calculated,168446,cup,1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g; × 250 ml
+267,157,bułka tarta,gotowy,ml,,,0.456,calculated,174928,cup,1,108,gęstość 0.456 g/ml z USDA: 1 cup (236.588 ml) = 108 g
+267,157,bułka tarta,gotowy,szklanka,,,114.12,calculated,174928,cup,1,108,gęstość 0.456 g/ml z USDA: 1 cup (236.588 ml) = 108 g; × 250 ml
+268,158,chleb pszenny,gotowy,szklanka,,okruchy,47.55,calculated,172818,"cup, crumbs",1,45,gęstość 0.19 g/ml z USDA: 1 cup (236.588 ml) = 45 g; × 250 ml
+268,158,chleb pszenny,gotowy,szklanka,,w kostkę,36.98,calculated,172818,"cup, cubes",1,35,gęstość 0.148 g/ml z USDA: 1 cup (236.588 ml) = 35 g; × 250 ml
+268,158,chleb pszenny,gotowy,plaster,,,25,measured,172818,slice,1,25,
+268,158,chleb pszenny,gotowy,plaster,,cienki,20,measured,172818,"slice, thin",1,20,
+268,158,chleb pszenny,gotowy,plaster,duży,,30,measured,172818,"slice, large",1,30,
+269,159,chleb żytni,gotowy,plaster,,,32,measured,172684,"slice, regular",1,32,
+269,159,chleb żytni,gotowy,plaster,,cienki,25,measured,172684,"slice, thin",1,25,
+270,160,chleb mieszany pszenno-żytni,gotowy,plaster,,,29,measured,172686,slice,1,29,
+271,161,chleb żytni razowy,gotowy,plaster,,,26,measured,174918,"slice, regular",1,26,
+271,161,chleb żytni razowy,gotowy,plaster,,cienki,20,measured,174918,"slice, thin",1,20,
+272,162,chleb graham,gotowy,plaster,,,32,measured,172688,slice,1,32,
+273,163,chleb pszenny pełnoziarnisty,gotowy,plaster,,,32,measured,172688,slice,1,32,
+274,164,chleb tostowy,gotowy,szklanka,,okruchy,47.55,calculated,172818,"cup, crumbs",1,45,gęstość 0.19 g/ml z USDA: 1 cup (236.588 ml) = 45 g; × 250 ml
+274,164,chleb tostowy,gotowy,szklanka,,w kostkę,36.98,calculated,172818,"cup, cubes",1,35,gęstość 0.148 g/ml z USDA: 1 cup (236.588 ml) = 35 g; × 250 ml
+274,164,chleb tostowy,gotowy,plaster,,,25,measured,172818,slice,1,25,
+274,164,chleb tostowy,gotowy,plaster,,cienki,20,measured,172818,"slice, thin",1,20,
+274,164,chleb tostowy,gotowy,plaster,duży,,30,measured,172818,"slice, large",1,30,
+275,165,bułka pszenna,gotowy,sztuka,,,28,measured,172793,roll (1 oz),1,28,
+276,166,bagietka,gotowy,plaster,,,48,measured,174091,slice 1 serving,1,48,
+277,167,tortilla pszenna,gotowy,sztuka,,,72,measured,173242,"tortilla (approx 10"" dia)",1,72,
+277,167,tortilla pszenna,gotowy,sztuka,średni,,32,measured,173242,"tortilla, medium (approx 6"" dia)",1,32,
+278,168,pita,gotowy,sztuka,mały,,28,measured,174915,"pita, small  (4"" dia)",1,28,
+278,168,pita,gotowy,sztuka,duży,,60,measured,174915,"pita, large (6-1/2"" dia)",1,60,
+279,169,pieczywo chrupkie żytnie,gotowy,szklanka,,kruszone,64.46,calculated,172744,"cup, crushed",1,61,gęstość 0.258 g/ml z USDA: 1 cup (236.588 ml) = 61 g; × 250 ml
+281,171,"mleko 0,5%",gotowy,ml,,,1.044,calculated,169868,cup,1,247,gęstość 1.044 g/ml z USDA: 1 cup (236.588 ml) = 247 g
+281,171,"mleko 0,5%",gotowy,szklanka,,,261,calculated,169868,cup,1,247,gęstość 1.044 g/ml z USDA: 1 cup (236.588 ml) = 247 g; × 250 ml
+282,172,mleko 2%,gotowy,ml,,,1.036,calculated,172193,quart,1,980,gęstość 1.036 g/ml z USDA: 1 quart (946.353 ml) = 980 g
+282,172,mleko 2%,gotowy,szklanka,,,258.89,calculated,172193,quart,1,980,gęstość 1.036 g/ml z USDA: 1 quart (946.353 ml) = 980 g; × 250 ml
+283,173,"mleko 3,2%",gotowy,ml,,,1.031,calculated,171265,quart,1,976,gęstość 1.031 g/ml z USDA: 1 quart (946.353 ml) = 976 g
+283,173,"mleko 3,2%",gotowy,łyżka,,,15,measured,171265,tbsp,1,15,
+283,173,"mleko 3,2%",gotowy,szklanka,,,257.83,calculated,171265,quart,1,976,gęstość 1.031 g/ml z USDA: 1 quart (946.353 ml) = 976 g; × 250 ml
+284,174,mleko kozie,gotowy,ml,,,1.031,calculated,171278,quart,1,976,gęstość 1.031 g/ml z USDA: 1 quart (946.353 ml) = 976 g
+284,174,mleko kozie,gotowy,szklanka,,,257.83,calculated,171278,quart,1,976,gęstość 1.031 g/ml z USDA: 1 quart (946.353 ml) = 976 g; × 250 ml
+285,175,mleko w proszku,gotowy,ml,,,0.541,calculated,170876,cup,1,128,gęstość 0.541 g/ml z USDA: 1 cup (236.588 ml) = 128 g
+285,175,mleko w proszku,gotowy,szklanka,,,135.26,calculated,170876,cup,1,128,gęstość 0.541 g/ml z USDA: 1 cup (236.588 ml) = 128 g; × 250 ml
+287,177,maślanka,gotowy,ml,,,1.036,calculated,170874,quart,1,980,gęstość 1.036 g/ml z USDA: 1 quart (946.353 ml) = 980 g
+287,177,maślanka,gotowy,szklanka,,,258.89,calculated,170874,quart,1,980,gęstość 1.036 g/ml z USDA: 1 quart (946.353 ml) = 980 g; × 250 ml
+289,179,jogurt naturalny,gotowy,ml,,,1.036,calculated,171284,cup (8 fl oz),1,245,gęstość 1.036 g/ml z USDA: 1 cup (236.588 ml) = 245 g
+289,179,jogurt naturalny,gotowy,szklanka,,,258.89,calculated,171284,cup (8 fl oz),1,245,gęstość 1.036 g/ml z USDA: 1 cup (236.588 ml) = 245 g; × 250 ml
+291,181,jogurt owocowy,gotowy,ml,,,1.036,calculated,170889,cup (8 fl oz),1,245,gęstość 1.036 g/ml z USDA: 1 cup (236.588 ml) = 245 g
+291,181,jogurt owocowy,gotowy,szklanka,,,258.89,calculated,170889,cup (8 fl oz),1,245,gęstość 1.036 g/ml z USDA: 1 cup (236.588 ml) = 245 g; × 250 ml
+296,186,serek wiejski,gotowy,szklanka,,"drobne ziarna, luźno",237.75,calculated,172179,"cup, small curd (not packed)",1,225,gęstość 0.951 g/ml z USDA: 1 cup (236.588 ml) = 225 g; × 250 ml
+296,186,serek wiejski,gotowy,szklanka,,"duże ziarna, luźno",221.9,calculated,172179,"cup, large curd (not packed)",1,210,gęstość 0.888 g/ml z USDA: 1 cup (236.588 ml) = 210 g; × 250 ml
+298,188,serek śmietankowy,gotowy,ml,,,0.981,calculated,173418,cup,1,232,gęstość 0.981 g/ml z USDA: 1 cup (236.588 ml) = 232 g
+298,188,serek śmietankowy,gotowy,łyżka,,,14.5,measured,173418,tbsp,1,14.5,
+298,188,serek śmietankowy,gotowy,łyżka,,po ubiciu,10,measured,173418,"tbsp, whipped",1,10,
+298,188,serek śmietankowy,gotowy,szklanka,,,245.15,calculated,173418,cup,1,232,gęstość 0.981 g/ml z USDA: 1 cup (236.588 ml) = 232 g; × 250 ml
+298,188,serek śmietankowy,gotowy,szklanka,,po ubiciu,169.07,calculated,173418,"tbsp, whipped",1,10,gęstość 0.676 g/ml z USDA: 1 tbsp (14.787 ml) = 10 g; × 250 ml
+299,189,śmietana 12%,gotowy,ml,,,1.023,calculated,171256,cup,1,242,gęstość 1.023 g/ml z USDA: 1 cup (236.588 ml) = 242 g
+299,189,śmietana 12%,gotowy,łyżka,,,15,measured,171256,tbsp,1,15,
+299,189,śmietana 12%,gotowy,szklanka,,,255.72,calculated,171256,cup,1,242,gęstość 1.023 g/ml z USDA: 1 cup (236.588 ml) = 242 g; × 250 ml
+300,190,śmietana 18%,gotowy,ml,,,0.972,calculated,171257,cup,1,230,gęstość 0.972 g/ml z USDA: 1 cup (236.588 ml) = 230 g
+300,190,śmietana 18%,gotowy,łyżka,,,12,measured,171257,tbsp,1,12,
+300,190,śmietana 18%,gotowy,szklanka,,,243.04,calculated,171257,cup,1,230,gęstość 0.972 g/ml z USDA: 1 cup (236.588 ml) = 230 g; × 250 ml
+301,191,śmietanka 30%,gotowy,ml,,,1.008,calculated,170859,fl oz,1,29.8,gęstość 1.008 g/ml z USDA: 1 fl oz (29.573 ml) = 29.8 g
+301,191,śmietanka 30%,gotowy,łyżka,,,15,measured,170859,tbsp,1,15,
+301,191,śmietanka 30%,gotowy,szklanka,,,251.91,calculated,170859,fl oz,1,29.8,gęstość 1.008 g/ml z USDA: 1 fl oz (29.573 ml) = 29.8 g; × 250 ml
+301,191,śmietanka 30%,gotowy,szklanka,,po ubiciu,126.8,calculated,170859,"cup, whipped",1,120,gęstość 0.507 g/ml z USDA: 1 cup (236.588 ml) = 120 g; × 250 ml
+301,191,śmietanka 30%,gotowy,szklanka,,przed ubiciem,251.49,calculated,170859,"cup, fluid (yields 2 cups whipped)",1,238,gęstość 1.006 g/ml z USDA: 1 cup (236.588 ml) = 238 g; × 250 ml
+304,194,ser ementaler,gotowy,szklanka,,roztopione,257.83,calculated,171251,"cup, melted",1,244,gęstość 1.031 g/ml z USDA: 1 cup (236.588 ml) = 244 g; × 250 ml
+304,194,ser ementaler,gotowy,szklanka,,starte,114.12,calculated,171251,"cup, shredded",1,108,gęstość 0.456 g/ml z USDA: 1 cup (236.588 ml) = 108 g; × 250 ml
+304,194,ser ementaler,gotowy,szklanka,,w kostkę,139.48,calculated,171251,"cup, diced",1,132,gęstość 0.558 g/ml z USDA: 1 cup (236.588 ml) = 132 g; × 250 ml
+304,194,ser ementaler,gotowy,plaster,,,28,measured,171251,slice (1 oz),1,28,
+305,195,ser cheddar,gotowy,plaster,,,19,measured,170899,slice (2/3 oz),1,19,
+306,196,mozzarella,gotowy,szklanka,,starte,118.35,calculated,170845,"cup, shredded",1,112,gęstość 0.473 g/ml z USDA: 1 cup (236.588 ml) = 112 g; × 250 ml
+306,196,mozzarella,gotowy,plaster,,,28.33,measured,170845,slices,6,170,
+307,197,ser feta,gotowy,szklanka,,pokruszone,158.5,calculated,173420,"cup, crumbled",1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g; × 250 ml
+307,197,ser feta,gotowy,cząstka,,,38,measured,173420,wedge (1.33 oz),1,38,
+309,199,camembert,gotowy,ml,,,1.04,calculated,172178,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g
+309,199,camembert,gotowy,szklanka,,,259.95,calculated,172178,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g; × 250 ml
+309,199,camembert,gotowy,cząstka,,,38,measured,172178,wedge (1.33 oz),1,38,
+310,200,ser pleśniowy niebieski,gotowy,szklanka,,"pokruszone, luźno",142.65,calculated,172175,"cup, crumbled, not packed",1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g; × 250 ml
+311,201,ser topiony,gotowy,szklanka,,starte,119.41,calculated,169080,"cup, shredded",1,113,gęstość 0.478 g/ml z USDA: 1 cup (236.588 ml) = 113 g; × 250 ml
+311,201,ser topiony,gotowy,szklanka,,w kostkę,147.94,calculated,169080,"cup, diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+311,201,ser topiony,gotowy,plaster,,,21,measured,169080,slice (3/4 oz),1,21,
+313,203,ricotta,gotowy,ml,,,1.04,calculated,170851,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g
+313,203,ricotta,gotowy,szklanka,,,259.95,calculated,170851,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g; × 250 ml
+320,207,jajo kurze,surowy,ml,,,1.027,calculated,171287,cup (4.86 large eggs),1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g
+320,207,jajo kurze,surowy,szklanka,,,256.78,calculated,171287,cup (4.86 large eggs),1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g; × 250 ml
+320,207,jajo kurze,surowy,sztuka,mały,,38,measured,171287,small,1,38,
+320,207,jajo kurze,surowy,sztuka,średni,,44,measured,171287,medium,1,44,
+320,207,jajo kurze,surowy,sztuka,duży,,50,measured,171287,large,1,50,
+320,207,jajo kurze,surowy,sztuka,bardzo duży,,56,measured,171287,extra large,1,56,
+321,207,jajo kurze,gotowany,ml,,,0.575,calculated,173424,tbsp,1,8.5,gęstość 0.575 g/ml z USDA: 1 tbsp (14.787 ml) = 8.5 g
+321,207,jajo kurze,gotowany,łyżka,,,8.5,measured,173424,tbsp,1,8.5,
+321,207,jajo kurze,gotowany,szklanka,,,143.71,calculated,173424,tbsp,1,8.5,gęstość 0.575 g/ml z USDA: 1 tbsp (14.787 ml) = 8.5 g; × 250 ml
+321,207,jajo kurze,gotowany,szklanka,,posiekane,143.71,calculated,173424,"cup, chopped",1,136,gęstość 0.575 g/ml z USDA: 1 cup (236.588 ml) = 136 g; × 250 ml
+321,207,jajo kurze,gotowany,sztuka,duży,,50,measured,173424,large,1,50,
+322,207,jajo kurze,smażony,sztuka,duży,,46,measured,173423,large,1,46,
+323,208,białko jaja kurzego,surowy,ml,,,1.027,calculated,172183,cup,1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g
+323,208,białko jaja kurzego,surowy,szklanka,,,256.78,calculated,172183,cup,1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g; × 250 ml
+323,208,białko jaja kurzego,surowy,sztuka,duży,,33,measured,172183,large,1,33,
+325,209,żółtko jaja kurzego,surowy,ml,,,1.027,calculated,172184,cup,1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g
+325,209,żółtko jaja kurzego,surowy,szklanka,,,256.78,calculated,172184,cup,1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g; × 250 ml
+325,209,żółtko jaja kurzego,surowy,sztuka,duży,,17,measured,172184,large,1,17,
+327,210,jajo przepiórcze,surowy,sztuka,,,9,measured,172191,egg,1,9,
+329,211,pierś z kurczaka,surowy,kawałek,,,263,measured,171509,piece,1,263,
+329,211,pierś z kurczaka,surowy,pierś,,,236,measured,171509,breast,0.5,118,
+330,211,pierś z kurczaka,gotowany,szklanka,,posiekane,147.94,calculated,171478,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+330,211,pierś z kurczaka,gotowany,pierś,,bez kości i skóry,190,measured,171478,"breast, bone and skin removed",0.5,95,
+331,211,pierś z kurczaka,duszony,szklanka,,posiekane,147.94,calculated,171478,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+331,211,pierś z kurczaka,duszony,pierś,,bez kości i skóry,190,measured,171478,"breast, bone and skin removed",0.5,95,
+332,211,pierś z kurczaka,pieczony,szklanka,,posiekane,147.94,calculated,171477,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+332,211,pierś z kurczaka,pieczony,pierś,,bez kości i skóry,172,measured,171477,"breast, bone and skin removed",0.5,86,
+333,211,pierś z kurczaka,smażony,pierś,,bez kości i skóry,172,measured,171078,"breast, bone and skin removed",0.5,86,
+335,212,udo z kurczaka,surowy,udo,,bez skóry,149,measured,173627,thigh without skin,1,149,
+336,212,udo z kurczaka,gotowany,szklanka,,posiekane,147.94,calculated,172389,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+336,212,udo z kurczaka,gotowany,udo,,bez kości i skóry,55,measured,172389,"thigh, bone and skin removed",1,55,
+337,212,udo z kurczaka,duszony,szklanka,,posiekane,147.94,calculated,172389,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+337,212,udo z kurczaka,duszony,udo,,bez kości i skóry,55,measured,172389,"thigh, bone and skin removed",1,55,
+338,212,udo z kurczaka,pieczony,udo,,bez skóry,116,measured,172388,thigh without skin,1,116,
+338,212,udo z kurczaka,pieczony,udo,,ze skórą,137,measured,172388,thigh with skin,1,137,
+339,212,udo z kurczaka,smażony,udo,,bez kości i skóry,52,measured,172387,"thigh, bone and skin removed",1,52,
+341,213,podudzie z kurczaka,surowy,podudzie,,bez skóry,122,measured,173614,drumstick without skin,1,122,
+341,213,podudzie z kurczaka,surowy,podudzie,,ze skórą,130,measured,173614,drumstick  with skin,1,130,
+342,213,podudzie z kurczaka,gotowany,szklanka,,posiekane,169.07,calculated,172377,"cup, chopped or diced",1,160,gęstość 0.676 g/ml z USDA: 1 cup (236.588 ml) = 160 g; × 250 ml
+342,213,podudzie z kurczaka,gotowany,podudzie,,bez kości i skóry,46,measured,172377,"drumstick, bone and skin removed",1,46,
+343,213,podudzie z kurczaka,pieczony,podudzie,,bez skóry,96,measured,172376,drumstick without skin,1,96,
+343,213,podudzie z kurczaka,pieczony,podudzie,,ze skórą,105,measured,172376,drumstick with skin,1,105,
+344,213,podudzie z kurczaka,smażony,podudzie,,bez kości i skóry,42,measured,172375,"drumstick, bone and skin removed",1,42,
+346,214,skrzydełko z kurczaka,surowy,kawałek,,,107,measured,172390,piece,1,107,
+347,214,skrzydełko z kurczaka,pieczony,kawałek,,,85,measured,173630,piece,1,85,
+348,214,skrzydełko z kurczaka,smażony,skrzydło,,bez kości,32,measured,173629,"wing, bone removed",1,32,
+351,215,kurczak (tuszka),gotowany,szklanka,,posiekane,147.94,calculated,171051,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+352,215,kurczak (tuszka),pieczony,szklanka,,posiekane,147.94,calculated,171450,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+353,216,wątróbka drobiowa,surowy,sztuka,,,44,measured,171060,liver,1,44,
+354,216,wątróbka drobiowa,duszony,sztuka,,,44,measured,171061,liver,1,44,
+355,216,wątróbka drobiowa,smażony,sztuka,,,44,measured,174491,liver,1,44,
+357,217,żołądki drobiowe,gotowany,szklanka,,posiekane,153.22,calculated,171457,cup chopped or dice,1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+358,217,żołądki drobiowe,duszony,szklanka,,posiekane,153.22,calculated,171457,cup chopped or dice,1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+359,218,serca drobiowe,surowy,sztuka,,,6.1,measured,171458,heart,1,6.1,
+360,218,serca drobiowe,duszony,szklanka,,posiekane,153.22,calculated,171059,"cup, chopped or diced",1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+364,220,pierś z indyka,surowy,pierś,,,1769,measured,171098,breast,1,1769,
+366,220,pierś z indyka,pieczony,pierś,,,1413,measured,171496,breast,1,1413,
+376,223,kaczka,pieczony,szklanka,,posiekane,147.94,calculated,172411,"cup, chopped or diced",1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+379,225,schab,surowy,kotlet,,,170,measured,168263,chop,1,170,
+380,225,schab,duszony,kotlet,,,72,measured,168303,"chop, excluding refuse (yield from 1 raw chop, with refuse, weighing 113 g)",1,72,
+382,225,schab,smażony,kotlet,,,66,measured,167893,"chop, excluding refuse (yield from 1 raw chop, with refuse, weighing 113 g)",1,66,
+383,225,schab,grillowany,kotlet,,,137,measured,168285,chop,1,137,
+387,226,polędwiczka wieprzowa,grillowany,kotlet,,,73,measured,168313,"chop, excluding refuse (yield from 1 raw chop, with refuse, weighing 113 g)",1,73,
+388,227,karkówka,surowy,stek,,,288,measured,167849,"steak without refuse (Yield from 1 raw steak, with refuse, weighing 380g)",1,288,
+389,227,karkówka,duszony,stek,,,185,measured,167850,"steak without refuse (Yield from 1 cooked steak, with refuse, weighing 249g)",1,185,
+391,227,karkówka,grillowany,stek,,,169,measured,167851,"steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 300 g)",1,169,
+395,228,łopatka wieprzowa,pieczony,szklanka,,w kostkę,142.65,calculated,168257,"cup, diced",1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g; × 250 ml
+399,229,szynka wieprzowa surowa,pieczony,szklanka,,w kostkę,142.65,calculated,168225,"cup, diced",1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g; × 250 ml
+435,240,mostek wołowy,duszony,stek,,,247,measured,169469,steak,1,247,
+440,242,wątróbka wołowa,smażony,plaster,,,81,measured,168627,slice,1,81,
+452,246,szynka gotowana,gotowy,plaster,,,28,measured,173864,slice,1,28,
+453,247,szynka wędzona,gotowy,ml,,,0.592,calculated,168295,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g
+453,247,szynka wędzona,gotowy,szklanka,,,147.94,calculated,168295,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+453,247,szynka wędzona,gotowy,plaster,,,28,measured,168295,"slice (6-1/4"" x 4"" x 1/16"") (1 oz)",1,28,
+458,252,kiełbasa śląska,gotowy,sztuka,,,227,measured,174577,"sausage (10"" long x 1-1/4"" dia)",1,227,
+461,253,kiełbasa wieprzowa wędzona,gotowy,sztuka,,,68,measured,174584,"link (4"" long x 1-1/8"" dia)",1,68,
+461,253,kiełbasa wieprzowa wędzona,gotowy,sztuka,mały,,16,measured,174584,"link, little (2"" long x 3/4"" dia)",1,16,
+468,255,kabanosy,gotowy,sztuka,,,68,measured,172939,"link (4"" long x 1-1/8"" dia)",1,68,
+468,255,kabanosy,gotowy,sztuka,mały,,16,measured,172939,"link,  little (2"" long x 3/4"" dia)",1,16,
+470,256,parówki,gotowany,sztuka,,,50,measured,171633,frankfurter,1,50,
+471,257,salami,gotowy,plaster,,,10,measured,172938,"slice (3-1/8"" dia x 1/16"" thick)",1,10,
+472,258,mortadela,gotowy,plaster,,,15,measured,174573,slice (15 per 8 oz package),1,15,
+475,260,pasztet,gotowy,ml,,,0.879,calculated,172930,tbsp,1,13,gęstość 0.879 g/ml z USDA: 1 tbsp (14.787 ml) = 13 g
+475,260,pasztet,gotowy,łyżka,,,13,measured,172930,tbsp,1,13,
+475,260,pasztet,gotowy,szklanka,,,219.79,calculated,172930,tbsp,1,13,gęstość 0.879 g/ml z USDA: 1 tbsp (14.787 ml) = 13 g; × 250 ml
+476,261,wątrobianka,gotowy,plaster,,,18,measured,171621,"slice (2-1/2"" dia x 1/4"" thick)",1,18,
+477,262,kaszanka,gotowy,plaster,,,25,measured,171618,slices,4,100,
+481,263,salceson,gotowy,plaster,,,28,measured,171630,"slice (1 oz) (4"" x 4"" x 3/32"" thick)",1,28,
+482,264,łosoś,surowy,filet,,,396,measured,175167,fillet,0.5,198,
+484,264,łosoś,pieczony,filet,,,356,measured,175168,fillet,0.5,178,
+486,264,łosoś,grillowany,filet,,,356,measured,175168,fillet,0.5,178,
+488,266,dorsz,surowy,filet,,,231,measured,171955,fillet,1,231,
+491,266,dorsz,pieczony,filet,,,180,measured,171956,fillet,1,180,
+494,267,mintaj,pieczony,filet,,,60,measured,173681,fillet,1,60,
+499,269,tilapia,surowy,filet,,,116,measured,175176,fillet,1,116,
+500,269,tilapia,pieczony,filet,,,87,measured,175177,fillet,1,87,
+502,270,panga,surowy,filet,,,159,measured,175165,fillet,1,159,
+503,270,panga,pieczony,filet,,,143,measured,175166,fillet,1,143,
+505,271,pstrąg,surowy,filet,,,79,measured,173717,fillet,1,79,
+506,271,pstrąg,pieczony,filet,,,71,measured,173718,fillet,1,71,
+508,271,pstrąg,grillowany,filet,,,71,measured,173718,fillet,1,71,
+510,273,karp,surowy,filet,,,218,measured,171952,fillet,1,218,
+511,273,karp,pieczony,filet,,,170,measured,174185,fillet,1,170,
+513,274,szczupak,surowy,filet,,,396,measured,173680,fillet,0.5,198,
+514,274,szczupak,pieczony,filet,,,310,measured,175127,fillet,0.5,155,
+515,275,sandacz,surowy,filet,,,159,measured,175128,fillet,1,159,
+516,275,sandacz,pieczony,filet,,,124,measured,171997,fillet,1,124,
+518,276,okoń,surowy,filet,,,60,measured,173678,fillet,1,60,
+520,277,halibut,surowy,filet,,,408,measured,174200,fillet,0.5,204,
+521,277,halibut,pieczony,filet,,,318,measured,174201,fillet,0.5,159,
+522,278,sola,surowy,filet,,,163,measured,174196,fillet,1,163,
+523,278,sola,pieczony,filet,,,127,measured,174197,fillet,1,127,
+528,280,makrela,surowy,filet,,,112,measured,175119,fillet,1,112,
+529,280,makrela,pieczony,filet,,,88,measured,175120,fillet,1,88,
+530,280,makrela,grillowany,filet,,,88,measured,175120,fillet,1,88,
+532,282,śledź,surowy,filet,,,184,measured,175116,fillet,1,184,
+533,282,śledź,pieczony,filet,,,143,measured,175117,fillet,1,143,
+536,284,śledź marynowany,gotowy,ml,,,0.592,calculated,175118,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g
+536,284,śledź marynowany,gotowy,szklanka,,,147.94,calculated,175118,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+536,284,śledź marynowany,gotowy,kawałek,,,15,measured,175118,"piece (1-3/4"" x 7/8"" x 1/2"")",1,15,
+539,287,tuńczyk w oleju,gotowy,szklanka,,w kawałkach,154.28,calculated,173708,"cup, solid or chunks",1,146,gęstość 0.617 g/ml z USDA: 1 cup (236.588 ml) = 146 g; × 250 ml
+540,288,sardynki w oleju,gotowy,szklanka,,odsączone,157.45,calculated,175139,"cup, drained",1,149,gęstość 0.63 g/ml z USDA: 1 cup (236.588 ml) = 149 g; × 250 ml
+540,288,sardynki w oleju,gotowy,sztuka,,,12,measured,175139,sardines,2,24,
+540,288,sardynki w oleju,gotowy,sztuka,mały,,12,measured,175139,"small (2-2/3"" x 1/2"" x 1/4"")",1,12,
+547,292,krewetki,smażony,sztuka,duży,,7.5,measured,171970,large,4,30,
+552,294,małże,surowy,ml,,,0.634,calculated,174216,cup,1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g
+552,294,małże,surowy,szklanka,,,158.5,calculated,174216,cup,1,150,gęstość 0.634 g/ml z USDA: 1 cup (236.588 ml) = 150 g; × 250 ml
+552,294,małże,surowy,sztuka,mały,,10,measured,174216,small,1,10,
+552,294,małże,surowy,sztuka,średni,,16,measured,174216,medium,1,16,
+552,294,małże,surowy,sztuka,duży,,20,measured,174216,large,1,20,
+554,295,fasola biała,surowy,ml,,,0.854,calculated,175202,cup,1,202,gęstość 0.854 g/ml z USDA: 1 cup (236.588 ml) = 202 g
+554,295,fasola biała,surowy,łyżka,,,12.6,measured,175202,tbsp,1,12.6,
+554,295,fasola biała,surowy,szklanka,,,213.45,calculated,175202,cup,1,202,gęstość 0.854 g/ml z USDA: 1 cup (236.588 ml) = 202 g; × 250 ml
+555,295,fasola biała,gotowany,ml,,,0.757,calculated,175203,cup,1,179,gęstość 0.757 g/ml z USDA: 1 cup (236.588 ml) = 179 g
+555,295,fasola biała,gotowany,łyżka,,,11.2,measured,175203,tbsp,1,11.2,
+555,295,fasola biała,gotowany,szklanka,,,189.15,calculated,175203,cup,1,179,gęstość 0.757 g/ml z USDA: 1 cup (236.588 ml) = 179 g; × 250 ml
+556,296,fasola czerwona,surowy,ml,,,0.778,calculated,173744,cup,1,184,gęstość 0.778 g/ml z USDA: 1 cup (236.588 ml) = 184 g
+556,296,fasola czerwona,surowy,łyżka,,,12.2,measured,173744,tbsp,1,12.2,
+556,296,fasola czerwona,surowy,szklanka,,,194.43,calculated,173744,cup,1,184,gęstość 0.778 g/ml z USDA: 1 cup (236.588 ml) = 184 g; × 250 ml
+557,296,fasola czerwona,gotowany,ml,,,0.748,calculated,175194,cup,1,177,gęstość 0.748 g/ml z USDA: 1 cup (236.588 ml) = 177 g
+557,296,fasola czerwona,gotowany,łyżka,,,11,measured,175194,tbsp,1,11,
+557,296,fasola czerwona,gotowany,szklanka,,,187.03,calculated,175194,cup,1,177,gęstość 0.748 g/ml z USDA: 1 cup (236.588 ml) = 177 g; × 250 ml
+558,297,fasola czarna,surowy,ml,,,0.82,calculated,173734,cup,1,194,gęstość 0.82 g/ml z USDA: 1 cup (236.588 ml) = 194 g
+558,297,fasola czarna,surowy,łyżka,,,12.1,measured,173734,tbsp,1,12.1,
+558,297,fasola czarna,surowy,szklanka,,,205,calculated,173734,cup,1,194,gęstość 0.82 g/ml z USDA: 1 cup (236.588 ml) = 194 g; × 250 ml
+559,297,fasola czarna,gotowany,ml,,,0.727,calculated,173735,cup,1,172,gęstość 0.727 g/ml z USDA: 1 cup (236.588 ml) = 172 g
+559,297,fasola czarna,gotowany,szklanka,,,181.75,calculated,173735,cup,1,172,gęstość 0.727 g/ml z USDA: 1 cup (236.588 ml) = 172 g; × 250 ml
+561,299,bób,surowy,ml,,,0.461,calculated,170377,cup,1,109,gęstość 0.461 g/ml z USDA: 1 cup (236.588 ml) = 109 g
+561,299,bób,surowy,szklanka,,,115.18,calculated,170377,cup,1,109,gęstość 0.461 g/ml z USDA: 1 cup (236.588 ml) = 109 g; × 250 ml
+561,299,bób,surowy,sztuka,,,8,measured,170377,broadbean,1,8,
+563,300,ciecierzyca,surowy,ml,,,0.845,calculated,173756,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g
+563,300,ciecierzyca,surowy,łyżka,,,12.5,measured,173756,tbsp,1,12.5,
+563,300,ciecierzyca,surowy,szklanka,,,211.34,calculated,173756,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g; × 250 ml
+564,300,ciecierzyca,gotowany,ml,,,0.693,calculated,173757,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g
+564,300,ciecierzyca,gotowany,szklanka,,,173.3,calculated,173757,cup,1,164,gęstość 0.693 g/ml z USDA: 1 cup (236.588 ml) = 164 g; × 250 ml
+566,302,soczewica czerwona,surowy,ml,,,0.812,calculated,174284,cup,1,192,gęstość 0.812 g/ml z USDA: 1 cup (236.588 ml) = 192 g
+566,302,soczewica czerwona,surowy,szklanka,,,202.88,calculated,174284,cup,1,192,gęstość 0.812 g/ml z USDA: 1 cup (236.588 ml) = 192 g; × 250 ml
+568,303,soczewica zielona,surowy,ml,,,0.812,calculated,172420,cup,1,192,gęstość 0.812 g/ml z USDA: 1 cup (236.588 ml) = 192 g
+568,303,soczewica zielona,surowy,łyżka,,,12,measured,172420,tablespoon,1,12,
+568,303,soczewica zielona,surowy,szklanka,,,202.88,calculated,172420,cup,1,192,gęstość 0.812 g/ml z USDA: 1 cup (236.588 ml) = 192 g; × 250 ml
+569,303,soczewica zielona,gotowany,ml,,,0.837,calculated,172421,cup,1,198,gęstość 0.837 g/ml z USDA: 1 cup (236.588 ml) = 198 g
+569,303,soczewica zielona,gotowany,łyżka,,,12.3,measured,172421,tbsp,1,12.3,
+569,303,soczewica zielona,gotowany,szklanka,,,209.22,calculated,172421,cup,1,198,gęstość 0.837 g/ml z USDA: 1 cup (236.588 ml) = 198 g; × 250 ml
+570,304,groch łuskany,surowy,ml,,,0.828,calculated,172428,cup,1,196,gęstość 0.828 g/ml z USDA: 1 cup (236.588 ml) = 196 g
+570,304,groch łuskany,surowy,szklanka,,,207.11,calculated,172428,cup,1,196,gęstość 0.828 g/ml z USDA: 1 cup (236.588 ml) = 196 g; × 250 ml
+571,304,groch łuskany,gotowany,ml,,,0.828,calculated,172429,cup,1,196,gęstość 0.828 g/ml z USDA: 1 cup (236.588 ml) = 196 g
+571,304,groch łuskany,gotowany,łyżka,,,12.2,measured,172429,tbsp,1,12.2,
+571,304,groch łuskany,gotowany,szklanka,,,207.11,calculated,172429,cup,1,196,gęstość 0.828 g/ml z USDA: 1 cup (236.588 ml) = 196 g; × 250 ml
+572,305,soja (nasiona),surowy,ml,,,0.786,calculated,174270,cup,1,186,gęstość 0.786 g/ml z USDA: 1 cup (236.588 ml) = 186 g
+572,305,soja (nasiona),surowy,szklanka,,,196.54,calculated,174270,cup,1,186,gęstość 0.786 g/ml z USDA: 1 cup (236.588 ml) = 186 g; × 250 ml
+573,305,soja (nasiona),gotowany,ml,,,0.397,calculated,168460,cup,1,94,gęstość 0.397 g/ml z USDA: 1 cup (236.588 ml) = 94 g
+573,305,soja (nasiona),gotowany,szklanka,,,99.33,calculated,168460,cup,1,94,gęstość 0.397 g/ml z USDA: 1 cup (236.588 ml) = 94 g; × 250 ml
+574,306,fasola mung,surowy,ml,,,0.875,calculated,174256,cup,1,207,gęstość 0.875 g/ml z USDA: 1 cup (236.588 ml) = 207 g
+574,306,fasola mung,surowy,łyżka,,,13,measured,174256,tbsp,1,13,
+574,306,fasola mung,surowy,szklanka,,,218.73,calculated,174256,cup,1,207,gęstość 0.875 g/ml z USDA: 1 cup (236.588 ml) = 207 g; × 250 ml
+575,306,fasola mung,gotowany,ml,,,0.854,calculated,174257,cup,1,202,gęstość 0.854 g/ml z USDA: 1 cup (236.588 ml) = 202 g
+575,306,fasola mung,gotowany,szklanka,,,213.45,calculated,174257,cup,1,202,gęstość 0.854 g/ml z USDA: 1 cup (236.588 ml) = 202 g; × 250 ml
+577,308,tofu naturalne,gotowy,ml,,,1.065,calculated,172448,cup,0.5,126,gęstość 1.065 g/ml z USDA: 0.5 cup (118.294 ml) = 126 g
+577,308,tofu naturalne,gotowy,szklanka,,,266.29,calculated,172448,cup,0.5,126,gęstość 1.065 g/ml z USDA: 0.5 cup (118.294 ml) = 126 g; × 250 ml
+579,308,tofu naturalne,smażony,kawałek,,,13,measured,174304,piece,1,13,
+584,311,napój sojowy,gotowy,ml,,,1.027,calculated,172446,cup,1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g
+584,311,napój sojowy,gotowy,szklanka,,,256.78,calculated,172446,cup,1,243,gęstość 1.027 g/ml z USDA: 1 cup (236.588 ml) = 243 g; × 250 ml
+585,312,hummus,gotowy,ml,,,1.04,calculated,174289,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g
+585,312,hummus,gotowy,łyżka,,,15,measured,174289,tbsp,1,15,
+585,312,hummus,gotowy,szklanka,,,259.95,calculated,174289,cup,1,246,gęstość 1.04 g/ml z USDA: 1 cup (236.588 ml) = 246 g; × 250 ml
+586,313,orzechy włoskie,surowy,szklanka,,mielone,84.54,calculated,170187,"cup, ground",1,80,gęstość 0.338 g/ml z USDA: 1 cup (236.588 ml) = 80 g; × 250 ml
+586,313,orzechy włoskie,surowy,szklanka,,posiekane,123.63,calculated,170187,"cup, chopped",1,117,gęstość 0.495 g/ml z USDA: 1 cup (236.588 ml) = 117 g; × 250 ml
+586,313,orzechy włoskie,surowy,szklanka,,w kawałkach,126.8,calculated,170187,cup pieces or chips,1,120,gęstość 0.507 g/ml z USDA: 1 cup (236.588 ml) = 120 g; × 250 ml
+586,313,orzechy włoskie,surowy,szklanka,,łuskane,105.67,calculated,170187,cup shelled (50 halves),1,100,gęstość 0.423 g/ml z USDA: 1 cup (236.588 ml) = 100 g; × 250 ml
+587,314,orzechy laskowe,surowy,szklanka,,całe,142.65,calculated,170581,"cup, whole",1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g; × 250 ml
+587,314,orzechy laskowe,surowy,szklanka,,mielone,79.25,calculated,170581,"cup, ground",1,75,gęstość 0.317 g/ml z USDA: 1 cup (236.588 ml) = 75 g; × 250 ml
+587,314,orzechy laskowe,surowy,szklanka,,posiekane,121.52,calculated,170581,"cup, chopped",1,115,gęstość 0.486 g/ml z USDA: 1 cup (236.588 ml) = 115 g; × 250 ml
+587,314,orzechy laskowe,surowy,sztuka,,,1.4,measured,170581,nuts,10,14,
+588,315,migdały,surowy,szklanka,,całe,151.11,calculated,170567,"cup, whole",1,143,gęstość 0.604 g/ml z USDA: 1 cup (236.588 ml) = 143 g; × 250 ml
+588,315,migdały,surowy,szklanka,,mielone,100.39,calculated,170567,"cup, ground",1,95,gęstość 0.402 g/ml z USDA: 1 cup (236.588 ml) = 95 g; × 250 ml
+588,315,migdały,surowy,szklanka,,w plastrach,97.22,calculated,170567,"cup, sliced",1,92,gęstość 0.389 g/ml z USDA: 1 cup (236.588 ml) = 92 g; × 250 ml
+588,315,migdały,surowy,szklanka,,w słupkach,114.12,calculated,170567,"cup, slivered",1,108,gęstość 0.456 g/ml z USDA: 1 cup (236.588 ml) = 108 g; × 250 ml
+588,315,migdały,surowy,sztuka,,,1.2,measured,170567,almond,1,1.2,
+589,315,migdały,pieczony,szklanka,,całe ziarna,145.82,calculated,170158,cup whole kernels,1,138,gęstość 0.583 g/ml z USDA: 1 cup (236.588 ml) = 138 g; × 250 ml
+591,316,orzechy nerkowca,pieczony,ml,,,0.582,calculated,170571,tbsp,1,8.6,gęstość 0.582 g/ml z USDA: 1 tbsp (14.787 ml) = 8.6 g
+591,316,orzechy nerkowca,pieczony,łyżka,,,8.6,measured,170571,tbsp,1,8.6,
+591,316,orzechy nerkowca,pieczony,szklanka,,,145.4,calculated,170571,tbsp,1,8.6,gęstość 0.582 g/ml z USDA: 1 tbsp (14.787 ml) = 8.6 g; × 250 ml
+591,316,orzechy nerkowca,pieczony,szklanka,,całe,144.77,calculated,170571,"cup, halves and whole",1,137,gęstość 0.579 g/ml z USDA: 1 cup (236.588 ml) = 137 g; × 250 ml
+592,317,pistacje,pieczony,ml,,,0.52,calculated,170185,cup,1,123,gęstość 0.52 g/ml z USDA: 1 cup (236.588 ml) = 123 g
+592,317,pistacje,pieczony,szklanka,,,129.97,calculated,170185,cup,1,123,gęstość 0.52 g/ml z USDA: 1 cup (236.588 ml) = 123 g; × 250 ml
+592,317,pistacje,pieczony,ziarno,,,0.7,measured,170185,kernel,1,0.7,
+593,318,orzeszki ziemne,surowy,ml,,,0.617,calculated,172430,cup,1,146,gęstość 0.617 g/ml z USDA: 1 cup (236.588 ml) = 146 g
+593,318,orzeszki ziemne,surowy,szklanka,,,154.28,calculated,172430,cup,1,146,gęstość 0.617 g/ml z USDA: 1 cup (236.588 ml) = 146 g; × 250 ml
+594,318,orzeszki ziemne,pieczony,ml,,,0.617,calculated,173806,cup,1,146,gęstość 0.617 g/ml z USDA: 1 cup (236.588 ml) = 146 g
+594,318,orzeszki ziemne,pieczony,szklanka,,,154.28,calculated,173806,cup,1,146,gęstość 0.617 g/ml z USDA: 1 cup (236.588 ml) = 146 g; × 250 ml
+594,318,orzeszki ziemne,pieczony,sztuka,,,1,measured,173806,peanut,1,1,
+595,319,masło orzechowe,gotowy,ml,,,1.091,calculated,172470,cup,1,258,gęstość 1.091 g/ml z USDA: 1 cup (236.588 ml) = 258 g
+595,319,masło orzechowe,gotowy,łyżka,,,16,measured,172470,tbsp,2,32,
+595,319,masło orzechowe,gotowy,szklanka,,,272.63,calculated,172470,cup,1,258,gęstość 1.091 g/ml z USDA: 1 cup (236.588 ml) = 258 g; × 250 ml
+596,320,orzechy brazylijskie,surowy,szklanka,,całe,140.54,calculated,170569,"cup, whole",1,133,gęstość 0.562 g/ml z USDA: 1 cup (236.588 ml) = 133 g; × 250 ml
+596,320,orzechy brazylijskie,surowy,ziarno,,,5,measured,170569,kernel,1,5,
+597,321,orzechy pekan,surowy,szklanka,,posiekane,115.18,calculated,170182,"cup, chopped",1,109,gęstość 0.461 g/ml z USDA: 1 cup (236.588 ml) = 109 g; × 250 ml
+597,321,orzechy pekan,surowy,szklanka,,połówki,104.61,calculated,170182,"cup, halves",1,99,gęstość 0.418 g/ml z USDA: 1 cup (236.588 ml) = 99 g; × 250 ml
+598,322,orzechy makadamia,surowy,szklanka,,całe,141.6,calculated,170178,"cup, whole or halves",1,134,gęstość 0.566 g/ml z USDA: 1 cup (236.588 ml) = 134 g; × 250 ml
+599,323,orzeszki piniowe,surowy,ml,,,0.571,calculated,170591,cup,1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g
+599,323,orzeszki piniowe,surowy,szklanka,,,142.65,calculated,170591,cup,1,135,gęstość 0.571 g/ml z USDA: 1 cup (236.588 ml) = 135 g; × 250 ml
+599,323,orzeszki piniowe,surowy,sztuka,,,0.17,measured,170591,nuts,10,1.7,
+600,324,słonecznik łuskany,surowy,ml,,,0.592,calculated,170562,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g
+600,324,słonecznik łuskany,surowy,szklanka,,,147.94,calculated,170562,cup,1,140,gęstość 0.592 g/ml z USDA: 1 cup (236.588 ml) = 140 g; × 250 ml
+601,324,słonecznik łuskany,pieczony,ml,,,0.541,calculated,170563,cup,1,128,gęstość 0.541 g/ml z USDA: 1 cup (236.588 ml) = 128 g
+601,324,słonecznik łuskany,pieczony,szklanka,,,135.26,calculated,170563,cup,1,128,gęstość 0.541 g/ml z USDA: 1 cup (236.588 ml) = 128 g; × 250 ml
+602,325,pestki dyni,surowy,ml,,,0.545,calculated,170556,cup,1,129,gęstość 0.545 g/ml z USDA: 1 cup (236.588 ml) = 129 g
+602,325,pestki dyni,surowy,szklanka,,,136.31,calculated,170556,cup,1,129,gęstość 0.545 g/ml z USDA: 1 cup (236.588 ml) = 129 g; × 250 ml
+603,325,pestki dyni,pieczony,ml,,,0.499,calculated,170557,cup,1,118,gęstość 0.499 g/ml z USDA: 1 cup (236.588 ml) = 118 g
+603,325,pestki dyni,pieczony,szklanka,,,124.69,calculated,170557,cup,1,118,gęstość 0.499 g/ml z USDA: 1 cup (236.588 ml) = 118 g; × 250 ml
+604,326,siemię lniane,surowy,łyżeczka,,całe,3.4,measured,169414,"tsp, whole",1,3.4,
+604,326,siemię lniane,surowy,łyżeczka,,mielone,2.5,measured,169414,"tsp, ground",1,2.5,
+604,326,siemię lniane,surowy,łyżka,,całe,10.3,measured,169414,"tbsp, whole",1,10.3,
+604,326,siemię lniane,surowy,łyżka,,mielone,7,measured,169414,"tbsp, ground",1,7,
+604,326,siemię lniane,surowy,szklanka,,całe,177.52,calculated,169414,"cup, whole",1,168,gęstość 0.71 g/ml z USDA: 1 cup (236.588 ml) = 168 g; × 250 ml
+604,326,siemię lniane,surowy,szklanka,,mielone,118.35,calculated,169414,"tbsp, ground",1,7,gęstość 0.473 g/ml z USDA: 1 tbsp (14.787 ml) = 7 g; × 250 ml
+606,328,sezam,surowy,ml,,,0.609,calculated,170150,cup,1,144,gęstość 0.609 g/ml z USDA: 1 cup (236.588 ml) = 144 g
+606,328,sezam,surowy,łyżka,,,9,measured,170150,tbsp,1,9,
+606,328,sezam,surowy,szklanka,,,152.16,calculated,170150,cup,1,144,gęstość 0.609 g/ml z USDA: 1 cup (236.588 ml) = 144 g; × 250 ml
+608,329,mak,surowy,ml,,,0.595,calculated,171330,tbsp,1,8.8,gęstość 0.595 g/ml z USDA: 1 tbsp (14.787 ml) = 8.8 g
+608,329,mak,surowy,łyżeczka,,,2.8,measured,171330,tsp,1,2.8,
+608,329,mak,surowy,łyżka,,,8.8,measured,171330,tbsp,1,8.8,
+608,329,mak,surowy,szklanka,,,148.78,calculated,171330,tbsp,1,8.8,gęstość 0.595 g/ml z USDA: 1 tbsp (14.787 ml) = 8.8 g; × 250 ml
+609,330,nasiona konopi łuskane,surowy,ml,,,0.676,calculated,170148,tbsp,3,30,gęstość 0.676 g/ml z USDA: 3 tbsp (44.36 ml) = 30 g
+609,330,nasiona konopi łuskane,surowy,łyżka,,,10,measured,170148,tbsp,3,30,
+609,330,nasiona konopi łuskane,surowy,szklanka,,,169.07,calculated,170148,tbsp,3,30,gęstość 0.676 g/ml z USDA: 3 tbsp (44.36 ml) = 30 g; × 250 ml
+611,332,tahini (pasta sezamowa),gotowy,ml,,,1.014,calculated,168604,tbsp,1,15,gęstość 1.014 g/ml z USDA: 1 tbsp (14.787 ml) = 15 g
+611,332,tahini (pasta sezamowa),gotowy,łyżka,,,15,measured,168604,tbsp,1,15,
+611,332,tahini (pasta sezamowa),gotowy,szklanka,,,253.6,calculated,168604,tbsp,1,15,gęstość 1.014 g/ml z USDA: 1 tbsp (14.787 ml) = 15 g; × 250 ml
+612,333,masło,gotowy,ml,,,0.959,calculated,173430,cup,1,227,gęstość 0.959 g/ml z USDA: 1 cup (236.588 ml) = 227 g
+612,333,masło,gotowy,łyżka,,,14.2,measured,173430,tbsp,1,14.2,
+612,333,masło,gotowy,szklanka,,,239.87,calculated,173430,cup,1,227,gęstość 0.959 g/ml z USDA: 1 cup (236.588 ml) = 227 g; × 250 ml
+613,334,masło klarowane,gotowy,ml,,,0.866,calculated,173412,cup,1,205,gęstość 0.866 g/ml z USDA: 1 cup (236.588 ml) = 205 g
+613,334,masło klarowane,gotowy,łyżka,,,12.8,measured,173412,tbsp,1,12.8,
+613,334,masło klarowane,gotowy,szklanka,,,216.62,calculated,173412,cup,1,205,gęstość 0.866 g/ml z USDA: 1 cup (236.588 ml) = 205 g; × 250 ml
+614,335,oliwa z oliwek,gotowy,ml,,,0.913,calculated,171413,cup,1,216,gęstość 0.913 g/ml z USDA: 1 cup (236.588 ml) = 216 g
+614,335,oliwa z oliwek,gotowy,łyżeczka,,,4.5,measured,171413,tsp,1,4.5,
+614,335,oliwa z oliwek,gotowy,łyżka,,,13.5,measured,171413,tablespoon,1,13.5,
+614,335,oliwa z oliwek,gotowy,szklanka,,,228.24,calculated,171413,cup,1,216,gęstość 0.913 g/ml z USDA: 1 cup (236.588 ml) = 216 g; × 250 ml
+615,336,olej rzepakowy,gotowy,ml,,,0.921,calculated,172336,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g
+615,336,olej rzepakowy,gotowy,łyżeczka,,,4.5,measured,172336,tsp,1,4.5,
+615,336,olej rzepakowy,gotowy,łyżka,,,14,measured,172336,tbsp,1,14,
+615,336,olej rzepakowy,gotowy,szklanka,,,230.36,calculated,172336,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g; × 250 ml
+616,337,olej słonecznikowy,gotowy,ml,,,0.921,calculated,171025,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g
+616,337,olej słonecznikowy,gotowy,łyżeczka,,,4.5,measured,171025,tsp,1,4.5,
+616,337,olej słonecznikowy,gotowy,łyżka,,,13.6,measured,171025,tbsp,1,13.6,
+616,337,olej słonecznikowy,gotowy,szklanka,,,230.36,calculated,171025,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g; × 250 ml
+617,338,olej lniany,gotowy,ml,,,0.921,calculated,167702,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g
+617,338,olej lniany,gotowy,łyżka,,,13.6,measured,167702,tbsp,1,13.6,
+617,338,olej lniany,gotowy,szklanka,,,230.36,calculated,167702,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g; × 250 ml
+618,339,olej kokosowy,gotowy,ml,,,0.921,calculated,171412,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g
+618,339,olej kokosowy,gotowy,łyżeczka,,,4.5,measured,171412,tsp,1,4.5,
+618,339,olej kokosowy,gotowy,łyżka,,,13.6,measured,171412,tbsp,1,13.6,
+618,339,olej kokosowy,gotowy,szklanka,,,230.36,calculated,171412,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g; × 250 ml
+619,340,olej sezamowy,gotowy,ml,,,0.921,calculated,171016,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g
+619,340,olej sezamowy,gotowy,łyżeczka,,,4.5,measured,171016,tsp,1,4.5,
+619,340,olej sezamowy,gotowy,łyżka,,,13.6,measured,171016,tablespoon,1,13.6,
+619,340,olej sezamowy,gotowy,szklanka,,,230.36,calculated,171016,cup,1,218,gęstość 0.921 g/ml z USDA: 1 cup (236.588 ml) = 218 g; × 250 ml
+620,341,smalec,gotowy,ml,,,0.866,calculated,171401,cup,1,205,gęstość 0.866 g/ml z USDA: 1 cup (236.588 ml) = 205 g
+620,341,smalec,gotowy,łyżka,,,12.8,measured,171401,tbsp,1,12.8,
+620,341,smalec,gotowy,szklanka,,,216.62,calculated,171401,cup,1,205,gęstość 0.866 g/ml z USDA: 1 cup (236.588 ml) = 205 g; × 250 ml
+621,342,margaryna,gotowy,ml,,,0.959,calculated,172349,cup,1,227,gęstość 0.959 g/ml z USDA: 1 cup (236.588 ml) = 227 g
+621,342,margaryna,gotowy,łyżka,,,14.2,measured,172349,tbsp,1,14.2,
+621,342,margaryna,gotowy,szklanka,,,239.87,calculated,172349,cup,1,227,gęstość 0.959 g/ml z USDA: 1 cup (236.588 ml) = 227 g; × 250 ml
+622,343,majonez,gotowy,ml,,,0.93,calculated,171009,cup,1,220,gęstość 0.93 g/ml z USDA: 1 cup (236.588 ml) = 220 g
+622,343,majonez,gotowy,łyżka,,,13.8,measured,171009,tbsp,1,13.8,
+622,343,majonez,gotowy,szklanka,,,232.47,calculated,171009,cup,1,220,gęstość 0.93 g/ml z USDA: 1 cup (236.588 ml) = 220 g; × 250 ml
+623,344,cukier biały,gotowy,ml,,,0.845,calculated,169655,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g
+623,344,cukier biały,gotowy,łyżeczka,,,4.2,measured,169655,tsp,1,4.2,
+623,344,cukier biały,gotowy,szklanka,,,211.34,calculated,169655,cup,1,200,gęstość 0.845 g/ml z USDA: 1 cup (236.588 ml) = 200 g; × 250 ml
+624,345,cukier trzcinowy,gotowy,łyżeczka,,luźno,3,measured,168833,tsp unpacked,1,3,
+624,345,cukier trzcinowy,gotowy,łyżeczka,,ubite,4.6,measured,168833,tsp packed,1,4.6,
+624,345,cukier trzcinowy,gotowy,szklanka,,luźno,153.22,calculated,168833,cup unpacked,1,145,gęstość 0.613 g/ml z USDA: 1 cup (236.588 ml) = 145 g; × 250 ml
+624,345,cukier trzcinowy,gotowy,szklanka,,ubite,232.47,calculated,168833,cup packed,1,220,gęstość 0.93 g/ml z USDA: 1 cup (236.588 ml) = 220 g; × 250 ml
+625,346,miód,gotowy,ml,,,1.433,calculated,169640,cup,1,339,gęstość 1.433 g/ml z USDA: 1 cup (236.588 ml) = 339 g
+625,346,miód,gotowy,łyżka,,,21,measured,169640,tbsp,1,21,
+625,346,miód,gotowy,szklanka,,,358.22,calculated,169640,cup,1,339,gęstość 1.433 g/ml z USDA: 1 cup (236.588 ml) = 339 g; × 250 ml
+626,347,syrop klonowy,gotowy,ml,,,1.331,calculated,169661,cup,1,315,gęstość 1.331 g/ml z USDA: 1 cup (236.588 ml) = 315 g
+626,347,syrop klonowy,gotowy,łyżka,,,20,measured,169661,tbsp,1,20,
+626,347,syrop klonowy,gotowy,szklanka,,,332.86,calculated,169661,cup,1,315,gęstość 1.331 g/ml z USDA: 1 cup (236.588 ml) = 315 g; × 250 ml
+627,348,kakao (proszek),gotowy,ml,,,0.364,calculated,169593,cup,1,86,gęstość 0.364 g/ml z USDA: 1 cup (236.588 ml) = 86 g
+627,348,kakao (proszek),gotowy,łyżka,,,5.4,measured,169593,tbsp,1,5.4,
+627,348,kakao (proszek),gotowy,szklanka,,,90.88,calculated,169593,cup,1,86,gęstość 0.364 g/ml z USDA: 1 cup (236.588 ml) = 86 g; × 250 ml
+629,350,dżem truskawkowy,gotowy,ml,,,1.353,calculated,169641,tbsp,1,20,gęstość 1.353 g/ml z USDA: 1 tbsp (14.787 ml) = 20 g
+629,350,dżem truskawkowy,gotowy,łyżka,,,20,measured,169641,tbsp,1,20,
+629,350,dżem truskawkowy,gotowy,szklanka,,,338.14,calculated,169641,tbsp,1,20,gęstość 1.353 g/ml z USDA: 1 tbsp (14.787 ml) = 20 g; × 250 ml
+630,351,ketchup,gotowy,ml,,,1.014,calculated,168556,cup,1,240,gęstość 1.014 g/ml z USDA: 1 cup (236.588 ml) = 240 g
+630,351,ketchup,gotowy,łyżka,,,17,measured,168556,tbsp,1,17,
+630,351,ketchup,gotowy,szklanka,,,253.61,calculated,168556,cup,1,240,gęstość 1.014 g/ml z USDA: 1 cup (236.588 ml) = 240 g; × 250 ml
+631,352,musztarda,gotowy,ml,,,1.052,calculated,172234,cup,1,249,gęstość 1.052 g/ml z USDA: 1 cup (236.588 ml) = 249 g
+631,352,musztarda,gotowy,szklanka,,,263.12,calculated,172234,cup,1,249,gęstość 1.052 g/ml z USDA: 1 cup (236.588 ml) = 249 g; × 250 ml
+632,353,sos sojowy,gotowy,ml,,,1.078,calculated,174277,cup,1,255,gęstość 1.078 g/ml z USDA: 1 cup (236.588 ml) = 255 g
+632,353,sos sojowy,gotowy,łyżeczka,,,5.3,measured,174277,tsp,1,5.3,
+632,353,sos sojowy,gotowy,łyżka,,,16,measured,174277,tbsp,1,16,
+632,353,sos sojowy,gotowy,szklanka,,,269.46,calculated,174277,cup,1,255,gęstość 1.078 g/ml z USDA: 1 cup (236.588 ml) = 255 g; × 250 ml
+633,354,ocet spirytusowy,gotowy,ml,,,1.006,calculated,172237,cup,1,238,gęstość 1.006 g/ml z USDA: 1 cup (236.588 ml) = 238 g
+633,354,ocet spirytusowy,gotowy,łyżeczka,,,5,measured,172237,tsp,1,5,
+633,354,ocet spirytusowy,gotowy,łyżka,,,14.9,measured,172237,tbsp,1,14.9,
+633,354,ocet spirytusowy,gotowy,szklanka,,,251.49,calculated,172237,cup,1,238,gęstość 1.006 g/ml z USDA: 1 cup (236.588 ml) = 238 g; × 250 ml
+636,357,sól,gotowy,ml,,,1.234,calculated,173468,cup,1,292,gęstość 1.234 g/ml z USDA: 1 cup (236.588 ml) = 292 g
+636,357,sól,gotowy,łyżeczka,,,6,measured,173468,tsp,1,6,
+636,357,sól,gotowy,łyżka,,,18,measured,173468,tbsp,1,18,
+636,357,sól,gotowy,szklanka,,,308.55,calculated,173468,cup,1,292,gęstość 1.234 g/ml z USDA: 1 cup (236.588 ml) = 292 g; × 250 ml

@@ -1,0 +1,225 @@
+# Miary domowe (S-109): opisy porcji USDA SR Legacy (`food_portion.modifier`) → polskie miary.
+# Używa ich build_portions.py. W SR Legacy `measure_unit_id` jest zawsze 9999 („undetermined”),
+# więc miara jest tylko w wolnym tekście, np. „cup, chopped”, „large (3" dia)”, „slice (1 oz)”.
+#
+# Rozbiór opisu: małe litery; nawiasy z liczbami (wymiary w calach, masa w oz) są pomijane,
+# nawiasy bez liczb – czytane jak zwykły tekst; opis z „yield(s)” poza nawiasem (wydajność z opakowania
+# lub produktu przed obróbką) jest pomijany. Pierwsza fraza to miara (`volume`, `count`, `sizes`
+# albo `ignored`), reszta to rozmiar (`sizes`), postać (`forms`) lub słowa bez znaczenia (`noise`).
+# Opis z nieznaną miarą lub nieznanym słowem jest pomijany i trafia do raportu
+# docs/data/portions_coverage.md – wtedy uzupełnij ten słownik.
+# Klucze: wyrazy a–z małymi literami rozdzielone spacją („pan-fried” = „pan fried”).
+
+# Polska szklanka w ml; gramy szklanki liczone z gęstości produktu (g/ml)
+glass_ml: 250
+
+# Miary objętości USDA: ml jednostki (miary US) i polska miara wpisywana wprost z USDA (`measured`).
+# Wszystkie służą do wyliczenia gęstości; szklanka i ml są zawsze wyliczane (`calculated`).
+volume:
+  cup: {ml: 236.5882}
+  tbsp: {ml: 14.7868, measure: łyżka}
+  tablespoon: {ml: 14.7868, measure: łyżka}
+  tsp: {ml: 4.9289, measure: łyżeczka}
+  fl oz: {ml: 29.5735}
+  pint: {ml: 473.1765}
+  quart: {ml: 946.3529}
+
+# Miary sztukowe USDA → polska miara
+count:
+  fruit: sztuka
+  egg: sztuka
+  apricot: sztuka
+  fig: sztuka
+  cherry: sztuka
+  olive: sztuka
+  almond: sztuka
+  peanut: sztuka
+  nuts: sztuka
+  berries: sztuka
+  raspberries: sztuka
+  grapes: sztuka
+  date: sztuka
+  prune: sztuka
+  pepper: sztuka
+  cucumber: sztuka
+  parsnip: sztuka
+  leek: sztuka
+  beet: sztuka
+  beets: sztuka
+  carrot: sztuka
+  potato: sztuka
+  eggplant: sztuka
+  avocado: sztuka
+  pomegranate: sztuka
+  plum tomato: sztuka
+  italian tomato: sztuka
+  broadbean: sztuka
+  beans: sztuka
+  sprout: sztuka
+  sardines: sztuka
+  spear: sztuka
+  spears: sztuka
+  melon: sztuka
+  tortilla: sztuka
+  pita: sztuka
+  roll: sztuka
+  frankfurter: sztuka
+  sausage: sztuka
+  link: sztuka
+  links: sztuka
+  liver: sztuka
+  heart: sztuka
+  kernel: ziarno
+  half: połówka
+  slice: plaster
+  slices: plaster
+  fillet: filet
+  leaf: liść
+  head: główka
+  bulb: bulwa
+  clove: ząbek
+  cloves: ząbek
+  stalk: łodyga
+  stalks: łodyga
+  sprig: gałązka
+  sprigs: gałązka
+  floweret: różyczka
+  flowerets: różyczka
+  bunch: pęczek
+  piece: kawałek
+  wedge: cząstka
+  ring: krążek
+  rings: krążek
+  strip: pasek
+  strips: pasek
+  ear: kolba
+  breast: pierś
+  drumstick: podudzie
+  thigh: udo
+  wing: skrzydło
+  chop: kotlet
+  steak: stek
+
+# Rozmiar: na początku opisu („large (3" dia)”) oznacza sztukę, dalej – rozmiar miary („head, large”).
+# Przymiotnik w rodzaju męskim – do słowa „rozmiar”.
+sizes:
+  extra small: bardzo mały
+  small: mały
+  little: mały
+  medium: średni
+  large: duży
+  extra large: bardzo duży
+  jumbo: bardzo duży
+
+# Postać produktu w mierze („cup, chopped” → „szklanka, posiekane”)
+forms:
+  chopped: posiekane
+  chopped or diced: posiekane
+  chopped or dice: posiekane
+  chopped or sliced: posiekane
+  diced: w kostkę
+  cubes: w kostkę
+  sliced: w plastrach
+  slices: w plastrach
+  strips or slices: w paskach
+  cut: pokrojone
+  pieces: w kawałkach
+  chunks: w kawałkach
+  pieces or slices: w kawałkach
+  pieces or chips: w kawałkach
+  solid or chunks: w kawałkach
+  shredded: starte
+  shredded or chopped: starte
+  grated: starte
+  mashed: puree
+  pureed: przecier
+  halves: połówki
+  whole: całe
+  whole or halves: całe
+  halves and whole: całe
+  whole kernels: całe ziarna
+  sections: cząstki
+  balls: kulki
+  packed: ubite
+  not packed: luźno
+  unpacked: luźno
+  ground: mielone
+  crumbled: pokruszone
+  crumbs: okruchy
+  crushed: kruszone
+  slivered: w słupkach
+  melted: roztopione
+  whipped: po ubiciu
+  fluid: przed ubiciem
+  pitted: bez pestek
+  without pits: bez pestek
+  drained: odsączone
+  undrained: z zalewą
+  with juice: z sokiem
+  shelled: łuskane
+  peeled: obrane
+  unpeeled: nieobrane
+  sprigs: gałązki
+  with skin: ze skórą
+  without skin: bez skóry
+  bone removed: bez kości
+  bone and skin removed: bez kości i skóry
+  boneless: bez kości
+  inner: wewnętrzny
+  outer: zewnętrzny
+  thin: cienki
+  thin small: cienki
+  thick large: gruby
+  large curd: duże ziarna
+  small curd: drobne ziarna
+  elbows: kolanka
+  farfalle: kokardki
+  penne: penne
+  rotini: świderki
+  shells: muszelki
+  spaghetti: spaghetti
+  lasagna: lasagne
+  lasagne: lasagne
+
+# Słowa bez znaczenia dla miary (masa w USDA to zawsze część jadalna)
+noise:
+  - excluding refuse
+  - without refuse
+  - regular
+  - serving
+  - ns as to florida or california
+
+# Miary pomijane: jednostki masy (gramy są w USDA wprost), opakowania, porcje handlowe i całe tuszki
+ignored:
+  - oz
+  - lb
+  - g
+  - grams
+  - cubic inch
+  - nlea serving
+  - serving
+  - package
+  - packet
+  - individual packet
+  - envelope
+  - container
+  - can
+  - unit
+  - roast
+  - chicken
+  - duck
+  - goose
+  - dash
+  - pat
+  - stick
+  - bar
+  - cake
+  - cakes
+  - block
+  - cracker
+  - patty
+  - each
+  - spear tip
+  - baby ear
+  - watermelon balls
+  - cantaloupe balls

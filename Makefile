@@ -1,4 +1,4 @@
-.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list map-products
+.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list map-products portions
 
 # Instalacja zależności (uv, wszyscy członkowie workspace) i hooków pre-commit
 install:
@@ -55,3 +55,8 @@ product-list:
 # wiersze `zweryfikowany` w mapping.csv nie są nadpisywane
 map-products:
 	uv run python -X utf8 data-pipeline/map_products.py
+
+# Miary domowe wariantów produktów (S-109): portions.csv i raport pokrycia;
+# wymaga mapping.csv (make map-products) i danych z make fetch-usda
+portions:
+	uv run python -X utf8 data-pipeline/build_portions.py

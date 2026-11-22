@@ -23,6 +23,7 @@ rozmowach z Claude Code. Nowe pojęcie dopisz tutaj w tym samym PR, w którym si
 | **`fdc_id`** | Identyfikator produktu w USDA FoodData Central. |
 | **mapowanie** (mapping) | Przypisanie wariantu produktu do rekordu USDA (`fdc_id`) ze statusem `auto` / `zweryfikowany` / `brak`: `data-pipeline/mapping/mapping.csv` (S-104). |
 | **kandydat** (candidate) | Rekord USDA zaproponowany dla wariantu produktu z wynikiem dopasowania 0–100; top-5 w `mapping_candidates.csv` (S-104). |
+| **miara domowa** (household measure) | Ilość produktu w mierze kuchennej – łyżka, łyżeczka, szklanka (250 ml), sztuka, plaster – z gramami na jedną miarę: `data-pipeline/portions/portions.csv` (S-109). Szklanka i `ml` wyliczane z gęstości produktu (`calculated`). |
 | **mini-baza** | Baza startowa 30–50 produktów (`foods_v0.1`) w formacie v1 (S-113). |
 | **baza v1** | Pełna baza 300–500 produktów (`foods_v1.0`) po akceptacji (S-112). |
 
