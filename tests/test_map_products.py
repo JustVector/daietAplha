@@ -67,6 +67,7 @@ def _variant(variant_id: int, food_id: int, preparation: str, name: str = "") ->
         name_pl=name or f"produkt {food_id}",
         preparation=preparation,  # type: ignore[arg-type]
         category="warzywa",
+        subcategory="korzeniowe i bulwiaste",
         polish_specific=False,
     )
 

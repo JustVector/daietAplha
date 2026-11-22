@@ -1,0 +1,126 @@
+# Słownik kategorii produktów podstawowych bazy v1 (S-105).
+# Dwa poziomy: kategoria (grupa z S-101) → podkategoria. Każdy produkt podstawowy w
+# input/product_list.csv ma dokładnie jedną kategorię i jedną podkategorię z tego pliku
+# (w CSV zapisane polską nazwą, `name_pl`).
+#   code     – stały identyfikator angielski (snake_case) dla bazy i API; unikalny w całym pliku,
+#              nie zmienia się przy zmianie polskiej nazwy,
+#   name_pl  – nazwa polska, unikalna wśród kategorii albo wśród podkategorii jednej kategorii,
+#   required – true: lista produktów musi mieć produkty z tej kategorii (kryterium S-101).
+# Kolejność w pliku = kolejność prezentacji. Każda podkategoria musi mieć co najmniej jeden produkt.
+
+categories:
+  - code: vegetables
+    name_pl: warzywa
+    required: true
+    subcategories:
+      - {code: root_vegetables, name_pl: korzeniowe i bulwiaste}
+      - {code: allium_vegetables, name_pl: cebulowe}
+      - {code: brassicas, name_pl: kapustne}
+      - {code: leafy_vegetables, name_pl: liściaste i sałaty}
+      - {code: nightshade_vegetables, name_pl: psiankowate}
+      - {code: cucurbit_vegetables, name_pl: dyniowate}
+      - {code: fresh_legume_vegetables, name_pl: strączkowe świeże}
+      - {code: fresh_herbs, name_pl: zioła i przyprawy świeże}
+      - {code: mushrooms, name_pl: grzyby}
+      - {code: vegetable_preserves, name_pl: przetwory warzywne}
+      - {code: other_vegetables, name_pl: inne warzywa}
+
+  - code: fruits
+    name_pl: owoce
+    required: true
+    subcategories:
+      - {code: pome_stone_fruits, name_pl: ziarnkowe i pestkowe}
+      - {code: berries, name_pl: jagodowe}
+      - {code: citrus_fruits, name_pl: cytrusy}
+      - {code: tropical_fruits, name_pl: egzotyczne}
+      - {code: dried_fruits, name_pl: suszone}
+      - {code: fruit_preserves_juices, name_pl: przetwory i soki}
+      - {code: other_fruits, name_pl: inne owoce}
+
+  - code: grains
+    name_pl: zboża i kasze
+    required: true
+    subcategories:
+      - {code: groats_grains, name_pl: kasze i ziarna}
+      - {code: rice, name_pl: ryż}
+      - {code: pasta, name_pl: makarony}
+      - {code: flakes_bran, name_pl: płatki i otręby}
+      - {code: flours_starches, name_pl: mąki i skrobie}
+      - {code: bread, name_pl: pieczywo}
+      - {code: grain_drinks, name_pl: napoje zbożowe}
+
+  - code: dairy
+    name_pl: nabiał
+    required: true
+    subcategories:
+      - {code: milk_drinks, name_pl: mleko i napoje mleczne}
+      - {code: yogurts, name_pl: jogurty}
+      - {code: fresh_cheeses, name_pl: twarogi i serki}
+      - {code: cream, name_pl: śmietana}
+      - {code: hard_cheeses, name_pl: sery żółte i twarde}
+      - {code: soft_other_cheeses, name_pl: sery miękkie i inne}
+
+  - code: eggs
+    name_pl: jaja
+    required: true
+    subcategories:
+      - {code: egg_products, name_pl: jaja i ich części}
+
+  - code: meat
+    name_pl: mięso
+    required: true
+    subcategories:
+      - {code: poultry, name_pl: drób}
+      - {code: pork, name_pl: wieprzowina}
+      - {code: beef_veal, name_pl: wołowina i cielęcina}
+      - {code: other_meat, name_pl: inne mięso}
+      - {code: offal, name_pl: podroby}
+      - {code: cold_cuts, name_pl: wędliny}
+      - {code: sausages, name_pl: kiełbasy}
+      - {code: offal_products, name_pl: wyroby podrobowe}
+
+  - code: fish_seafood
+    name_pl: ryby i owoce morza
+    required: true
+    subcategories:
+      - {code: sea_fish, name_pl: ryby morskie}
+      - {code: freshwater_fish, name_pl: ryby słodkowodne}
+      - {code: smoked_fish, name_pl: ryby wędzone}
+      - {code: salted_marinated_fish, name_pl: ryby solone i marynowane}
+      - {code: canned_fish, name_pl: konserwy rybne}
+      - {code: seafood, name_pl: owoce morza}
+      - {code: fish_products, name_pl: przetwory rybne}
+
+  - code: legumes
+    name_pl: rośliny strączkowe
+    required: true
+    subcategories:
+      - {code: dry_legumes, name_pl: suche nasiona}
+      - {code: canned_legumes, name_pl: konserwowe}
+      - {code: fresh_legumes, name_pl: świeże}
+      - {code: legume_products, name_pl: przetwory strączkowe}
+
+  - code: nuts_seeds
+    name_pl: orzechy i nasiona
+    required: true
+    subcategories:
+      - {code: nuts, name_pl: orzechy}
+      - {code: seeds, name_pl: nasiona i pestki}
+      - {code: nut_seed_butters, name_pl: pasty i masła}
+
+  - code: fats
+    name_pl: tłuszcze
+    required: true
+    subcategories:
+      - {code: animal_fats, name_pl: tłuszcze zwierzęce}
+      - {code: vegetable_oils, name_pl: oleje roślinne}
+      - {code: processed_fats, name_pl: tłuszcze przetworzone}
+
+  - code: other
+    name_pl: inne
+    required: false
+    subcategories:
+      - {code: sugars_sweeteners, name_pl: cukry i słodziki}
+      - {code: sweets_cocoa, name_pl: słodycze i kakao}
+      - {code: sauces_condiments, name_pl: sosy i przyprawy}
+      - {code: baking_additives, name_pl: dodatki do pieczenia}
