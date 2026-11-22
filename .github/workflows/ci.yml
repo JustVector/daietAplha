@@ -1,0 +1,49 @@
+# CI: lint i testy dla każdego PR i każdego pusha na main (S-004)
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Nowy push do tego samego PR/brancha anuluje poprzedni przebieg
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint-test:
+    name: lint i testy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      # Gałąź 3.13 – ta sama co w .python-version i pyproject.toml (S-003)
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - uses: astral-sh/setup-uv@v10.4.0  # setup-uv nie publikuje tagów głównych (v10)
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      # --locked: błąd, jeśli uv.lock nie zgadza się z pyproject.toml
+      - name: Instalacja zależności
+        run: uv sync --locked
+
+      - name: Lint (ruff, mypy)
+        run: make lint
+
+      - name: Testy
+        run: make test
+
+      # Podstawowe hooki pre-commit na całym repo; ruff i mypy już sprawdził make lint
+      - name: Hooki pre-commit
+        run: uv run pre-commit run --all-files --show-diff-on-failure
+        env:
+          SKIP: ruff-check,ruff-format,mypy

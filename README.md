@@ -1,5 +1,7 @@
 # dAIet
 
+[![CI](https://github.com/JustVector/daietAplha/actions/workflows/ci.yml/badge.svg)](https://github.com/JustVector/daietAplha/actions/workflows/ci.yml)
+
 Planer posiłków dla domu: układa plan na kilka dni i listę zakupów z przepisów generowanych przez LLM,
 pilnując celów i ograniczeń żywieniowych domowników. Wartości odżywcze **zawsze pochodzą z bazy żywności**
 (USDA SR Legacy + własne opracowanie), nigdy z modelu językowego – LLM proponuje przepis, a silnik więzów
