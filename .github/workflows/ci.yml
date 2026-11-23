@@ -50,14 +50,17 @@ jobs:
       - name: Instalacja zależności
         run: uv sync --locked --all-packages
 
-      # Surowe dane USDA do testu tabeli szerokiej (S-102); klucz cache = manifest sum SHA-256
+      # Surowe dane USDA do testów pipeline'u: SR Legacy (S-102) i tabela retencji R6 (S-106);
+      # klucz cache = manifesty sum SHA-256
       - name: Cache danych USDA
         uses: actions/cache@v6
         with:
-          path: data/raw/usda_sr_legacy
-          key: usda-sr-legacy-${{ hashFiles('data-pipeline/checksums/usda_sr_legacy.sha256') }}
+          path: |
+            data/raw/usda_sr_legacy
+            data/raw/usda_retention
+          key: usda-${{ hashFiles('data-pipeline/checksums/*.sha256') }}
 
-      # Bez cache pobiera archiwum z USDA; z cache tylko sprawdza sumy
+      # Bez cache pobiera dane z USDA; z cache tylko sprawdza sumy
       - name: Dane USDA
         run: make fetch-usda
 

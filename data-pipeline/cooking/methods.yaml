@@ -1,0 +1,131 @@
+# Przeliczenie wariantów obróbki termicznej (S-106) – parametry i dobór współczynników retencji.
+# Opis logiki: docs/data/cooking_calc.md.
+
+# Tłuszcz wchłaniany przy smażeniu: wariant produktu z listy (S-101), którego wartości dolicza się
+# w ilości wchłoniętego tłuszczu (olej rzepakowy, „gotowy”).
+frying_fat_variant_id: 615
+
+# Minimalna liczba par USDA (surowy i obrobiony, oba zmapowane), od której mediana par wyznacza
+# wydajność i wchłonięty tłuszcz grupy.
+min_pairs: 3
+
+# Ryby: próg tłuszczu w produkcie wyjściowym (g/100 g) – powyżej niego współczynniki R6 dla ryb tłustych
+# (`fatty`), do niego włącznie dla chudych (`codes`).
+fatty_fish_fat_g: 5.0
+
+# Składnik bazy v1 (usda_nutrient_id z nutrients.yaml) → numer składnika w tabeli R6 (stary nutrient_nbr).
+# Składniki spoza listy nie mają współczynnika w R6 – retencja 100%.
+# Witamina A (RAE) i foliany (DFE) dostają współczynnik pokrewnego składnika R6 (RE, foliany ogółem).
+r6_nutrients:
+  1087: 301  # wapń
+  1089: 303  # żelazo
+  1090: 304  # magnez
+  1091: 305  # fosfor
+  1092: 306  # potas
+  1093: 307  # sód
+  1095: 309  # cynk
+  1098: 312  # miedź
+  1106: 392  # witamina A (RAE) ← Vitamin A, RE
+  1162: 401  # witamina C
+  1165: 404  # tiamina
+  1166: 405  # ryboflawina
+  1167: 406  # niacyna
+  1175: 415  # witamina B6
+  1178: 418  # witamina B12
+  1190: 417  # foliany (DFE) ← Folate, total
+  1018: 221  # alkohol etylowy
+
+# Wariant obróbki → kod procesu R6 (kolumna `code`, np. 3451 = VEG,ROOTS,ETC,BAKED; bez zer
+# wiodących, bo YAML czyta je jako liczbę ósemkową).
+# Reguła dotyczy kategorii (`category`), podkategorii (`subcategory`) albo produktu podstawowego
+# (`food_id`) – kody z categories.yaml; wygrywa najbardziej szczegółowa reguła z danym wariantem.
+retention:
+  # --- warzywa ---
+  - category: vegetables
+    codes: {gotowany: 3775, gotowany na parze: 3784, pieczony: 3771, smażony: 3780, duszony: 3776,
+            grillowany: 3771}
+  - subcategory: root_vegetables
+    codes: {gotowany: 3455, gotowany na parze: 3464, pieczony: 3451, smażony: 3460, duszony: 3456,
+            grillowany: 3451}
+  - subcategory: leafy_vegetables
+    codes: {gotowany: 3005, gotowany na parze: 3004, pieczony: 3001, smażony: 3015, duszony: 3006,
+            grillowany: 3001}
+  - food_id: 1  # ziemniak
+    codes: {gotowany: 3308, pieczony: 3301, smażony: 3315}
+  - food_id: 38  # pomidor
+    codes: {pieczony: 3751, duszony: 3751, smażony: 3752, grillowany: 3752}
+  # --- owoce ---
+  - category: fruits
+    codes: {gotowany: 155, pieczony: 151, smażony: 153, duszony: 155, grillowany: 152}
+  # --- zboża i kasze ---
+  - category: grains
+    codes: {gotowany: 358}
+  - subcategory: groats_grains
+    codes: {gotowany: 432}
+  - subcategory: rice
+    codes: {gotowany: 432}
+  - subcategory: pasta
+    codes: {gotowany: 381}
+  - subcategory: flakes_bran
+    codes: {gotowany: 352}
+  # --- jaja ---
+  - category: eggs
+    codes: {gotowany: 105, gotowany na parze: 107, smażony: 103, pieczony: 101}
+  # --- nabiał (sery) ---
+  - category: dairy
+    codes: {pieczony: 1, grillowany: 3, smażony: 3}
+  # --- mięso ---
+  - subcategory: poultry
+    codes: {gotowany: 855, pieczony: 805, smażony: 803, grillowany: 801, duszony: 851}
+  - subcategory: pork
+    codes: {gotowany: 1301, pieczony: 1254, smażony: 1252, grillowany: 1251, duszony: 1351}
+  - subcategory: beef_veal
+    codes: {gotowany: 653, pieczony: 601, smażony: 604, grillowany: 602, duszony: 651}
+  - food_id: 241  # mięso mielone wołowe
+    codes: {duszony: 751, smażony: 751}
+  - subcategory: other_meat
+    codes: {gotowany: 1055, pieczony: 1004, smażony: 1001, grillowany: 1001, duszony: 1051}
+  - subcategory: offal
+    codes: {gotowany: 1182, pieczony: 1181, smażony: 1181, grillowany: 1181, duszony: 1182}
+  - food_id: 216  # wątróbka drobiowa
+    codes: {gotowany: 1152, smażony: 1151, duszony: 1152}
+  - food_id: 234  # wątróbka wieprzowa
+    codes: {gotowany: 1152, smażony: 1151, duszony: 1152}
+  - food_id: 242  # wątróbka wołowa
+    codes: {gotowany: 1152, smażony: 1151, duszony: 1152}
+  - subcategory: cold_cuts
+    codes: {gotowany: 1555, pieczony: 1459, smażony: 1551, grillowany: 1451}
+  - food_id: 259  # boczek wędzony
+    codes: {smażony: 1456, grillowany: 1456}
+  - subcategory: sausages
+    codes: {gotowany: 1654, pieczony: 1657, smażony: 1659, grillowany: 1657}
+  - subcategory: offal_products
+    codes: {gotowany: 1654, pieczony: 1657, smażony: 1659, grillowany: 1657}
+  # --- ryby i owoce morza ---
+  - subcategory: sea_fish
+    codes: {gotowany: 2401, gotowany na parze: 2401, pieczony: 2301, smażony: 2309, grillowany: 2305,
+            duszony: 2401}
+    fatty: {gotowany: 2551, gotowany na parze: 2551, pieczony: 2451, smażony: 2459, grillowany: 2455,
+            duszony: 2551}
+  - subcategory: freshwater_fish
+    codes: {gotowany: 2401, gotowany na parze: 2401, pieczony: 2301, smażony: 2309, grillowany: 2305,
+            duszony: 2401}
+    fatty: {gotowany: 2551, gotowany na parze: 2551, pieczony: 2451, smażony: 2459, grillowany: 2455,
+            duszony: 2551}
+  - subcategory: seafood
+    codes: {gotowany: 2761, gotowany na parze: 2770, pieczony: 2750, smażony: 2755, grillowany: 2753,
+            duszony: 2761}
+  - subcategory: fish_products
+    codes: {pieczony: 2605, smażony: 2601}
+  # --- rośliny strączkowe ---
+  - category: legumes
+    codes: {gotowany: 521}
+  - food_id: 302  # soczewica czerwona – krótkie gotowanie
+    codes: {gotowany: 501}
+  - subcategory: fresh_legumes
+    codes: {gotowany: 501}
+  - subcategory: legume_products
+    codes: {pieczony: 503, grillowany: 503, smażony: 505}
+  # --- orzechy i nasiona ---
+  - category: nuts_seeds
+    codes: {pieczony: 2203}

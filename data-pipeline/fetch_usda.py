@@ -1,11 +1,14 @@
-"""Odtwarza surowe dane USDA SR Legacy (2018-04) w data/raw/usda_sr_legacy/ (S-006).
+"""Odtwarza surowe dane USDA w data/raw/: SR Legacy (2018-04, S-006) i tabelę współczynników
+retencji R6 (2007, S-106) w data/raw/usda_retention/.
 
-Źródło plików (w tej kolejności):
+Źródło plików SR Legacy (w tej kolejności):
 1. katalog lokalny z opcji --source albo zmiennej USDA_SOURCE_DIR (środowisko lub plik .env),
 2. oficjalne archiwum ZIP z serwera USDA.
 
 Każdy plik jest sprawdzany sumą SHA-256 z manifestu data-pipeline/checksums/usda_sr_legacy.sha256,
-więc obie drogi dają dokładnie te same dane.
+więc obie drogi dają dokładnie te same dane. Tabela R6 (jeden plik tekstowy) też pochodzi z katalogu
+lokalnego, jeśli jest w nim plik `retn06.txt`, a w przeciwnym razie z serwera USDA ARS; sprawdza ją
+manifest data-pipeline/checksums/usda_retention.sha256.
 """
 
 from __future__ import annotations
@@ -31,6 +34,22 @@ ARCHIVE_URL = (
     "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip"
 )
 ARCHIVE_SHA256 = "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0"
+
+# USDA Table of Nutrient Retention Factors, Release 6 (2007) – wartości współczynników (S-106);
+# retention_factor.csv z paczki SR Legacy ma tylko listę procesów obróbki
+RETENTION_DIR = REPO_ROOT / "data" / "raw" / "usda_retention"
+RETENTION_MANIFEST_PATH = Path(__file__).resolve().parent / "checksums" / "usda_retention.sha256"
+RETENTION_BASE_URL = "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/"
+RETENTION_FILE = "retn06.txt"
+
+SR_HEADER = [
+    "# USDA FoodData Central – SR Legacy (2018-04), CC0 1.0",
+    f"# Źródło: {ARCHIVE_URL}",
+]
+RETENTION_HEADER = [
+    "# USDA Table of Nutrient Retention Factors, Release 6 (2007), domena publiczna",
+    f"# Źródło: {RETENTION_BASE_URL}{RETENTION_FILE}",
+]
 
 _CHUNK = 1024 * 1024
 
@@ -60,11 +79,10 @@ def read_manifest(path: Path) -> dict[str, str]:
     return entries
 
 
-def write_manifest(path: Path, entries: dict[str, str]) -> None:
+def write_manifest(path: Path, entries: dict[str, str], source: Sequence[str] = SR_HEADER) -> None:
     """Zapisuje manifest posortowany po nazwie pliku, z nagłówkiem o źródle."""
     header = [
-        "# USDA FoodData Central – SR Legacy (2018-04), CC0 1.0",
-        f"# Źródło: {ARCHIVE_URL}",
+        *source,
         "# Generuje: uv run python data-pipeline/fetch_usda.py --update-checksums",
     ]
     lines = [f"{digest}  {name}" for name, digest in sorted(entries.items())]
@@ -168,11 +186,35 @@ def fetch(
     return action
 
 
+def fetch_files(
+    dest: Path,
+    manifest: dict[str, str],
+    source: Path | None,
+    base_url: str = RETENTION_BASE_URL,
+) -> str:
+    """Pojedyncze pliki (bez archiwum) do stanu zgodnego z manifestem: z katalogu lokalnego, gdy są
+    w nim wszystkie, w przeciwnym razie z `base_url`. Zwraca opis wykonanej akcji."""
+    if not verify_dir(dest, manifest):
+        return "dane są aktualne – nic do zrobienia"
+    if source is not None and all((source / name).is_file() for name in manifest):
+        copy_from_dir(source, dest, manifest)
+        action = f"skopiowano z katalogu lokalnego {source}"
+    else:
+        dest.mkdir(parents=True, exist_ok=True)
+        for name in manifest:
+            download(base_url + name, dest / name)
+        action = f"pobrano z {base_url}"
+    problems = verify_dir(dest, manifest)
+    if problems:
+        raise DataIntegrityError("; ".join(problems))
+    return action
+
+
 def parse_args(argv: Sequence[str] | None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Odtwarza surowe dane USDA SR Legacy (2018-04) w data/raw/usda_sr_legacy/ "
-            "i sprawdza sumy SHA-256."
+            "i tabelę retencji R6 w data/raw/usda_retention/ oraz sprawdza sumy SHA-256."
         ),
     )
     parser.add_argument(
@@ -196,31 +238,50 @@ def parse_args(argv: Sequence[str] | None) -> argparse.Namespace:
     return parser.parse_args(argv)
 
 
+def _datasets() -> list[tuple[str, Path, Path, list[str]]]:
+    """Zbiory danych: nazwa, katalog w data/raw, manifest, nagłówek manifestu."""
+    return [
+        ("SR Legacy", DEST_DIR, MANIFEST_PATH, SR_HEADER),
+        ("R6", RETENTION_DIR, RETENTION_MANIFEST_PATH, RETENTION_HEADER),
+    ]
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
     try:
         if args.update_checksums:
-            files = (
-                sorted(p for p in DEST_DIR.iterdir() if p.is_file()) if DEST_DIR.is_dir() else []
-            )
-            if not files:
-                print(f"Błąd: brak plików w {DEST_DIR}", file=sys.stderr)
-                return 1
-            write_manifest(MANIFEST_PATH, {p.name: sha256_file(p) for p in files})
-            print(f"Zapisano manifest: {MANIFEST_PATH} ({len(files)} plików)")
+            for label, directory, manifest_path, header in _datasets():
+                files = (
+                    sorted(p for p in directory.iterdir() if p.is_file())
+                    if directory.is_dir()
+                    else []
+                )
+                if not files:
+                    print(f"Błąd: brak plików w {directory}", file=sys.stderr)
+                    return 1
+                write_manifest(manifest_path, {p.name: sha256_file(p) for p in files}, header)
+                print(f"Zapisano manifest {label}: {manifest_path} ({len(files)} plików)")
             return 0
 
-        manifest = read_manifest(MANIFEST_PATH)
         if args.verify:
-            problems = verify_dir(DEST_DIR, manifest)
-            for problem in problems:
-                print(f"Błąd: {problem}", file=sys.stderr)
-            if not problems:
-                print(f"OK: {len(manifest)} plików zgodnych z manifestem")
-            return 1 if problems else 0
+            failed = False
+            for label, directory, manifest_path, _ in _datasets():
+                manifest = read_manifest(manifest_path)
+                problems = verify_dir(directory, manifest)
+                for problem in problems:
+                    print(f"Błąd ({label}): {problem}", file=sys.stderr)
+                if not problems:
+                    print(f"OK ({label}): {len(manifest)} plików zgodnych z manifestem")
+                failed = failed or bool(problems)
+            return 1 if failed else 0
 
-        action = fetch(DEST_DIR, manifest, resolve_source(args.source, ENV_FILE))
-        print(f"OK: {action}; {len(manifest)} plików zgodnych z manifestem")
+        source = resolve_source(args.source, ENV_FILE)
+        manifest = read_manifest(MANIFEST_PATH)
+        action = fetch(DEST_DIR, manifest, source)
+        print(f"OK (SR Legacy): {action}; {len(manifest)} plików zgodnych z manifestem")
+        retention = read_manifest(RETENTION_MANIFEST_PATH)
+        action = fetch_files(RETENTION_DIR, retention, source)
+        print(f"OK (R6): {action}; {len(retention)} plików zgodnych z manifestem")
         return 0
     except (DataIntegrityError, OSError) as error:
         print(f"Błąd: {error}", file=sys.stderr)

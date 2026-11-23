@@ -1,0 +1,4 @@
+# USDA Table of Nutrient Retention Factors, Release 6 (2007), domena publiczna
+# Źródło: https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.txt
+# Generuje: uv run python data-pipeline/fetch_usda.py --update-checksums
+5b71867f6649e801db3bf88c6cd1887b0673e853d4ba94aa0af2b3c091e983f9  retn06.txt

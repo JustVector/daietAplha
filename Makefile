@@ -1,4 +1,4 @@
-.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list map-products portions
+.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list map-products portions cooked-variants
 
 # Instalacja zależności (uv, wszyscy członkowie workspace) i hooków pre-commit
 install:
@@ -35,7 +35,8 @@ format:
 	uv run ruff format .
 	uv run ruff check --fix .
 
-# Surowe dane USDA SR Legacy do data/raw/usda_sr_legacy/ (lokalna kopia z USDA_SOURCE_DIR albo pobranie)
+# Surowe dane USDA: SR Legacy do data/raw/usda_sr_legacy/ (lokalna kopia z USDA_SOURCE_DIR albo pobranie)
+# i tabela retencji R6 do data/raw/usda_retention/ (S-106)
 fetch-usda:
 	uv run python data-pipeline/fetch_usda.py
 
@@ -60,3 +61,9 @@ map-products:
 # wymaga mapping.csv (make map-products) i danych z make fetch-usda
 portions:
 	uv run python -X utf8 data-pipeline/build_portions.py
+
+# Warianty po obróbce termicznej (S-106): wyliczenie brakujących wariantów współczynnikami retencji R6
+# i wydajności, raport pokrycia i tabela wartości z flagami measured/calculated w data/interim/;
+# wymaga mapping.csv (make map-products) i danych z make fetch-usda
+cooked-variants:
+	uv run python -X utf8 data-pipeline/cooking.py

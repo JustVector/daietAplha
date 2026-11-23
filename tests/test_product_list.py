@@ -8,8 +8,8 @@ z `categories.yaml`; ostatni test sprawdza prawdziwy plik `data-pipeline/input/p
 from pathlib import Path
 
 import pytest
-from categories import Categories, Category, Subcategory, load_categories
 
+from categories import Categories, Category, Subcategory, load_categories
 from product_list import (
     COLUMNS,
     PRODUCT_LIST_FILE,

@@ -16,8 +16,10 @@ rozmowach z Claude Code. Nowe pojęcie dopisz tutaj w tym samym PR, w którym si
 | **składnik odżywczy** (nutrient) | Mierzona cecha produktu: białko, tłuszcz, magnez, błonnik, IG itd. Kolumna CSV bazy. |
 | **źródło** (source) | Pochodzenie wartości, np. USDA SR Legacy (z `fdc_id`) albo pozycja w tabeli IG. Każda wartość je ma. |
 | **measured / calculated** | Flaga wartości: zmierzona (wprost ze źródła) albo wyliczona, np. współczynnikiem retencji lub wydajności. |
-| **współczynnik retencji** (retention factor) | Część składnika, która zostaje po obróbce; USDA R6 (S-106). |
-| **współczynnik wydajności** (yield factor) | Zmiana masy produktu przy obróbce, np. utrata wody (S-106). |
+| **współczynnik retencji** (retention factor) | Część składnika (%), która zostaje w produkcie po obróbce; tabela USDA R6, proces dobierany w `data-pipeline/cooking/methods.yaml` (S-106). Brak współczynnika w R6 = 100%. |
+| **współczynnik wydajności** (yield factor) | Wydajność: masa produktu po obróbce w % masy przed obróbką, np. ok. 80% mięsa pieczonego, 300% kaszy gotowanej; `data-pipeline/cooking/yields.csv` albo mediana par USDA (S-106). |
+| **wariant bazowy** (base variant) | Wariant produktu z rekordem USDA, z którego wylicza się brakujący wariant obróbki: `surowy`, a gdy go nie ma – `gotowy` (S-106). |
+| **para USDA** (USDA pair) | Dwa warianty tego samego produktu zmierzone w USDA – bazowy i po obróbce; z bilansu suchej masy dają wydajność i wchłonięty tłuszcz grupy (S-106, `docs/data/cooking_calc.md`). |
 | **IG** – indeks glikemiczny (GI) | Jak szybko produkt podnosi glukozę we krwi względem glukozy; brak danych = `null` (S-107). |
 | **ŁG** – ładunek glikemiczny (GL) | IG × węglowodany przyswajalne w porcji / 100; liczony w kodzie (S-302). |
 | **pokrycie składnika** (nutrient coverage) | Odsetek produktów, które mają wartość składnika odżywczego (`null` = brak, zero ze źródła to wartość). Raport: `docs/data/nutrient_coverage.md` (S-103). |

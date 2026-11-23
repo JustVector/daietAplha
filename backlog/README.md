@@ -41,7 +41,7 @@ Statusy: todo → ready (zależności zamknięte, decyzje wypełnione) → in-pr
 | [S-103](S-103.md) | Wybór składników odżywczych i jednostek | CC+P | S-102 | in-progress |
 | [S-104](S-104.md) | Mapowanie listy produktów do fdc_id | CC+P | S-101, S-102 | in-progress |
 | [S-105](S-105.md) | Polskie nazwy i kategorie | CC+P | S-104 | done |
-| [S-106](S-106.md) | Warianty po obróbce termicznej | CC | S-104 | todo |
+| [S-106](S-106.md) | Warianty po obróbce termicznej | CC | S-104 | done |
 | [S-107](S-107.md) | Indeks glikemiczny | CC+P | S-104 | todo |
 | [S-108](S-108.md) | Tagi wykluczeń i diet | P | S-104 | todo |
 | [S-109](S-109.md) | Miary domowe | CC | S-104 | done |

@@ -11,6 +11,7 @@ from fetch_usda import (
     DataIntegrityError,
     extract_archive,
     fetch,
+    fetch_files,
     read_env_file,
     read_manifest,
     verify_dir,
@@ -126,3 +127,40 @@ def test_read_env_file(tmp_path: Path) -> None:
     assert read_env_file(env, "USDA_SOURCE_DIR") == "C:\\dane projektu"
     assert read_env_file(env, "BRAK") is None
     assert read_env_file(tmp_path / "nie_ma", "USDA_SOURCE_DIR") is None
+
+
+# --- Tabela retencji R6 (pojedyncze pliki, S-106) ---
+
+
+def test_fetch_files_downloads_missing_files(
+    tmp_path: Path, manifest: dict[str, str], monkeypatch: pytest.MonkeyPatch
+) -> None:
+    urls: list[str] = []
+
+    def fake_download(url: str, target: Path) -> None:
+        urls.append(url)
+        target.write_bytes(FILES[url.rsplit("/", 1)[1]])
+
+    monkeypatch.setattr(fetch_usda, "download", fake_download)
+    dest = tmp_path / "retention"
+    action = fetch_files(dest, manifest, None, base_url="http://test/")
+    assert action == "pobrano z http://test/"
+    assert sorted(urls) == ["http://test/food.csv", "http://test/nutrient.csv"]
+    assert verify_dir(dest, manifest) == []
+    assert fetch_files(dest, manifest, None) == "dane są aktualne – nic do zrobienia"
+
+
+def test_fetch_files_prefers_local_copy(
+    tmp_path: Path, source_dir: Path, manifest: dict[str, str], monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(fetch_usda, "download", lambda url, target: pytest.fail("pobieranie"))
+    action = fetch_files(tmp_path / "retention", manifest, source_dir)
+    assert "katalogu lokalnego" in action
+
+
+def test_fetch_files_rejects_wrong_checksum(
+    tmp_path: Path, manifest: dict[str, str], monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(fetch_usda, "download", lambda url, target: target.write_bytes(b"x"))
+    with pytest.raises(DataIntegrityError, match="niezgodna suma"):
+        fetch_files(tmp_path / "retention", manifest, None, base_url="http://test/")
