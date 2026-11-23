@@ -1,6 +1,6 @@
 # ADR-0001 – Baza żywności: poziom danych, format i źródła
 
-Status: przyjęta | Data: 2026-11-14 (uzupełniona 2026-11-22) | Decyduje: Piotr | Story: S-005
+Status: przyjęta | Data: 2026-11-14 (uzupełniona 2026-11-22 i 2026-11-23) | Decyduje: Piotr | Story: S-005
 
 ## Kontekst
 dAIet układa przepisy przez LLM, ale wszystkie liczby (wartości odżywcze, IG, ŁG) muszą pochodzić z lokalnej bazy
@@ -38,7 +38,8 @@ z otwartych źródeł, z jawnym pochodzeniem każdej wartości.
 | --- | --- | --- |
 | Szkielet: makro, minerały, witaminy, warianty po obróbce | USDA FoodData Central – SR Legacy (2018-04) | CC0, wydanie końcowe; S-006, S-102 |
 | Indeks glikemiczny | International Tables of GI and GL Values 2021 (Atkinson i in., AJCN), tabela uzupełniająca 1 | tylko wartości zgodne z ISO; z metodą obróbki; S-107 |
-| Przeliczenia po obróbce, gdy brak danych zmierzonych | USDA Table of Nutrient Retention Factors R6 (2007) | S-106 |
+| Przeliczenia po obróbce, gdy brak danych zmierzonych | USDA Table of Nutrient Retention Factors R6 (2007) | retencja składników; S-106 |
+| Wydajność (zmiana masy) przy obróbce | USDA Table of Cooking Yields for Meat and Poultry (2012), Bognár (BFE 2002), pary rekordów SR Legacy | S-106, [cooking_calc.md](../data/cooking_calc.md) |
 | Uzupełnienie | ANSES Ciqual 2025, Fineli | produkty europejskie, zwłaszcza polskie luki w USDA (np. twaróg, kasza gryczana, kiszonki); z oznaczeniem źródła |
 
 ## Konsekwencje
@@ -52,11 +53,13 @@ z otwartych źródeł, z jawnym pochodzeniem każdej wartości.
 - Produkty handlowe z kodami EAN – poza zakresem v1 (dokument z 2026-11-14, roadmapa).
 
 ## Otwarte sprawy (rozbieżności z dokumentem z 2026-11-14)
-1. **Wartości współczynników retencji R6 nie są w pobranych danych.** Plik `retention_factor.csv` z paczki
-   SR Legacy (270 wierszy: `id`, `code`, `food_group_id`, `description`) zawiera tylko listę procesów obróbki,
-   bez wartości współczynników. Pełną tabelę R6 trzeba pobrać osobno – do rozwiązania w S-106.
-2. **Brak źródła współczynników wydajności** (zmiana masy przy obróbce). Dokument je wymienia, ale nie wskazuje
-   źródła – do ustalenia w S-106.
+1. **Wartości współczynników retencji R6 nie są w pobranych danych** – rozwiązane w S-106 (2026-11-23):
+   `retention_factor.csv` z paczki SR Legacy ma tylko listę procesów, więc pełną tabelę R6 (`retn06.txt`,
+   USDA ARS) pobiera osobno `make fetch-usda` z weryfikacją SHA-256.
+2. **Brak źródła współczynników wydajności** – rozwiązane w S-106 (2026-11-23, decyzja Piotra): mięso – USDA
+   Table of Cooking Yields for Meat and Poultry (2012); ryby, wyroby mięsne, jaja, kasze, warzywa duszone –
+   Bognár (BFE-R--02-03, 2002); pozostałe grupy – mediany par rekordów SR Legacy (przed obróbką i po niej).
+   Warzywa pieczone i grillowane nie mają źródła – do uzupełnienia z Ciqual/Fineli. Licencja tabel Bognár – S-505.
 3. **Licencje.** Dokument podaje tylko CC0 dla USDA. Do sprawdzenia: warunki publicznego użycia tabel IG,
    licencje Ciqual i Fineli oraz własna licencja bazy v1 – S-505.
 4. **Rola Ciqual/Fineli** w dokumencie jest opcjonalna; roadmapa traktuje je jako uzupełnienie polskich produktów.

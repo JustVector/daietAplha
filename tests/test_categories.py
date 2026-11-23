@@ -7,6 +7,7 @@ prawdziwy plik `data-pipeline/categories.yaml`.
 from pathlib import Path
 
 import pytest
+
 from categories import CATEGORIES_FILE, CategoriesError, load_categories
 
 VALID = """

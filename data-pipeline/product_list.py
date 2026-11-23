@@ -19,8 +19,9 @@ from collections import Counter
 from pathlib import Path
 from typing import Literal
 
-from categories import Categories, CategoriesError, load_categories
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_validator
+
+from categories import Categories, CategoriesError, load_categories
 
 PRODUCT_LIST_FILE = Path(__file__).resolve().parent / "input" / "product_list.csv"
 

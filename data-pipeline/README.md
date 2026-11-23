@@ -38,7 +38,13 @@ każdy plik jest sprawdzany sumą SHA-256 z manifestu [`checksums/usda_sr_legacy
 - `--update-checksums` – przepisanie manifestu; tylko przy świadomej zmianie wersji danych.
 
 Uwaga: `retention_factor.csv` zawiera tylko listę procesów obróbki, bez wartości współczynników retencji –
-pełna tabela USDA R6 jest osobnym źródłem (S-106, [ADR-0001](../docs/adr/0001-food-database.md)).
+pełną tabelę USDA R6 pobiera ta sama komenda (niżej, S-106).
+
+**Tabela retencji USDA R6** (S-106): `make fetch-usda` pobiera też *USDA Table of Nutrient Retention Factors,
+Release 6* (2007, domena publiczna) – plik `retn06.txt` z
+https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/ do `data/raw/usda_retention/` (poza git), sprawdzany
+sumą z [`checksums/usda_retention.sha256`](checksums/usda_retention.sha256). Gdy `USDA_SOURCE_DIR` zawiera
+`retn06.txt`, plik jest kopiowany zamiast pobierania.
 
 ## Tabela szeroka SR Legacy (S-102)
 
@@ -218,3 +224,28 @@ uruchom ponownie.
 
 Test `tests/test_portions.py` sprawdza rozbiór opisów, przeliczenia (3 przykłady na prawdziwych danych: łyżka oliwy,
 szklanka mleka, średnie jabłko) i czy pliki wynikowe w repo są aktualne.
+
+## Warianty po obróbce termicznej (S-106)
+
+```
+make cooked-variants
+```
+
+[`cooking.py`](cooking.py) wylicza warianty obróbki termicznej bez rekordu USDA z wariantu bazowego tego samego
+produktu (`surowy`, a gdy go nie ma – `gotowy`): współczynniki retencji USDA R6, wydajność (zmiana masy) i olej
+wchłonięty przy smażeniu. Wymaga danych z `make fetch-usda` i `mapping/mapping.csv`. Logika, wzory i źródła:
+[`docs/data/cooking_calc.md`](../docs/data/cooking_calc.md).
+
+| Plik | Zawartość |
+| --- | --- |
+| [`cooking/methods.yaml`](cooking/methods.yaml) | parametry (olej do smażenia, minimum par, próg ryb tłustych), składniki z R6 i dobór procesu R6 dla kategorii, podkategorii lub produktu |
+| [`cooking/yields.csv`](cooking/yields.csv) | wydajność (%) i wchłonięty tłuszcz (g) dla zakresu i wariantu obróbki: `scope`, `preparation`, `yield_pct`, `fat_uptake_g`, `source`, `reference` (tabela w źródle) |
+| [`cooking/cooked_variants.csv`](cooking/cooked_variants.csv) | wynik: wyliczone warianty – baza, proces R6, wydajność, olej i wartości 38 składników |
+| [`../docs/data/cooking_coverage.md`](../docs/data/cooking_coverage.md) | wynik: wyliczone warianty, warianty bez wartości z powodem, mediany par USDA |
+| `data/interim/variant_nutrients.parquet` | wynik (poza git): wartości wszystkich wariantów – `measured` z USDA i `calculated` – ze źródłem i odwołaniem do współczynnika (`factor_ref`) |
+
+- Wydajność: najpierw wpis `yields.csv`, potem mediana co najmniej 3 par USDA (warianty zmierzone przed obróbką
+  i po niej), od najwęższego zakresu (produkt, podkategoria, kategoria). Wpis ze źródłem `brak` = świadomy brak.
+- Kody kategorii i podkategorii jak w [`categories.yaml`](categories.yaml); produkt jako `food:<food_id>`.
+- Po zmianie `mapping.csv`, `cooking/` albo listy produktów uruchom komendę ponownie – test
+  `tests/test_cooking.py` sprawdza, czy pliki w repo są aktualne.
