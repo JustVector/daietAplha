@@ -1,0 +1,358 @@
+food_id,name_pl,category,subcategory,contains_lactose,contains_gluten,meat,fish,seafood,eggs,nuts,vegan,vegetarian,status,notes
+1,ziemniak,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+2,batat,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+3,marchew,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+4,burak ćwikłowy,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+5,pietruszka (korzeń),warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+6,seler korzeniowy,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+7,seler naciowy,warzywa,inne warzywa,false,false,false,false,false,false,false,true,true,auto,
+8,pasternak,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+9,por,warzywa,cebulowe,false,false,false,false,false,false,false,true,true,auto,
+10,cebula,warzywa,cebulowe,false,false,false,false,false,false,false,true,true,auto,
+11,cebula czerwona,warzywa,cebulowe,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+12,cebula dymka,warzywa,cebulowe,false,false,false,false,false,false,false,true,true,auto,
+13,szalotka,warzywa,cebulowe,false,false,false,false,false,false,false,true,true,auto,
+14,czosnek,warzywa,cebulowe,false,false,false,false,false,false,false,true,true,auto,
+15,szczypiorek,warzywa,zioła i przyprawy świeże,false,false,false,false,false,false,false,true,true,auto,
+16,koperek,warzywa,zioła i przyprawy świeże,false,false,false,false,false,false,false,true,true,auto,
+17,natka pietruszki,warzywa,zioła i przyprawy świeże,false,false,false,false,false,false,false,true,true,auto,
+18,kapusta biała,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+19,kapusta czerwona,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+20,kapusta włoska,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+21,kapusta pekińska,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+22,kapusta kiszona,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+23,brukselka,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+24,kalafior,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+25,brokuł,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+26,kalarepa,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+27,jarmuż,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+28,szpinak,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+29,sałata masłowa,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+30,sałata lodowa,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+31,sałata rzymska,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+32,rukola,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+33,roszponka,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+34,cykoria,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+35,rzeżucha,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+36,ogórek,warzywa,dyniowate,false,false,false,false,false,false,false,true,true,auto,
+37,ogórek kiszony,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+38,pomidor,warzywa,psiankowate,false,false,false,false,false,false,false,true,true,auto,
+39,pomidor koktajlowy,warzywa,psiankowate,false,false,false,false,false,false,false,true,true,auto,
+40,pomidory krojone z puszki,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+41,przecier pomidorowy (passata),warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+42,koncentrat pomidorowy,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+43,pomidory suszone,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+44,papryka czerwona,warzywa,psiankowate,false,false,false,false,false,false,false,true,true,auto,
+45,papryka zielona,warzywa,psiankowate,false,false,false,false,false,false,false,true,true,auto,
+46,papryka żółta,warzywa,psiankowate,false,false,false,false,false,false,false,true,true,auto,
+47,papryczka chili,warzywa,psiankowate,false,false,false,false,false,false,false,true,true,auto,
+48,cukinia,warzywa,dyniowate,false,false,false,false,false,false,false,true,true,auto,
+49,bakłażan,warzywa,psiankowate,false,false,false,false,false,false,false,true,true,auto,
+50,dynia,warzywa,dyniowate,false,false,false,false,false,false,false,true,true,auto,
+51,rzodkiewka,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+52,rzepa,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+53,brukiew,warzywa,korzeniowe i bulwiaste,false,false,false,false,false,false,false,true,true,auto,
+54,fasolka szparagowa,warzywa,strączkowe świeże,false,false,false,false,false,false,false,true,true,auto,
+55,groszek zielony,warzywa,strączkowe świeże,false,false,false,false,false,false,false,true,true,auto,
+56,groszek konserwowy,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+57,kukurydza cukrowa (kolba),warzywa,inne warzywa,false,false,false,false,false,false,false,true,true,auto,
+58,kukurydza konserwowa,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+59,szparagi,warzywa,inne warzywa,false,false,false,false,false,false,false,true,true,auto,
+60,koper włoski (fenkuł),warzywa,inne warzywa,false,false,false,false,false,false,false,true,true,auto,
+61,pak choi,warzywa,kapustne,false,false,false,false,false,false,false,true,true,auto,
+62,kiełki fasoli mung,warzywa,inne warzywa,false,false,false,false,false,false,false,true,true,auto,
+63,imbir,warzywa,zioła i przyprawy świeże,false,false,false,false,false,false,false,true,true,auto,
+64,chrzan tarty,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+65,botwina,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,
+66,szczaw,warzywa,liściaste i sałaty,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+67,oliwki zielone,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+68,oliwki czarne,warzywa,przetwory warzywne,false,false,false,false,false,false,false,true,true,auto,
+69,mieszanka warzyw mrożona,warzywa,inne warzywa,false,false,false,false,false,false,false,true,true,auto,
+70,pieczarka,warzywa,grzyby,false,false,false,false,false,false,false,true,true,auto,
+71,boczniak,warzywa,grzyby,false,false,false,false,false,false,false,true,true,auto,
+72,borowik (prawdziwek),warzywa,grzyby,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+73,kurka,warzywa,grzyby,false,false,false,false,false,false,false,true,true,auto,
+74,borowik suszony,warzywa,grzyby,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+75,jabłko,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+76,gruszka,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+77,śliwka,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+78,śliwka suszona,owoce,suszone,false,false,false,false,false,false,false,true,true,auto,
+79,czereśnia,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+80,wiśnia,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+81,truskawka,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+82,malina,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+83,borówka amerykańska,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+84,jagoda (borówka czarna),owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+85,jeżyna,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+86,porzeczka czarna,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+87,porzeczka czerwona,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+88,agrest,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+89,żurawina,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+90,żurawina suszona,owoce,suszone,false,false,false,false,false,false,false,true,true,auto,
+91,aronia,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+92,rabarbar,owoce,inne owoce,false,false,false,false,false,false,false,true,true,auto,
+93,pigwa,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+94,morela,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+95,morela suszona,owoce,suszone,false,false,false,false,false,false,false,true,true,auto,
+96,brzoskwinia,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+97,nektarynka,owoce,ziarnkowe i pestkowe,false,false,false,false,false,false,false,true,true,auto,
+98,winogrona,owoce,jagodowe,false,false,false,false,false,false,false,true,true,auto,
+99,rodzynki,owoce,suszone,false,false,false,false,false,false,false,true,true,auto,
+100,banan,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+101,pomarańcza,owoce,cytrusy,false,false,false,false,false,false,false,true,true,auto,
+102,mandarynka,owoce,cytrusy,false,false,false,false,false,false,false,true,true,auto,
+103,grejpfrut,owoce,cytrusy,false,false,false,false,false,false,false,true,true,auto,
+104,cytryna,owoce,cytrusy,false,false,false,false,false,false,false,true,true,auto,
+105,limonka,owoce,cytrusy,false,false,false,false,false,false,false,true,true,auto,
+106,kiwi,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+107,ananas,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+108,mango,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+109,papaja,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+110,marakuja,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+111,arbuz,owoce,inne owoce,false,false,false,false,false,false,false,true,true,auto,
+112,melon kantalupa,owoce,inne owoce,false,false,false,false,false,false,false,true,true,auto,
+113,granat,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+114,awokado,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+115,figa,owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+116,figa suszona,owoce,suszone,false,false,false,false,false,false,false,true,true,auto,
+117,daktyle suszone,owoce,suszone,false,false,false,false,false,false,false,true,true,auto,
+118,kaki (persymona),owoce,egzotyczne,false,false,false,false,false,false,false,true,true,auto,
+119,jabłko suszone,owoce,suszone,false,false,false,false,false,false,false,true,true,auto,
+120,mus jabłkowy bez cukru,owoce,przetwory i soki,false,false,false,false,false,false,false,true,true,auto,
+121,sok jabłkowy,owoce,przetwory i soki,false,false,false,false,false,false,false,true,true,auto,
+122,sok pomarańczowy,owoce,przetwory i soki,false,false,false,false,false,false,false,true,true,auto,
+123,sok z cytryny,owoce,przetwory i soki,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+124,kasza gryczana palona,zboża i kasze,kasze i ziarna,false,false,false,false,false,false,false,true,true,auto,
+125,kasza gryczana niepalona (biała),zboża i kasze,kasze i ziarna,false,false,false,false,false,false,false,true,true,auto,
+126,kasza jaglana,zboża i kasze,kasze i ziarna,false,false,false,false,false,false,false,true,true,auto,
+127,kasza jęczmienna perłowa,zboża i kasze,kasze i ziarna,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+128,kasza jęczmienna pęczak,zboża i kasze,kasze i ziarna,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+129,kasza manna,zboża i kasze,kasze i ziarna,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+130,kasza kukurydziana,zboża i kasze,kasze i ziarna,false,false,false,false,false,false,false,true,true,auto,
+131,kasza kuskus,zboża i kasze,kasze i ziarna,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+132,kasza bulgur,zboża i kasze,kasze i ziarna,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+133,orkisz (ziarno),zboża i kasze,kasze i ziarna,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+134,komosa ryżowa,zboża i kasze,kasze i ziarna,false,false,false,false,false,false,false,true,true,auto,
+135,amarantus,zboża i kasze,kasze i ziarna,false,false,false,false,false,false,false,true,true,auto,
+136,ryż biały,zboża i kasze,ryż,false,false,false,false,false,false,false,true,true,auto,
+137,ryż brązowy,zboża i kasze,ryż,false,false,false,false,false,false,false,true,true,auto,
+138,ryż basmati,zboża i kasze,ryż,false,false,false,false,false,false,false,true,true,auto,
+139,ryż parboiled,zboża i kasze,ryż,false,false,false,false,false,false,false,true,true,auto,
+140,ryż dziki,zboża i kasze,ryż,false,false,false,false,false,false,false,true,true,auto,
+141,makaron pszenny,zboża i kasze,makarony,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+142,makaron pełnoziarnisty,zboża i kasze,makarony,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+143,makaron jajeczny,zboża i kasze,makarony,false,true,false,false,false,true,false,false,true,auto,"contains_gluten: nazwa, USDA; eggs: nazwa, USDA"
+144,makaron ryżowy,zboża i kasze,makarony,false,false,false,false,false,false,false,true,true,auto,
+145,płatki owsiane,zboża i kasze,płatki i otręby,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA; owies jak zboże glutenowe (decyzja 2026-11-24); bezglutenowy tylko certyfikowany"
+146,otręby owsiane,zboża i kasze,płatki i otręby,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA; owies jak zboże glutenowe (decyzja 2026-11-24); bezglutenowy tylko certyfikowany"
+147,otręby pszenne,zboża i kasze,płatki i otręby,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+148,płatki kukurydziane,zboża i kasze,płatki i otręby,false,true,false,false,false,false,false,true,true,auto,contains_gluten: nazwa; zwykle ekstrakt słodu jęczmiennego – gluten z zasady ostrożności
+149,musli,zboża i kasze,płatki i otręby,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa; bez rekordu USDA – tylko kategoria i nazwa; możliwy dodatek mleka, serwatki lub miodu zależnie od producenta"
+150,napój owsiany,zboża i kasze,napoje zbożowe,false,true,false,false,false,false,false,true,true,auto,contains_gluten: nazwa; bez rekordu USDA – tylko kategoria i nazwa; owies jak zboże glutenowe (decyzja 2026-11-24); bezglutenowy tylko certyfikowany
+151,mąka pszenna (typ 450–650),zboża i kasze,mąki i skrobie,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+152,mąka pszenna pełnoziarnista,zboża i kasze,mąki i skrobie,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+153,mąka żytnia,zboża i kasze,mąki i skrobie,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+154,mąka gryczana,zboża i kasze,mąki i skrobie,false,false,false,false,false,false,false,true,true,auto,
+155,mąka kukurydziana,zboża i kasze,mąki i skrobie,false,false,false,false,false,false,false,true,true,auto,
+156,skrobia ziemniaczana (mąka ziemniaczana),zboża i kasze,mąki i skrobie,false,false,false,false,false,false,false,true,true,auto,
+157,bułka tarta,zboża i kasze,mąki i skrobie,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+158,chleb pszenny,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+159,chleb żytni,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+160,chleb mieszany pszenno-żytni,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+161,chleb żytni razowy,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+162,chleb graham,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+163,chleb pszenny pełnoziarnisty,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+164,chleb tostowy,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA; możliwy dodatek mleka, serwatki lub miodu zależnie od producenta"
+165,bułka pszenna,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA; możliwy dodatek mleka, serwatki lub miodu zależnie od producenta"
+166,bagietka,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+167,tortilla pszenna,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+168,pita,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+169,pieczywo chrupkie żytnie,zboża i kasze,pieczywo,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA"
+170,wafle ryżowe,zboża i kasze,pieczywo,false,false,false,false,false,false,false,true,true,auto,
+171,"mleko 0,5%",nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+172,mleko 2%,nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+173,"mleko 3,2%",nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+174,mleko kozie,nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+175,mleko w proszku,nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+176,kefir,nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+177,maślanka,nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+178,mleko zsiadłe,nabiał,mleko i napoje mleczne,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+179,jogurt naturalny,nabiał,jogurty,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+180,jogurt grecki,nabiał,jogurty,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+181,jogurt owocowy,nabiał,jogurty,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+182,skyr,nabiał,jogurty,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+183,twaróg chudy,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+184,twaróg półtłusty,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+185,twaróg tłusty,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+186,serek wiejski,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+187,serek homogenizowany naturalny,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+188,serek śmietankowy,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+189,śmietana 12%,nabiał,śmietana,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+190,śmietana 18%,nabiał,śmietana,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+191,śmietanka 30%,nabiał,śmietana,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+192,ser gouda,nabiał,sery żółte i twarde,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA; laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+193,ser edamski,nabiał,sery żółte i twarde,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA; laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+194,ser ementaler,nabiał,sery żółte i twarde,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA; laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+195,ser cheddar,nabiał,sery żółte i twarde,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA; laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+196,mozzarella,nabiał,sery miękkie i inne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+197,ser feta,nabiał,sery miękkie i inne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+198,parmezan,nabiał,sery żółte i twarde,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA; laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+199,camembert,nabiał,sery miękkie i inne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+200,ser pleśniowy niebieski,nabiał,sery miękkie i inne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+201,ser topiony,nabiał,sery miękkie i inne,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+202,mascarpone,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+203,ricotta,nabiał,twarogi i serki,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria, USDA"
+204,halloumi,nabiał,sery miękkie i inne,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+205,oscypek,nabiał,sery żółte i twarde,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa; laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+206,bryndza,nabiał,sery miękkie i inne,true,false,false,false,false,false,false,false,true,auto,contains_lactose: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+207,jajo kurze,jaja,jaja i ich części,false,false,false,false,false,true,false,false,true,auto,"eggs: kategoria, USDA"
+208,białko jaja kurzego,jaja,jaja i ich części,false,false,false,false,false,true,false,false,true,auto,"eggs: kategoria, USDA"
+209,żółtko jaja kurzego,jaja,jaja i ich części,false,false,false,false,false,true,false,false,true,auto,"eggs: kategoria, USDA"
+210,jajo przepiórcze,jaja,jaja i ich części,false,false,false,false,false,true,false,false,true,auto,"eggs: kategoria, USDA"
+211,pierś z kurczaka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+212,udo z kurczaka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+213,podudzie z kurczaka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+214,skrzydełko z kurczaka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+215,kurczak (tuszka),mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+216,wątróbka drobiowa,mięso,podroby,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+217,żołądki drobiowe,mięso,podroby,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+218,serca drobiowe,mięso,podroby,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+219,mięso mielone z kurczaka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+220,pierś z indyka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+221,udziec z indyka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+222,mięso mielone z indyka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+223,kaczka,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+224,gęś,mięso,drób,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+225,schab,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+226,polędwiczka wieprzowa,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+227,karkówka,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+228,łopatka wieprzowa,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+229,szynka wieprzowa surowa,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+230,boczek surowy,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+231,żeberka wieprzowe,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+232,golonka,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+233,mięso mielone wieprzowe,mięso,wieprzowina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+234,wątróbka wieprzowa,mięso,podroby,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+235,polędwica wołowa,mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+236,rostbef,mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+237,antrykot,mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+238,łopatka wołowa,mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+239,pręga wołowa,mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+240,mostek wołowy,mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+241,mięso mielone wołowe,mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+242,wątróbka wołowa,mięso,podroby,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+243,cielęcina (udziec),mięso,wołowina i cielęcina,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+244,jagnięcina (udziec),mięso,inne mięso,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+245,królik,mięso,inne mięso,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+246,szynka gotowana,mięso,wędliny,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+247,szynka wędzona,mięso,wędliny,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+248,polędwica sopocka,mięso,wędliny,false,false,true,false,false,false,false,false,false,auto,meat: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+249,szynka z indyka,mięso,wędliny,false,false,true,false,false,false,false,false,false,auto,meat: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+250,pierś z kurczaka wędzona (wędlina),mięso,wędliny,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+251,kiełbasa krakowska sucha,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+252,kiełbasa śląska,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+253,kiełbasa wieprzowa wędzona,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+254,biała kiełbasa,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+255,kabanosy,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+256,parówki,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+257,salami,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+258,mortadela,mięso,kiełbasy,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+259,boczek wędzony,mięso,wędliny,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA"
+260,pasztet,mięso,wyroby podrobowe,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+261,wątrobianka,mięso,wyroby podrobowe,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+262,kaszanka,mięso,wyroby podrobowe,false,true,true,false,false,false,false,false,false,auto,"contains_gluten: nazwa; meat: kategoria, USDA; gluten zależy od kaszy (jęczmienna tak, gryczana nie) – tag z zasady ostrożności"
+263,salceson,mięso,wyroby podrobowe,false,false,true,false,false,false,false,false,false,auto,"meat: kategoria, USDA; możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+264,łosoś,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+265,łosoś wędzony,ryby i owoce morza,ryby wędzone,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+266,dorsz,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+267,mintaj,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+268,morszczuk,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,fish: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+269,tilapia,ryby i owoce morza,ryby słodkowodne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+270,panga,ryby i owoce morza,ryby słodkowodne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+271,pstrąg,ryby i owoce morza,ryby słodkowodne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+272,pstrąg wędzony,ryby i owoce morza,ryby wędzone,false,false,false,true,false,false,false,false,false,auto,fish: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+273,karp,ryby i owoce morza,ryby słodkowodne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+274,szczupak,ryby i owoce morza,ryby słodkowodne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+275,sandacz,ryby i owoce morza,ryby słodkowodne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+276,okoń,ryby i owoce morza,ryby słodkowodne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+277,halibut,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+278,sola,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+279,tuńczyk świeży,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+280,makrela,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+281,makrela wędzona,ryby i owoce morza,ryby wędzone,false,false,false,true,false,false,false,false,false,auto,fish: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+282,śledź,ryby i owoce morza,ryby morskie,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+283,śledź solony (matjas),ryby i owoce morza,ryby solone i marynowane,false,false,false,true,false,false,false,false,false,auto,fish: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+284,śledź marynowany,ryby i owoce morza,ryby solone i marynowane,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+285,szprot wędzony,ryby i owoce morza,ryby wędzone,false,false,false,true,false,false,false,false,false,auto,fish: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+286,tuńczyk w sosie własnym,ryby i owoce morza,konserwy rybne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+287,tuńczyk w oleju,ryby i owoce morza,konserwy rybne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+288,sardynki w oleju,ryby i owoce morza,konserwy rybne,false,false,false,true,false,false,false,false,false,auto,"fish: kategoria, USDA"
+289,makrela w sosie pomidorowym,ryby i owoce morza,konserwy rybne,false,false,false,true,false,false,false,false,false,auto,fish: kategoria; bez rekordu USDA – tylko kategoria i nazwa
+290,paluszki rybne,ryby i owoce morza,przetwory rybne,false,true,false,true,false,false,false,false,false,auto,contains_gluten: nazwa; fish: kategoria; bez rekordu USDA – tylko kategoria i nazwa; panierka pszenna – gluten; jaja zależą od receptury
+291,paluszki surimi,ryby i owoce morza,przetwory rybne,false,true,false,true,false,true,false,false,false,auto,contains_gluten: nazwa; fish: kategoria; eggs: nazwa; bez rekordu USDA – tylko kategoria i nazwa; zwykle skrobia pszenna i białko jaja – gluten i jaja z zasady ostrożności
+292,krewetki,ryby i owoce morza,owoce morza,false,false,false,false,true,false,false,false,false,auto,"seafood: kategoria, USDA"
+293,kalmary,ryby i owoce morza,owoce morza,false,false,false,false,true,false,false,false,false,auto,"seafood: kategoria, USDA"
+294,małże,ryby i owoce morza,owoce morza,false,false,false,false,true,false,false,false,false,auto,"seafood: kategoria, USDA"
+295,fasola biała,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+296,fasola czerwona,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+297,fasola czarna,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+298,fasola czerwona konserwowa,rośliny strączkowe,konserwowe,false,false,false,false,false,false,false,true,true,auto,
+299,bób,rośliny strączkowe,świeże,false,false,false,false,false,false,false,true,true,auto,
+300,ciecierzyca,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+301,ciecierzyca konserwowa,rośliny strączkowe,konserwowe,false,false,false,false,false,false,false,true,true,auto,
+302,soczewica czerwona,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+303,soczewica zielona,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+304,groch łuskany,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+305,soja (nasiona),rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+306,fasola mung,rośliny strączkowe,suche nasiona,false,false,false,false,false,false,false,true,true,auto,
+307,edamame,rośliny strączkowe,świeże,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+308,tofu naturalne,rośliny strączkowe,przetwory strączkowe,false,false,false,false,false,false,false,true,true,auto,
+309,tofu wędzone,rośliny strączkowe,przetwory strączkowe,false,false,false,false,false,false,false,true,true,auto,bez rekordu USDA – tylko kategoria i nazwa
+310,tempeh,rośliny strączkowe,przetwory strączkowe,false,false,false,false,false,false,false,true,true,auto,
+311,napój sojowy,rośliny strączkowe,przetwory strączkowe,false,false,false,false,false,false,false,true,true,auto,
+312,hummus,rośliny strączkowe,przetwory strączkowe,false,false,false,false,false,false,false,true,true,auto,
+313,orzechy włoskie,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA"
+314,orzechy laskowe,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA"
+315,migdały,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, USDA"
+316,orzechy nerkowca,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA"
+317,pistacje,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, USDA"
+318,orzeszki ziemne,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA; orzeszki ziemne (strączkowe) liczone jako orzechy (decyzja 2026-11-24)"
+319,masło orzechowe,orzechy i nasiona,pasty i masła,false,false,false,false,false,false,true,true,true,auto,"nuts: nazwa, USDA; orzeszki ziemne (strączkowe) liczone jako orzechy (decyzja 2026-11-24)"
+320,orzechy brazylijskie,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA"
+321,orzechy pekan,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA"
+322,orzechy makadamia,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA"
+323,orzeszki piniowe,orzechy i nasiona,orzechy,false,false,false,false,false,false,true,true,true,auto,"nuts: kategoria, nazwa, USDA"
+324,słonecznik łuskany,orzechy i nasiona,nasiona i pestki,false,false,false,false,false,false,false,true,true,auto,
+325,pestki dyni,orzechy i nasiona,nasiona i pestki,false,false,false,false,false,false,false,true,true,auto,
+326,siemię lniane,orzechy i nasiona,nasiona i pestki,false,false,false,false,false,false,false,true,true,auto,
+327,nasiona chia,orzechy i nasiona,nasiona i pestki,false,false,false,false,false,false,false,true,true,auto,
+328,sezam,orzechy i nasiona,nasiona i pestki,false,false,false,false,false,false,false,true,true,auto,
+329,mak,orzechy i nasiona,nasiona i pestki,false,false,false,false,false,false,false,true,true,auto,
+330,nasiona konopi łuskane,orzechy i nasiona,nasiona i pestki,false,false,false,false,false,false,false,true,true,auto,
+331,wiórki kokosowe,orzechy i nasiona,orzechy,false,false,false,false,false,false,false,true,true,auto,kokos nie jest liczony jako orzech (decyzja 2026-11-24)
+332,tahini (pasta sezamowa),orzechy i nasiona,pasty i masła,false,false,false,false,false,false,false,true,true,auto,
+333,masło,tłuszcze,tłuszcze zwierzęce,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: nazwa, USDA"
+334,masło klarowane,tłuszcze,tłuszcze zwierzęce,true,false,false,false,false,false,false,false,true,auto,"contains_lactose: nazwa, USDA; laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+335,oliwa z oliwek,tłuszcze,oleje roślinne,false,false,false,false,false,false,false,true,true,auto,
+336,olej rzepakowy,tłuszcze,oleje roślinne,false,false,false,false,false,false,false,true,true,auto,
+337,olej słonecznikowy,tłuszcze,oleje roślinne,false,false,false,false,false,false,false,true,true,auto,
+338,olej lniany,tłuszcze,oleje roślinne,false,false,false,false,false,false,false,true,true,auto,
+339,olej kokosowy,tłuszcze,oleje roślinne,false,false,false,false,false,false,false,true,true,auto,kokos nie jest liczony jako orzech (decyzja 2026-11-24)
+340,olej sezamowy,tłuszcze,oleje roślinne,false,false,false,false,false,false,false,true,true,auto,
+341,smalec,tłuszcze,tłuszcze zwierzęce,false,false,true,false,false,false,false,false,false,auto,"meat: nazwa, USDA; tłuszcz lub kolagen zwierząt rzeźnych – tag mięso"
+342,margaryna,tłuszcze,tłuszcze przetworzone,false,false,false,false,false,false,false,true,true,auto,"możliwy dodatek mleka, serwatki lub miodu zależnie od producenta"
+343,majonez,tłuszcze,tłuszcze przetworzone,false,false,false,false,false,true,false,false,true,auto,"eggs: nazwa, USDA"
+344,cukier biały,inne,cukry i słodziki,false,false,false,false,false,false,false,true,true,auto,
+345,cukier trzcinowy,inne,cukry i słodziki,false,false,false,false,false,false,false,true,true,auto,
+346,miód,inne,cukry i słodziki,false,false,false,false,false,false,false,false,true,auto,"nie vegan: nazwa, USDA; wegetariański, ale nie wegański (decyzja 2026-11-24)"
+347,syrop klonowy,inne,cukry i słodziki,false,false,false,false,false,false,false,true,true,auto,
+348,kakao (proszek),inne,słodycze i kakao,false,false,false,false,false,false,false,true,true,auto,
+349,czekolada gorzka (70%),inne,słodycze i kakao,false,false,false,false,false,false,false,true,true,auto,"możliwy dodatek mleka, serwatki lub miodu zależnie od producenta"
+350,dżem truskawkowy,inne,słodycze i kakao,false,false,false,false,false,false,false,true,true,auto,
+351,ketchup,inne,sosy i przyprawy,false,false,false,false,false,false,false,true,true,auto,
+352,musztarda,inne,sosy i przyprawy,false,false,false,false,false,false,false,true,true,auto,
+353,sos sojowy,inne,sosy i przyprawy,false,true,false,false,false,false,false,true,true,auto,"contains_gluten: nazwa, USDA; shoyu z pszenicą – gluten; tamari bez pszenicy to inny produkt"
+354,ocet spirytusowy,inne,sosy i przyprawy,false,false,false,false,false,false,false,true,true,auto,
+355,drożdże świeże,inne,dodatki do pieczenia,false,false,false,false,false,false,false,true,true,auto,
+356,żelatyna,inne,dodatki do pieczenia,false,false,true,false,false,false,false,false,false,auto,"meat: nazwa, USDA; tłuszcz lub kolagen zwierząt rzeźnych – tag mięso"
+357,sól,inne,sosy i przyprawy,false,false,false,false,false,false,false,true,true,auto,

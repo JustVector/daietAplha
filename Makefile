@@ -1,4 +1,4 @@
-.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list map-products portions cooked-variants
+.PHONY: install up down logs migrate run test lint format fetch-usda sr-wide nutrient-coverage product-list map-products portions cooked-variants product-tags
 
 # Instalacja zależności (uv, wszyscy członkowie workspace) i hooków pre-commit
 install:
@@ -67,3 +67,8 @@ portions:
 # wymaga mapping.csv (make map-products) i danych z make fetch-usda
 cooked-variants:
 	uv run python -X utf8 data-pipeline/cooking.py
+
+# Tagi wykluczeń i diet (S-108): propozycja automatyczna w tags/product_tags.csv (wiersze
+# `zweryfikowany` nie są nadpisywane); wymaga mapping.csv (make map-products) i danych z make fetch-usda
+product-tags:
+	uv run python -X utf8 data-pipeline/product_tags.py

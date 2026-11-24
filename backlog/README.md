@@ -43,7 +43,7 @@ Statusy: todo → ready (zależności zamknięte, decyzje wypełnione) → in-pr
 | [S-105](S-105.md) | Polskie nazwy i kategorie | CC+P | S-104 | done |
 | [S-106](S-106.md) | Warianty po obróbce termicznej | CC | S-104 | done |
 | [S-107](S-107.md) | Indeks glikemiczny | CC+P | S-104 | todo |
-| [S-108](S-108.md) | Tagi wykluczeń i diet | P | S-104 | todo |
+| [S-108](S-108.md) | Tagi wykluczeń i diet | P | S-104 | in-progress |
 | [S-109](S-109.md) | Miary domowe | CC | S-104 | done |
 | [S-110](S-110.md) | Walidacja jakości danych | CC | S-106 | todo |
 | [S-111](S-111.md) | Eksport bazy v1 | CC | S-110 | todo |

@@ -6,7 +6,8 @@ Etapy (backlog E1):
 - pobranie USDA FoodData Central SR Legacy do `data/raw/` (S-006),
 - import do tabeli szerokiej (S-102, opis niżej) i wybór składników odżywczych (S-103),
 - lista produktów podstawowych (S-101) z polskimi nazwami i kategoriami (S-105), opis niżej,
-- mapowanie listy produktów podstawowych, warianty obróbki, IG, tagi, miary (S-104, S-106 – S-109),
+- mapowanie listy produktów podstawowych, warianty obróbki, IG, tagi, miary (S-104, S-106 – S-109;
+  tagi wykluczeń i diet opis niżej),
 - walidacja i eksport bazy v1 (S-110, S-111).
 
 Zasada: każda wartość odżywcza ma źródło i flagę `measured` / `calculated`.
@@ -249,3 +250,52 @@ wchłonięty przy smażeniu. Wymaga danych z `make fetch-usda` i `mapping/mappin
 - Kody kategorii i podkategorii jak w [`categories.yaml`](categories.yaml); produkt jako `food:<food_id>`.
 - Po zmianie `mapping.csv`, `cooking/` albo listy produktów uruchom komendę ponownie – test
   `tests/test_cooking.py` sprawdza, czy pliki w repo są aktualne.
+
+## Tagi wykluczeń i diet (S-108)
+
+```
+make product-tags
+```
+
+| Plik | Zawartość |
+| --- | --- |
+| [`tags.yaml`](tags.yaml) | słownik tagów: `code` (angielski, nazwa kolumny), `name_pl`, `kind` (`exclusion` / `diet`), zależności tagów diet i reguły automatycznej propozycji; uwagi do przeglądu (`review_notes`) |
+| [`tags/product_tags.csv`](tags/product_tags.csv) | tagi produktów (w git): 1 wiersz = produkt podstawowy (`food_id`), kolumny `food_id`, `name_pl`, `category`, `subcategory`, po jednej kolumnie `true`/`false` na tag, `status`, `notes` |
+| [`product_tags.py`](product_tags.py) | propozycja automatyczna i walidacja |
+
+Tagi v1:
+
+| Kod | Nazwa | Rodzaj |
+| --- | --- | --- |
+| `contains_lactose` | zawiera laktozę | wykluczenie |
+| `contains_gluten` | zawiera gluten | wykluczenie |
+| `meat` | mięso | wykluczenie |
+| `fish` | ryby | wykluczenie |
+| `seafood` | owoce morza | wykluczenie |
+| `eggs` | jaja | wykluczenie |
+| `nuts` | orzechy | wykluczenie |
+| `vegan` | wegańskie | dieta |
+| `vegetarian` | wegetariańskie | dieta |
+
+- Tag wykluczenia = produkt **zawiera** składnik; profil domownika wyklucza produkty z tagiem (S-301).
+  Tag diety = produkt **nadaje się** do diety.
+- Tagi należą do produktu podstawowego, więc obowiązują wszystkie jego warianty (obróbka ich nie zmienia;
+  wariant `smażony` zawiera olej rzepakowy – S-106).
+- **Propozycja automatyczna** (`make product-tags`): reguły z `tags.yaml` sprawdzają kategorię i podkategorię
+  produktu (`categories.yaml`), polską nazwę oraz kategorię i opis USDA rekordów przypisanych wariantom
+  produktu w `mapping/mapping.csv` (S-104). Tag diety dostaje produkt bez wykluczających go tagów
+  (`excluded_by_tags`) i bez trafienia reguły `excluded_by` (np. miód nie jest wegański).
+  W `notes` generator zapisuje źródła każdego tagu (`kategoria`, `nazwa`, `USDA`), brak rekordu USDA
+  i uwagi do przeglądu z `review_notes`.
+- **Zasada ostrożności**: wątpliwy produkt dostaje tag wykluczenia – niepotrzebne wykluczenie szkodzi mniej
+  niż pominięte (np. laktoza w serach dojrzewających i maśle klarowanym, gluten w kaszance i płatkach
+  kukurydzianych).
+- **Statusy**: `auto` – propozycja, nadpisywana przy każdym uruchomieniu; `zweryfikowany` – sprawdzone ręcznie,
+  nigdy nienadpisywane (nazwa i kategoria odświeżane z listy produktów). Weryfikacja (praca Piotra):
+  popraw `true`/`false`, ustaw `zweryfikowany`, opcjonalnie zmień `notes`.
+- Walidacja (także w CI, bez danych USDA: `uv run python -X utf8 data-pipeline/product_tags.py --check`):
+  kolumny zgodne ze słownikiem, każdy produkt z listy dokładnie raz i w kolejności `food_id`, nazwa i kategoria
+  zgodne z listą produktów, wartości `true`/`false`, statusy, spójność tagów (`vegan` → `vegetarian`;
+  `vegetarian` nie z `meat`, `fish`, `seafood`; `vegan` nie z `contains_lactose`, `eggs`).
+  Test na prawdziwych danych sprawdza, czy plik w repo jest aktualny – po zmianie listy produktów, mapowania
+  albo `tags.yaml` uruchom `make product-tags`.

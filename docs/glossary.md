@@ -36,7 +36,8 @@ rozmowach z Claude Code. Nowe pojęcie dopisz tutaj w tym samym PR, w którym si
 | Pojęcie | Znaczenie |
 | --- | --- |
 | **więzy** (constraints) | Reguły, które musi spełnić przepis i plan: wykluczenia, próg IG, limit ŁG, różnorodność 7 dni (S-301). |
-| **tag wykluczenia** (exclusion tag) | Cecha produktu używana przez więzy, np. laktoza, gluten, mięso (S-108). |
+| **tag wykluczenia** (exclusion tag) | Cecha produktu „zawiera X” używana przez więzy: laktoza, gluten, mięso, ryby, owoce morza, jaja, orzechy. Przypisany produktowi podstawowemu (wszystkim jego wariantom): `data-pipeline/tags/product_tags.csv`, słownik `data-pipeline/tags.yaml` (S-108). |
+| **tag diety** (diet tag) | Cecha produktu „nadaje się do diety”: wegańskie, wegetariańskie. Nie może współwystępować z tagami wykluczeń, które dietę wykluczają (np. wegetariańskie z mięsem) (S-108). |
 | **profil** (profile) | Ustawienia domownika: wykluczenia, tryb niskiego IG, posiłki dziennie (S-203). |
 | **tryb niskiego IG** | Ustawienie profilu ograniczające IG/ŁG posiłków; dane o zdrowiu w rozumieniu RODO (S-504). |
 | **przepis** (recipe) | Propozycja LLM: warianty produktów z gramaturą, kroki, porcje; liczby dolicza backend (S-304). |
