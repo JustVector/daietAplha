@@ -42,7 +42,7 @@ select = ["E", "W", "F", "I", "N", "UP", "B", "SIM"]
 [tool.ruff.lint.isort]
 known-first-party = ["daiet_backend", "fetch_usda", "build_sr_wide", "nutrients", "nutrient_coverage",
                      "product_list", "map_products", "build_portions", "categories",
-                     "cooking"]
+                     "cooking", "product_tags"]
 
 [tool.mypy]
 python_version = "3.13"

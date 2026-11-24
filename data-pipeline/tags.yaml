@@ -1,0 +1,175 @@
+# Słownik tagów wykluczeń i diet bazy v1 (S-108) wraz z regułami automatycznej propozycji.
+# Tagi przypisuje się produktom podstawowym (food_id) – obróbka ich nie zmienia (wariant `smażony`
+# ma olej rzepakowy, S-106). Przypisanie: tags/product_tags.csv – po jednej kolumnie true/false
+# na tag, w kolejności z tego pliku.
+#   code     – stały identyfikator angielski (snake_case) dla bazy i API; nazwa kolumny w CSV,
+#   name_pl  – nazwa polska,
+#   kind     – `exclusion`: produkt ZAWIERA składnik (laktoza, gluten, mięso...), profil wyklucza
+#              produkty z tagiem; `diet`: produkt NADAJE SIĘ do diety (wegańska, wegetariańska),
+#   requires – (tylko diet) tagi diet, które produkt z tym tagiem musi mieć też (wegański →
+#              wegetariański),
+#   excluded_by_tags – (tylko diet) tagi wykluczeń, z którymi produkt nie może mieć tego tagu.
+#
+# Reguły propozycji (`make product-tags`):
+#   match       – (exclusion) kiedy produkt dostaje tag,
+#   excluded_by – (diet) kiedy produkt NIE dostaje tagu, oprócz `excluded_by_tags`.
+# Pola reguły (wszystkie opcjonalne; wystarczy jedno trafienie):
+#   categories / subcategories – kody z categories.yaml (kategoria lub podkategoria produktu),
+#   name_patterns   – wyrażenia regularne na polskiej nazwie produktu (`name_pl`, bez rozróżniania
+#                     wielkości liter),
+#   usda_categories – kategorie USDA (`food_category`) rekordów przypisanych wariantom produktu
+#                     w mapping/mapping.csv,
+#   usda_patterns   – wyrażenia regularne na opisie USDA tych rekordów,
+#   except_usda_patterns – rekord USDA pasujący do tego wzorca nie daje trafienia,
+#   except_name_patterns – produkt o pasującej nazwie nigdy nie dostaje trafienia z tej reguły.
+# Zasada ostrożności: wątpliwy produkt dostaje tag wykluczenia (niepotrzebne wykluczenie szkodzi
+# mniej niż pominięte). Ostateczne przypisanie zatwierdza Piotr (status `zweryfikowany`).
+
+tags:
+  - code: contains_lactose
+    name_pl: zawiera laktozę
+    kind: exclusion
+    # Decyzja 2026-11-24: cały nabiał, także sery długo dojrzewające, masło i masło klarowane
+    match:
+      categories: [dairy]
+      name_patterns: ["^masło( klarowane)?$"]
+      usda_categories: [Dairy and Egg Products]
+      except_usda_patterns: ["^Egg"]
+
+  - code: contains_gluten
+    name_pl: zawiera gluten
+    kind: exclusion
+    # Decyzja 2026-11-24: owies (płatki, otręby, napój) traktowany jak zboże glutenowe (lista UE)
+    match:
+      name_patterns:
+        - "pszen"
+        - "żyt"
+        - "jęczmien"
+        - "orkisz"
+        - "owsi"
+        - "owies"
+        - "\\bkuskus"
+        - "\\bbulgur"
+        - "\\bmanna\\b"
+        - "\\bmusli\\b"
+        - "\\bgraham\\b"
+        - "\\bbagietka\\b"
+        - "\\bpita\\b"
+        - "\\bbułka\\b"
+        - "\\bchleb\\b"
+        - "makaron (pełnoziarnisty|jajeczny)"
+        - "\\bsos sojowy\\b"
+        - "\\bpaluszki (rybne|surimi)\\b"
+        - "\\bkaszanka\\b"
+        - "^płatki kukurydziane$"
+      usda_categories: [Baked Products]
+      usda_patterns:
+        - "\\b(wheat|rye|barley|spelt|bulgur|couscous|farina|oats?|semolina)\\b"
+        - "^Pasta\\b"
+        - "^Noodles, egg\\b"
+      except_usda_patterns: ["^Leavening agents", "^Buckwheat"]
+      except_name_patterns: ["^drożdże", "\\bryż", "gryczan", "^kukurydza", "kukurydziana$", "^skrobia"]
+
+  - code: meat
+    name_pl: mięso
+    kind: exclusion
+    # Smalec i żelatyna (tłuszcz i kolagen zwierząt rzeźnych) traktowane jak mięso
+    match:
+      categories: [meat]
+      name_patterns: ["^smalec$", "^żelatyna$"]
+      usda_categories:
+        - Poultry Products
+        - Pork Products
+        - Beef Products
+        - Lamb, Veal, and Game Products
+        - Sausages and Luncheon Meats
+      usda_patterns: ["^Lard\\b", "^Gelatins\\b"]
+
+  - code: fish
+    name_pl: ryby
+    kind: exclusion
+    match:
+      subcategories:
+        - sea_fish
+        - freshwater_fish
+        - smoked_fish
+        - salted_marinated_fish
+        - canned_fish
+        - fish_products
+      usda_patterns: ["^Fish\\b"]
+
+  - code: seafood
+    name_pl: owoce morza
+    kind: exclusion
+    match:
+      subcategories: [seafood]
+      usda_patterns: ["^(Crustaceans|Mollusks)\\b"]
+
+  - code: eggs
+    name_pl: jaja
+    kind: exclusion
+    match:
+      categories: [eggs]
+      name_patterns: ["jajeczn", "^majonez$", "\\bpaluszki surimi\\b"]
+      usda_patterns: ["^Egg\\b", "^Noodles, egg\\b", "\\bmayonnaise\\b"]
+
+  - code: nuts
+    name_pl: orzechy
+    kind: exclusion
+    # Decyzja 2026-11-24: orzeszki ziemne liczone jako orzechy, kokos nie
+    match:
+      subcategories: [nuts]
+      name_patterns: ["orzech", "orzesz"]
+      usda_patterns: ["^Nuts\\b", "^Peanut"]
+      except_usda_patterns: ["coconut"]
+      except_name_patterns: ["kokos"]
+
+  - code: vegan
+    name_pl: wegańskie
+    kind: diet
+    requires: [vegetarian]
+    excluded_by_tags: [contains_lactose, meat, fish, seafood, eggs]
+    # Decyzja 2026-11-24: miód nie jest wegański (jest wegetariański)
+    excluded_by:
+      categories: [dairy, eggs]
+      subcategories: [animal_fats]
+      name_patterns: ["^miód$"]
+      usda_categories: [Dairy and Egg Products]
+      usda_patterns: ["^Honey\\b"]
+
+  - code: vegetarian
+    name_pl: wegetariańskie
+    kind: diet
+    # Żelatyna i smalec wykluczone przez tag `meat`
+    excluded_by_tags: [meat, fish, seafood]
+
+# Uwagi do przeglądu: produkt o nazwie pasującej do wzorca dostaje uwagę w kolumnie `notes`
+# product_tags.csv (wiersze `auto`). Tu trafiają przypadki, w których tag zależy od receptury
+# albo od decyzji.
+review_notes:
+  - name_pattern: "owsi|owies"
+    note: "owies jak zboże glutenowe (decyzja 2026-11-24); bezglutenowy tylko certyfikowany"
+  - name_pattern: "^masło klarowane$|^parmezan$|^ser ementaler$|^ser cheddar$|^ser gouda$|^ser edamski$|^oscypek$"
+    note: "laktoza śladowa, tag z zasady ostrożności (decyzja 2026-11-24)"
+  - name_pattern: "^kaszanka$"
+    note: "gluten zależy od kaszy (jęczmienna tak, gryczana nie) – tag z zasady ostrożności"
+  - name_pattern: "^paluszki rybne$"
+    note: "panierka pszenna – gluten; jaja zależą od receptury"
+  - name_pattern: "^paluszki surimi$"
+    note: "zwykle skrobia pszenna i białko jaja – gluten i jaja z zasady ostrożności"
+  - name_pattern: "^(parówki|kiełbasa|pasztet|wątrobianka|mortadela|salceson|biała kiełbasa|kabanosy|salami)"
+    note: "możliwe dodatki z glutenem lub mlekiem zależnie od producenta"
+  - name_pattern: "^(chleb tostowy|bułka pszenna|margaryna|czekolada gorzka|musli)"
+    note: "możliwy dodatek mleka, serwatki lub miodu zależnie od producenta"
+  - name_pattern: "^orzeszki ziemne$|^masło orzechowe$"
+    note: "orzeszki ziemne (strączkowe) liczone jako orzechy (decyzja 2026-11-24)"
+  - name_pattern: "^(wiórki kokosowe|olej kokosowy)$"
+    note: "kokos nie jest liczony jako orzech (decyzja 2026-11-24)"
+  - name_pattern: "^(smalec|żelatyna)$"
+    note: "tłuszcz lub kolagen zwierząt rzeźnych – tag mięso"
+  - name_pattern: "^miód$"
+    note: "wegetariański, ale nie wegański (decyzja 2026-11-24)"
+  - name_pattern: "^płatki kukurydziane$"
+    note: "zwykle ekstrakt słodu jęczmiennego – gluten z zasady ostrożności"
+  - name_pattern: "^sos sojowy$"
+    note: "shoyu z pszenicą – gluten; tamari bez pszenicy to inny produkt"
